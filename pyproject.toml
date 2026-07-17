@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "storm"
+version = "0.2.0"
+description = "STORM - STandaard Omgevingswet ReferentieModel: standaard + transformaties + renvooi"
+requires-python = ">=3.10"
+dependencies = [
+    "lxml>=5",
+    "click>=8",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8", "xmlschema>=3"]
+geo = ["shapely>=2"]
+
+[project.scripts]
+storm = "storm.cli:cli"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
