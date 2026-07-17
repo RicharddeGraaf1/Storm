@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
-<Regeling xmlns="urn:storm:1.0" xmlns:ns1="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:ns2="http://toepasbare-regels.omgevingswet.overheid.nl/v1.0/Interactieregel" xmlns:ns3="http://toepasbare-regels.omgevingswet.overheid.nl/v1.0/Uitvoeringsregel" xmlns:ns4="http://www.trisotech.com/2015/triso/modeling" xmlns:ns5="http://toepasbare-regels.omgevingswet.overheid.nl/v1.0/Bedrijfsregel" xmlns:ns6="http://toepasbare-regels.omgevingswet.overheid.nl/v1.0/Content" schemaversie="0.2.0">
+<Regeling xmlns="urn:storm:1.0" xmlns:ns10="http://toepasbare-regels.omgevingswet.overheid.nl/v1.0/Bedrijfsregel" xmlns:ns11="http://toepasbare-regels.omgevingswet.overheid.nl/v1.0/Content" xmlns:ns2="https://standaarden.overheid.nl/lvbb/stop/aanlevering/" xmlns:ns3="https://standaarden.overheid.nl/stop/imop/data/" xmlns:ns4="https://standaarden.overheid.nl/stop/imop/tekst/" xmlns:ns5="http://www.overheid.nl/2017/lvbb" xmlns:ns6="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:ns7="http://toepasbare-regels.omgevingswet.overheid.nl/v1.0/Interactieregel" xmlns:ns8="http://toepasbare-regels.omgevingswet.overheid.nl/v1.0/Uitvoeringsregel" xmlns:ns9="http://www.trisotech.com/2015/triso/modeling" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaversie="0.5.0" xsi:schemaLocation="urn:storm:1.0 https://raw.githubusercontent.com/RicharddeGraaf1/Storm/main/standaard/xsd/storm.xsd">
    <Identificatie>
-      <FRBRWork>/akn/nl/bill/gm0297/2019/3520</FRBRWork>
-      <FRBRExpression>/akn/nl/bill/gm0297/2019/3520/nld@2019</FRBRExpression>
-      <soortWork>/join/id/stop/work_003</soortWork>
+      <FRBRWork>/akn/nl/act/gm0297/2019/reg456</FRBRWork>
+      <FRBRExpression>/akn/nl/act/gm0297/2019/reg456/nld@1</FRBRExpression>
+      <soortWork>/join/id/stop/work_019</soortWork>
       <versienummer>1</versienummer>
       <bevoegdGezag>gm0297</bevoegdGezag>
    </Identificatie>
@@ -1098,27 +1098,27 @@
       </Regelingsgebied>
    </OwObjecten>
    <Geo>
-      <Gio work="/join/id/regdata/gm0297/2019/Bedrijf_categorie_2" expressie="/join/id/regdata/gm0297/2019/Bedrijf_categorie_2/nld@2019-06-18;3520" bestand="gio/Bedrijf_categorie_2.gml">
+      <Gio work="/join/id/regdata/gm0297/2019/Bedrijf_categorie_2" expressie="/join/id/regdata/gm0297/2019/Bedrijf_categorie_2/nld@2019-06-18;3520" bestand="gio/Bedrijf_categorie_2.gml" wrapper="gio/GIO001-Bedrijf_categorie_2.xml">
          <Gebiedsaanwijzing owId="nl.imow-gm0297.gebiedsaanwijzing.2019000001" locatieRef="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2">
             <type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</type>
             <naam>Bedrijf categorie 2</naam>
             <groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Bedrijf</groep>
          </Gebiedsaanwijzing>
       </Gio>
-      <Gio work="/join/id/regdata/gm0297/2019/Bouwhoogte" expressie="/join/id/regdata/gm0297/2019/Bouwhoogte/nld@2019-06-18;3520" bestand="gio/Bouwhoogte.gml" />
-      <Gio work="/join/id/regdata/gm0297/2019/Centrumgebied" expressie="/join/id/regdata/gm0297/2019/Centrumgebied/nld@2019-06-18;3520" bestand="gio/Centrumgebied.gml">
+      <Gio work="/join/id/regdata/gm0297/2019/Bouwhoogte" expressie="/join/id/regdata/gm0297/2019/Bouwhoogte/nld@2019-06-18;3520" bestand="gio/Bouwhoogte.gml" wrapper="gio/GIO006-Bouwhoogte.xml" />
+      <Gio work="/join/id/regdata/gm0297/2019/Centrumgebied" expressie="/join/id/regdata/gm0297/2019/Centrumgebied/nld@2019-06-18;3520" bestand="gio/Centrumgebied.gml" wrapper="gio/GIO002-Centrumgebied.xml">
          <Gebiedsaanwijzing owId="nl.imow-gm0297.gebiedsaanwijzing.2019000002" locatieRef="nl.imow-gm0297.gebiedengroep.centrumgebied">
             <type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</type>
             <naam>Centrumgebied</naam>
             <groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Centrumgebied</groep>
          </Gebiedsaanwijzing>
       </Gio>
-      <Gio work="/join/id/regdata/gm0297/2019/Zone_A" expressie="/join/id/regdata/gm0297/2019/Zone_A/nld@2019-06-18;3520" bestand="gio/Zone_A.gml" />
-      <Gio work="/join/id/regdata/gm0297/2019/Zone_B" expressie="/join/id/regdata/gm0297/2019/Zone_B/nld@2019-06-18;3520" bestand="gio/Zone_B.gml" />
-      <Gio work="/join/id/regdata/gm0297/2019/Speelhal" expressie="/join/id/regdata/gm0297/2019/Speelhal/nld@2019-06-18;3520" bestand="gio/Speelhal.gml" />
-      <Gio work="/join/id/regdata/gm0297/2019/Welstand" expressie="/join/id/regdata/gm0297/2019/Welstand/nld@2019-06-18;3520" bestand="gio/Welstand.gml" />
-      <Gio work="/join/id/regdata/gm0297/2019/Zuilichem" expressie="/join/id/regdata/gm0297/2019/Zuilichem/nld@2019-06-18;3520" bestand="gio/Zuilichem.gml" />
-      <Gio work="/join/id/regdata/gm0297/2021/Ponsgebied" expressie="/join/id/regdata/gm0297/2021/Ponsgebied/nld@2021-01-01;1" bestand="gio/PonsGebied.gml" />
+      <Gio work="/join/id/regdata/gm0297/2019/Zone_A" expressie="/join/id/regdata/gm0297/2019/Zone_A/nld@2019-06-18;3520" bestand="gio/Zone_A.gml" wrapper="gio/GIO003-Zone_A.xml" />
+      <Gio work="/join/id/regdata/gm0297/2019/Zone_B" expressie="/join/id/regdata/gm0297/2019/Zone_B/nld@2019-06-18;3520" bestand="gio/Zone_B.gml" wrapper="gio/GIO004-Zone_B.xml" />
+      <Gio work="/join/id/regdata/gm0297/2019/Speelhal" expressie="/join/id/regdata/gm0297/2019/Speelhal/nld@2019-06-18;3520" bestand="gio/Speelhal.gml" wrapper="gio/GIO005-Speelhal.xml" />
+      <Gio work="/join/id/regdata/gm0297/2019/Welstand" expressie="/join/id/regdata/gm0297/2019/Welstand/nld@2019-06-18;3520" bestand="gio/Welstand.gml" wrapper="gio/GIO007-Welstand.xml" />
+      <Gio work="/join/id/regdata/gm0297/2019/Zuilichem" expressie="/join/id/regdata/gm0297/2019/Zuilichem/nld@2019-06-18;3520" bestand="gio/Zuilichem.gml" wrapper="gio/GIO008-Zuilichem.xml" />
+      <Gio work="/join/id/regdata/gm0297/2021/Ponsgebied" expressie="/join/id/regdata/gm0297/2021/Ponsgebied/nld@2021-01-01;1" bestand="gio/PonsGebied.gml" wrapper="gio/PonsGebied.xml" />
       <Ambtsgebied id="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied">
          <BestuurlijkeGrenzen id="GM0297" domein="NL.BI.BestuurlijkGebied" geldigOp="2021-01-01" />
       </Ambtsgebied>
@@ -1183,130 +1183,370 @@
          </Normwaarde>
       </ImowNorm>
    </Exportregels>
+   <Envelop>
+      <Envelopdeel bestand="akn_nl_bill_gm0297-3520-01.xml">
+         <ns2:AanleveringBesluit schemaversie="1.2.0" xsi:schemaLocation="https://standaarden.overheid.nl/lvbb/stop/aanlevering/ https://raw.githubusercontent.com/RicharddeGraaf1/schemaTestsRichard/refs/heads/main/1.4.1/lvbb/lvbb-stop-aanlevering.xsd">
+   <ns2:BesluitVersie>
+      <ns3:ExpressionIdentificatie>
+         <ns3:FRBRWork>/akn/nl/bill/gm0297/2019/3520</ns3:FRBRWork>
+         <ns3:FRBRExpression>/akn/nl/bill/gm0297/2019/3520/nld@2019</ns3:FRBRExpression>
+         <ns3:soortWork>/join/id/stop/work_003</ns3:soortWork>
+      </ns3:ExpressionIdentificatie>
+      <ns3:BesluitMetadata>
+         <ns3:eindverantwoordelijke>/tooi/id/gemeente/gm0297</ns3:eindverantwoordelijke>
+         <ns3:maker>/tooi/id/gemeente/gm0297</ns3:maker>
+         
+         <ns3:soortBestuursorgaan>/tooi/def/thes/kern/c_2a7d8663</ns3:soortBestuursorgaan>
+         <ns3:officieleTitel>Vaststelling van Omgevingsplan Gemeentestad (Zaltbommel)</ns3:officieleTitel>
+         <ns3:onderwerpen>
+            <ns3:onderwerp>/tooi/def/concept/c_9d1917e9</ns3:onderwerp>
+            
+         </ns3:onderwerpen>
+         <ns3:rechtsgebieden>
+            <ns3:rechtsgebied>/tooi/def/concept/c_8ad05f6d</ns3:rechtsgebied>
+         </ns3:rechtsgebieden>
+         <ns3:soortProcedure>/join/id/stop/proceduretype_definitief</ns3:soortProcedure>
+         <ns3:informatieobjectRefs>
+            <ns3:informatieobjectRef>/join/id/regdata/gm0297/2019/Bedrijf_categorie_2/nld@2019-06-18;3520</ns3:informatieobjectRef>
+            <ns3:informatieobjectRef>/join/id/regdata/gm0297/2019/Centrumgebied/nld@2019-06-18;3520</ns3:informatieobjectRef>
+            <ns3:informatieobjectRef>/join/id/regdata/gm0297/2019/Speelhal/nld@2019-06-18;3520</ns3:informatieobjectRef>
+            <ns3:informatieobjectRef>/join/id/regdata/gm0297/2019/Bouwhoogte/nld@2019-06-18;3520</ns3:informatieobjectRef>
+            <ns3:informatieobjectRef>/join/id/regdata/gm0297/2019/Welstand/nld@2019-06-18;3520</ns3:informatieobjectRef>
+            <ns3:informatieobjectRef>/join/id/regdata/gm0297/2019/Zone_A/nld@2019-06-18;3520</ns3:informatieobjectRef>
+            <ns3:informatieobjectRef>/join/id/regdata/gm0297/2019/Zone_B/nld@2019-06-18;3520</ns3:informatieobjectRef>
+            <ns3:informatieobjectRef>/join/id/regdata/gm0297/2019/Zuilichem/nld@2019-06-18;3520</ns3:informatieobjectRef>
+            <ns3:informatieobjectRef>/join/id/regdata/gm0297/2020/PDF/nld@2020-06-18;3520</ns3:informatieobjectRef>
+            <ns3:informatieobjectRef>/join/id/regdata/gm0297/2021/Ponsgebied/nld@2021-01-01;1</ns3:informatieobjectRef>
+            
+         </ns3:informatieobjectRefs>
+      </ns3:BesluitMetadata>
+      <ns3:Procedureverloop>
+         <ns3:bekendOp>2019-12-17</ns3:bekendOp>
+         <ns3:procedurestappen>
+            <ns3:Procedurestap>
+               <ns3:soortStap>/join/id/stop/procedure/stap_002</ns3:soortStap>
+               <ns3:voltooidOp>2019-12-03</ns3:voltooidOp>
+            </ns3:Procedurestap>
+            <ns3:Procedurestap>
+               <ns3:soortStap>/join/id/stop/procedure/stap_003</ns3:soortStap>
+               <ns3:voltooidOp>2019-12-05</ns3:voltooidOp>
+            </ns3:Procedurestap>
+         </ns3:procedurestappen>
+      </ns3:Procedureverloop>
+      <ns3:ConsolidatieInformatie>
+         <ns3:BeoogdeRegelgeving>
+            <ns3:BeoogdeRegeling>
+               <ns3:doelen>
+                  <ns3:doel>/join/id/proces/gm0297/2019/Instelling</ns3:doel>
+               </ns3:doelen>
+               <ns3:instrumentVersie>/akn/nl/act/gm0297/2019/reg456/nld@1</ns3:instrumentVersie>
+               <ns3:eId>art_I</ns3:eId>
+            </ns3:BeoogdeRegeling>
+            <ns3:BeoogdInformatieobject>
+               <ns3:doelen>
+                  <ns3:doel>/join/id/proces/gm0297/2019/Instelling</ns3:doel>
+               </ns3:doelen>
+               <ns3:instrumentVersie>/join/id/regdata/gm0297/2019/Bedrijf_categorie_2/nld@2019-06-18;3520</ns3:instrumentVersie>
+               <ns3:eId>!initieel_reg#cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1</ns3:eId>
+            </ns3:BeoogdInformatieobject>
+            <ns3:BeoogdInformatieobject>
+               <ns3:doelen>
+                  <ns3:doel>/join/id/proces/gm0297/2019/Instelling</ns3:doel>
+               </ns3:doelen>
+               <ns3:instrumentVersie>/join/id/regdata/gm0297/2019/Centrumgebied/nld@2019-06-18;3520</ns3:instrumentVersie>
+               <ns3:eId>!initieel_reg#cmp_I__content_o_1__list_o_1__item_o_2__ref_o_1</ns3:eId>
+            </ns3:BeoogdInformatieobject>
+            <ns3:BeoogdInformatieobject>
+               <ns3:doelen>
+                  <ns3:doel>/join/id/proces/gm0297/2019/Instelling</ns3:doel>
+               </ns3:doelen>
+               <ns3:instrumentVersie>/join/id/regdata/gm0297/2019/Speelhal/nld@2019-06-18;3520</ns3:instrumentVersie>
+               <ns3:eId>!initieel_reg#cmp_I__content_o_1__list_o_1__item_o_3__ref_o_1</ns3:eId>
+            </ns3:BeoogdInformatieobject>
+            <ns3:BeoogdInformatieobject>
+               <ns3:doelen>
+                  <ns3:doel>/join/id/proces/gm0297/2019/Instelling</ns3:doel>
+               </ns3:doelen>
+               <ns3:instrumentVersie>/join/id/regdata/gm0297/2019/Bouwhoogte/nld@2019-06-18;3520</ns3:instrumentVersie>
+               <ns3:eId>!initieel_reg#cmp_I__content_o_1__list_o_1__item_o_4__ref_o_1</ns3:eId>
+            </ns3:BeoogdInformatieobject>
+            <ns3:BeoogdInformatieobject>
+               <ns3:doelen>
+                  <ns3:doel>/join/id/proces/gm0297/2019/Instelling</ns3:doel>
+               </ns3:doelen>
+               <ns3:instrumentVersie>/join/id/regdata/gm0297/2019/Welstand/nld@2019-06-18;3520</ns3:instrumentVersie>
+               <ns3:eId>!initieel_reg#cmp_I__content_o_1__list_o_1__item_o_5__ref_o_1</ns3:eId>
+            </ns3:BeoogdInformatieobject>
+            <ns3:BeoogdInformatieobject>
+               <ns3:doelen>
+                  <ns3:doel>/join/id/proces/gm0297/2019/Instelling</ns3:doel>
+               </ns3:doelen>
+               <ns3:instrumentVersie>/join/id/regdata/gm0297/2019/Zone_A/nld@2019-06-18;3520</ns3:instrumentVersie>
+               <ns3:eId>!initieel_reg#cmp_I__content_o_1__list_o_1__item_o_6__ref_o_1</ns3:eId>
+            </ns3:BeoogdInformatieobject>
+            <ns3:BeoogdInformatieobject>
+               <ns3:doelen>
+                  <ns3:doel>/join/id/proces/gm0297/2019/Instelling</ns3:doel>
+               </ns3:doelen>
+               <ns3:instrumentVersie>/join/id/regdata/gm0297/2019/Zone_B/nld@2019-06-18;3520</ns3:instrumentVersie>
+               <ns3:eId>!initieel_reg#cmp_I__content_o_1__list_o_1__item_o_7__ref_o_1</ns3:eId>
+            </ns3:BeoogdInformatieobject>
+            <ns3:BeoogdInformatieobject>
+               <ns3:doelen>
+                  <ns3:doel>/join/id/proces/gm0297/2019/Instelling</ns3:doel>
+               </ns3:doelen>
+               <ns3:instrumentVersie>/join/id/regdata/gm0297/2019/Zuilichem/nld@2019-06-18;3520</ns3:instrumentVersie>
+               <ns3:eId>!initieel_reg#cmp_I__content_o_1__list_o_1__item_o_8__ref_o_1</ns3:eId>
+            </ns3:BeoogdInformatieobject>
+            <ns3:BeoogdInformatieobject>
+               <ns3:doelen>
+                  <ns3:doel>/join/id/proces/gm0297/2019/Instelling</ns3:doel>
+               </ns3:doelen>
+               <ns3:instrumentVersie>/join/id/regdata/gm0297/2020/PDF/nld@2020-06-18;3520</ns3:instrumentVersie>
+               <ns3:eId>!initieel_reg#cmp_IV__content_o_1__list_o_1__item_o_1__ref_o_1</ns3:eId>
+            </ns3:BeoogdInformatieobject>
+            <ns3:BeoogdInformatieobject>
+               <ns3:doelen>
+                  <ns3:doel>/join/id/proces/gm0297/2019/Instelling</ns3:doel>
+               </ns3:doelen>
+               <ns3:instrumentVersie>/join/id/regdata/gm0297/2021/Ponsgebied/nld@2021-01-01;1</ns3:instrumentVersie>
+               <ns3:eId>art_III__ref_o_1</ns3:eId>
+            </ns3:BeoogdInformatieobject>
+         </ns3:BeoogdeRegelgeving>
+         <ns3:Tijdstempels>
+            <ns3:Tijdstempel>
+               <ns3:doel>/join/id/proces/gm0297/2019/Instelling</ns3:doel>
+               <ns3:soortTijdstempel>juridischWerkendVanaf</ns3:soortTijdstempel>
+               <ns3:datum>2020-01-14</ns3:datum>
+               <ns3:eId>art_II</ns3:eId>
+            </ns3:Tijdstempel>
+         </ns3:Tijdstempels>
+      </ns3:ConsolidatieInformatie>
+      <ns4:BesluitCompact>
+         <ns4:RegelingOpschrift eId="longTitle" wId="longTitle">
+            <ns4:Al>Vaststelling van Omgevingsplan Gemeentestad (Zaltbommel)</ns4:Al>
+         </ns4:RegelingOpschrift>
+         <ns4:Aanhef eId="formula_1" wId="formula_1">
+            <ns4:Al>De raad van de gemeente Gemeenstestad </ns4:Al>
+            <ns4:Al>gelezen het voorstel van burgemeester en wethouders van 26 juni 2019, nr. 2019-4542;</ns4:Al>
+            <ns4:Al>Gelet op <ns4:ExtRef ref="https://wetten.overheid.nl/jci1.3:c:BWBR0005416&amp;titeldeel=III&amp;hoofdstuk=IX&amp;artikel=149" soort="URL">Gemeentewet, art. 149</ns4:ExtRef>.</ns4:Al>
+            <ns4:Al>besluit:</ns4:Al>
+         </ns4:Aanhef>
+         <ns4:Lichaam eId="body" wId="body">
+            <ns4:WijzigArtikel eId="art_I" wId="gm0297_1__art_I">
+               <ns4:Kop>
+                  <ns4:Label>Artikel</ns4:Label>
+                  <ns4:Nummer>I</ns4:Nummer>
+               </ns4:Kop>
+               <ns4:Wat>De "Voorbeeldregels met uitbreiding tbv Toepasbare Regels" opgenomen in <ns4:IntRef ref="cmp_A" scope="WijzigBijlage">Bijlage A</ns4:IntRef> worden vastgesteld.</ns4:Wat>
+            </ns4:WijzigArtikel>
+            <ns4:Artikel eId="art_II" wId="gm0297_1__art_II">
+               <ns4:Kop>
+                  <ns4:Label>Artikel</ns4:Label>
+                  <ns4:Nummer>II</ns4:Nummer>
+               </ns4:Kop>
+               <ns4:Inhoud>
+                  <ns4:Al>Dit besluit treedt in werking per 14 januari 2020.</ns4:Al>
+               </ns4:Inhoud>
+            </ns4:Artikel>
+            <ns4:Artikel eId="art_III" wId="gm0297_1__art_III">
+               <ns4:Kop>
+                  <ns4:Label>Artikel</ns4:Label>
+                  <ns4:Nummer>III</ns4:Nummer>
+               </ns4:Kop>
+               <ns4:Inhoud>
+                  <ns4:Al>Het omgevingsplan van rechtswege vervalt voor het Pons-informatieobject <ns4:ExtIoRef eId="art_III__ref_o_1" wId="gm0297_1__art_III__ref_o_1" ref="/join/id/regdata/gm0297/2021/Ponsgebied/nld@2021-01-01;1">/join/id/regdata/gm0297/2021/Ponsgebied/nld@2021-01-01;1</ns4:ExtIoRef> van dit artikel.</ns4:Al>
+               </ns4:Inhoud>
+            </ns4:Artikel>
+         </ns4:Lichaam>
+         <ns4:Sluiting eId="formula_2" wId="formula_2">
+            <ns4:Al>Gegeven te Kaap Doorn, Gemeentestad, 3 december 2019</ns4:Al>
+            <ns4:Ondertekening>
+               <ns4:Al>Gedeputeerde Raad van Apeldoorn tot Den Haag</ns4:Al>
+               <ns4:Al>Yue Wan Fan</ns4:Al>
+               <ns4:Al>gemeentesecretaris</ns4:Al>
+               <ns4:Al>Nadine Bauer</ns4:Al>
+               <ns4:Al>Burgemeester</ns4:Al>
+            </ns4:Ondertekening>
+         </ns4:Sluiting>
+         <ns4:WijzigBijlage eId="cmp_A" wId="gm0297_1__cmp_A">
+            <ns4:Kop>
+               <ns4:Label>Bijlage</ns4:Label>
+               <ns4:Nummer>A</ns4:Nummer>
+               <ns4:Opschrift>Bijlage bij artikel I</ns4:Opschrift>
+            </ns4:Kop>
+            <Tekstinvoegpunt />
+         </ns4:WijzigBijlage>
+      </ns4:BesluitCompact>
+   </ns2:BesluitVersie>
+   <ns2:RegelingVersieInformatie>
+      <ns3:ExpressionIdentificatie>
+         <ns3:FRBRWork>/akn/nl/act/gm0297/2019/reg456</ns3:FRBRWork>
+         <ns3:FRBRExpression>/akn/nl/act/gm0297/2019/reg456/nld@1</ns3:FRBRExpression>
+         <ns3:soortWork>/join/id/stop/work_019</ns3:soortWork>
+      </ns3:ExpressionIdentificatie>
+      <ns3:RegelingVersieMetadata>
+         <ns3:versienummer>1</ns3:versienummer>
+      </ns3:RegelingVersieMetadata>
+      <ns3:RegelingMetadata>
+         <ns3:eindverantwoordelijke>/tooi/id/gemeente/gm0297</ns3:eindverantwoordelijke>
+         <ns3:maker>/tooi/id/gemeente/gm0297</ns3:maker>
+         
+         <ns3:soortBestuursorgaan>/tooi/def/thes/kern/c_2a7d8663</ns3:soortBestuursorgaan>
+         <ns3:heeftCiteertitelInformatie>
+            <ns3:CiteertitelInformatie>
+               <ns3:citeertitel>Gemeentestad (omgevingsplan Zaltbommel)</ns3:citeertitel>
+               <ns3:isOfficieel>true</ns3:isOfficieel>
+            </ns3:CiteertitelInformatie>
+         </ns3:heeftCiteertitelInformatie>
+         <ns3:officieleTitel>Omgevingsplan Zaltbommel (met de nadruk op Zuilichem)</ns3:officieleTitel>
+         <ns3:onderwerpen>
+            <ns3:onderwerp>/tooi/def/concept/c_9d1917e9</ns3:onderwerp>
+         </ns3:onderwerpen>
+         <ns3:rechtsgebieden>
+            <ns3:rechtsgebied>/tooi/def/concept/c_8ad05f6d</ns3:rechtsgebied>
+         </ns3:rechtsgebieden>
+         <ns3:soortRegeling>/join/id/stop/regelingtype_003</ns3:soortRegeling>
+         
+      </ns3:RegelingMetadata>
+   </ns2:RegelingVersieInformatie>
+</ns2:AanleveringBesluit>
+      </Envelopdeel>
+      <Envelopdeel bestand="opdracht.xml">
+         <ns5:publicatieOpdracht>
+  <ns5:idLevering>RdG-Omgevingsplan-Zaltbommel_initieel_001</ns5:idLevering>
+  
+  <ns5:idBevoegdGezag>00000001807288111000</ns5:idBevoegdGezag> 
+  <ns5:idAanleveraar>00000003560458830000</ns5:idAanleveraar>
+  <ns5:publicatie>akn_nl_bill_gm0297-3520-01.xml</ns5:publicatie>
+  <ns5:datumBekendmaking>2022-06-25</ns5:datumBekendmaking>
+</ns5:publicatieOpdracht>
+      </Envelopdeel>
+   </Envelop>
    <ToepasbareRegels>
-      <ToepasbareActiviteit activiteitRef="nl.imow-gm0297.activiteit.2019000800" soort="conclusie" naam="Conclusie Bouwen van een bijgebouw - Initiele versie" namespace="http://toepasbare-regels.omgevingswet.overheid.nl/00000001807288111000">
+      <ToepasbareActiviteit activiteitRef="nl.imow-gm0297.activiteit.2019000800" soort="conclusie" naam="Conclusie Bouwen van een bijgebouw - Initiele versie" namespace="http://toepasbare-regels.omgevingswet.overheid.nl/00000001807288111000" geldigBegindatum="23-12-2020">
          <Regelgroep id="Regelgroep1" prioriteit="1">Bouwen van een bijgebouw</Regelgroep>
          <Uitvoeringsregel id="UitvId0001" regelgroepRef="Regelgroep1" prioriteit="10" gegevensType="number">
             <VraagTekst>Wat is de oppervlakte van het bijgebouw?</VraagTekst>
          </Uitvoeringsregel>
          <Beslislogica>
-            <ns1:definitions exporter="Decision Modeler" exporterVersion="7.2.0" id="_0d28736f-5b50-4d24-9e3e-327304ae6807" name="Conclusie Bouwen van een bijgebouw - Initiele versie" namespace="http://toepasbare-regels.omgevingswet.overheid.nl/00000001807288111000">
-	<ns1:extensionElements>
-		<ns2:regelgroepen>
-			<ns2:regelgroep id="Regelgroep1">
-				<ns2:naam>Bouwen van een bijgebouw</ns2:naam>
-				<ns2:prioriteit>1</ns2:prioriteit>
-			</ns2:regelgroep>
-		</ns2:regelgroepen>
-		<ns3:uitvoeringsregels>
-			<ns3:uitvoeringsregel id="UitvId0001">
-				<ns3:regelgroepRef href="#Regelgroep1" />
-				<ns3:bereik>werkzaamheid</ns3:bereik>
-				<ns2:classificatie>activiteit</ns2:classificatie>
-				<ns3:publiceerbaar>true</ns3:publiceerbaar>
-				<ns3:potentieelVertrouwelijk>true</ns3:potentieelVertrouwelijk>
-				<ns2:prioriteit>10</ns2:prioriteit>
-				<ns3:vraag>
-					<ns3:gegevensType>number</ns3:gegevensType>
-					<ns3:vraagTekst>Wat is de oppervlakte van het bijgebouw?</ns3:vraagTekst>
-				</ns3:vraag>
-			</ns3:uitvoeringsregel>
-		</ns3:uitvoeringsregels>			
-	</ns1:extensionElements>
-	<ns1:itemDefinition isCollection="false" label="TConclusie" name="TConclusie">
-		<ns1:typeRef>feel:string</ns1:typeRef>
-		<ns1:allowedValues ns4:constraintsType="enumeration">
-			<ns1:extensionElements>
-				<ns4:constraintDetails>
-					<ns4:display>"NietVanToepassing", "NeemContactOpMet", "Meldingsplicht", "Vergunningplicht", "Informatieplicht", "Toestemmingsvrij", "Verbod"</ns4:display>
-					<ns4:choices>
-						<ns4:value>"NietVanToepassing"</ns4:value>
-						<ns4:display>"NietVanToepassing"</ns4:display>
-					</ns4:choices>
-					<ns4:choices>
-						<ns4:value>"NeemContactOpMet"</ns4:value>
-						<ns4:display>"NeemContactOpMet"</ns4:display>
-					</ns4:choices>
-					<ns4:choices>
-						<ns4:value>"Meldingsplicht"</ns4:value>
-						<ns4:display>"Meldingsplicht"</ns4:display>
-					</ns4:choices>
-					<ns4:choices>
-						<ns4:value>"Vergunningplicht"</ns4:value>
-						<ns4:display>"Vergunningplicht"</ns4:display>
-					</ns4:choices>
-					<ns4:choices>
-						<ns4:value>"Informatieplicht"</ns4:value>
-						<ns4:display>"Informatieplicht"</ns4:display>
-					</ns4:choices>
-					<ns4:choices>
-						<ns4:value>"Toestemmingsvrij"</ns4:value>
-						<ns4:display>"Toestemmingsvrij"</ns4:display>
-					</ns4:choices>
-					<ns4:choices>
-						<ns4:value>"Verbod"</ns4:value>
-						<ns4:display>"Verbod"</ns4:display>
-					</ns4:choices>
-				</ns4:constraintDetails>
-			</ns1:extensionElements>
-			<ns1:text>"NietVanToepassing","NeemContactOpMet","Meldingsplicht","Vergunningplicht","Informatieplicht","Toestemmingsvrij","Verbod"</ns1:text>
-		</ns1:allowedValues>
-	</ns1:itemDefinition>	
-	<ns1:inputData id="InputData0001" name="oppervlakte m2">
-		<ns1:extensionElements>
-			<ns3:uitvoeringsregelRef href="#UitvId0001" />
-		</ns1:extensionElements>							 					 
-		<ns1:variable id="_d4aea971-c2fc-4894-bbfb-bb92a364d628" name="oppervlakte m2" typeRef="feel:number" />
-	</ns1:inputData>	
-	<ns1:decision id="_2dee2620-8640-4061-bf2c-c00beb1f8602" name="Besluit - Bouwen van een bijgebouw">
-		<ns1:extensionElements>
-			<ns5:functioneleStructuurRef href="#http://toepasbare-regels.omgevingswet.overheid.nl/00000001807288111000/id/concept/Conclusienl.imow-gm0297.activiteit.2019000800" />
-		</ns1:extensionElements>					
-		<ns1:variable id="_5c41771c-515c-4d34-8adc-ac7474fb6f2b" name="Besluit - Bouwen van een bijgebouw" typeRef="TConclusie" />
-		<ns1:informationRequirement>
-			<ns1:requiredInput href="#InputData0001" />
-		</ns1:informationRequirement>
-		<ns1:decisionTable hitPolicy="UNIQUE" id="_ede1da70-67bb-4944-bee8-dfd3f5ef17ee" outputLabel="Besluit - Bouwen van een bijgebouw" ns4:descriptionVisible="false" ns4:expressionId="_ee613fb9-9da1-4b4f-b737-57ea9e8967be" typeRef="TConclusie">
-			<ns1:input id="_d26a8cc4-bf55-4df6-8ae2-d5a7c1e5a3d3" label="oppervlakte m2">
-				<ns1:inputExpression typeRef="feel:number">
-					<ns1:text>oppervlakte m2</ns1:text>
-				</ns1:inputExpression>
-			</ns1:input>
-			<ns1:output id="_2c8a345e-bbd7-4de3-8cd5-433a7d8b005b" ns4:allowNull="true">
-				<ns1:outputValues ns4:constraintsType="enumeration">
-					<ns1:text>"NietVanToepassing","NeemContactOpMet","Meldingsplicht","Vergunningplicht","Informatieplicht","Toestemmingsvrij","Verbod",null</ns1:text>
-				</ns1:outputValues>	
-			</ns1:output>	
-			<ns1:rule id="_718ab23d-7381-4281-8070-be5c5d37db8d">
-				<ns1:inputEntry id="_4bd5e571-57cf-47b3-af69-30987cc7433d">
-					<ns1:text>&lt;20</ns1:text>
-				</ns1:inputEntry>
-				<ns1:outputEntry id="_7fa89330-adba-40d7-9009-c63101e3fd79">
-					<ns1:text>"Toestemmingsvrij"</ns1:text>
-				</ns1:outputEntry>
-			</ns1:rule>
-			<ns1:rule id="_8828d4cb-61e8-4a9d-abc9-6b04dc01f578">
-				<ns1:inputEntry id="_7c127fea-ac33-4163-b956-5a1d10e73548">
-					<ns1:text>[20..30)</ns1:text>
-				</ns1:inputEntry>
-				<ns1:outputEntry id="_d6df12a8-0cb0-4a85-8204-a9f54218d827">
-					<ns1:text>"Meldingsplicht"</ns1:text>
-				</ns1:outputEntry>
-			</ns1:rule>
-			<ns1:rule id="_4e22fe95-282d-4814-831c-65c837fc62e9">
-				<ns1:inputEntry id="_4aa7b110-8efd-4e17-9dbd-87117bd2b47c">
-					<ns1:text>&gt;=30</ns1:text>
-				</ns1:inputEntry>
-				<ns1:outputEntry id="_2e4bd114-3d22-4378-9b8c-bca4b1731edc">
-					<ns1:text>"Vergunningplicht"</ns1:text>
-				</ns1:outputEntry>
-			</ns1:rule>
-		</ns1:decisionTable>
-	</ns1:decision>
-</ns1:definitions>
+            <ns6:definitions exporter="Decision Modeler" exporterVersion="7.2.0" id="_0d28736f-5b50-4d24-9e3e-327304ae6807" name="Conclusie Bouwen van een bijgebouw - Initiele versie" namespace="http://toepasbare-regels.omgevingswet.overheid.nl/00000001807288111000">
+	<ns6:extensionElements>
+		<ns7:regelgroepen>
+			<ns7:regelgroep id="Regelgroep1">
+				<ns7:naam>Bouwen van een bijgebouw</ns7:naam>
+				<ns7:prioriteit>1</ns7:prioriteit>
+			</ns7:regelgroep>
+		</ns7:regelgroepen>
+		<ns8:uitvoeringsregels>
+			<ns8:uitvoeringsregel id="UitvId0001">
+				<ns8:regelgroepRef href="#Regelgroep1" />
+				<ns8:bereik>werkzaamheid</ns8:bereik>
+				<ns7:classificatie>activiteit</ns7:classificatie>
+				<ns8:publiceerbaar>true</ns8:publiceerbaar>
+				<ns8:potentieelVertrouwelijk>true</ns8:potentieelVertrouwelijk>
+				<ns7:prioriteit>10</ns7:prioriteit>
+				<ns8:vraag>
+					<ns8:gegevensType>number</ns8:gegevensType>
+					<ns8:vraagTekst>Wat is de oppervlakte van het bijgebouw?</ns8:vraagTekst>
+				</ns8:vraag>
+			</ns8:uitvoeringsregel>
+		</ns8:uitvoeringsregels>			
+	</ns6:extensionElements>
+	<ns6:itemDefinition isCollection="false" label="TConclusie" name="TConclusie">
+		<ns6:typeRef>feel:string</ns6:typeRef>
+		<ns6:allowedValues ns9:constraintsType="enumeration">
+			<ns6:extensionElements>
+				<ns9:constraintDetails>
+					<ns9:display>"NietVanToepassing", "NeemContactOpMet", "Meldingsplicht", "Vergunningplicht", "Informatieplicht", "Toestemmingsvrij", "Verbod"</ns9:display>
+					<ns9:choices>
+						<ns9:value>"NietVanToepassing"</ns9:value>
+						<ns9:display>"NietVanToepassing"</ns9:display>
+					</ns9:choices>
+					<ns9:choices>
+						<ns9:value>"NeemContactOpMet"</ns9:value>
+						<ns9:display>"NeemContactOpMet"</ns9:display>
+					</ns9:choices>
+					<ns9:choices>
+						<ns9:value>"Meldingsplicht"</ns9:value>
+						<ns9:display>"Meldingsplicht"</ns9:display>
+					</ns9:choices>
+					<ns9:choices>
+						<ns9:value>"Vergunningplicht"</ns9:value>
+						<ns9:display>"Vergunningplicht"</ns9:display>
+					</ns9:choices>
+					<ns9:choices>
+						<ns9:value>"Informatieplicht"</ns9:value>
+						<ns9:display>"Informatieplicht"</ns9:display>
+					</ns9:choices>
+					<ns9:choices>
+						<ns9:value>"Toestemmingsvrij"</ns9:value>
+						<ns9:display>"Toestemmingsvrij"</ns9:display>
+					</ns9:choices>
+					<ns9:choices>
+						<ns9:value>"Verbod"</ns9:value>
+						<ns9:display>"Verbod"</ns9:display>
+					</ns9:choices>
+				</ns9:constraintDetails>
+			</ns6:extensionElements>
+			<ns6:text>"NietVanToepassing","NeemContactOpMet","Meldingsplicht","Vergunningplicht","Informatieplicht","Toestemmingsvrij","Verbod"</ns6:text>
+		</ns6:allowedValues>
+	</ns6:itemDefinition>	
+	<ns6:inputData id="InputData0001" name="oppervlakte m2">
+		<ns6:extensionElements>
+			<ns8:uitvoeringsregelRef href="#UitvId0001" />
+		</ns6:extensionElements>							 					 
+		<ns6:variable id="_d4aea971-c2fc-4894-bbfb-bb92a364d628" name="oppervlakte m2" typeRef="feel:number" />
+	</ns6:inputData>	
+	<ns6:decision id="_2dee2620-8640-4061-bf2c-c00beb1f8602" name="Besluit - Bouwen van een bijgebouw">
+		<ns6:extensionElements>
+			<ns10:functioneleStructuurRef href="#http://toepasbare-regels.omgevingswet.overheid.nl/00000001807288111000/id/concept/Conclusienl.imow-gm0297.activiteit.2019000800" />
+		</ns6:extensionElements>					
+		<ns6:variable id="_5c41771c-515c-4d34-8adc-ac7474fb6f2b" name="Besluit - Bouwen van een bijgebouw" typeRef="TConclusie" />
+		<ns6:informationRequirement>
+			<ns6:requiredInput href="#InputData0001" />
+		</ns6:informationRequirement>
+		<ns6:decisionTable hitPolicy="UNIQUE" id="_ede1da70-67bb-4944-bee8-dfd3f5ef17ee" outputLabel="Besluit - Bouwen van een bijgebouw" ns9:descriptionVisible="false" ns9:expressionId="_ee613fb9-9da1-4b4f-b737-57ea9e8967be" typeRef="TConclusie">
+			<ns6:input id="_d26a8cc4-bf55-4df6-8ae2-d5a7c1e5a3d3" label="oppervlakte m2">
+				<ns6:inputExpression typeRef="feel:number">
+					<ns6:text>oppervlakte m2</ns6:text>
+				</ns6:inputExpression>
+			</ns6:input>
+			<ns6:output id="_2c8a345e-bbd7-4de3-8cd5-433a7d8b005b" ns9:allowNull="true">
+				<ns6:outputValues ns9:constraintsType="enumeration">
+					<ns6:text>"NietVanToepassing","NeemContactOpMet","Meldingsplicht","Vergunningplicht","Informatieplicht","Toestemmingsvrij","Verbod",null</ns6:text>
+				</ns6:outputValues>	
+			</ns6:output>	
+			<ns6:rule id="_718ab23d-7381-4281-8070-be5c5d37db8d">
+				<ns6:inputEntry id="_4bd5e571-57cf-47b3-af69-30987cc7433d">
+					<ns6:text>&lt;20</ns6:text>
+				</ns6:inputEntry>
+				<ns6:outputEntry id="_7fa89330-adba-40d7-9009-c63101e3fd79">
+					<ns6:text>"Toestemmingsvrij"</ns6:text>
+				</ns6:outputEntry>
+			</ns6:rule>
+			<ns6:rule id="_8828d4cb-61e8-4a9d-abc9-6b04dc01f578">
+				<ns6:inputEntry id="_7c127fea-ac33-4163-b956-5a1d10e73548">
+					<ns6:text>[20..30)</ns6:text>
+				</ns6:inputEntry>
+				<ns6:outputEntry id="_d6df12a8-0cb0-4a85-8204-a9f54218d827">
+					<ns6:text>"Meldingsplicht"</ns6:text>
+				</ns6:outputEntry>
+			</ns6:rule>
+			<ns6:rule id="_4e22fe95-282d-4814-831c-65c837fc62e9">
+				<ns6:inputEntry id="_4aa7b110-8efd-4e17-9dbd-87117bd2b47c">
+					<ns6:text>&gt;=30</ns6:text>
+				</ns6:inputEntry>
+				<ns6:outputEntry id="_2e4bd114-3d22-4378-9b8c-bca4b1731edc">
+					<ns6:text>"Vergunningplicht"</ns6:text>
+				</ns6:outputEntry>
+			</ns6:rule>
+		</ns6:decisionTable>
+	</ns6:decision>
+</ns6:definitions>
          </Beslislogica>
       </ToepasbareActiviteit>
-      <ToepasbareActiviteit activiteitRef="nl.imow-gm0297.activiteit.2019000810" soort="conclusie" naam="Conclusie Kappen van een boom - Initiele versie" namespace="http://toepasbare-regels.omgevingswet.overheid.nl/00000001807288111000">
+      <ToepasbareActiviteit activiteitRef="nl.imow-gm0297.activiteit.2019000810" soort="conclusie" naam="Conclusie Kappen van een boom - Initiele versie" namespace="http://toepasbare-regels.omgevingswet.overheid.nl/00000001807288111000" geldigBegindatum="23-12-2020">
          <Regelgroep id="Regelgroep1" prioriteit="1">Kappen van een boom</Regelgroep>
          <Uitvoeringsregel id="UitvId0001" regelgroepRef="Regelgroep1" prioriteit="10" gegevensType="number">
             <VraagTekst>Wat is de stamomtrek van de boom?</VraagTekst>
@@ -1321,280 +1561,280 @@
             <VraagTekst>Wordt de boom gekapt vanwege een aanschrijving op grond van artikel PM van de Algemene plaatselijke verordening?</VraagTekst>
          </Uitvoeringsregel>
          <Beslislogica>
-            <ns1:definitions exporter="Decision Modeler" exporterVersion="7.2.0" id="_ea4a7081-2efa-4dab-8169-51b40775a8ec" name="Conclusie Kappen van een boom - Initiele versie" namespace="http://toepasbare-regels.omgevingswet.overheid.nl/00000001807288111000">
-	<ns1:extensionElements>
-		<ns2:regelgroepen>
-			<ns2:regelgroep id="Regelgroep1">
-				<ns2:naam>Kappen van een boom</ns2:naam>
-				<ns2:prioriteit>1</ns2:prioriteit>
-			</ns2:regelgroep>
-		</ns2:regelgroepen>
-		<ns3:uitvoeringsregels>
-			<ns3:uitvoeringsregel id="UitvId0001">
-				<ns3:regelgroepRef href="#Regelgroep1" />
-				<ns3:bereik>werkzaamheid</ns3:bereik>
-				<ns2:classificatie>activiteit</ns2:classificatie>
-				<ns3:publiceerbaar>true</ns3:publiceerbaar>
-				<ns3:potentieelVertrouwelijk>true</ns3:potentieelVertrouwelijk>
-				<ns2:prioriteit>10</ns2:prioriteit>
-				<ns3:vraag>
-					<ns3:gegevensType>number</ns3:gegevensType>
-					<ns3:vraagTekst>Wat is de stamomtrek van de boom?</ns3:vraagTekst>
-				</ns3:vraag>
-			</ns3:uitvoeringsregel>			
-			<ns3:uitvoeringsregel id="UitvId0002">
-				<ns3:regelgroepRef href="#Regelgroep1" />
-				<ns3:bereik>werkzaamheid</ns3:bereik>
-				<ns2:classificatie>activiteit</ns2:classificatie>
-				<ns3:publiceerbaar>true</ns3:publiceerbaar>
-				<ns3:potentieelVertrouwelijk>true</ns3:potentieelVertrouwelijk>
-				<ns2:prioriteit>20</ns2:prioriteit>
-				<ns3:vraag>
-					<ns3:gegevensType>boolean</ns3:gegevensType>
-					<ns3:vraagTekst>Is de boom zichtbaar vanaf openbaar toegankelijk gebied?</ns3:vraagTekst>
-				</ns3:vraag>
-			</ns3:uitvoeringsregel>			
-			<ns3:uitvoeringsregel id="UitvId0003">
-				<ns3:regelgroepRef href="#Regelgroep1" />
-				<ns3:bereik>werkzaamheid</ns3:bereik>
-				<ns2:classificatie>activiteit</ns2:classificatie>
-				<ns3:publiceerbaar>true</ns3:publiceerbaar>
-				<ns3:potentieelVertrouwelijk>true</ns3:potentieelVertrouwelijk>
-				<ns2:prioriteit>30</ns2:prioriteit>
-				<ns3:vraag>
-					<ns3:gegevensType>boolean</ns3:gegevensType>
-					<ns3:vraagTekst>Wordt de boom gekapt op grond van de Plantenziektenwet?</ns3:vraagTekst>
-				</ns3:vraag>
-			</ns3:uitvoeringsregel>			
-			<ns3:uitvoeringsregel id="UitvId0004">
-				<ns3:regelgroepRef href="#Regelgroep1" />
-				<ns3:bereik>werkzaamheid</ns3:bereik>
-				<ns2:classificatie>activiteit</ns2:classificatie>
-				<ns3:publiceerbaar>true</ns3:publiceerbaar>
-				<ns3:potentieelVertrouwelijk>true</ns3:potentieelVertrouwelijk>
-				<ns2:prioriteit>40</ns2:prioriteit>
-				<ns3:vraag>
-					<ns3:gegevensType>boolean</ns3:gegevensType>
-					<ns3:vraagTekst>Wordt de boom gekapt vanwege een aanschrijving op grond van artikel PM van de Algemene plaatselijke verordening?</ns3:vraagTekst>
-				</ns3:vraag>
-			</ns3:uitvoeringsregel>		
-		</ns3:uitvoeringsregels>
-	</ns1:extensionElements>	
-	<ns1:itemDefinition isCollection="false" label="TConclusie" name="TConclusie">
-		<ns1:typeRef>feel:string</ns1:typeRef>
-		<ns1:allowedValues ns4:constraintsType="enumeration">
-			<ns1:extensionElements>
-				<ns4:constraintDetails>
-					<ns4:display>"NietVanToepassing", "NeemContactOpMet", "Meldingsplicht", "Vergunningplicht", "Informatieplicht", "Toestemmingsvrij", "Verbod"</ns4:display>
-					<ns4:choices>
-						<ns4:value>"NietVanToepassing"</ns4:value>
-						<ns4:display>"NietVanToepassing"</ns4:display>
-					</ns4:choices>
-					<ns4:choices>
-						<ns4:value>"NeemContactOpMet"</ns4:value>
-						<ns4:display>"NeemContactOpMet"</ns4:display>
-					</ns4:choices>
-					<ns4:choices>
-						<ns4:value>"Meldingsplicht"</ns4:value>
-						<ns4:display>"Meldingsplicht"</ns4:display>
-					</ns4:choices>
-					<ns4:choices>
-						<ns4:value>"Vergunningplicht"</ns4:value>
-						<ns4:display>"Vergunningplicht"</ns4:display>
-					</ns4:choices>
-					<ns4:choices>
-						<ns4:value>"Informatieplicht"</ns4:value>
-						<ns4:display>"Informatieplicht"</ns4:display>
-					</ns4:choices>
-					<ns4:choices>
-						<ns4:value>"Toestemmingsvrij"</ns4:value>
-						<ns4:display>"Toestemmingsvrij"</ns4:display>
-					</ns4:choices>
-					<ns4:choices>
-						<ns4:value>"Verbod"</ns4:value>
-						<ns4:display>"Verbod"</ns4:display>
-					</ns4:choices>
-				</ns4:constraintDetails>
-			</ns1:extensionElements>
-			<ns1:text>"NietVanToepassing","NeemContactOpMet","Meldingsplicht","Vergunningplicht","Informatieplicht","Toestemmingsvrij","Verbod"</ns1:text>
-		</ns1:allowedValues>
-	</ns1:itemDefinition>
-	<ns1:inputData id="InputData0001" name="stamomtrek">
-		<ns1:extensionElements>
-			<ns3:uitvoeringsregelRef href="#UitvId0001" />
-		</ns1:extensionElements>							 
-		<ns1:variable id="_08a003e2-42c0-46da-b622-40e63672b84d" name="stamomtrek" typeRef="feel:number" />
-	</ns1:inputData>
-	<ns1:inputData id="InputData0002" name="zichtbaar vanaf openbaar toegankelijk gebied">
-		<ns1:extensionElements>
-			<ns3:uitvoeringsregelRef href="#UitvId0002" />
-		</ns1:extensionElements>		
-		<ns1:variable id="_049b8e57-6735-44ac-826f-922f3f56dd66" name="zichtbaar vanaf openbaar toegankelijk gebied" typeRef="feel:boolean" />
-	</ns1:inputData>
-	<ns1:inputData id="_InputData0003" name="gekapt op grond van de Plantenziektenwet">
-		<ns1:extensionElements>
-			<ns3:uitvoeringsregelRef href="#UitvId0003" />
-		</ns1:extensionElements>							 
-		<ns1:variable id="_ccbee686-2119-4560-b1f4-2e8464e73814" name="gekapt op grond van de Plantenziektenwet" typeRef="feel:boolean" />
-	</ns1:inputData>
-	<ns1:inputData id="InputData0004" name="aanschrijving op grond van artikel PM van de Algemene plaatselijke verordening">
-		<ns1:extensionElements>
-			<ns3:uitvoeringsregelRef href="#UitvId0004" />
-		</ns1:extensionElements>							 
-		<ns1:variable id="_68e9f3a3-c767-438c-a4ab-7f7d2158b258" name="aanschrijving op grond van artikel PM van de Algemene plaatselijke verordening" typeRef="feel:boolean" />
-	</ns1:inputData>	
-	<ns1:decision id="_Decision0001" name="Besluit - Kappen van een boom" ns4:useOutputTypeAsAnswer="false">
-		<ns1:extensionElements>
-			<ns5:functioneleStructuurRef href="#http://toepasbare-regels.omgevingswet.overheid.nl/00000001807288111000/id/concept/Conclusienl.imow-gm0297.activiteit.2019000810" />
-		</ns1:extensionElements>
-		<ns1:variable id="_0509e494-4d26-468c-8a75-d75075e2e744" name="Besluit - Kappen van een boom" typeRef="TConclusie" />
-		<ns1:informationRequirement>
-			<ns1:requiredInput href="#InputData0001" />
-		</ns1:informationRequirement>
-		<ns1:informationRequirement>
-			<ns1:requiredInput href="#InputData0002" />
-		</ns1:informationRequirement>
-		<ns1:informationRequirement>
-			<ns1:requiredDecision href="#Decision0002" />
-		</ns1:informationRequirement>
-		<ns1:decisionTable hitPolicy="UNIQUE" id="_bb1183d5-26c4-4c27-ae95-cdccc9af4e22" outputLabel="Besluit - Kappen van een boom" ns4:descriptionVisible="false" ns4:expressionId="_78263a1a-571a-43e6-8d4a-663bba47381a" typeRef="TConclusie">
-			<ns1:input id="_8a9de060-1ed8-4a17-9810-88363956050d" label="stamomtrek" ns4:allowNull="true">
-				<ns1:inputExpression typeRef="feel:number">
-					<ns1:text>stamomtrek</ns1:text>
-				</ns1:inputExpression>
-			</ns1:input>
-			<ns1:input id="_9eb0066f-69e6-4bed-82af-1f70f576e26e" label="zichtbaar vanaf openbaar toegankelijk gebied" ns4:allowNull="true">
-				<ns1:inputExpression typeRef="feel:boolean">
-					<ns1:text>zichtbaar vanaf openbaar toegankelijk gebied</ns1:text>
-				</ns1:inputExpression>
-			</ns1:input>
-			<ns1:input id="_ad5d4458-ad7d-4296-9bbe-e79dab2e462a" label="Plantenziektewet of artikel PM in APV" ns4:allowNull="true">
-				<ns1:inputExpression typeRef="feel:boolean">
-					<ns1:text>Plantenziektewet of artikel PM in APV</ns1:text>
-				</ns1:inputExpression>
-			</ns1:input>
-			<ns1:output id="_53dff9e4-dda5-48a2-a2d6-d7ac73ba23ef" ns4:allowNull="true">
-				<ns1:outputValues ns4:constraintsType="enumeration">
-					<ns1:text>"NietVanToepassing","NeemContactOpMet","Meldingsplicht","Vergunningplicht","Informatieplicht","Toestemmingsvrij","Verbod",null</ns1:text>
-				</ns1:outputValues>
-			</ns1:output>
-			<ns1:rule id="_1df5d8f8-7d6e-4b53-b417-ec85ac5237fd">
-				<ns1:inputEntry id="_c952e6f4-7621-492d-b400-781c880cd17b">
-					<ns1:text>&lt; 50</ns1:text>
-				</ns1:inputEntry>
-				<ns1:inputEntry id="_9d07816c-04d9-4bcf-b231-8f30c6eaaa9c">
-					<ns1:text>-</ns1:text>
-				</ns1:inputEntry>
-				<ns1:inputEntry id="_c6f674af-1522-4942-9843-453c65478381">
-					<ns1:text>-</ns1:text>
-				</ns1:inputEntry>
-				<ns1:outputEntry id="_c88334f2-f366-4edc-9780-40ed818f67c7">
-					<ns1:text>"Toestemmingsvrij"</ns1:text>
-				</ns1:outputEntry>
-			</ns1:rule>
-			<ns1:rule id="_853e9218-e96d-4e12-878f-623aab0d4c32">
-				<ns1:inputEntry id="_b7bbcf66-33ba-4508-8cd2-330e66eb702b">
-					<ns1:text>&gt;= 50</ns1:text>
-				</ns1:inputEntry>
-				<ns1:inputEntry id="_b43b6241-f88d-4377-bcdb-8d84e1d9d9b7">
-					<ns1:text>false</ns1:text>
-				</ns1:inputEntry>
-				<ns1:inputEntry id="_32851144-d786-4829-8cd4-124073fd1438">
-					<ns1:text>-</ns1:text>
-				</ns1:inputEntry>
-				<ns1:outputEntry id="_c356709f-cfce-483e-a425-c9cf405bf4f4">
-					<ns1:text>"Toestemmingsvrij"</ns1:text>
-				</ns1:outputEntry>
-			</ns1:rule>
-			<ns1:rule id="_5907102e-8f04-4ee0-a0c7-36a278daeb23">
-				<ns1:inputEntry id="_8a12f1c0-34cc-4faa-9929-3cbb8ecb054a">
-					<ns1:text>&gt;= 50</ns1:text>
-				</ns1:inputEntry>
-				<ns1:inputEntry id="_d8b8fa17-75e1-4518-ab67-3834fc49f1ee">
-					<ns1:text>true</ns1:text>
-				</ns1:inputEntry>
-				<ns1:inputEntry id="_aad9486b-45d3-45ff-8e53-ca26a2064a7e">
-					<ns1:text>true</ns1:text>
-				</ns1:inputEntry>
-				<ns1:outputEntry id="_b453801c-9c18-4a6b-bb9f-f4dcf6ea83c0">
-					<ns1:text>"Toestemmingsvrij"</ns1:text>
-				</ns1:outputEntry>
-			</ns1:rule>
-			<ns1:rule id="_96eba2f8-277f-4410-8862-45b3f9d6d327">
-				<ns1:inputEntry id="_a8ab2218-efbb-4636-a974-f4142ce7f282">
-					<ns1:text>&gt;= 50</ns1:text>
-				</ns1:inputEntry>
-				<ns1:inputEntry id="_1bf04921-8903-4bfb-ab8e-388db220cc9f">
-					<ns1:text>true</ns1:text>
-				</ns1:inputEntry>
-				<ns1:inputEntry id="_5d4ca6c1-0196-4337-b25a-46ba43edd55a">
-					<ns1:text>false</ns1:text>
-				</ns1:inputEntry>
-				<ns1:outputEntry id="_de738c36-1625-4cb3-be1b-b4aa0f68847f">
-					<ns1:text>"Vergunningplicht"</ns1:text>
-				</ns1:outputEntry>
-			</ns1:rule>
-		</ns1:decisionTable>
-	</ns1:decision>
-	<ns1:decision id="Decision0002" name="Plantenziektewet of artikel PM in APV">
-		<ns1:variable id="_2395d36b-5a56-4099-b03b-cae9743aa267" name="Plantenziektewet of artikel PM in APV" typeRef="feel:boolean" />
-		<ns1:informationRequirement>
-			<ns1:requiredInput href="#_InputData0003" />
-		</ns1:informationRequirement>
-		<ns1:informationRequirement>
-			<ns1:requiredInput href="#InputData0004" />
-		</ns1:informationRequirement>
-		<ns1:decisionTable hitPolicy="UNIQUE" id="_d5f137c5-26ab-438d-b148-4bbb2969e59e" outputLabel="Plantenziektewet of artikel PM in APV" ns4:descriptionVisible="false" ns4:expressionId="_2a9929a2-1b07-4798-9043-61ce311af506" typeRef="feel:boolean">
-			<ns1:input id="_461c05be-8ac2-4d58-bf7e-677cb6552730" label="gekapt op grond van de Plantenziektenwet">
-				<ns1:inputExpression typeRef="feel:boolean">
-					<ns1:text>gekapt op grond van de Plantenziektenwet</ns1:text>
-				</ns1:inputExpression>
-			</ns1:input>
-			<ns1:input id="_fcf92753-26b0-4faa-b9ef-a0ada45357df" label="aanschrijving op grond van artikel PM van de Algemene plaatselijke verordening">
-				<ns1:inputExpression typeRef="feel:boolean">
-					<ns1:text>aanschrijving op grond van artikel PM van de Algemene plaatselijke verordening</ns1:text>
-				</ns1:inputExpression>
-			</ns1:input>
-			<ns1:output id="_afa5fe3c-ee19-43c2-b702-8fcca50b9fb3" ns4:allowNull="true" />
-			<ns1:rule id="_bd7338ae-baaa-4019-bcfc-d99daa3fab86">
-				<ns1:inputEntry id="_eab97adc-6a97-40da-93e5-03ade1c83f97">
-					<ns1:text>true</ns1:text>
-				</ns1:inputEntry>
-				<ns1:inputEntry id="_1e7cf76a-16c8-4043-bc4c-506f5cefb512">
-					<ns1:text>-</ns1:text>
-				</ns1:inputEntry>
-				<ns1:outputEntry id="_79af9a6d-fcc2-4181-858d-2a7578b5416d">
-					<ns1:text>true</ns1:text>
-				</ns1:outputEntry>
-			</ns1:rule>
-			<ns1:rule id="_fde4917f-1ff6-4202-8402-84fbe0aedde9">
-				<ns1:inputEntry id="_df02e1e5-1dcb-40fa-8db7-6f809ee68b15">
-					<ns1:text>false</ns1:text>
-				</ns1:inputEntry>
-				<ns1:inputEntry id="_c80ee37c-01be-44e2-a04d-0e211f038a9b">
-					<ns1:text>true</ns1:text>
-				</ns1:inputEntry>
-				<ns1:outputEntry id="_7fbf839f-4c6e-4ae1-9295-1a9399b5bf91">
-					<ns1:text>true</ns1:text>
-				</ns1:outputEntry>
-			</ns1:rule>
-			<ns1:rule id="_4e1193cd-8c8b-4cc9-b1b9-18e638959b5a">
-				<ns1:inputEntry id="_b7fe898a-7e78-4280-b969-81a4ba09c64c">
-					<ns1:text>false</ns1:text>
-				</ns1:inputEntry>
-				<ns1:inputEntry id="_521a8bf0-c60b-4813-98f2-6ebb2fa61e04">
-					<ns1:text>false</ns1:text>
-				</ns1:inputEntry>
-				<ns1:outputEntry id="_817c57e6-9c1b-4a4c-9733-331253e4db8c">
-					<ns1:text>false</ns1:text>
-				</ns1:outputEntry>
-			</ns1:rule>
-		</ns1:decisionTable>
-	</ns1:decision>
-</ns1:definitions>
+            <ns6:definitions exporter="Decision Modeler" exporterVersion="7.2.0" id="_ea4a7081-2efa-4dab-8169-51b40775a8ec" name="Conclusie Kappen van een boom - Initiele versie" namespace="http://toepasbare-regels.omgevingswet.overheid.nl/00000001807288111000">
+	<ns6:extensionElements>
+		<ns7:regelgroepen>
+			<ns7:regelgroep id="Regelgroep1">
+				<ns7:naam>Kappen van een boom</ns7:naam>
+				<ns7:prioriteit>1</ns7:prioriteit>
+			</ns7:regelgroep>
+		</ns7:regelgroepen>
+		<ns8:uitvoeringsregels>
+			<ns8:uitvoeringsregel id="UitvId0001">
+				<ns8:regelgroepRef href="#Regelgroep1" />
+				<ns8:bereik>werkzaamheid</ns8:bereik>
+				<ns7:classificatie>activiteit</ns7:classificatie>
+				<ns8:publiceerbaar>true</ns8:publiceerbaar>
+				<ns8:potentieelVertrouwelijk>true</ns8:potentieelVertrouwelijk>
+				<ns7:prioriteit>10</ns7:prioriteit>
+				<ns8:vraag>
+					<ns8:gegevensType>number</ns8:gegevensType>
+					<ns8:vraagTekst>Wat is de stamomtrek van de boom?</ns8:vraagTekst>
+				</ns8:vraag>
+			</ns8:uitvoeringsregel>			
+			<ns8:uitvoeringsregel id="UitvId0002">
+				<ns8:regelgroepRef href="#Regelgroep1" />
+				<ns8:bereik>werkzaamheid</ns8:bereik>
+				<ns7:classificatie>activiteit</ns7:classificatie>
+				<ns8:publiceerbaar>true</ns8:publiceerbaar>
+				<ns8:potentieelVertrouwelijk>true</ns8:potentieelVertrouwelijk>
+				<ns7:prioriteit>20</ns7:prioriteit>
+				<ns8:vraag>
+					<ns8:gegevensType>boolean</ns8:gegevensType>
+					<ns8:vraagTekst>Is de boom zichtbaar vanaf openbaar toegankelijk gebied?</ns8:vraagTekst>
+				</ns8:vraag>
+			</ns8:uitvoeringsregel>			
+			<ns8:uitvoeringsregel id="UitvId0003">
+				<ns8:regelgroepRef href="#Regelgroep1" />
+				<ns8:bereik>werkzaamheid</ns8:bereik>
+				<ns7:classificatie>activiteit</ns7:classificatie>
+				<ns8:publiceerbaar>true</ns8:publiceerbaar>
+				<ns8:potentieelVertrouwelijk>true</ns8:potentieelVertrouwelijk>
+				<ns7:prioriteit>30</ns7:prioriteit>
+				<ns8:vraag>
+					<ns8:gegevensType>boolean</ns8:gegevensType>
+					<ns8:vraagTekst>Wordt de boom gekapt op grond van de Plantenziektenwet?</ns8:vraagTekst>
+				</ns8:vraag>
+			</ns8:uitvoeringsregel>			
+			<ns8:uitvoeringsregel id="UitvId0004">
+				<ns8:regelgroepRef href="#Regelgroep1" />
+				<ns8:bereik>werkzaamheid</ns8:bereik>
+				<ns7:classificatie>activiteit</ns7:classificatie>
+				<ns8:publiceerbaar>true</ns8:publiceerbaar>
+				<ns8:potentieelVertrouwelijk>true</ns8:potentieelVertrouwelijk>
+				<ns7:prioriteit>40</ns7:prioriteit>
+				<ns8:vraag>
+					<ns8:gegevensType>boolean</ns8:gegevensType>
+					<ns8:vraagTekst>Wordt de boom gekapt vanwege een aanschrijving op grond van artikel PM van de Algemene plaatselijke verordening?</ns8:vraagTekst>
+				</ns8:vraag>
+			</ns8:uitvoeringsregel>		
+		</ns8:uitvoeringsregels>
+	</ns6:extensionElements>	
+	<ns6:itemDefinition isCollection="false" label="TConclusie" name="TConclusie">
+		<ns6:typeRef>feel:string</ns6:typeRef>
+		<ns6:allowedValues ns9:constraintsType="enumeration">
+			<ns6:extensionElements>
+				<ns9:constraintDetails>
+					<ns9:display>"NietVanToepassing", "NeemContactOpMet", "Meldingsplicht", "Vergunningplicht", "Informatieplicht", "Toestemmingsvrij", "Verbod"</ns9:display>
+					<ns9:choices>
+						<ns9:value>"NietVanToepassing"</ns9:value>
+						<ns9:display>"NietVanToepassing"</ns9:display>
+					</ns9:choices>
+					<ns9:choices>
+						<ns9:value>"NeemContactOpMet"</ns9:value>
+						<ns9:display>"NeemContactOpMet"</ns9:display>
+					</ns9:choices>
+					<ns9:choices>
+						<ns9:value>"Meldingsplicht"</ns9:value>
+						<ns9:display>"Meldingsplicht"</ns9:display>
+					</ns9:choices>
+					<ns9:choices>
+						<ns9:value>"Vergunningplicht"</ns9:value>
+						<ns9:display>"Vergunningplicht"</ns9:display>
+					</ns9:choices>
+					<ns9:choices>
+						<ns9:value>"Informatieplicht"</ns9:value>
+						<ns9:display>"Informatieplicht"</ns9:display>
+					</ns9:choices>
+					<ns9:choices>
+						<ns9:value>"Toestemmingsvrij"</ns9:value>
+						<ns9:display>"Toestemmingsvrij"</ns9:display>
+					</ns9:choices>
+					<ns9:choices>
+						<ns9:value>"Verbod"</ns9:value>
+						<ns9:display>"Verbod"</ns9:display>
+					</ns9:choices>
+				</ns9:constraintDetails>
+			</ns6:extensionElements>
+			<ns6:text>"NietVanToepassing","NeemContactOpMet","Meldingsplicht","Vergunningplicht","Informatieplicht","Toestemmingsvrij","Verbod"</ns6:text>
+		</ns6:allowedValues>
+	</ns6:itemDefinition>
+	<ns6:inputData id="InputData0001" name="stamomtrek">
+		<ns6:extensionElements>
+			<ns8:uitvoeringsregelRef href="#UitvId0001" />
+		</ns6:extensionElements>							 
+		<ns6:variable id="_08a003e2-42c0-46da-b622-40e63672b84d" name="stamomtrek" typeRef="feel:number" />
+	</ns6:inputData>
+	<ns6:inputData id="InputData0002" name="zichtbaar vanaf openbaar toegankelijk gebied">
+		<ns6:extensionElements>
+			<ns8:uitvoeringsregelRef href="#UitvId0002" />
+		</ns6:extensionElements>		
+		<ns6:variable id="_049b8e57-6735-44ac-826f-922f3f56dd66" name="zichtbaar vanaf openbaar toegankelijk gebied" typeRef="feel:boolean" />
+	</ns6:inputData>
+	<ns6:inputData id="_InputData0003" name="gekapt op grond van de Plantenziektenwet">
+		<ns6:extensionElements>
+			<ns8:uitvoeringsregelRef href="#UitvId0003" />
+		</ns6:extensionElements>							 
+		<ns6:variable id="_ccbee686-2119-4560-b1f4-2e8464e73814" name="gekapt op grond van de Plantenziektenwet" typeRef="feel:boolean" />
+	</ns6:inputData>
+	<ns6:inputData id="InputData0004" name="aanschrijving op grond van artikel PM van de Algemene plaatselijke verordening">
+		<ns6:extensionElements>
+			<ns8:uitvoeringsregelRef href="#UitvId0004" />
+		</ns6:extensionElements>							 
+		<ns6:variable id="_68e9f3a3-c767-438c-a4ab-7f7d2158b258" name="aanschrijving op grond van artikel PM van de Algemene plaatselijke verordening" typeRef="feel:boolean" />
+	</ns6:inputData>	
+	<ns6:decision id="_Decision0001" name="Besluit - Kappen van een boom" ns9:useOutputTypeAsAnswer="false">
+		<ns6:extensionElements>
+			<ns10:functioneleStructuurRef href="#http://toepasbare-regels.omgevingswet.overheid.nl/00000001807288111000/id/concept/Conclusienl.imow-gm0297.activiteit.2019000810" />
+		</ns6:extensionElements>
+		<ns6:variable id="_0509e494-4d26-468c-8a75-d75075e2e744" name="Besluit - Kappen van een boom" typeRef="TConclusie" />
+		<ns6:informationRequirement>
+			<ns6:requiredInput href="#InputData0001" />
+		</ns6:informationRequirement>
+		<ns6:informationRequirement>
+			<ns6:requiredInput href="#InputData0002" />
+		</ns6:informationRequirement>
+		<ns6:informationRequirement>
+			<ns6:requiredDecision href="#Decision0002" />
+		</ns6:informationRequirement>
+		<ns6:decisionTable hitPolicy="UNIQUE" id="_bb1183d5-26c4-4c27-ae95-cdccc9af4e22" outputLabel="Besluit - Kappen van een boom" ns9:descriptionVisible="false" ns9:expressionId="_78263a1a-571a-43e6-8d4a-663bba47381a" typeRef="TConclusie">
+			<ns6:input id="_8a9de060-1ed8-4a17-9810-88363956050d" label="stamomtrek" ns9:allowNull="true">
+				<ns6:inputExpression typeRef="feel:number">
+					<ns6:text>stamomtrek</ns6:text>
+				</ns6:inputExpression>
+			</ns6:input>
+			<ns6:input id="_9eb0066f-69e6-4bed-82af-1f70f576e26e" label="zichtbaar vanaf openbaar toegankelijk gebied" ns9:allowNull="true">
+				<ns6:inputExpression typeRef="feel:boolean">
+					<ns6:text>zichtbaar vanaf openbaar toegankelijk gebied</ns6:text>
+				</ns6:inputExpression>
+			</ns6:input>
+			<ns6:input id="_ad5d4458-ad7d-4296-9bbe-e79dab2e462a" label="Plantenziektewet of artikel PM in APV" ns9:allowNull="true">
+				<ns6:inputExpression typeRef="feel:boolean">
+					<ns6:text>Plantenziektewet of artikel PM in APV</ns6:text>
+				</ns6:inputExpression>
+			</ns6:input>
+			<ns6:output id="_53dff9e4-dda5-48a2-a2d6-d7ac73ba23ef" ns9:allowNull="true">
+				<ns6:outputValues ns9:constraintsType="enumeration">
+					<ns6:text>"NietVanToepassing","NeemContactOpMet","Meldingsplicht","Vergunningplicht","Informatieplicht","Toestemmingsvrij","Verbod",null</ns6:text>
+				</ns6:outputValues>
+			</ns6:output>
+			<ns6:rule id="_1df5d8f8-7d6e-4b53-b417-ec85ac5237fd">
+				<ns6:inputEntry id="_c952e6f4-7621-492d-b400-781c880cd17b">
+					<ns6:text>&lt; 50</ns6:text>
+				</ns6:inputEntry>
+				<ns6:inputEntry id="_9d07816c-04d9-4bcf-b231-8f30c6eaaa9c">
+					<ns6:text>-</ns6:text>
+				</ns6:inputEntry>
+				<ns6:inputEntry id="_c6f674af-1522-4942-9843-453c65478381">
+					<ns6:text>-</ns6:text>
+				</ns6:inputEntry>
+				<ns6:outputEntry id="_c88334f2-f366-4edc-9780-40ed818f67c7">
+					<ns6:text>"Toestemmingsvrij"</ns6:text>
+				</ns6:outputEntry>
+			</ns6:rule>
+			<ns6:rule id="_853e9218-e96d-4e12-878f-623aab0d4c32">
+				<ns6:inputEntry id="_b7bbcf66-33ba-4508-8cd2-330e66eb702b">
+					<ns6:text>&gt;= 50</ns6:text>
+				</ns6:inputEntry>
+				<ns6:inputEntry id="_b43b6241-f88d-4377-bcdb-8d84e1d9d9b7">
+					<ns6:text>false</ns6:text>
+				</ns6:inputEntry>
+				<ns6:inputEntry id="_32851144-d786-4829-8cd4-124073fd1438">
+					<ns6:text>-</ns6:text>
+				</ns6:inputEntry>
+				<ns6:outputEntry id="_c356709f-cfce-483e-a425-c9cf405bf4f4">
+					<ns6:text>"Toestemmingsvrij"</ns6:text>
+				</ns6:outputEntry>
+			</ns6:rule>
+			<ns6:rule id="_5907102e-8f04-4ee0-a0c7-36a278daeb23">
+				<ns6:inputEntry id="_8a12f1c0-34cc-4faa-9929-3cbb8ecb054a">
+					<ns6:text>&gt;= 50</ns6:text>
+				</ns6:inputEntry>
+				<ns6:inputEntry id="_d8b8fa17-75e1-4518-ab67-3834fc49f1ee">
+					<ns6:text>true</ns6:text>
+				</ns6:inputEntry>
+				<ns6:inputEntry id="_aad9486b-45d3-45ff-8e53-ca26a2064a7e">
+					<ns6:text>true</ns6:text>
+				</ns6:inputEntry>
+				<ns6:outputEntry id="_b453801c-9c18-4a6b-bb9f-f4dcf6ea83c0">
+					<ns6:text>"Toestemmingsvrij"</ns6:text>
+				</ns6:outputEntry>
+			</ns6:rule>
+			<ns6:rule id="_96eba2f8-277f-4410-8862-45b3f9d6d327">
+				<ns6:inputEntry id="_a8ab2218-efbb-4636-a974-f4142ce7f282">
+					<ns6:text>&gt;= 50</ns6:text>
+				</ns6:inputEntry>
+				<ns6:inputEntry id="_1bf04921-8903-4bfb-ab8e-388db220cc9f">
+					<ns6:text>true</ns6:text>
+				</ns6:inputEntry>
+				<ns6:inputEntry id="_5d4ca6c1-0196-4337-b25a-46ba43edd55a">
+					<ns6:text>false</ns6:text>
+				</ns6:inputEntry>
+				<ns6:outputEntry id="_de738c36-1625-4cb3-be1b-b4aa0f68847f">
+					<ns6:text>"Vergunningplicht"</ns6:text>
+				</ns6:outputEntry>
+			</ns6:rule>
+		</ns6:decisionTable>
+	</ns6:decision>
+	<ns6:decision id="Decision0002" name="Plantenziektewet of artikel PM in APV">
+		<ns6:variable id="_2395d36b-5a56-4099-b03b-cae9743aa267" name="Plantenziektewet of artikel PM in APV" typeRef="feel:boolean" />
+		<ns6:informationRequirement>
+			<ns6:requiredInput href="#_InputData0003" />
+		</ns6:informationRequirement>
+		<ns6:informationRequirement>
+			<ns6:requiredInput href="#InputData0004" />
+		</ns6:informationRequirement>
+		<ns6:decisionTable hitPolicy="UNIQUE" id="_d5f137c5-26ab-438d-b148-4bbb2969e59e" outputLabel="Plantenziektewet of artikel PM in APV" ns9:descriptionVisible="false" ns9:expressionId="_2a9929a2-1b07-4798-9043-61ce311af506" typeRef="feel:boolean">
+			<ns6:input id="_461c05be-8ac2-4d58-bf7e-677cb6552730" label="gekapt op grond van de Plantenziektenwet">
+				<ns6:inputExpression typeRef="feel:boolean">
+					<ns6:text>gekapt op grond van de Plantenziektenwet</ns6:text>
+				</ns6:inputExpression>
+			</ns6:input>
+			<ns6:input id="_fcf92753-26b0-4faa-b9ef-a0ada45357df" label="aanschrijving op grond van artikel PM van de Algemene plaatselijke verordening">
+				<ns6:inputExpression typeRef="feel:boolean">
+					<ns6:text>aanschrijving op grond van artikel PM van de Algemene plaatselijke verordening</ns6:text>
+				</ns6:inputExpression>
+			</ns6:input>
+			<ns6:output id="_afa5fe3c-ee19-43c2-b702-8fcca50b9fb3" ns9:allowNull="true" />
+			<ns6:rule id="_bd7338ae-baaa-4019-bcfc-d99daa3fab86">
+				<ns6:inputEntry id="_eab97adc-6a97-40da-93e5-03ade1c83f97">
+					<ns6:text>true</ns6:text>
+				</ns6:inputEntry>
+				<ns6:inputEntry id="_1e7cf76a-16c8-4043-bc4c-506f5cefb512">
+					<ns6:text>-</ns6:text>
+				</ns6:inputEntry>
+				<ns6:outputEntry id="_79af9a6d-fcc2-4181-858d-2a7578b5416d">
+					<ns6:text>true</ns6:text>
+				</ns6:outputEntry>
+			</ns6:rule>
+			<ns6:rule id="_fde4917f-1ff6-4202-8402-84fbe0aedde9">
+				<ns6:inputEntry id="_df02e1e5-1dcb-40fa-8db7-6f809ee68b15">
+					<ns6:text>false</ns6:text>
+				</ns6:inputEntry>
+				<ns6:inputEntry id="_c80ee37c-01be-44e2-a04d-0e211f038a9b">
+					<ns6:text>true</ns6:text>
+				</ns6:inputEntry>
+				<ns6:outputEntry id="_7fbf839f-4c6e-4ae1-9295-1a9399b5bf91">
+					<ns6:text>true</ns6:text>
+				</ns6:outputEntry>
+			</ns6:rule>
+			<ns6:rule id="_4e1193cd-8c8b-4cc9-b1b9-18e638959b5a">
+				<ns6:inputEntry id="_b7fe898a-7e78-4280-b969-81a4ba09c64c">
+					<ns6:text>false</ns6:text>
+				</ns6:inputEntry>
+				<ns6:inputEntry id="_521a8bf0-c60b-4813-98f2-6ebb2fa61e04">
+					<ns6:text>false</ns6:text>
+				</ns6:inputEntry>
+				<ns6:outputEntry id="_817c57e6-9c1b-4a4c-9733-331253e4db8c">
+					<ns6:text>false</ns6:text>
+				</ns6:outputEntry>
+			</ns6:rule>
+		</ns6:decisionTable>
+	</ns6:decision>
+</ns6:definitions>
          </Beslislogica>
       </ToepasbareActiviteit>
-      <ToepasbareActiviteit activiteitRef="nl.imow-gm0297.activiteit.2019000810" soort="indieningsvereistenvergunning" naam="Indieningsvereisten Vergunning Kappen van een boom - Initiele versie" namespace="http://toepasbare-regels.omgevingswet.overheid.nl/00000001807288111000">
+      <ToepasbareActiviteit activiteitRef="nl.imow-gm0297.activiteit.2019000810" soort="indieningsvereistenvergunning" naam="Indieningsvereisten Vergunning Kappen van een boom - Initiele versie" namespace="http://toepasbare-regels.omgevingswet.overheid.nl/00000001807288111000" geldigBegindatum="06-01-2021">
          <Regelgroep id="Regelgroep1" prioriteit="1">Kappen van een boom</Regelgroep>
          <Uitvoeringsregel id="UitvId0001" regelgroepRef="Regelgroep1" prioriteit="10" gegevensType="number">
             <VraagTekst>Wat is de stamomtrek van de boom?</VraagTekst>
@@ -1612,368 +1852,368 @@
             <VraagTekst>Wat is de reden voor het kappen van de boom?</VraagTekst>
          </Uitvoeringsregel>
          <Beslislogica>
-            <ns1:definitions exporter="Decision Modeler" exporterVersion="7.3.1" id="_f97bca96-7ebe-4a6b-9e60-a9f0d65147fa" name="Indieningsvereisten Vergunning Kappen van een boom - Initiele versie" namespace="http://toepasbare-regels.omgevingswet.overheid.nl/00000001807288111000" ns4:logoChoice="Default" ns4:translationLanguages="" xml:lang="en">
-	<ns1:extensionElements>
-		<ns2:regelgroepen>
-			<ns2:regelgroep id="Regelgroep1">
-				<ns2:naam>Kappen van een boom</ns2:naam>
-				<ns2:prioriteit>1</ns2:prioriteit>
-			</ns2:regelgroep>
-		</ns2:regelgroepen>
-		<ns3:uitvoeringsregels>
-			<ns3:uitvoeringsregel id="UitvId0001">
-				<ns3:regelgroepRef href="#Regelgroep1" />
-				<ns3:bereik>werkzaamheid</ns3:bereik>
-				<ns2:classificatie>activiteit</ns2:classificatie>
-				<ns3:publiceerbaar>true</ns3:publiceerbaar>
-				<ns3:potentieelVertrouwelijk>true</ns3:potentieelVertrouwelijk>
-				<ns2:prioriteit>10</ns2:prioriteit>
-				<ns3:vraag>
-					<ns3:gegevensType>number</ns3:gegevensType>
-					<ns3:vraagTekst>Wat is de stamomtrek van de boom?</ns3:vraagTekst>
-				</ns3:vraag>
-			</ns3:uitvoeringsregel>
-			<ns3:uitvoeringsregel id="UitvId0002">
-				<ns3:regelgroepRef href="#Regelgroep1" />
-				<ns3:bereik>werkzaamheid</ns3:bereik>
-				<ns2:classificatie>activiteit</ns2:classificatie>
-				<ns3:publiceerbaar>true</ns3:publiceerbaar>
-				<ns3:potentieelVertrouwelijk>true</ns3:potentieelVertrouwelijk>
-				<ns2:prioriteit>20</ns2:prioriteit>
-				<ns3:vraag>
-					<ns3:gegevensType>boolean</ns3:gegevensType>
-					<ns3:vraagTekst>Veroorzaakt de boom gevaar of ernstige hinder?</ns3:vraagTekst>
-				</ns3:vraag>
-			</ns3:uitvoeringsregel>
-			<ns3:uitvoeringsregel id="UitvId0003">
-				<ns3:regelgroepRef href="#Regelgroep1" />
-				<ns3:bereik>werkzaamheid</ns3:bereik>
-				<ns2:classificatie>activiteit</ns2:classificatie>
-				<ns3:publiceerbaar>true</ns3:publiceerbaar>
-				<ns3:potentieelVertrouwelijk>true</ns3:potentieelVertrouwelijk>
-				<ns2:prioriteit>30</ns2:prioriteit>
-				<ns3:vraag>
-					<ns3:gegevensType>boolean</ns3:gegevensType>
-					<ns3:vraagTekst>Wordt de boom gekapt vanwege een individueel of maatschappelijk belang?</ns3:vraagTekst>
-				</ns3:vraag>
-			</ns3:uitvoeringsregel>
-			<ns3:uitvoeringsregel id="UitvId0004">
-				<ns3:bijlage>
-					<ns3:bijlageType>Situatieschets</ns3:bijlageType>
-				</ns3:bijlage>
-				<ns6:uitvoeringsregelToelichting>
-					<ns6:toelichting>Teken de te kappen boom op een kaart, foto of tekening geïdentificeerd met een nummer en de locatie</ns6:toelichting>
-				</ns6:uitvoeringsregelToelichting>
-			</ns3:uitvoeringsregel>
-			<ns3:uitvoeringsregel id="UitvId0005">
-				<ns3:regelgroepRef href="#Regelgroep1" />
-				<ns3:bereik>werkzaamheid</ns3:bereik>
-				<ns2:classificatie>activiteit</ns2:classificatie>
-				<ns3:publiceerbaar>true</ns3:publiceerbaar>
-				<ns3:potentieelVertrouwelijk>true</ns3:potentieelVertrouwelijk>
-				<ns2:prioriteit>50</ns2:prioriteit>
-				<ns3:vraag>
-					<ns3:gegevensType>string</ns3:gegevensType>
-					<ns3:vraagTekst>Wat is de reden voor het kappen van de boom?</ns3:vraagTekst>
-				</ns3:vraag>
-			</ns3:uitvoeringsregel>
-		</ns3:uitvoeringsregels>
-	</ns1:extensionElements>
-	<ns1:itemDefinition isCollection="false" label="TConclusie" name="TConclusie">
-		<ns1:typeRef>feel:string</ns1:typeRef>
-		<ns1:allowedValues ns4:constraintsType="enumeration">
-			<ns1:extensionElements>
-				<ns4:constraintDetails>
-					<ns4:display>"NietVanToepassing", "NeemContactOpMet", "Meldingsplicht", "Vergunningplicht", "Informatieplicht", "Toestemmingsvrij", "Verbod"</ns4:display>
-					<ns4:choices>
-						<ns4:value>"NietVanToepassing"</ns4:value>
-						<ns4:display>"NietVanToepassing"</ns4:display>
-					</ns4:choices>
-					<ns4:choices>
-						<ns4:value>"NeemContactOpMet"</ns4:value>
-						<ns4:display>"NeemContactOpMet"</ns4:display>
-					</ns4:choices>
-					<ns4:choices>
-						<ns4:value>"Meldingsplicht"</ns4:value>
-						<ns4:display>"Meldingsplicht"</ns4:display>
-					</ns4:choices>
-					<ns4:choices>
-						<ns4:value>"Vergunningplicht"</ns4:value>
-						<ns4:display>"Vergunningplicht"</ns4:display>
-					</ns4:choices>
-					<ns4:choices>
-						<ns4:value>"Informatieplicht"</ns4:value>
-						<ns4:display>"Informatieplicht"</ns4:display>
-					</ns4:choices>
-					<ns4:choices>
-						<ns4:value>"Toestemmingsvrij"</ns4:value>
-						<ns4:display>"Toestemmingsvrij"</ns4:display>
-					</ns4:choices>
-					<ns4:choices>
-						<ns4:value>"Verbod"</ns4:value>
-						<ns4:display>"Verbod"</ns4:display>
-					</ns4:choices>
-				</ns4:constraintDetails>
-			</ns1:extensionElements>
-			<ns1:text>"NietVanToepassing","NeemContactOpMet","Meldingsplicht","Vergunningplicht","Informatieplicht","Toestemmingsvrij","Verbod"</ns1:text>
-		</ns1:allowedValues>
-	</ns1:itemDefinition>
-	<ns1:inputData id="_5856e129-98dd-4797-9329-3bde20199196" name="stamomtrek">
-		<ns1:extensionElements>
-			<ns3:uitvoeringsregelRef href="#UitvId0001" />
-		</ns1:extensionElements>
-		<ns1:variable id="_4d41004e-ce40-43c3-b04f-d7b71d7972dd" name="stamomtrek" typeRef="feel:number" />
-	</ns1:inputData>
-	<ns1:inputData id="_98dc0d35-f785-415e-b93f-461b5a2c35fe" name="gevaar of ernstige hinder">
-		<ns1:extensionElements>
-			<ns3:uitvoeringsregelRef href="#UitvId0002" />
-		</ns1:extensionElements>
-		<ns1:variable id="_c5c9ccc4-a947-43d9-bf82-94a91a32b0ed" name="gevaar of ernstige hinder" typeRef="feel:boolean" />
-	</ns1:inputData>
-	<ns1:inputData id="_3bbfecd5-865c-4e7c-89af-19c6fa08f0cc" name="individueel of maatschappelijk belang">
-		<ns1:extensionElements>
-			<ns3:uitvoeringsregelRef href="#UitvId0003" />
-		</ns1:extensionElements>
-		<ns1:variable id="_16536717-db35-48dc-b37a-aeaf09a87d0d" name="individueel of maatschappelijk belang" typeRef="feel:boolean" />
-	</ns1:inputData>
-	<ns1:inputData id="_247c495c-831a-4b69-b1d0-e3a2ec233d2a" name="situatieschets">
-		<ns1:extensionElements>
-			<ns3:uitvoeringsregelRef href="#UitvId0004" />
-		</ns1:extensionElements>
-		<ns1:variable id="_062acbcf-fe37-4f5d-b227-b2c3aebe7a0f" name="situatieschets" typeRef="feel:boolean" />
-	</ns1:inputData>
-	<ns1:inputData id="_23042866-38e0-48d8-9b1b-71c064482a66" name="reden">
-		<ns1:extensionElements>
-			<ns3:uitvoeringsregelRef href="#UitvId0005" />
-		</ns1:extensionElements>
-		<ns1:variable id="_e5175d51-6a25-466f-b3ae-fd3a8a07e33f" name="reden" typeRef="feel:string" />
-	</ns1:inputData>
-	<ns1:decision id="_2dee2620-8640-4061-bf2c-c00beb1f8602" name="Indieningsvereisten Vergunning - Kappen van een boom" ns4:useOutputTypeAsAnswer="false">
-		<ns1:extensionElements>
-			<ns5:functioneleStructuurRef href="#http://toepasbare-regels.omgevingswet.overheid.nl/00000001807288111000/id/concept/IndieningsvereistenVergunningnl.imow-gm0297.activiteit.2019000810" />
-		</ns1:extensionElements>
-		<ns1:variable id="_5c41771c-515c-4d34-8adc-ac7474fb6f2b" name="Indieningsvereisten Vergunning - Kappen van een boom" typeRef="feel:boolean" />
-		<ns1:informationRequirement>
-			<ns1:requiredInput href="#_247c495c-831a-4b69-b1d0-e3a2ec233d2a" />
-		</ns1:informationRequirement>
-		<ns1:informationRequirement>
-			<ns1:requiredDecision href="#_4622a149-f0f7-441f-9ac1-4695ac5fb46c" />
-		</ns1:informationRequirement>
-		<ns1:informationRequirement>
-			<ns1:requiredDecision href="#_e2344361-239f-463c-ad74-e48319571f76" />
-		</ns1:informationRequirement>
-		<ns1:informationRequirement>
-			<ns1:requiredDecision href="#_8a33fcea-950a-46e4-9bf1-4eae99700d35" />
-		</ns1:informationRequirement>
-		<ns1:decisionTable hitPolicy="ANY" id="_ede1da70-67bb-4944-bee8-dfd3f5ef17ee" outputLabel="Indieningsvereisten Vergunning - Kappen van een boom" ns4:descriptionVisible="false" ns4:expressionId="_ee613fb9-9da1-4b4f-b737-57ea9e8967be" typeRef="feel:boolean">
-			<ns1:input id="_8a7e1c8b-1b75-477a-9235-5efa061ba737" label="conv stamomtrek" ns4:allowNull="true">
-				<ns1:inputExpression typeRef="feel:boolean">
-					<ns1:text>conv stamomtrek</ns1:text>
-				</ns1:inputExpression>
-			</ns1:input>
-			<ns1:input id="_8caae66a-8e72-4c23-9751-c7af025f5e2b" label="conv reden" ns4:allowNull="true">
-				<ns1:inputExpression typeRef="feel:boolean">
-					<ns1:text>conv reden</ns1:text>
-				</ns1:inputExpression>
-			</ns1:input>
-			<ns1:input id="_b8967a6f-e51c-45b7-87ea-2bf09b12ab09" label="situatieschets" ns4:allowNull="true">
-				<ns1:inputExpression typeRef="feel:boolean">
-					<ns1:text>situatieschets</ns1:text>
-				</ns1:inputExpression>
-			</ns1:input>
-			<ns1:input id="_8f9a3f1f-19a3-47e0-9dcc-49aa1ba0b1de" label="beoordelingsregels" ns4:allowNull="true">
-				<ns1:inputExpression typeRef="feel:string">
-					<ns1:text>beoordelingsregels</ns1:text>
-				</ns1:inputExpression>
-			</ns1:input>
-			<ns1:output id="_2c8a345e-bbd7-4de3-8cd5-433a7d8b005b" ns4:allowNull="true" />
-			<ns1:rule id="_718ab23d-7381-4281-8070-be5c5d37db8d">
-				<ns1:inputEntry id="_521eec67-a69b-4b68-82c7-080fdcb46f6d">
-					<ns1:text>true</ns1:text>
-				</ns1:inputEntry>
-				<ns1:inputEntry id="_743b74ad-d77e-4381-a23f-627fb79279ea">
-					<ns1:text>true</ns1:text>
-				</ns1:inputEntry>
-				<ns1:inputEntry id="_52ee3437-e3c2-4d01-ab48-0be2607e7a87">
-					<ns1:text>true</ns1:text>
-				</ns1:inputEntry>
-				<ns1:inputEntry id="_64ee0ccd-45ab-43bf-8588-e4ce79264c29">
-					<ns1:text>true</ns1:text>
-				</ns1:inputEntry>
-				<ns1:outputEntry id="_7fa89330-adba-40d7-9009-c63101e3fd79">
-					<ns1:text>true</ns1:text>
-				</ns1:outputEntry>
-			</ns1:rule>
-			<ns1:rule id="_2649fc4e-8374-4ce5-8a88-038ef165ad03">
-				<ns1:inputEntry id="_e7c9f918-d15d-4af4-871c-6fad9cbe0cd3">
-					<ns1:text>false</ns1:text>
-				</ns1:inputEntry>
-				<ns1:inputEntry id="_c8a1ca3f-5f56-4fcf-b086-4bbc0dbe9c30">
-					<ns1:text>-</ns1:text>
-				</ns1:inputEntry>
-				<ns1:inputEntry id="_69b2b002-6348-449a-a9c5-fea9cca4d7cd">
-					<ns1:text>-</ns1:text>
-				</ns1:inputEntry>
-				<ns1:inputEntry id="_230e3847-b8c2-4876-9880-cb91262542d0">
-					<ns1:text>-</ns1:text>
-				</ns1:inputEntry>
-				<ns1:outputEntry id="_248d2d63-dce7-4928-b081-e703e57c0f06">
-					<ns1:text>false</ns1:text>
-				</ns1:outputEntry>
-			</ns1:rule>
-			<ns1:rule id="_4fc6627a-7497-4427-a7e2-03c968123df0">
-				<ns1:inputEntry id="_a04c97c5-b1ad-4a69-8fde-7875a80fd93b">
-					<ns1:text>-</ns1:text>
-				</ns1:inputEntry>
-				<ns1:inputEntry id="_f6532185-be25-4683-bae9-421623a0582a">
-					<ns1:text>false</ns1:text>
-				</ns1:inputEntry>
-				<ns1:inputEntry id="_82424a27-b81d-40cc-ad1f-0d167996e3a6">
-					<ns1:text>-</ns1:text>
-				</ns1:inputEntry>
-				<ns1:inputEntry id="_4e97883b-4874-47ac-af32-2981b9e724d4">
-					<ns1:text>-</ns1:text>
-				</ns1:inputEntry>
-				<ns1:outputEntry id="_e4a1f18d-44b9-404e-adc7-2c316d2c3e86">
-					<ns1:text>false</ns1:text>
-				</ns1:outputEntry>
-			</ns1:rule>
-			<ns1:rule id="_1a488617-8b22-4245-8a5b-759e883d79ec">
-				<ns1:inputEntry id="_b0936bd3-7dbf-423c-9b2f-6a9aaf6bb41c">
-					<ns1:text>-</ns1:text>
-				</ns1:inputEntry>
-				<ns1:inputEntry id="_301267d7-003e-47ef-93c3-b80d7195a5ee">
-					<ns1:text>-</ns1:text>
-				</ns1:inputEntry>
-				<ns1:inputEntry id="_eadf3d3a-5c69-4671-a70a-aa1ef8bffadb">
-					<ns1:text>false</ns1:text>
-				</ns1:inputEntry>
-				<ns1:inputEntry id="_18010df6-d802-4789-aa39-f3ab8e33fa87">
-					<ns1:text>-</ns1:text>
-				</ns1:inputEntry>
-				<ns1:outputEntry id="_4c6e57f5-9408-4acf-bc2d-3c97019ba9e8">
-					<ns1:text>false</ns1:text>
-				</ns1:outputEntry>
-			</ns1:rule>
-			<ns1:rule id="_fa073c18-6ffc-46e6-8af2-c57c8fd1f0d8">
-				<ns1:inputEntry id="_532f345f-9991-4fec-82cf-e6003b471b46">
-					<ns1:text>-</ns1:text>
-				</ns1:inputEntry>
-				<ns1:inputEntry id="_1d275d41-633d-4e5f-b212-722301f7f156">
-					<ns1:text>-</ns1:text>
-				</ns1:inputEntry>
-				<ns1:inputEntry id="_38082e2c-89d9-4143-b801-13c908197a0b">
-					<ns1:text>-</ns1:text>
-				</ns1:inputEntry>
-				<ns1:inputEntry id="_6a9b071a-8293-4bd9-a4e7-369c36b31ebb">
-					<ns1:text>false</ns1:text>
-				</ns1:inputEntry>
-				<ns1:outputEntry id="_afc98aa1-bc6c-4c64-a3d2-622d5353213f">
-					<ns1:text>false</ns1:text>
-				</ns1:outputEntry>
-			</ns1:rule>
-		</ns1:decisionTable>
-	</ns1:decision>
-	<ns1:decision id="_4622a149-f0f7-441f-9ac1-4695ac5fb46c" name="beoordelingsregels" ns4:useOutputTypeAsAnswer="false">
-		<ns1:variable id="_685d9196-1f1c-40e4-9b3c-070624abbf0b" name="beoordelingsregels" typeRef="feel:string" />
-		<ns1:informationRequirement>
-			<ns1:requiredInput href="#_98dc0d35-f785-415e-b93f-461b5a2c35fe" />
-		</ns1:informationRequirement>
-		<ns1:informationRequirement>
-			<ns1:requiredInput href="#_3bbfecd5-865c-4e7c-89af-19c6fa08f0cc" />
-		</ns1:informationRequirement>
-		<ns1:decisionTable hitPolicy="ANY" id="_f5754b0a-22f7-47b5-af83-0324016f4e17" outputLabel="beoordelingsregels" ns4:descriptionVisible="false" ns4:expressionId="_ead10b2c-d4ef-4950-b57f-966ae52e87ec" typeRef="feel:string">
-			<ns1:input id="_0fa90d2b-176f-432f-bee9-677a6cdae440" label="gevaar of ernstige hinder">
-				<ns1:inputExpression typeRef="feel:boolean">
-					<ns1:text>gevaar of ernstige hinder</ns1:text>
-				</ns1:inputExpression>
-			</ns1:input>
-			<ns1:input id="_b1e0f197-dc29-4caf-8f5b-3e648b8fc480" label="individueel of maatschappelijk belang">
-				<ns1:inputExpression typeRef="feel:boolean">
-					<ns1:text>individueel of maatschappelijk belang</ns1:text>
-				</ns1:inputExpression>
-			</ns1:input>
-			<ns1:output id="_3fa10b81-423c-4569-bd05-8408d719d83a" ns4:allowNull="true" />
-			<ns1:rule id="_c95fe594-b499-493d-b15e-f5c9619db51c">
-				<ns1:inputEntry id="_4a692aa7-7ec7-4e0b-8160-3e9cd3de6221">
-					<ns1:text>true</ns1:text>
-				</ns1:inputEntry>
-				<ns1:inputEntry id="_857df16a-d75f-46e9-97be-c2a0b258983d">
-					<ns1:text>-</ns1:text>
-				</ns1:inputEntry>
-				<ns1:outputEntry id="_cbcac2d3-659b-436b-bd18-404a6ba1a2b4">
-					<ns1:text>true</ns1:text>
-				</ns1:outputEntry>
-			</ns1:rule>
-			<ns1:rule id="_1e5adec0-52a3-483a-9364-c43f6defb464">
-				<ns1:inputEntry id="_312b1ded-d198-40ca-b42e-5fb6351909a9">
-					<ns1:text>-</ns1:text>
-				</ns1:inputEntry>
-				<ns1:inputEntry id="_580e3cfd-959e-4005-b821-05fba2859fcd">
-					<ns1:text>true</ns1:text>
-				</ns1:inputEntry>
-				<ns1:outputEntry id="_54a00504-82a0-4894-8d7a-9bca6c2d812c">
-					<ns1:text>true</ns1:text>
-				</ns1:outputEntry>
-			</ns1:rule>
-			<ns1:rule id="_50a28b23-14ac-4777-a9ec-214d4e400148">
-				<ns1:inputEntry id="_24b2cdf4-ac11-4a81-a7ce-f3a4f529f921">
-					<ns1:text>false</ns1:text>
-				</ns1:inputEntry>
-				<ns1:inputEntry id="_fac5b1a0-e366-4e35-8a8c-606a0cd67385">
-					<ns1:text>false</ns1:text>
-				</ns1:inputEntry>
-				<ns1:outputEntry id="_a0ff2309-adc6-417f-9b23-9b98f39e3c9b">
-					<ns1:text>true</ns1:text>
-				</ns1:outputEntry>
-			</ns1:rule>
-		</ns1:decisionTable>
-	</ns1:decision>
-	<ns1:decision id="_e2344361-239f-463c-ad74-e48319571f76" name="conv stamomtrek">
-		<ns1:variable id="_208d7ccd-bf79-4a78-8e48-1dce4d2a220c" name="conv stamomtrek" typeRef="feel:boolean" />
-		<ns1:informationRequirement>
-			<ns1:requiredInput href="#_5856e129-98dd-4797-9329-3bde20199196" />
-		</ns1:informationRequirement>
-		<ns1:decisionTable hitPolicy="FIRST" id="_17e905df-3ecc-4fa6-a118-0eaf21063782" outputLabel="conv stamomtrek" ns4:descriptionVisible="false" ns4:expressionId="_490597c2-5b6f-4a37-a03b-4b97d20e091b" typeRef="feel:boolean">
-			<ns1:input id="_ada54fea-e9de-40a0-a5b1-94cb734db956" label="stamomtrek">
-				<ns1:inputExpression typeRef="feel:number">
-					<ns1:text>stamomtrek</ns1:text>
-				</ns1:inputExpression>
-			</ns1:input>
-			<ns1:output id="_14fa13fe-3c3f-4459-85c5-7b373de28ab6" ns4:allowNull="true" />
-			<ns1:rule id="_f653f9db-731f-4b92-aa7b-182ff1b48934">
-				<ns1:inputEntry id="_3eda589f-c62c-4671-bdd5-59850d6fe5ec">
-					<ns1:text>not(null)</ns1:text>
-				</ns1:inputEntry>
-				<ns1:outputEntry id="_a789388f-fa22-49a3-ae4d-f64252dc6be5">
-					<ns1:text>true</ns1:text>
-				</ns1:outputEntry>
-			</ns1:rule>
-		</ns1:decisionTable>
-	</ns1:decision>
-	<ns1:decision id="_8a33fcea-950a-46e4-9bf1-4eae99700d35" name="conv reden">
-		<ns1:variable id="_364c8443-ba73-4c32-b767-4f3678c9515d" name="conv reden" typeRef="feel:boolean" />
-		<ns1:informationRequirement>
-			<ns1:requiredInput href="#_23042866-38e0-48d8-9b1b-71c064482a66" />
-		</ns1:informationRequirement>
-		<ns1:decisionTable hitPolicy="FIRST" id="_dc706f0b-f691-4c61-9d09-ddbc9bc054ae" outputLabel="conv reden" ns4:descriptionVisible="false" ns4:expressionId="_a567f8cf-7a0e-4628-83e3-b1c115dcf328" typeRef="feel:boolean">
-			<ns1:input id="_45967d5f-a3bb-4e16-9cff-195ea4bb5694" label="reden">
-				<ns1:inputExpression typeRef="feel:string">
-					<ns1:text>reden</ns1:text>
-				</ns1:inputExpression>
-			</ns1:input>
-			<ns1:output id="_c7099cc7-d2fa-4b28-a7c4-2cf355b074ca" ns4:allowNull="true" />
-			<ns1:rule id="_5852e7ae-43bf-4c2e-a105-526ec0aa34a2">
-				<ns1:inputEntry id="_fc0bd398-97ea-49d6-87c4-3c4c19cc56a4">
-					<ns1:text>not(null)</ns1:text>
-				</ns1:inputEntry>
-				<ns1:outputEntry id="_e77221dd-ab16-4ad5-91e3-d9e2da5d1216">
-					<ns1:text>true</ns1:text>
-				</ns1:outputEntry>
-			</ns1:rule>
-		</ns1:decisionTable>
-	</ns1:decision>
-</ns1:definitions>
+            <ns6:definitions exporter="Decision Modeler" exporterVersion="7.3.1" id="_f97bca96-7ebe-4a6b-9e60-a9f0d65147fa" name="Indieningsvereisten Vergunning Kappen van een boom - Initiele versie" namespace="http://toepasbare-regels.omgevingswet.overheid.nl/00000001807288111000" ns9:logoChoice="Default" ns9:translationLanguages="" xml:lang="en">
+	<ns6:extensionElements>
+		<ns7:regelgroepen>
+			<ns7:regelgroep id="Regelgroep1">
+				<ns7:naam>Kappen van een boom</ns7:naam>
+				<ns7:prioriteit>1</ns7:prioriteit>
+			</ns7:regelgroep>
+		</ns7:regelgroepen>
+		<ns8:uitvoeringsregels>
+			<ns8:uitvoeringsregel id="UitvId0001">
+				<ns8:regelgroepRef href="#Regelgroep1" />
+				<ns8:bereik>werkzaamheid</ns8:bereik>
+				<ns7:classificatie>activiteit</ns7:classificatie>
+				<ns8:publiceerbaar>true</ns8:publiceerbaar>
+				<ns8:potentieelVertrouwelijk>true</ns8:potentieelVertrouwelijk>
+				<ns7:prioriteit>10</ns7:prioriteit>
+				<ns8:vraag>
+					<ns8:gegevensType>number</ns8:gegevensType>
+					<ns8:vraagTekst>Wat is de stamomtrek van de boom?</ns8:vraagTekst>
+				</ns8:vraag>
+			</ns8:uitvoeringsregel>
+			<ns8:uitvoeringsregel id="UitvId0002">
+				<ns8:regelgroepRef href="#Regelgroep1" />
+				<ns8:bereik>werkzaamheid</ns8:bereik>
+				<ns7:classificatie>activiteit</ns7:classificatie>
+				<ns8:publiceerbaar>true</ns8:publiceerbaar>
+				<ns8:potentieelVertrouwelijk>true</ns8:potentieelVertrouwelijk>
+				<ns7:prioriteit>20</ns7:prioriteit>
+				<ns8:vraag>
+					<ns8:gegevensType>boolean</ns8:gegevensType>
+					<ns8:vraagTekst>Veroorzaakt de boom gevaar of ernstige hinder?</ns8:vraagTekst>
+				</ns8:vraag>
+			</ns8:uitvoeringsregel>
+			<ns8:uitvoeringsregel id="UitvId0003">
+				<ns8:regelgroepRef href="#Regelgroep1" />
+				<ns8:bereik>werkzaamheid</ns8:bereik>
+				<ns7:classificatie>activiteit</ns7:classificatie>
+				<ns8:publiceerbaar>true</ns8:publiceerbaar>
+				<ns8:potentieelVertrouwelijk>true</ns8:potentieelVertrouwelijk>
+				<ns7:prioriteit>30</ns7:prioriteit>
+				<ns8:vraag>
+					<ns8:gegevensType>boolean</ns8:gegevensType>
+					<ns8:vraagTekst>Wordt de boom gekapt vanwege een individueel of maatschappelijk belang?</ns8:vraagTekst>
+				</ns8:vraag>
+			</ns8:uitvoeringsregel>
+			<ns8:uitvoeringsregel id="UitvId0004">
+				<ns8:bijlage>
+					<ns8:bijlageType>Situatieschets</ns8:bijlageType>
+				</ns8:bijlage>
+				<ns11:uitvoeringsregelToelichting>
+					<ns11:toelichting>Teken de te kappen boom op een kaart, foto of tekening geïdentificeerd met een nummer en de locatie</ns11:toelichting>
+				</ns11:uitvoeringsregelToelichting>
+			</ns8:uitvoeringsregel>
+			<ns8:uitvoeringsregel id="UitvId0005">
+				<ns8:regelgroepRef href="#Regelgroep1" />
+				<ns8:bereik>werkzaamheid</ns8:bereik>
+				<ns7:classificatie>activiteit</ns7:classificatie>
+				<ns8:publiceerbaar>true</ns8:publiceerbaar>
+				<ns8:potentieelVertrouwelijk>true</ns8:potentieelVertrouwelijk>
+				<ns7:prioriteit>50</ns7:prioriteit>
+				<ns8:vraag>
+					<ns8:gegevensType>string</ns8:gegevensType>
+					<ns8:vraagTekst>Wat is de reden voor het kappen van de boom?</ns8:vraagTekst>
+				</ns8:vraag>
+			</ns8:uitvoeringsregel>
+		</ns8:uitvoeringsregels>
+	</ns6:extensionElements>
+	<ns6:itemDefinition isCollection="false" label="TConclusie" name="TConclusie">
+		<ns6:typeRef>feel:string</ns6:typeRef>
+		<ns6:allowedValues ns9:constraintsType="enumeration">
+			<ns6:extensionElements>
+				<ns9:constraintDetails>
+					<ns9:display>"NietVanToepassing", "NeemContactOpMet", "Meldingsplicht", "Vergunningplicht", "Informatieplicht", "Toestemmingsvrij", "Verbod"</ns9:display>
+					<ns9:choices>
+						<ns9:value>"NietVanToepassing"</ns9:value>
+						<ns9:display>"NietVanToepassing"</ns9:display>
+					</ns9:choices>
+					<ns9:choices>
+						<ns9:value>"NeemContactOpMet"</ns9:value>
+						<ns9:display>"NeemContactOpMet"</ns9:display>
+					</ns9:choices>
+					<ns9:choices>
+						<ns9:value>"Meldingsplicht"</ns9:value>
+						<ns9:display>"Meldingsplicht"</ns9:display>
+					</ns9:choices>
+					<ns9:choices>
+						<ns9:value>"Vergunningplicht"</ns9:value>
+						<ns9:display>"Vergunningplicht"</ns9:display>
+					</ns9:choices>
+					<ns9:choices>
+						<ns9:value>"Informatieplicht"</ns9:value>
+						<ns9:display>"Informatieplicht"</ns9:display>
+					</ns9:choices>
+					<ns9:choices>
+						<ns9:value>"Toestemmingsvrij"</ns9:value>
+						<ns9:display>"Toestemmingsvrij"</ns9:display>
+					</ns9:choices>
+					<ns9:choices>
+						<ns9:value>"Verbod"</ns9:value>
+						<ns9:display>"Verbod"</ns9:display>
+					</ns9:choices>
+				</ns9:constraintDetails>
+			</ns6:extensionElements>
+			<ns6:text>"NietVanToepassing","NeemContactOpMet","Meldingsplicht","Vergunningplicht","Informatieplicht","Toestemmingsvrij","Verbod"</ns6:text>
+		</ns6:allowedValues>
+	</ns6:itemDefinition>
+	<ns6:inputData id="_5856e129-98dd-4797-9329-3bde20199196" name="stamomtrek">
+		<ns6:extensionElements>
+			<ns8:uitvoeringsregelRef href="#UitvId0001" />
+		</ns6:extensionElements>
+		<ns6:variable id="_4d41004e-ce40-43c3-b04f-d7b71d7972dd" name="stamomtrek" typeRef="feel:number" />
+	</ns6:inputData>
+	<ns6:inputData id="_98dc0d35-f785-415e-b93f-461b5a2c35fe" name="gevaar of ernstige hinder">
+		<ns6:extensionElements>
+			<ns8:uitvoeringsregelRef href="#UitvId0002" />
+		</ns6:extensionElements>
+		<ns6:variable id="_c5c9ccc4-a947-43d9-bf82-94a91a32b0ed" name="gevaar of ernstige hinder" typeRef="feel:boolean" />
+	</ns6:inputData>
+	<ns6:inputData id="_3bbfecd5-865c-4e7c-89af-19c6fa08f0cc" name="individueel of maatschappelijk belang">
+		<ns6:extensionElements>
+			<ns8:uitvoeringsregelRef href="#UitvId0003" />
+		</ns6:extensionElements>
+		<ns6:variable id="_16536717-db35-48dc-b37a-aeaf09a87d0d" name="individueel of maatschappelijk belang" typeRef="feel:boolean" />
+	</ns6:inputData>
+	<ns6:inputData id="_247c495c-831a-4b69-b1d0-e3a2ec233d2a" name="situatieschets">
+		<ns6:extensionElements>
+			<ns8:uitvoeringsregelRef href="#UitvId0004" />
+		</ns6:extensionElements>
+		<ns6:variable id="_062acbcf-fe37-4f5d-b227-b2c3aebe7a0f" name="situatieschets" typeRef="feel:boolean" />
+	</ns6:inputData>
+	<ns6:inputData id="_23042866-38e0-48d8-9b1b-71c064482a66" name="reden">
+		<ns6:extensionElements>
+			<ns8:uitvoeringsregelRef href="#UitvId0005" />
+		</ns6:extensionElements>
+		<ns6:variable id="_e5175d51-6a25-466f-b3ae-fd3a8a07e33f" name="reden" typeRef="feel:string" />
+	</ns6:inputData>
+	<ns6:decision id="_2dee2620-8640-4061-bf2c-c00beb1f8602" name="Indieningsvereisten Vergunning - Kappen van een boom" ns9:useOutputTypeAsAnswer="false">
+		<ns6:extensionElements>
+			<ns10:functioneleStructuurRef href="#http://toepasbare-regels.omgevingswet.overheid.nl/00000001807288111000/id/concept/IndieningsvereistenVergunningnl.imow-gm0297.activiteit.2019000810" />
+		</ns6:extensionElements>
+		<ns6:variable id="_5c41771c-515c-4d34-8adc-ac7474fb6f2b" name="Indieningsvereisten Vergunning - Kappen van een boom" typeRef="feel:boolean" />
+		<ns6:informationRequirement>
+			<ns6:requiredInput href="#_247c495c-831a-4b69-b1d0-e3a2ec233d2a" />
+		</ns6:informationRequirement>
+		<ns6:informationRequirement>
+			<ns6:requiredDecision href="#_4622a149-f0f7-441f-9ac1-4695ac5fb46c" />
+		</ns6:informationRequirement>
+		<ns6:informationRequirement>
+			<ns6:requiredDecision href="#_e2344361-239f-463c-ad74-e48319571f76" />
+		</ns6:informationRequirement>
+		<ns6:informationRequirement>
+			<ns6:requiredDecision href="#_8a33fcea-950a-46e4-9bf1-4eae99700d35" />
+		</ns6:informationRequirement>
+		<ns6:decisionTable hitPolicy="ANY" id="_ede1da70-67bb-4944-bee8-dfd3f5ef17ee" outputLabel="Indieningsvereisten Vergunning - Kappen van een boom" ns9:descriptionVisible="false" ns9:expressionId="_ee613fb9-9da1-4b4f-b737-57ea9e8967be" typeRef="feel:boolean">
+			<ns6:input id="_8a7e1c8b-1b75-477a-9235-5efa061ba737" label="conv stamomtrek" ns9:allowNull="true">
+				<ns6:inputExpression typeRef="feel:boolean">
+					<ns6:text>conv stamomtrek</ns6:text>
+				</ns6:inputExpression>
+			</ns6:input>
+			<ns6:input id="_8caae66a-8e72-4c23-9751-c7af025f5e2b" label="conv reden" ns9:allowNull="true">
+				<ns6:inputExpression typeRef="feel:boolean">
+					<ns6:text>conv reden</ns6:text>
+				</ns6:inputExpression>
+			</ns6:input>
+			<ns6:input id="_b8967a6f-e51c-45b7-87ea-2bf09b12ab09" label="situatieschets" ns9:allowNull="true">
+				<ns6:inputExpression typeRef="feel:boolean">
+					<ns6:text>situatieschets</ns6:text>
+				</ns6:inputExpression>
+			</ns6:input>
+			<ns6:input id="_8f9a3f1f-19a3-47e0-9dcc-49aa1ba0b1de" label="beoordelingsregels" ns9:allowNull="true">
+				<ns6:inputExpression typeRef="feel:string">
+					<ns6:text>beoordelingsregels</ns6:text>
+				</ns6:inputExpression>
+			</ns6:input>
+			<ns6:output id="_2c8a345e-bbd7-4de3-8cd5-433a7d8b005b" ns9:allowNull="true" />
+			<ns6:rule id="_718ab23d-7381-4281-8070-be5c5d37db8d">
+				<ns6:inputEntry id="_521eec67-a69b-4b68-82c7-080fdcb46f6d">
+					<ns6:text>true</ns6:text>
+				</ns6:inputEntry>
+				<ns6:inputEntry id="_743b74ad-d77e-4381-a23f-627fb79279ea">
+					<ns6:text>true</ns6:text>
+				</ns6:inputEntry>
+				<ns6:inputEntry id="_52ee3437-e3c2-4d01-ab48-0be2607e7a87">
+					<ns6:text>true</ns6:text>
+				</ns6:inputEntry>
+				<ns6:inputEntry id="_64ee0ccd-45ab-43bf-8588-e4ce79264c29">
+					<ns6:text>true</ns6:text>
+				</ns6:inputEntry>
+				<ns6:outputEntry id="_7fa89330-adba-40d7-9009-c63101e3fd79">
+					<ns6:text>true</ns6:text>
+				</ns6:outputEntry>
+			</ns6:rule>
+			<ns6:rule id="_2649fc4e-8374-4ce5-8a88-038ef165ad03">
+				<ns6:inputEntry id="_e7c9f918-d15d-4af4-871c-6fad9cbe0cd3">
+					<ns6:text>false</ns6:text>
+				</ns6:inputEntry>
+				<ns6:inputEntry id="_c8a1ca3f-5f56-4fcf-b086-4bbc0dbe9c30">
+					<ns6:text>-</ns6:text>
+				</ns6:inputEntry>
+				<ns6:inputEntry id="_69b2b002-6348-449a-a9c5-fea9cca4d7cd">
+					<ns6:text>-</ns6:text>
+				</ns6:inputEntry>
+				<ns6:inputEntry id="_230e3847-b8c2-4876-9880-cb91262542d0">
+					<ns6:text>-</ns6:text>
+				</ns6:inputEntry>
+				<ns6:outputEntry id="_248d2d63-dce7-4928-b081-e703e57c0f06">
+					<ns6:text>false</ns6:text>
+				</ns6:outputEntry>
+			</ns6:rule>
+			<ns6:rule id="_4fc6627a-7497-4427-a7e2-03c968123df0">
+				<ns6:inputEntry id="_a04c97c5-b1ad-4a69-8fde-7875a80fd93b">
+					<ns6:text>-</ns6:text>
+				</ns6:inputEntry>
+				<ns6:inputEntry id="_f6532185-be25-4683-bae9-421623a0582a">
+					<ns6:text>false</ns6:text>
+				</ns6:inputEntry>
+				<ns6:inputEntry id="_82424a27-b81d-40cc-ad1f-0d167996e3a6">
+					<ns6:text>-</ns6:text>
+				</ns6:inputEntry>
+				<ns6:inputEntry id="_4e97883b-4874-47ac-af32-2981b9e724d4">
+					<ns6:text>-</ns6:text>
+				</ns6:inputEntry>
+				<ns6:outputEntry id="_e4a1f18d-44b9-404e-adc7-2c316d2c3e86">
+					<ns6:text>false</ns6:text>
+				</ns6:outputEntry>
+			</ns6:rule>
+			<ns6:rule id="_1a488617-8b22-4245-8a5b-759e883d79ec">
+				<ns6:inputEntry id="_b0936bd3-7dbf-423c-9b2f-6a9aaf6bb41c">
+					<ns6:text>-</ns6:text>
+				</ns6:inputEntry>
+				<ns6:inputEntry id="_301267d7-003e-47ef-93c3-b80d7195a5ee">
+					<ns6:text>-</ns6:text>
+				</ns6:inputEntry>
+				<ns6:inputEntry id="_eadf3d3a-5c69-4671-a70a-aa1ef8bffadb">
+					<ns6:text>false</ns6:text>
+				</ns6:inputEntry>
+				<ns6:inputEntry id="_18010df6-d802-4789-aa39-f3ab8e33fa87">
+					<ns6:text>-</ns6:text>
+				</ns6:inputEntry>
+				<ns6:outputEntry id="_4c6e57f5-9408-4acf-bc2d-3c97019ba9e8">
+					<ns6:text>false</ns6:text>
+				</ns6:outputEntry>
+			</ns6:rule>
+			<ns6:rule id="_fa073c18-6ffc-46e6-8af2-c57c8fd1f0d8">
+				<ns6:inputEntry id="_532f345f-9991-4fec-82cf-e6003b471b46">
+					<ns6:text>-</ns6:text>
+				</ns6:inputEntry>
+				<ns6:inputEntry id="_1d275d41-633d-4e5f-b212-722301f7f156">
+					<ns6:text>-</ns6:text>
+				</ns6:inputEntry>
+				<ns6:inputEntry id="_38082e2c-89d9-4143-b801-13c908197a0b">
+					<ns6:text>-</ns6:text>
+				</ns6:inputEntry>
+				<ns6:inputEntry id="_6a9b071a-8293-4bd9-a4e7-369c36b31ebb">
+					<ns6:text>false</ns6:text>
+				</ns6:inputEntry>
+				<ns6:outputEntry id="_afc98aa1-bc6c-4c64-a3d2-622d5353213f">
+					<ns6:text>false</ns6:text>
+				</ns6:outputEntry>
+			</ns6:rule>
+		</ns6:decisionTable>
+	</ns6:decision>
+	<ns6:decision id="_4622a149-f0f7-441f-9ac1-4695ac5fb46c" name="beoordelingsregels" ns9:useOutputTypeAsAnswer="false">
+		<ns6:variable id="_685d9196-1f1c-40e4-9b3c-070624abbf0b" name="beoordelingsregels" typeRef="feel:string" />
+		<ns6:informationRequirement>
+			<ns6:requiredInput href="#_98dc0d35-f785-415e-b93f-461b5a2c35fe" />
+		</ns6:informationRequirement>
+		<ns6:informationRequirement>
+			<ns6:requiredInput href="#_3bbfecd5-865c-4e7c-89af-19c6fa08f0cc" />
+		</ns6:informationRequirement>
+		<ns6:decisionTable hitPolicy="ANY" id="_f5754b0a-22f7-47b5-af83-0324016f4e17" outputLabel="beoordelingsregels" ns9:descriptionVisible="false" ns9:expressionId="_ead10b2c-d4ef-4950-b57f-966ae52e87ec" typeRef="feel:string">
+			<ns6:input id="_0fa90d2b-176f-432f-bee9-677a6cdae440" label="gevaar of ernstige hinder">
+				<ns6:inputExpression typeRef="feel:boolean">
+					<ns6:text>gevaar of ernstige hinder</ns6:text>
+				</ns6:inputExpression>
+			</ns6:input>
+			<ns6:input id="_b1e0f197-dc29-4caf-8f5b-3e648b8fc480" label="individueel of maatschappelijk belang">
+				<ns6:inputExpression typeRef="feel:boolean">
+					<ns6:text>individueel of maatschappelijk belang</ns6:text>
+				</ns6:inputExpression>
+			</ns6:input>
+			<ns6:output id="_3fa10b81-423c-4569-bd05-8408d719d83a" ns9:allowNull="true" />
+			<ns6:rule id="_c95fe594-b499-493d-b15e-f5c9619db51c">
+				<ns6:inputEntry id="_4a692aa7-7ec7-4e0b-8160-3e9cd3de6221">
+					<ns6:text>true</ns6:text>
+				</ns6:inputEntry>
+				<ns6:inputEntry id="_857df16a-d75f-46e9-97be-c2a0b258983d">
+					<ns6:text>-</ns6:text>
+				</ns6:inputEntry>
+				<ns6:outputEntry id="_cbcac2d3-659b-436b-bd18-404a6ba1a2b4">
+					<ns6:text>true</ns6:text>
+				</ns6:outputEntry>
+			</ns6:rule>
+			<ns6:rule id="_1e5adec0-52a3-483a-9364-c43f6defb464">
+				<ns6:inputEntry id="_312b1ded-d198-40ca-b42e-5fb6351909a9">
+					<ns6:text>-</ns6:text>
+				</ns6:inputEntry>
+				<ns6:inputEntry id="_580e3cfd-959e-4005-b821-05fba2859fcd">
+					<ns6:text>true</ns6:text>
+				</ns6:inputEntry>
+				<ns6:outputEntry id="_54a00504-82a0-4894-8d7a-9bca6c2d812c">
+					<ns6:text>true</ns6:text>
+				</ns6:outputEntry>
+			</ns6:rule>
+			<ns6:rule id="_50a28b23-14ac-4777-a9ec-214d4e400148">
+				<ns6:inputEntry id="_24b2cdf4-ac11-4a81-a7ce-f3a4f529f921">
+					<ns6:text>false</ns6:text>
+				</ns6:inputEntry>
+				<ns6:inputEntry id="_fac5b1a0-e366-4e35-8a8c-606a0cd67385">
+					<ns6:text>false</ns6:text>
+				</ns6:inputEntry>
+				<ns6:outputEntry id="_a0ff2309-adc6-417f-9b23-9b98f39e3c9b">
+					<ns6:text>true</ns6:text>
+				</ns6:outputEntry>
+			</ns6:rule>
+		</ns6:decisionTable>
+	</ns6:decision>
+	<ns6:decision id="_e2344361-239f-463c-ad74-e48319571f76" name="conv stamomtrek">
+		<ns6:variable id="_208d7ccd-bf79-4a78-8e48-1dce4d2a220c" name="conv stamomtrek" typeRef="feel:boolean" />
+		<ns6:informationRequirement>
+			<ns6:requiredInput href="#_5856e129-98dd-4797-9329-3bde20199196" />
+		</ns6:informationRequirement>
+		<ns6:decisionTable hitPolicy="FIRST" id="_17e905df-3ecc-4fa6-a118-0eaf21063782" outputLabel="conv stamomtrek" ns9:descriptionVisible="false" ns9:expressionId="_490597c2-5b6f-4a37-a03b-4b97d20e091b" typeRef="feel:boolean">
+			<ns6:input id="_ada54fea-e9de-40a0-a5b1-94cb734db956" label="stamomtrek">
+				<ns6:inputExpression typeRef="feel:number">
+					<ns6:text>stamomtrek</ns6:text>
+				</ns6:inputExpression>
+			</ns6:input>
+			<ns6:output id="_14fa13fe-3c3f-4459-85c5-7b373de28ab6" ns9:allowNull="true" />
+			<ns6:rule id="_f653f9db-731f-4b92-aa7b-182ff1b48934">
+				<ns6:inputEntry id="_3eda589f-c62c-4671-bdd5-59850d6fe5ec">
+					<ns6:text>not(null)</ns6:text>
+				</ns6:inputEntry>
+				<ns6:outputEntry id="_a789388f-fa22-49a3-ae4d-f64252dc6be5">
+					<ns6:text>true</ns6:text>
+				</ns6:outputEntry>
+			</ns6:rule>
+		</ns6:decisionTable>
+	</ns6:decision>
+	<ns6:decision id="_8a33fcea-950a-46e4-9bf1-4eae99700d35" name="conv reden">
+		<ns6:variable id="_364c8443-ba73-4c32-b767-4f3678c9515d" name="conv reden" typeRef="feel:boolean" />
+		<ns6:informationRequirement>
+			<ns6:requiredInput href="#_23042866-38e0-48d8-9b1b-71c064482a66" />
+		</ns6:informationRequirement>
+		<ns6:decisionTable hitPolicy="FIRST" id="_dc706f0b-f691-4c61-9d09-ddbc9bc054ae" outputLabel="conv reden" ns9:descriptionVisible="false" ns9:expressionId="_a567f8cf-7a0e-4628-83e3-b1c115dcf328" typeRef="feel:boolean">
+			<ns6:input id="_45967d5f-a3bb-4e16-9cff-195ea4bb5694" label="reden">
+				<ns6:inputExpression typeRef="feel:string">
+					<ns6:text>reden</ns6:text>
+				</ns6:inputExpression>
+			</ns6:input>
+			<ns6:output id="_c7099cc7-d2fa-4b28-a7c4-2cf355b074ca" ns9:allowNull="true" />
+			<ns6:rule id="_5852e7ae-43bf-4c2e-a105-526ec0aa34a2">
+				<ns6:inputEntry id="_fc0bd398-97ea-49d6-87c4-3c4c19cc56a4">
+					<ns6:text>not(null)</ns6:text>
+				</ns6:inputEntry>
+				<ns6:outputEntry id="_e77221dd-ab16-4ad5-91e3-d9e2da5d1216">
+					<ns6:text>true</ns6:text>
+				</ns6:outputEntry>
+			</ns6:rule>
+		</ns6:decisionTable>
+	</ns6:decision>
+</ns6:definitions>
          </Beslislogica>
       </ToepasbareActiviteit>
    </ToepasbareRegels>
