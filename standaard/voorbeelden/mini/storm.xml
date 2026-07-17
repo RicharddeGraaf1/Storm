@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Regeling xmlns="urn:storm:1.0" schemaversie="0.2.0">
+   <Identificatie>
+      <FRBRWork>/akn/nl/act/gm9999/2026/mini</FRBRWork>
+      <soortWork>/join/id/stop/work_019</soortWork>
+      <versienummer>1</versienummer>
+      <bevoegdGezag>gm9999</bevoegdGezag>
+   </Identificatie>
+   <Tekst structuur="compact">
+      <RegelingOpschrift eId="longTitle" wId="longTitle">
+         <Al>Mini-omgevingsplan STORM</Al>
+      </RegelingOpschrift>
+      <Lichaam eId="body" wId="body">
+         <Hoofdstuk eId="chp_1" wId="gm9999_1__chp_1">
+            <Kop>
+               <Label>Hoofdstuk</Label>
+               <Nummer>1</Nummer>
+               <Opschrift>Kern</Opschrift>
+            </Kop>
+            <Artikel eId="chp_1__art_1.1" wId="gm9999_1__chp_1__art_1.1" owId="nl.imow-gm9999.regeltekst.0000000001" regelType="regelVoorIedereen" idealisatie="exact">
+               <Kop>
+                  <Label>Artikel</Label>
+                  <Nummer>1.1</Nummer>
+                  <Opschrift>Bouwen in de kern</Opschrift>
+               </Kop>
+               <Regel soort="regelVoorIedereen" idealisatie="exact" owId="nl.imow-gm9999.juridischeregel.0000000001">
+                  <ActiviteitToedeling activiteitRef="nl.imow-gm9999.activiteit.0000000001" kwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan" owId="nl.imow-gm9999.activiteitlocatieaanduiding.0000000001">
+                     <Locatieaanduiding>
+                        <GioRef ref="nl.imow-gm9999.gebiedengroep.kern" />
+                     </Locatieaanduiding>
+                  </ActiviteitToedeling>
+               </Regel>
+               <Inhoud>
+                  <Al>Bouwen is toegestaan binnen <IntIoRef ref="io_kern" eId="chp_1__art_1.1__ref_o_1" wId="gm9999_1__chp_1__art_1.1__ref_o_1">de kern</IntIoRef>.<Noot id="n1" type="voet"><NootNummer>1</NootNummer><Al>Zie de <i>toelichting</i> voor het begrip kern.</Al></Noot></Al>
+                  <table eId="chp_1__art_1.1__table_o_1" wId="gm9999_1__chp_1__art_1.1__table_o_1" frame="all">
+                     <title>Maximale <b>bouwhoogten</b></title>
+                     <tgroup cols="2" align="left">
+                        <colspec colname="c1" colnum="1" colwidth="50*" />
+                        <colspec colname="c2" colnum="2" colwidth="50*" />
+                        <thead valign="top">
+                           <row>
+                              <entry colname="c1" align="left"><Al>Gebied</Al></entry>
+                              <entry colname="c2" align="left"><Al>Hoogte</Al></entry>
+                           </row>
+                        </thead>
+                        <tbody valign="top">
+                           <row>
+                              <entry colname="c1"><Al>Kern</Al></entry>
+                              <entry colname="c2"><Al>9 m</Al></entry>
+                           </row>
+                        </tbody>
+                     </tgroup>
+                  </table>
+               </Inhoud>
+            </Artikel>
+         </Hoofdstuk>
+      </Lichaam>
+      <Bijlage eId="cmp_A" wId="gm9999_1__cmp_A">
+         <Kop>
+            <Label>Bijlage</Label>
+            <Nummer>A</Nummer>
+            <Opschrift>Informatieobjecten</Opschrift>
+         </Kop>
+         <Divisietekst eId="cmp_A__content_o_1" wId="gm9999_1__cmp_A__content_o_1">
+            <Inhoud>
+               <Al><ExtIoRef eId="io_kern" wId="io_kern" ref="/join/id/regdata/gm9999/2026/kern/nld@2026-01-01;1">/join/id/regdata/gm9999/2026/kern</ExtIoRef></Al>
+            </Inhoud>
+         </Divisietekst>
+      </Bijlage>
+   </Tekst>
+   <OwObjecten>
+      <Activiteit id="nl.imow-gm9999.activiteit.0000000001">
+         <naam>bouwen van een bouwwerk</naam>
+         <groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/BouwactiviteitRuimtelijk</groep>
+      </Activiteit>
+   </OwObjecten>
+   <Geo>
+      <Gio work="/join/id/regdata/gm9999/2026/kern" expressie="/join/id/regdata/gm9999/2026/kern/nld@2026-01-01;1" bestand="gio/kern.gml">
+         <Gebiedsaanwijzing owId="nl.imow-gm9999.gebiedsaanwijzing.0000000001" locatieRef="nl.imow-gm9999.gebiedengroep.kern">
+            <type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</type>
+            <naam>Kern</naam>
+            <groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Woongebied</groep>
+         </Gebiedsaanwijzing>
+      </Gio>
+      <Ambtsgebied id="nl.imow-gm9999.ambtsgebied.mini">
+         <noemer>Gemeente Mini</noemer>
+         <BestuurlijkeGrenzen id="GM9999" domein="NL.BI.BestuurlijkGebied" geldigOp="2026-01-01" />
+      </Ambtsgebied>
+   </Geo>
+   <Exportregels>
+      <ImowLocatie owId="nl.imow-gm9999.gebied.0000000001" soort="Gebied" basisgeoId="11111111-2222-3333-4444-555555555555" />
+      <ImowLocatie owId="nl.imow-gm9999.gebiedengroep.kern" soort="Gebiedengroep" noemer="Kern" gioWork="/join/id/regdata/gm9999/2026/kern">
+         <LidRef ref="nl.imow-gm9999.gebied.0000000001" />
+      </ImowLocatie>
+   </Exportregels>
+</Regeling>

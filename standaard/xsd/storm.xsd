@@ -1,0 +1,988 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  STORM - STandaard Omgevingswet ReferentieModel (concept v0.2.0)
+
+  Eén schema dat STOP-tekst, IMOW-annotaties en IMTR-toepasbare-regels
+  in samenhang beschrijft. Ontwerpprincipes: docs/STORM-specificatie.md
+  (gebaseerd op "20211119 - mening toekomst standaard.pptx" / Rutopie).
+
+  v0.2: geometrie en normwaarden leven in de GIO-GML-bestanden zelf
+  (het STORM-pakket = storm.xml + gio/*.gml); de regel-locatie wordt
+  waar mogelijk gedestilleerd uit de IntIoRefs in de tekst; de
+  IMOW-objectwereld (locatie-identiteiten, normen) verhuist naar een
+  expliciet Exportregels-compartiment.
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="urn:storm:1.0"
+           xmlns="urn:storm:1.0"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified"
+           version="0.4.0">
+
+  <!-- ================================================================ -->
+  <!-- Root                                                             -->
+  <!-- ================================================================ -->
+
+  <xs:element name="Regeling">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Identificatie"/>
+        <xs:element ref="Tekst"/>
+        <xs:element ref="OwObjecten" minOccurs="0"/>
+        <xs:element ref="Geo" minOccurs="0"/>
+        <xs:element ref="Exportregels" minOccurs="0"/>
+        <xs:element ref="ToepasbareRegels" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="schemaversie" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Identificatie">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="FRBRWork" type="xs:string"/>
+        <xs:element name="FRBRExpression" type="xs:string" minOccurs="0"/>
+        <xs:element name="soortWork" type="xs:string" minOccurs="0"/>
+        <xs:element name="versienummer" type="xs:string" minOccurs="0"/>
+        <xs:element name="bevoegdGezag" type="xs:string" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- ================================================================ -->
+  <!-- Gedeelde bouwstenen                                              -->
+  <!-- ================================================================ -->
+
+  <xs:attributeGroup name="agTekstId">
+    <xs:attribute name="eId" type="xs:string"/>
+    <xs:attribute name="wId" type="xs:string"/>
+  </xs:attributeGroup>
+
+  <!-- Rutopie-annotatie-attributen op artikel/lid/divisie(tekst) (slide 11/15).
+       owId bewaart de IMOW Regeltekst-/Tekstdeel-identificatie voor een
+       verliesvrije rondreis STORM -> IMOW. -->
+  <xs:attributeGroup name="agAnnotatie">
+    <xs:attribute name="regelType" type="RegelSoort"/>
+    <xs:attribute name="idealisatie" type="Idealisatie"/>
+    <xs:attribute name="thema" type="xs:anyURI"/>
+    <xs:attribute name="owId" type="xs:string"/>
+  </xs:attributeGroup>
+
+  <xs:simpleType name="RegelSoort">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="regelVoorIedereen"/>
+      <xs:enumeration value="instructieregel"/>
+      <xs:enumeration value="omgevingswaarderegel"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="Idealisatie">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="exact"/>
+      <xs:enumeration value="indicatief"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="RefNaarObject">
+    <xs:attribute name="ref" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:element name="Locatieaanduiding">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="GioRef" type="RefNaarObject" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- ================================================================ -->
+  <!-- Tekststructuur (STOP-vormig, P2) mét inline annotaties (P3)      -->
+  <!-- ================================================================ -->
+
+  <xs:element name="Tekst">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="RegelingOpschrift"/>
+        <xs:element ref="Lichaam"/>
+        <xs:element ref="Bijlage" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="ArtikelgewijzeToelichting" minOccurs="0"/>
+      </xs:sequence>
+      <!-- STOP-oorsprong: RegelingCompact of RegelingVrijetekst -->
+      <xs:attribute name="structuur" default="compact">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="compact"/>
+            <xs:enumeration value="vrijetekst"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <!-- meegenomen uit een besluit-/mutatiecontext (STOP) -->
+      <xs:attribute name="componentnaam" type="xs:string"/>
+      <xs:attribute name="wordt" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="RegelingOpschrift">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Al" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="agTekstId"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:group name="gStructuur">
+    <xs:choice>
+      <xs:element ref="Titel"/>
+      <xs:element ref="Hoofdstuk"/>
+      <xs:element ref="Afdeling"/>
+      <xs:element ref="Paragraaf"/>
+      <xs:element ref="Subparagraaf"/>
+      <xs:element ref="Subsubparagraaf"/>
+      <xs:element ref="Artikel"/>
+      <xs:element ref="Divisie"/>
+      <xs:element ref="Divisietekst"/>
+    </xs:choice>
+  </xs:group>
+
+  <xs:complexType name="StructuurElement">
+    <xs:sequence>
+      <xs:element ref="Kop" minOccurs="0"/>
+      <xs:group ref="gStructuur" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="agTekstId"/>
+  </xs:complexType>
+
+  <xs:element name="Lichaam" type="StructuurElement"/>
+  <xs:element name="Titel" type="StructuurElement"/>
+  <xs:element name="Hoofdstuk" type="StructuurElement"/>
+  <xs:element name="Afdeling" type="StructuurElement"/>
+  <xs:element name="Paragraaf" type="StructuurElement"/>
+  <xs:element name="Subparagraaf" type="StructuurElement"/>
+  <xs:element name="Subsubparagraaf" type="StructuurElement"/>
+
+  <xs:element name="Kop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Label" type="xs:string" minOccurs="0"/>
+        <xs:element name="Nummer" type="xs:string" minOccurs="0"/>
+        <xs:element name="Opschrift" type="Tekstregel" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Relatie met een ander geannoteerd tekst-element (IMOW:
+       gerelateerdeRegeltekst); ref = de owId van het gerelateerde element -->
+  <xs:element name="GerelateerdRef" type="RefNaarObject"/>
+
+  <!-- Inline annotaties op artikel/lid (Regel) en divisie(tekst) (Tekstdeel,
+       HoofdlijnRef); vrij te combineren (P3) -->
+  <xs:group name="gAnnotaties">
+    <xs:choice>
+      <xs:element ref="Regel"/>
+      <xs:element ref="Tekstdeel"/>
+      <xs:element ref="GerelateerdRef"/>
+      <xs:element name="HoofdlijnRef" type="RefNaarObject"/>
+    </xs:choice>
+  </xs:group>
+
+  <xs:element name="Artikel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Kop" minOccurs="0"/>
+        <xs:group ref="gAnnotaties" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:choice>
+          <xs:element ref="Inhoud" minOccurs="0"/>
+          <xs:element ref="Lid" maxOccurs="unbounded"/>
+          <xs:element name="Gereserveerd">
+            <xs:complexType/>
+          </xs:element>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="agTekstId"/>
+      <xs:attributeGroup ref="agAnnotatie"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Lid">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="LidNummer" type="xs:string"/>
+        <xs:group ref="gAnnotaties" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="Inhoud" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="agTekstId"/>
+      <xs:attributeGroup ref="agAnnotatie"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Divisie">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Kop" minOccurs="0"/>
+        <xs:group ref="gAnnotaties" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:group ref="gStructuur" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="agTekstId"/>
+      <xs:attributeGroup ref="agAnnotatie"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Divisietekst">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Kop" minOccurs="0"/>
+        <xs:group ref="gAnnotaties" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="Inhoud" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="agTekstId"/>
+      <xs:attributeGroup ref="agAnnotatie"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Bijlage" type="StructuurElement"/>
+  <xs:element name="ArtikelgewijzeToelichting" type="StructuurElement"/>
+
+  <xs:element name="Inhoud">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Al"/>
+        <xs:element ref="Lijst"/>
+        <xs:element ref="Begrippenlijst"/>
+        <xs:element ref="Figuur"/>
+        <xs:element ref="table"/>
+        <!-- complete-vocabulaire (buiten profiel compact) -->
+        <xs:element ref="Tussenkop"/>
+        <xs:element ref="Kadertekst"/>
+        <xs:element ref="Groep"/>
+        <xs:element ref="InleidendeTekst"/>
+        <xs:element ref="Aanhef"/>
+        <xs:element ref="Sluiting"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- ================================================================ -->
+  <!-- Complete-vocabulaire (v0.4): elementen buiten profiel compact.    -->
+  <!-- Structuur conform de staart-inventaris 2026-07-17; de conversie   -->
+  <!-- complete->compact degradeert ze met behoud van tekst.             -->
+  <!-- ================================================================ -->
+
+  <xs:element name="Tussenkop">
+    <xs:complexType>
+      <xs:complexContent mixed="true">
+        <xs:extension base="Tekstregel">
+          <xs:attribute name="niveau" type="xs:string"/>
+          <xs:anyAttribute namespace="##other" processContents="skip"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Kadertekst">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Kop"/>
+        <xs:element ref="Al"/>
+        <xs:element ref="Lijst"/>
+        <xs:element ref="Figuur"/>
+        <xs:element ref="table"/>
+        <xs:element ref="Tussenkop"/>
+      </xs:choice>
+      <xs:attributeGroup ref="agTekstId"/>
+      <xs:attribute name="type" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Groep">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Al"/>
+        <xs:element ref="Lijst"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="InleidendeTekst">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Kop"/>
+        <xs:element ref="Al"/>
+        <xs:element ref="Lijst"/>
+        <xs:element ref="Figuur"/>
+      </xs:choice>
+      <xs:attributeGroup ref="agTekstId"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Aanhef">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Al"/>
+        <xs:element name="Considerans">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="Al" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Afkondiging">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="Al" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+      <xs:attributeGroup ref="agTekstId"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Sluiting">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Al"/>
+        <xs:element name="Ondertekening">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="Al" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Slotformulering">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="Al" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Dagtekening">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="Al" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+      <xs:attributeGroup ref="agTekstId"/>
+      <xs:attribute name="stam-id" type="xs:string"/>
+      <xs:attribute name="versie-id" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- ================================================================ -->
+  <!-- CALS-tabellen (v0.3) — in 43,9% van de vigerende regelingen;      -->
+  <!-- attributen conform de praktijk-inventaris 2026-07-17              -->
+  <!-- ================================================================ -->
+
+  <xs:element name="table">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="title" type="Tekstregel"/>
+        <xs:element ref="Bron"/>
+        <xs:element ref="tgroup"/>
+      </xs:choice>
+      <xs:attributeGroup ref="agTekstId"/>
+      <xs:attribute name="frame" type="xs:string"/>
+      <xs:attribute name="colsep" type="xs:string"/>
+      <xs:attribute name="rowsep" type="xs:string"/>
+      <xs:attribute name="tabstyle" type="xs:string"/>
+      <xs:attribute name="pgwide" type="xs:string"/>
+      <xs:attribute name="orient" type="xs:string"/>
+      <xs:attribute name="class" type="xs:string"/>
+      <xs:anyAttribute namespace="##other" processContents="skip"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="tgroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="colspec" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="thead" type="Rijenblok" minOccurs="0"/>
+        <xs:element name="tbody" type="Rijenblok"/>
+      </xs:sequence>
+      <xs:attribute name="cols" type="xs:string" use="required"/>
+      <xs:attribute name="align" type="xs:string"/>
+      <xs:attribute name="colsep" type="xs:string"/>
+      <xs:attribute name="rowsep" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="colspec">
+    <xs:complexType>
+      <xs:attribute name="colname" type="xs:string"/>
+      <xs:attribute name="colnum" type="xs:string"/>
+      <xs:attribute name="colwidth" type="xs:string"/>
+      <xs:attribute name="align" type="xs:string"/>
+      <xs:attribute name="colsep" type="xs:string"/>
+      <xs:attribute name="rowsep" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="Rijenblok">
+    <xs:sequence>
+      <xs:element ref="row" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="valign" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:element name="row">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="entry" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="rowsep" type="xs:string"/>
+      <xs:attribute name="valign" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="entry">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Al"/>
+        <xs:element ref="Lijst"/>
+        <xs:element ref="Figuur"/>
+        <xs:element ref="Tussenkop"/>
+      </xs:choice>
+      <xs:attribute name="valign" type="xs:string"/>
+      <xs:attribute name="colname" type="xs:string"/>
+      <xs:attribute name="align" type="xs:string"/>
+      <xs:attribute name="colsep" type="xs:string"/>
+      <xs:attribute name="rowsep" type="xs:string"/>
+      <xs:attribute name="rotate" type="xs:string"/>
+      <xs:attribute name="namest" type="xs:string"/>
+      <xs:attribute name="nameend" type="xs:string"/>
+      <xs:attribute name="morerows" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Figuur">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <!-- figuur-titel; niet te verwarren met het structuurelement Titel -->
+        <xs:element name="Titel" type="Tekstregel"/>
+        <xs:element ref="Bron"/>
+        <xs:element name="Illustratie">
+          <xs:complexType>
+            <xs:attribute name="naam" type="xs:string" use="required"/>
+            <xs:attribute name="formaat" type="xs:string"/>
+            <xs:attribute name="breedte" type="xs:string"/>
+            <xs:attribute name="hoogte" type="xs:string"/>
+            <xs:attribute name="dpi" type="xs:string"/>
+            <xs:attribute name="uitlijning" type="xs:string"/>
+            <xs:attribute name="alt" type="xs:string"/>
+            <xs:anyAttribute namespace="##other" processContents="skip"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Bijschrift">
+          <xs:complexType mixed="true">
+            <xs:complexContent>
+              <xs:extension base="Tekstregel">
+                <xs:attribute name="locatie" type="xs:string"/>
+              </xs:extension>
+            </xs:complexContent>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+      <xs:attributeGroup ref="agTekstId"/>
+      <!-- vreemde-ns-extensies waargenomen in de praktijk (dso:) -->
+      <xs:anyAttribute namespace="##other" processContents="skip"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Mixed tekst met inline verwijzingen (P8: eenduidige Ow-referenties;
+       karakterpositie is impliciet in de plaats van het element, slide 23).
+       v0.3: opmaak (i/b/u/strong — genest waargenomen) en de Noot-familie
+       toegevoegd op basis van de praktijk-inventaris 2026-07-17. -->
+  <xs:complexType name="Tekstregel" mixed="true">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="IntOwRef" type="InlineRef"/>
+      <xs:element name="ExtOwRef" type="InlineRef"/>
+      <xs:element name="IntIoRef" type="InlineRef"/>
+      <xs:element name="ExtIoRef" type="InlineRef"/>
+      <xs:element name="IntRef" type="InlineRef"/>
+      <xs:element name="ExtRef" type="InlineRef"/>
+      <xs:element name="Nadruk" type="Nadruk"/>
+      <xs:element name="sup" type="Tekstregel"/>
+      <xs:element name="sub" type="Tekstregel"/>
+      <xs:element name="i" type="Tekstregel"/>
+      <xs:element name="b" type="Tekstregel"/>
+      <xs:element name="u" type="Tekstregel"/>
+      <xs:element name="strong" type="Tekstregel"/>
+      <xs:element name="br">
+        <xs:complexType/>
+      </xs:element>
+      <xs:element ref="Noot"/>
+      <xs:element name="Nootref">
+        <xs:complexType>
+          <xs:attribute name="refid" type="xs:string" use="required"/>
+        </xs:complexType>
+      </xs:element>
+      <!-- complete-vocabulaire (buiten profiel compact) -->
+      <xs:element name="abbr">
+        <xs:complexType mixed="true">
+          <xs:attribute name="title" type="xs:string"/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Contact">
+        <xs:complexType mixed="true">
+          <xs:attribute name="adres" type="xs:string"/>
+          <xs:attribute name="soort" type="xs:string"/>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="InlineTekstAfbeelding">
+        <xs:complexType>
+          <xs:attribute name="naam" type="xs:string" use="required"/>
+          <xs:attribute name="formaat" type="xs:string"/>
+          <xs:attribute name="breedte" type="xs:string"/>
+          <xs:attribute name="hoogte" type="xs:string"/>
+          <xs:attribute name="dpi" type="xs:string"/>
+          <xs:attribute name="alt" type="xs:string"/>
+        </xs:complexType>
+      </xs:element>
+    </xs:choice>
+    <!-- vreemde-ns-extensies (renvooi:, dso:) breed toegestaan op de
+         tekstlaag, zoals STOP zelf ook extensie-attributen toelaat -->
+    <xs:anyAttribute namespace="##other" processContents="skip"/>
+  </xs:complexType>
+
+  <xs:complexType name="InlineRef" mixed="true">
+    <xs:attribute name="ref" type="xs:string" use="required"/>
+    <xs:attribute name="scope" type="xs:string"/>
+    <xs:attribute name="soort" type="xs:string"/>
+    <xs:attributeGroup ref="agTekstId"/>
+  </xs:complexType>
+
+  <xs:complexType name="Nadruk">
+    <xs:complexContent mixed="true">
+      <xs:extension base="Tekstregel">
+        <xs:attribute name="soort" type="xs:string"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <!-- Voetnoot: inline in lopende tekst (praktijk: ook binnen b/u/i/title) -->
+  <xs:element name="Noot">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="NootNummer" type="xs:string" minOccurs="0"/>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element ref="Al"/>
+          <xs:element ref="Lijst"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string"/>
+      <xs:attribute name="type" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Bronvermelding (waargenomen bij table en Figuur) -->
+  <xs:element name="Bron" type="Tekstregel"/>
+
+  <xs:element name="Al" type="Tekstregel"/>
+
+  <xs:element name="Lijst">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Lijstaanhef" type="Tekstregel" minOccurs="0"/>
+        <xs:element ref="Li" maxOccurs="unbounded"/>
+        <xs:element name="Lijstsluiting" type="Tekstregel" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="agTekstId"/>
+      <xs:attribute name="type" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Li">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="LiNummer" type="xs:string" minOccurs="0"/>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="Al"/>
+          <xs:element ref="Lijst"/>
+          <xs:element ref="table"/>
+          <xs:element ref="Figuur"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="agTekstId"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Begrippenlijst">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Begrip" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="agTekstId"/>
+      <!-- vreemde-ns-extensies waargenomen in de praktijk (renvooi:) -->
+      <xs:anyAttribute namespace="##other" processContents="skip"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Begrip">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Term" type="Tekstregel"/>
+        <xs:element name="Definitie">
+          <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+              <xs:element ref="Al"/>
+              <xs:element ref="Lijst"/>
+              <xs:element ref="table"/>
+            </xs:choice>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attributeGroup ref="agTekstId"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- ================================================================ -->
+  <!-- Regel: de verliesvrije drager van de juridische-regel-annotatie   -->
+  <!-- Cardinaliteiten volgens slide 9: locatie en idealisatie verplicht -->
+  <!-- ================================================================ -->
+
+  <xs:element name="Regel">
+    <xs:complexType>
+      <xs:sequence>
+        <!-- v0.2: optioneel — zonder Locatieaanduiding wordt de locatie
+             gedestilleerd uit de IntIoRefs van het artikel/lid; een
+             artikel zonder IntIoRefs geldt op het ambtsgebied -->
+        <xs:element ref="Locatieaanduiding" minOccurs="0"/>
+        <xs:element name="GebiedsaanwijzingRef" type="RefNaarObject"
+                    minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="NormRef" type="RefNaarObject"
+                    minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="ActiviteitToedeling"
+                    minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="soort" type="RegelSoort" use="required"/>
+      <xs:attribute name="idealisatie" type="Idealisatie" use="required"/>
+      <xs:attribute name="thema" type="xs:anyURI"/>
+      <!-- bgvdov bij instructieregels (slide 6/9) -->
+      <xs:attribute name="instrument" type="xs:anyURI"/>
+      <xs:attribute name="taakuitoefening" type="xs:anyURI"/>
+      <!-- oorspronkelijke IMOW-identificatie t.b.v. verliesvrije rondreis -->
+      <xs:attribute name="owId" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Vrijetekst-tegenhanger van Regel (slide 7): vervangt het zelfstandige
+       IMOW-object Tekstdeel (P6). thema/idealisatie als attributen;
+       hoofdlijn-duiding, locatie en gebiedsaanwijzing als kinderen. -->
+  <xs:element name="Tekstdeel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Locatieaanduiding" minOccurs="0"/>
+        <xs:element name="GebiedsaanwijzingRef" type="RefNaarObject"
+                    minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="HoofdlijnRef" type="RefNaarObject"
+                    minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="idealisatie" type="Idealisatie"/>
+      <xs:attribute name="thema" type="xs:anyURI"/>
+      <xs:attribute name="owId" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Vervangt het zelfstandige object ActiviteitLocatieaanduiding (P6) -->
+  <xs:element name="ActiviteitToedeling">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Locatieaanduiding" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="activiteitRef" type="xs:string" use="required"/>
+      <xs:attribute name="kwalificatie" type="xs:anyURI" use="required"/>
+      <xs:attribute name="owId" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- ================================================================ -->
+  <!-- OwObjecten: behouden objecten (P7) + normen (P10)                -->
+  <!-- ================================================================ -->
+
+  <xs:element name="OwObjecten">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Activiteit" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="Hoofdlijn" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="Pons" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="Regelingsgebied" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Activiteit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="naam" type="xs:string"/>
+        <xs:element name="groep" type="xs:anyURI" minOccurs="0"/>
+        <xs:element name="bovenliggendeActiviteitRef" type="RefNaarObject"
+                    minOccurs="0"/>
+        <xs:element name="gerelateerdeActiviteitRef" type="RefNaarObject"
+                    minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Hoofdlijn">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="soort" type="xs:string"/>
+        <xs:element name="naam" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Pons">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Locatieaanduiding"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Regelingsgebied">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Locatieaanduiding"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- ================================================================ -->
+  <!-- Geo v0.2: verwijzingen naar de GIO-GML-bestanden (het pakket)     -->
+  <!-- Geometrie en normwaarden leven ín de GML (STOP imop-geo);         -->
+  <!-- STORM dupliceert ze niet. Gebiedsaanwijzing-velden rusten óp      -->
+  <!-- de GIO (P5, slide 12/16).                                         -->
+  <!-- ================================================================ -->
+
+  <xs:element name="Geo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Gio" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="Ambtsgebied" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Gio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Gebiedsaanwijzing" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="work" type="xs:string" use="required"/>
+      <xs:attribute name="expressie" type="xs:string"/>
+      <!-- relatief pad naar het GML-bestand naast storm.xml -->
+      <xs:attribute name="bestand" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- bgvdov: bij gebruik zijn type, naam en groep alle drie verplicht.
+       locatieRef = export-hint: de IMOW-locatie waarop de aanwijzing
+       rustte (ImowLocatie/@owId). -->
+  <xs:element name="Gebiedsaanwijzing">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="type" type="xs:anyURI"/>
+        <xs:element name="naam" type="xs:string"/>
+        <xs:element name="groep" type="xs:anyURI"/>
+      </xs:sequence>
+      <xs:attribute name="owId" type="xs:string"/>
+      <xs:attribute name="locatieRef" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Ambtsgebied">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="noemer" type="xs:string" minOccurs="0"/>
+        <xs:element name="BestuurlijkeGrenzen">
+          <xs:complexType>
+            <xs:attribute name="id" type="xs:string" use="required"/>
+            <xs:attribute name="domein" type="xs:string" use="required"/>
+            <xs:attribute name="geldigOp" type="xs:date"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- ================================================================ -->
+  <!-- Exportregels (v0.2): transformatie-metadata voor de IMOW-export.  -->
+  <!-- Geen STORM-inhoud maar administratie die de doelstandaard nodig   -->
+  <!-- heeft: IMOW-locatie-identiteiten en norm-objecten. Waarden,       -->
+  <!-- geometrie, normnaam/type/eenheid komen uit de GIO-GML zodra een   -->
+  <!-- gioWork gezet is — alleen wat dáár niet in past staat hier        -->
+  <!-- expliciet (soort, groep, waardeInRegeltekst, identiteiten).       -->
+  <!-- ================================================================ -->
+
+  <xs:element name="Exportregels">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ImowLocatie" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="ImowGebiedsaanwijzing" minOccurs="0"
+                    maxOccurs="unbounded"/>
+        <xs:element ref="ImowNorm" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="ImowLocatie">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="LidRef" type="RefNaarObject"
+                    minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="owId" type="xs:string" use="required"/>
+      <xs:attribute name="soort" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Gebied"/>
+            <xs:enumeration value="Gebiedengroep"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="noemer" type="xs:string"/>
+      <!-- Gebied: de basisgeo-id van zijn geometrie in de GML -->
+      <xs:attribute name="basisgeoId" type="xs:string"/>
+      <!-- de GIO waarmee deze locatie 1-op-1 correspondeert; drager
+           van de IntIoRef-destillatie (tekst -> work -> locatie) -->
+      <xs:attribute name="gioWork" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- fallback wanneer een gebiedsaanwijzing niet aan een Gio (work)
+       gehangen kan worden, bv. bij consolidaties zonder GIO-metadata -->
+  <xs:element name="ImowGebiedsaanwijzing">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="type" type="xs:anyURI"/>
+        <xs:element name="naam" type="xs:string"/>
+        <xs:element name="groep" type="xs:anyURI"/>
+        <xs:element name="LocatieRef" type="RefNaarObject"
+                    maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="owId" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="ImowNorm">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Normwaarde" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LocatieRef" type="RefNaarObject"
+                          maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="owId" type="xs:string"/>
+            <!-- alleen wanneer de waarde NIET uit de GML afleidbaar is -->
+            <xs:attribute name="kwantitatieveWaarde" type="xs:string"/>
+            <xs:attribute name="kwalitatieveWaarde" type="xs:string"/>
+            <xs:attribute name="waardeInRegeltekst" type="xs:string"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="owId" type="xs:string" use="required"/>
+      <xs:attribute name="soort" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="omgevingsnorm"/>
+            <xs:enumeration value="omgevingswaarde"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <!-- de GIO die naam/type/eenheid en de waarden per locatie draagt -->
+      <xs:attribute name="gioWork" type="xs:string"/>
+      <!-- alleen wanneer geen gioWork (of afwijkend van de GML) -->
+      <xs:attribute name="naam" type="xs:string"/>
+      <xs:attribute name="type" type="xs:anyURI"/>
+      <xs:attribute name="eenheid" type="xs:anyURI"/>
+      <xs:attribute name="groep" type="xs:anyURI"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- ================================================================ -->
+  <!-- IMTR-module — gebouwd op STTR-voorbeeldbestanden (v1.0 én 3.0.0)  -->
+  <!--                                                                   -->
+  <!-- De STTR-kern (activiteit-koppeling, regelgroepen, vragen,        -->
+  <!-- geo-verwijzingen) is STORM-native. De DMN-beslislogica blijft     -->
+  <!-- verbatim ingebed in Beslislogica: DMN is al een open standaard.  -->
+  <!-- De native laag is een projectie van de ingebedde DMN.            -->
+  <!-- ================================================================ -->
+
+  <xs:element name="ToepasbareRegels">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ToepasbareActiviteit" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="ToepasbareActiviteit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Regelgroep" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="Uitvoeringsregel" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="Beslislogica"/>
+      </xs:sequence>
+      <!-- IMOW-activiteit uit bedr:functioneleStructuurRef: de brug die
+           ActiviteitLocatieaanduiding overbodig maakt (slide 12) -->
+      <xs:attribute name="activiteitRef" type="xs:string"/>
+      <xs:attribute name="soort" type="xs:string"/>
+      <xs:attribute name="naam" type="xs:string"/>
+      <xs:attribute name="namespace" type="xs:anyURI" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Regelgroep">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="id" type="xs:string" use="required"/>
+          <xs:attribute name="prioriteit" type="xs:string"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Uitvoeringsregel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="VraagTekst" type="xs:string" minOccurs="0"/>
+        <!-- geoVerwijzing: de vraag wordt beantwoord door de locatie -->
+        <xs:element name="GioRef" type="RefNaarObject" minOccurs="0"/>
+        <xs:element name="Optie" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute name="sequenceId" type="xs:string"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Toelichting" type="xs:string" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string" use="required"/>
+      <xs:attribute name="regelgroepRef" type="xs:string"/>
+      <xs:attribute name="prioriteit" type="xs:string"/>
+      <xs:attribute name="gegevensType" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- De oorspronkelijke dmn:definitions, verbatim -->
+  <xs:element name="Beslislogica">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:any namespace="##other" processContents="skip"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
