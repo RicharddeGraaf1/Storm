@@ -17,7 +17,7 @@
            xmlns="urn:storm:1.0"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified"
-           version="0.4.0">
+           version="0.5.0">
 
   <!-- ================================================================ -->
   <!-- Root                                                             -->
@@ -31,6 +31,7 @@
         <xs:element ref="OwObjecten" minOccurs="0"/>
         <xs:element ref="Geo" minOccurs="0"/>
         <xs:element ref="Exportregels" minOccurs="0"/>
+        <xs:element ref="Envelop" minOccurs="0"/>
         <xs:element ref="ToepasbareRegels" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="schemaversie" type="xs:string" use="required"/>
@@ -779,6 +780,9 @@
       <xs:attribute name="expressie" type="xs:string"/>
       <!-- relatief pad naar het GML-bestand naast storm.xml -->
       <xs:attribute name="bestand" type="xs:string"/>
+      <!-- relatief pad naar de verbatim bewaarde LVBB-aanleverwrapper
+           (AanleveringInformatieObject: metadata, hash, symbolisatie) -->
+      <xs:attribute name="wrapper" type="xs:string"/>
     </xs:complexType>
   </xs:element>
 
@@ -909,6 +913,35 @@
   </xs:element>
 
   <!-- ================================================================ -->
+  <!-- Envelop (v0.5): de LVBB-aanleveradministratie verbatim bewaard    -->
+  <!-- (AanleveringBesluit zonder de regelingtekst, publicatieOpdracht,  -->
+  <!-- manifest). In het besluit markeert Tekstinvoegpunt de plek waar   -->
+  <!-- de regelingtekst zat; de export klikt de uit STORM geregenereerde -->
+  <!-- tekst daar weer in. Zo is de bhkv-rondreis envelop-verliesvrij.   -->
+  <!-- ================================================================ -->
+
+  <xs:element name="Envelop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Envelopdeel" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:any namespace="##any" processContents="skip"/>
+            </xs:sequence>
+            <!-- bestandsnaam waaronder dit deel wordt uitgeleverd -->
+            <xs:attribute name="bestand" type="xs:string" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- markeert binnen de envelop de plek van de regelingtekst -->
+  <xs:element name="Tekstinvoegpunt">
+    <xs:complexType/>
+  </xs:element>
+
+  <!-- ================================================================ -->
   <!-- IMTR-module — gebouwd op STTR-voorbeeldbestanden (v1.0 én 3.0.0)  -->
   <!--                                                                   -->
   <!-- De STTR-kern (activiteit-koppeling, regelgroepen, vragen,        -->
@@ -938,6 +971,8 @@
       <xs:attribute name="soort" type="xs:string"/>
       <xs:attribute name="naam" type="xs:string"/>
       <xs:attribute name="namespace" type="xs:anyURI" use="required"/>
+      <!-- uit de KV-TR-opdracht (formaat dd-mm-jjjj zoals aangeleverd) -->
+      <xs:attribute name="geldigBegindatum" type="xs:string"/>
     </xs:complexType>
   </xs:element>
 

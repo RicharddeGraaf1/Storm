@@ -41,7 +41,11 @@ PRESENTATIE_TYPEN = {"Kaart", "Kaartlaag", "SymbolisatieItem"}
 # ---------------------------------------------------------------------------
 
 def vind_stop_tekst(bronmap: Path, meldingen):
-    """Zoek de RegelingCompact/RegelingVrijetekst + identificatie."""
+    """Zoek de RegelingCompact/RegelingVrijetekst + identificatie.
+
+    Returns ook het brondocument (wortel + pad): een AanleveringBesluit
+    wordt door de aanroeper verbatim als Envelop bewaard.
+    """
     for pad in sorted(bronmap.glob("*.xml")):
         try:
             wortel = ET.parse(pad).getroot()
@@ -53,11 +57,52 @@ def vind_stop_tekst(bronmap: Path, meldingen):
             if tekst is None and lokale_naam(wortel.tag) == wortelnaam:
                 tekst = wortel
             if tekst is not None:
-                ident = wortel.find(f".//{{{STOP_DATA}}}ExpressionIdentificatie")
+                # bij een besluit-bron staan er meerdere identificaties in;
+                # de régeling (soortWork /act/) is de STORM-identiteit
+                idents = wortel.findall(
+                    f".//{{{STOP_DATA}}}ExpressionIdentificatie")
+                ident = next(
+                    (i for i in idents
+                     if "/act/" in (i.findtext(f"{{{STOP_DATA}}}FRBRWork")
+                                    or "")),
+                    idents[0] if idents else None)
                 versie = wortel.find(f".//{{{STOP_DATA}}}versienummer")
                 print(f"  STOP-tekst ({wortelnaam}) gevonden in {pad.name}")
-                return tekst, structuur, ident, versie
+                return tekst, structuur, ident, versie, wortel, pad
     raise SystemExit(f"Geen RegelingCompact/RegelingVrijetekst in {bronmap}")
+
+
+def bouw_envelop(regeling, bron_wortel, bron_pad, bronmap: Path, meldingen):
+    """Bewaar de LVBB-aanleveradministratie verbatim in een Envelop.
+
+    Het AanleveringBesluit gaat er zonder de regelingtekst in (op die plek
+    komt een Tekstinvoegpunt); de publicatieOpdracht gaat verbatim mee.
+    """
+    import copy
+    if lokale_naam(bron_wortel.tag) != "AanleveringBesluit":
+        return False
+    envelop = _sub(regeling, "Envelop")
+
+    besluit = copy.deepcopy(bron_wortel)
+    for ouder in besluit.iter():
+        for i, kind in enumerate(list(ouder)):
+            if isinstance(kind.tag, str) and lokale_naam(kind.tag) in (
+                    "RegelingCompact", "RegelingVrijetekst"):
+                invoegpunt = ET.Element(f"{S}Tekstinvoegpunt")
+                invoegpunt.tail = kind.tail
+                ouder.remove(kind)
+                ouder.insert(i, invoegpunt)
+    deel = _sub(envelop, "Envelopdeel", bestand=bron_pad.name)
+    deel.append(besluit)
+
+    opdracht_pad = bronmap / "opdracht.xml"
+    if opdracht_pad.is_file():
+        try:
+            deel = _sub(envelop, "Envelopdeel", bestand="opdracht.xml")
+            deel.append(ET.parse(opdracht_pad).getroot())
+        except ET.ParseError:
+            waarschuw(meldingen, "opdracht.xml niet leesbaar; overgeslagen")
+    return True
 
 
 def _hrefs(el, naam):
@@ -296,6 +341,7 @@ def lees_gios(bronmap: Path, meldingen):
     norm (naam/type/eenheid) en waarde-per-basisgeo-id.
     """
     gios = []
+    io_bijlagen = []
     basisgeo_bestanden = {}  # bestandsnaam -> frozenset basisgeo-ids
     for pad in sorted(list(bronmap.glob("*.gml")) + list(bronmap.glob("*.xml"))):
         try:
@@ -323,15 +369,26 @@ def lees_gios(bronmap: Path, meldingen):
                 gios.append({"work": work, "expressie": expr,
                              "bestand": bestand, "basisgeo_ids": None,
                              "norm": None, "waarden": {}, "bron_pad": pad,
-                             "vorm": "aanlevering"})
+                             "wrapper_pad": pad, "vorm": "aanlevering"})
+            elif work and bestand:
+                # niet-geo informatieobject (bv. PDF): wrapper + payload
+                # reizen verbatim mee in het pakket (io/)
+                io_bijlagen.append({"wrapper_pad": pad, "payload": bestand})
     # duplicaten (vaststelling + aanlever-wrapper voor dezelfde work):
-    # de vaststellingsvorm wint, die draagt norm en geometrie direct
+    # de vaststellingsvorm wint (draagt norm en geometrie direct), maar de
+    # wrapper wordt onthouden — die draagt de LVBB-metadata en de hash
     per_work = {}
     for gio in gios:
         bestaand = per_work.get(gio["work"])
-        if bestaand is None or (bestaand.get("vorm") == "aanlevering"
-                                and gio.get("vorm") == "vaststelling"):
+        if bestaand is None:
             per_work[gio["work"]] = gio
+        elif bestaand.get("vorm") == "aanlevering" \
+                and gio.get("vorm") == "vaststelling":
+            gio["wrapper_pad"] = bestaand["bron_pad"]
+            per_work[gio["work"]] = gio
+        elif bestaand.get("vorm") == "vaststelling" \
+                and gio.get("vorm") == "aanlevering":
+            bestaand["wrapper_pad"] = gio["bron_pad"]
     gios = list(per_work.values())
 
     # kale-GML-verwijzingen naresolven
@@ -351,8 +408,10 @@ def lees_gios(bronmap: Path, meldingen):
                 ids = frozenset()
             gio["basisgeo_ids"] = ids
     if gios:
-        print(f"  GIO's gelezen: {len(gios)}")
-    return gios
+        print(f"  GIO's gelezen: {len(gios)}"
+              + (f" (+{len(io_bijlagen)} overige informatieobjecten)"
+                 if io_bijlagen else ""))
+    return gios, io_bijlagen
 
 
 def _lees_gio_versie(wortel, pad):
@@ -433,7 +492,10 @@ FSR_PATROON = re.compile(
 
 
 def lees_toepasbare_regels(imtr_map: Path, meldingen):
-    """Lees STTR-bestanden (DMN met STTR-extensies, v1.0 en 3.0.0)."""
+    """Lees STTR-bestanden: losse DMN's én KV-TR-aanlever-ZIPs
+    (manifest + opdracht + DMN, zoals het Omgevingsloket ze aanlevert)."""
+    import zipfile
+
     resultaten = []
     paden = sorted(imtr_map.glob("*.dmn")) + sorted(imtr_map.glob("*.xml"))
     for pad in paden:
@@ -443,40 +505,66 @@ def lees_toepasbare_regels(imtr_map: Path, meldingen):
             continue
         if lokale_naam(wortel.tag) != "definitions":
             continue
-        tr = {
-            "naam": wortel.get("name"),
-            "namespace": wortel.get("namespace"),
-            "activiteitRef": None,
-            "soort": None,
-            "regelgroepen": [],
-            "uitvoeringsregels": [],
-            "dmn": wortel,  # verbatim ingebed
-            "bestand": pad.name,
-        }
-        for el in wortel.iter():
-            if not isinstance(el.tag, str):
-                continue
-            naam = lokale_naam(el.tag)
-            if naam == "functioneleStructuurRef" and tr["activiteitRef"] is None:
-                m = FSR_PATROON.search(el.get("href") or "")
-                if m:
-                    tr["soort"] = (m.group(1) or "").lower() or None
-                    tr["activiteitRef"] = m.group(2)
-            elif naam == "regelgroep":
-                tr["regelgroepen"].append({
-                    "id": el.get("id"),
-                    "naam": _kindtekst(el, "naam"),
-                    "prioriteit": _kindtekst(el, "prioriteit"),
-                })
-            elif naam == "uitvoeringsregel":
-                tr["uitvoeringsregels"].append(_lees_uitvoeringsregel(el))
-        if tr["activiteitRef"] is None:
-            waarschuw(meldingen, f"{pad.name}: geen IMOW-activiteit gevonden "
-                                 f"in functioneleStructuurRef")
-        resultaten.append(tr)
-        print(f"  STTR gelezen: {pad.name} "
-              f"({len(tr['uitvoeringsregels'])} uitvoeringsregels)")
+        resultaten.append(_lees_sttr(wortel, pad.name, None, meldingen))
+    for pad in sorted(imtr_map.glob("*.zip")):
+        with zipfile.ZipFile(pad) as zf:
+            begindatum = None
+            for lid in zf.namelist():
+                if lid.lower().endswith("opdrachtaanleverentoepasbareregels.xml"):
+                    try:
+                        opdracht = ET.fromstring(zf.read(lid))
+                        begindatum = _kindtekst(opdracht, "geldigBegindatum")
+                    except ET.ParseError:
+                        pass
+            for lid in zf.namelist():
+                if not lid.lower().endswith(".dmn"):
+                    continue
+                try:
+                    wortel = ET.fromstring(zf.read(lid))
+                except ET.ParseError:
+                    waarschuw(meldingen, f"{pad.name}:{lid} niet leesbaar")
+                    continue
+                if lokale_naam(wortel.tag) == "definitions":
+                    resultaten.append(_lees_sttr(wortel, f"{pad.name}:{lid}",
+                                                 begindatum, meldingen))
     return resultaten
+
+
+def _lees_sttr(wortel, bron_naam, geldig_begindatum, meldingen):
+    tr = {
+        "naam": wortel.get("name"),
+        "namespace": wortel.get("namespace"),
+        "activiteitRef": None,
+        "soort": None,
+        "geldigBegindatum": geldig_begindatum,
+        "regelgroepen": [],
+        "uitvoeringsregels": [],
+        "dmn": wortel,  # verbatim ingebed
+        "bestand": bron_naam,
+    }
+    for el in wortel.iter():
+        if not isinstance(el.tag, str):
+            continue
+        naam = lokale_naam(el.tag)
+        if naam == "functioneleStructuurRef" and tr["activiteitRef"] is None:
+            m = FSR_PATROON.search(el.get("href") or "")
+            if m:
+                tr["soort"] = (m.group(1) or "").lower() or None
+                tr["activiteitRef"] = m.group(2)
+        elif naam == "regelgroep":
+            tr["regelgroepen"].append({
+                "id": el.get("id"),
+                "naam": _kindtekst(el, "naam"),
+                "prioriteit": _kindtekst(el, "prioriteit"),
+            })
+        elif naam == "uitvoeringsregel":
+            tr["uitvoeringsregels"].append(_lees_uitvoeringsregel(el))
+    if tr["activiteitRef"] is None:
+        waarschuw(meldingen, f"{bron_naam}: geen IMOW-activiteit gevonden "
+                             f"in functioneleStructuurRef")
+    print(f"  STTR gelezen: {bron_naam} "
+          f"({len(tr['uitvoeringsregels'])} uitvoeringsregels)")
+    return tr
 
 
 def _lees_uitvoeringsregel(el):
@@ -519,7 +607,8 @@ def bouw_toepasbare_regels(regeling, toepasbaar):
     for tr in toepasbaar:
         el = _sub(wortel, "ToepasbareActiviteit",
                   activiteitRef=tr["activiteitRef"], soort=tr["soort"],
-                  naam=tr["naam"], namespace=tr["namespace"])
+                  naam=tr["naam"], namespace=tr["namespace"],
+                  geldigBegindatum=tr["geldigBegindatum"])
         for groep in tr["regelgroepen"]:
             _sub(el, "Regelgroep", groep["naam"], id=groep["id"],
                  prioriteit=groep["prioriteit"])
@@ -771,8 +860,10 @@ def bouw_geo(regeling, ow, gios, loc_giowork, meldingen):
             aanwijzing_rest.append(ga)
 
     for gio in gios:
+        wrapper = gio.get("wrapper_pad")
         el = _sub(geo, "Gio", work=gio["work"], expressie=gio["expressie"],
-                  bestand=f"gio/{gio['bestand']}")
+                  bestand=f"gio/{gio['bestand']}",
+                  wrapper=f"gio/{wrapper.name}" if wrapper else None)
         ga = aanwijzing_per_work.get(gio["work"])
         if ga:
             ga_el = _sub(el, "Gebiedsaanwijzing", owId=ga["id"],
@@ -863,16 +954,21 @@ def _vind_norm_gio(norm, gios, loc_basisgeo):
 
 def converteer(bronmap: Path, doel: Path,
                imtr_map: Path | None = None) -> list[str]:
+    from .storm_common import STORM_XSD_URL, XSI
+
     meldingen: list[str] = []
     print(f"Bron: {bronmap}")
-    compact, structuur, ident_el, versie_el = vind_stop_tekst(bronmap, meldingen)
+    compact, structuur, ident_el, versie_el, bron_wortel, bron_pad = \
+        vind_stop_tekst(bronmap, meldingen)
     ow = lees_ow_objecten(bronmap, meldingen)
-    gios = lees_gios(bronmap, meldingen)
+    gios, io_bijlagen = lees_gios(bronmap, meldingen)
     loc_basisgeo, werk_locatie, loc_giowork = bereken_locatie_mappings(ow, gios)
     toepasbaar = (lees_toepasbare_regels(imtr_map, meldingen)
                   if imtr_map else [])
 
-    regeling = ET.Element(f"{S}Regeling", {"schemaversie": "0.2.0"})
+    regeling = ET.Element(f"{S}Regeling", {"schemaversie": "0.5.0"})
+    regeling.set(f"{{{XSI}}}schemaLocation",
+                 f"{STORM} {STORM_XSD_URL}")
     bouw_identificatie(regeling, ident_el, versie_el)
 
     tekst_el = ET.SubElement(regeling, f"{S}Tekst", {"structuur": structuur})
@@ -887,11 +983,12 @@ def converteer(bronmap: Path, doel: Path,
     aanwijzing_rest = bouw_geo(regeling, ow, gios, loc_giowork, meldingen)
     bouw_exportregels(regeling, ow, gios, loc_basisgeo, loc_giowork,
                       aanwijzing_rest, meldingen)
+    envelop = bouw_envelop(regeling, bron_wortel, bron_pad, bronmap, meldingen)
     if toepasbaar:
         bouw_toepasbare_regels(regeling, toepasbaar)
 
     doel.parent.mkdir(parents=True, exist_ok=True)
-    # GML-pakket: de GIO-bestanden verbatim naast storm.xml
+    # GML-pakket: GIO-bestanden + aanleverwrappers verbatim naast storm.xml
     if gios:
         gio_map = doel.parent / "gio"
         gio_map.mkdir(exist_ok=True)
@@ -899,6 +996,18 @@ def converteer(bronmap: Path, doel: Path,
             bron_gml = bronmap / gio["bestand"]
             if bron_gml.exists():
                 shutil.copy2(bron_gml, gio_map / gio["bestand"])
+            wrapper = gio.get("wrapper_pad")
+            if wrapper and wrapper.exists():
+                shutil.copy2(wrapper, gio_map / wrapper.name)
+    # overige informatieobjecten (bv. PDF-bijlagen) verbatim in io/
+    if io_bijlagen:
+        io_map = doel.parent / "io"
+        io_map.mkdir(exist_ok=True)
+        for io in io_bijlagen:
+            shutil.copy2(io["wrapper_pad"], io_map / io["wrapper_pad"].name)
+            payload = bronmap / io["payload"]
+            if payload.exists():
+                shutil.copy2(payload, io_map / io["payload"])
     # alleen_ns: niet inspringen binnen ingebedde DMN (Beslislogica)
     schrijf_xml(regeling, doel, default_ns=STORM, alleen_ns=STORM)
 
@@ -916,6 +1025,7 @@ def converteer(bronmap: Path, doel: Path,
     print(f"  imow-locaties in exportregels   : "
           f"{len(ow['gebieden']) + len(ow['gebiedengroepen'])}")
     print(f"  normen in exportregels          : {len(ow['normen'])}")
+    print(f"  envelop (LVBB-administratie)    : {'ja' if envelop else 'nee'}")
     print(f"  toepasbare-regelbestanden       : {len(toepasbaar)}")
     print(f"  waarschuwingen                  : {len(meldingen)}")
     return meldingen

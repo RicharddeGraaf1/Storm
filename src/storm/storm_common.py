@@ -27,6 +27,16 @@ XLINK_HREF = f"{{{XLINK}}}href"
 STOP_GEO = "https://standaarden.overheid.nl/stop/imop/geo/"
 BASISGEO = "http://www.geostandaarden.nl/basisgeometrie/1.0"
 
+LVBB_AANLEVERING = "https://standaarden.overheid.nl/lvbb/stop/aanlevering/"
+LVBB_OPDRACHT = "http://www.overheid.nl/2017/lvbb"
+IMOW_MANIFEST_OW = "http://www.geostandaarden.nl/bestanden-ow/manifest-ow"
+
+XSI = "http://www.w3.org/2001/XMLSchema-instance"
+ET.register_namespace("xsi", XSI)
+# online schema-verwijzing zodat documenten in bv. Oxygen direct valideren
+STORM_XSD_URL = ("https://raw.githubusercontent.com/RicharddeGraaf1/Storm/"
+                 "main/standaard/xsd/storm.xsd")
+
 # Idealisatie: IMOW-waardelijst-URI <-> STORM-enumeratie
 IDEALISATIE_URI = {
     "exact": "http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact",

@@ -1,5 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<Regeling xmlns="urn:storm:1.0" schemaversie="0.2.0">
+<Regeling xmlns="urn:storm:1.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="urn:storm:1.0 https://raw.githubusercontent.com/RicharddeGraaf1/Storm/main/standaard/xsd/storm.xsd"
+          schemaversie="0.5.0">
    <Identificatie>
       <FRBRWork>/akn/nl/act/gm9999/2026/mini</FRBRWork>
       <soortWork>/join/id/stop/work_019</soortWork>

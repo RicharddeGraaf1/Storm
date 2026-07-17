@@ -58,6 +58,31 @@ def rondreis(bronmap: Path, doelmap: Path, imtr: Path | None):
 
 @cli.command()
 @click.argument("storm_xml", type=click.Path(exists=True, path_type=Path))
+@click.argument("doelmap", type=click.Path(path_type=Path))
+@click.option("--zip", "maak_zip", is_flag=True,
+              help="pak de aanlevering ook in als ZIP")
+@click.option("--id-levering")
+@click.option("--datum-bekendmaking")
+def storm2bhkv(storm_xml: Path, doelmap: Path, maak_zip: bool,
+               id_levering: str | None, datum_bekendmaking: str | None):
+    """STORM-pakket -> LVBB-aanleverpakket (besluit, GIO's, OW, manifesten)."""
+    from .adapters.bhkv import storm2bhkv as export
+    export(storm_xml, doelmap, maak_zip, id_levering, datum_bekendmaking)
+
+
+@cli.command()
+@click.argument("storm_xml", type=click.Path(exists=True, path_type=Path))
+@click.argument("doelmap", type=click.Path(path_type=Path))
+@click.option("--geldig-begindatum")
+def storm2imtr(storm_xml: Path, doelmap: Path,
+               geldig_begindatum: str | None):
+    """STORM-pakket -> KV-TR-aanlever-ZIPs (één per regelbestand)."""
+    from .adapters.imtr import storm2imtr as export
+    export(storm_xml, doelmap, geldig_begindatum)
+
+
+@cli.command()
+@click.argument("storm_xml", type=click.Path(exists=True, path_type=Path))
 @click.argument("doel", type=click.Path(path_type=Path))
 def complete2compact(storm_xml: Path, doel: Path):
     """Degradeer een STORM-document naar profiel compact (tekstbehoud)."""

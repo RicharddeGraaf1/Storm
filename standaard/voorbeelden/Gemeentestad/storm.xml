@@ -1,0 +1,1980 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Regeling xmlns="urn:storm:1.0" xmlns:ns1="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:ns2="http://toepasbare-regels.omgevingswet.overheid.nl/v1.0/Interactieregel" xmlns:ns3="http://toepasbare-regels.omgevingswet.overheid.nl/v1.0/Uitvoeringsregel" xmlns:ns4="http://www.trisotech.com/2015/triso/modeling" xmlns:ns5="http://toepasbare-regels.omgevingswet.overheid.nl/v1.0/Bedrijfsregel" xmlns:ns6="http://toepasbare-regels.omgevingswet.overheid.nl/v1.0/Content" schemaversie="0.2.0">
+   <Identificatie>
+      <FRBRWork>/akn/nl/bill/gm0297/2019/3520</FRBRWork>
+      <FRBRExpression>/akn/nl/bill/gm0297/2019/3520/nld@2019</FRBRExpression>
+      <soortWork>/join/id/stop/work_003</soortWork>
+      <versienummer>1</versienummer>
+      <bevoegdGezag>gm0297</bevoegdGezag>
+   </Identificatie>
+   <Tekst structuur="compact" componentnaam="initieel_reg" wordt="/akn/nl/act/gm0297/2019/reg456/nld@1">
+      <RegelingOpschrift eId="longTitle" wId="longTitle">
+         <Al>Omgevingsplan Zaltbommel (met de nadruk op Zuilichem)</Al>
+      </RegelingOpschrift>
+      <Lichaam eId="body" wId="body">
+         <Hoofdstuk eId="chp_1" wId="gm0297_1__chp_1">
+            <Kop>
+               <Label>Hoofdstuk</Label>
+               <Nummer>1</Nummer>
+               <Opschrift>Algemene bepalingen</Opschrift>
+            </Kop>
+            <Artikel eId="chp_1__art_1.4" wId="gm0297_1__chp_1__art_1.4" owId="nl.imow-gm0297.regeltekst.2019000116" regelType="regelVoorIedereen" idealisatie="exact">
+               <Kop>
+                  <Label>Artikel</Label>
+                  <Nummer>1.4</Nummer>
+                  <Opschrift>Toepassingsgebied</Opschrift>
+               </Kop>
+               <Regel soort="regelVoorIedereen" idealisatie="exact" owId="nl.imow-gm0297.juridischeregel.2019000019" />
+               <Inhoud>
+                  <Al>Dit omgevingsplan is van toepassing in Zaltbommel.</Al>
+               </Inhoud>
+            </Artikel>
+         </Hoofdstuk>
+         <Hoofdstuk eId="chp_2" wId="gm0297_1__chp_2">
+            <Kop>
+               <Label>Hoofdstuk</Label>
+               <Nummer>2</Nummer>
+               <Opschrift>Functietoedeling</Opschrift>
+            </Kop>
+            <Afdeling eId="chp_2__subchp_2.2" wId="gm0297_1__chp_2__subchp_2.2">
+               <Kop>
+                  <Label>Afdeling</Label>
+                  <Nummer>2.2</Nummer>
+                  <Opschrift>Bedrijf categorie 2</Opschrift>
+               </Kop>
+               <Artikel eId="chp_2__subchp_2.2__art_2.3" wId="gm0297_1__chp_2__subchp_2.2__art_2.3" owId="nl.imow-gm0297.regeltekst.2019000001" regelType="regelVoorIedereen" idealisatie="exact">
+                  <Kop>
+                     <Label>Artikel</Label>
+                     <Nummer>2.3</Nummer>
+                     <Opschrift>Doel functietoedeling</Opschrift>
+                  </Kop>
+                  <Regel soort="regelVoorIedereen" idealisatie="exact" owId="nl.imow-gm0297.juridischeregel.2019000001">
+                     <GebiedsaanwijzingRef ref="nl.imow-gm0297.gebiedsaanwijzing.2019000001" />
+                  </Regel>
+                  <Inhoud>
+                     <Al>Het werkingsgebied van de functie '<IntIoRef eId="chp_2__subchp_2.2__art_2.3__ref_o_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.3__ref_o_1" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1">Bedrijf categorie 2</IntIoRef>' is bedoeld voor het verrichten van gebruiksactiviteiten die passen bij een bedrijf met een lichte milieucategorie met een beperkte uitstraling op het omringende gebied. </Al>
+                  </Inhoud>
+               </Artikel>
+               <Artikel eId="chp_2__subchp_2.2__art_2.4" wId="gm0297_1__chp_2__subchp_2.2__art_2.4" owId="nl.imow-gm0297.regeltekst.2019000002">
+                  <Kop>
+                     <Label>Artikel</Label>
+                     <Nummer>2.4</Nummer>
+                     <Opschrift>Gebruiksactiviteiten die zonder vergunning of melding zijn toegestaan</Opschrift>
+                  </Kop>
+                  <Regel soort="regelVoorIedereen" idealisatie="exact" owId="nl.imow-gm0297.juridischeregel.2019000002">
+                     <Locatieaanduiding>
+                        <GioRef ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2" />
+                     </Locatieaanduiding>
+                     <ActiviteitToedeling activiteitRef="nl.imow-gm0297.activiteit.2019000241" kwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan" owId="nl.imow-gm0297.activiteitlocatieaanduiding.2019000001">
+                        <Locatieaanduiding>
+                           <GioRef ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2" />
+                        </Locatieaanduiding>
+                     </ActiviteitToedeling>
+                  </Regel>
+                  <Regel soort="regelVoorIedereen" idealisatie="exact" owId="nl.imow-gm0297.juridischeregel.2019000003">
+                     <Locatieaanduiding>
+                        <GioRef ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2" />
+                     </Locatieaanduiding>
+                     <ActiviteitToedeling activiteitRef="nl.imow-gm0297.activiteit.2019000530" kwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan" owId="nl.imow-gm0297.activiteitlocatieaanduiding.2019000002">
+                        <Locatieaanduiding>
+                           <GioRef ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2" />
+                        </Locatieaanduiding>
+                     </ActiviteitToedeling>
+                  </Regel>
+                  <Regel soort="regelVoorIedereen" idealisatie="exact" owId="nl.imow-gm0297.juridischeregel.2019000004">
+                     <Locatieaanduiding>
+                        <GioRef ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2" />
+                     </Locatieaanduiding>
+                     <ActiviteitToedeling activiteitRef="nl.imow-gm0297.activiteit.2019000243" kwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan" owId="nl.imow-gm0297.activiteitlocatieaanduiding.2019000003">
+                        <Locatieaanduiding>
+                           <GioRef ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2" />
+                        </Locatieaanduiding>
+                     </ActiviteitToedeling>
+                  </Regel>
+                  <Regel soort="regelVoorIedereen" idealisatie="exact" owId="nl.imow-gm0297.juridischeregel.2019000005">
+                     <Locatieaanduiding>
+                        <GioRef ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2" />
+                     </Locatieaanduiding>
+                     <ActiviteitToedeling activiteitRef="nl.imow-gm0297.activiteit.2019000244" kwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan" owId="nl.imow-gm0297.activiteitlocatieaanduiding.2019000004">
+                        <Locatieaanduiding>
+                           <GioRef ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2" />
+                        </Locatieaanduiding>
+                     </ActiviteitToedeling>
+                  </Regel>
+                  <Regel soort="regelVoorIedereen" idealisatie="exact" owId="nl.imow-gm0297.juridischeregel.2019000006">
+                     <Locatieaanduiding>
+                        <GioRef ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2" />
+                     </Locatieaanduiding>
+                     <ActiviteitToedeling activiteitRef="nl.imow-gm0297.activiteit.2019000245" kwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan" owId="nl.imow-gm0297.activiteitlocatieaanduiding.2019000005">
+                        <Locatieaanduiding>
+                           <GioRef ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2" />
+                        </Locatieaanduiding>
+                     </ActiviteitToedeling>
+                  </Regel>
+                  <Regel soort="regelVoorIedereen" idealisatie="exact" owId="nl.imow-gm0297.juridischeregel.2019000007">
+                     <Locatieaanduiding>
+                        <GioRef ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2" />
+                     </Locatieaanduiding>
+                     <ActiviteitToedeling activiteitRef="nl.imow-gm0297.activiteit.2019000246" kwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan" owId="nl.imow-gm0297.activiteitlocatieaanduiding.2019000006">
+                        <Locatieaanduiding>
+                           <GioRef ref="nl.imow-gm0297.gebiedengroep.zoneA" />
+                        </Locatieaanduiding>
+                     </ActiviteitToedeling>
+                  </Regel>
+                  <Inhoud>
+                     <Al>Ter plaatse van het werkingsgebied van de functie '<IntIoRef eId="chp_2__subchp_2.2__art_2.4__ref_o_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.4__ref_o_1" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1">Bedrijf categorie 2</IntIoRef>' mogen de locatie en de daarop voorkomende bouwwerken in ieder geval worden gebruikt voor het verrichten van de volgende gebruiksactiviteiten:</Al>
+                     <Lijst eId="chp_2__subchp_2.2__art_2.4__list_o_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.4__list_o_1" type="expliciet">
+                        <Li eId="chp_2__subchp_2.2__art_2.4__list_o_1__item_a" wId="gm0297_1__chp_2__subchp_2.2__art_2.4__list_o_1__item_a">
+                           <LiNummer>a.</LiNummer>
+                           <Al>het uitoefenen van bedrijfstypen van categorie 2 die voorkomen op de bij deze regels behorende<IntRef ref="cmp_III__content_o_1" scope="Divisietekst">Lijst van toegelaten bedrijfstypen</IntRef> ; </Al>
+                        </Li>
+                        <Li eId="chp_2__subchp_2.2__art_2.4__list_o_1__item_b" wId="gm0297_1__chp_2__subchp_2.2__art_2.4__list_o_1__item_b">
+                           <LiNummer>b.</LiNummer>
+                           <Al>het wonen in een bedrijfswoning ;</Al>
+                        </Li>
+                        <Li eId="chp_2__subchp_2.2__art_2.4__list_o_1__item_c" wId="gm0297_1__chp_2__subchp_2.2__art_2.4__list_o_1__item_c">
+                           <LiNummer>c.</LiNummer>
+                           <Al>het aanleggen en instandhouden van nutsvoorzieningen </Al>
+                        </Li>
+                        <Li eId="chp_2__subchp_2.2__art_2.4__list_o_1__item_d" wId="gm0297_1__chp_2__subchp_2.2__art_2.4__list_o_1__item_d">
+                           <LiNummer>d.</LiNummer>
+                           <Al>het aanleggen en instandhouden van voorzieningen voor de waterhuishouding;</Al>
+                        </Li>
+                        <Li eId="chp_2__subchp_2.2__art_2.4__list_o_1__item_e" wId="gm0297_1__chp_2__subchp_2.2__art_2.4__list_o_1__item_e">
+                           <LiNummer>e.</LiNummer>
+                           <Al>het aanleggen en instandhouden van tuin en/of erf.</Al>
+                        </Li>
+                        <Li eId="chp_2__subchp_2.2__art_2.4__list_o_1__item_f" wId="gm0297_1__chp_2__subchp_2.2__art_2.4__list_o_1__item_f">
+                           <LiNummer>f.</LiNummer>
+                           <Al>het uitoefenen van detailhandel in ter plaatse vervaardigde goederen, voor zover deze binnen ‘<IntIoRef eId="chp_2__subchp_2.2__art_2.4__list_o_1__item_f__ref_o_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.4__list_o_1__item_f__ref_o_1" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_6__ref_o_1">Zone A</IntIoRef>’ van het werkingsgebied ‘<IntIoRef eId="chp_2__subchp_2.2__art_2.4__list_o_1__item_f__ref_o_2" wId="gm0297_1__chp_2__subchp_2.2__art_2.4__list_o_1__item_f__ref_o_2" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1">Bedrijf categorie 2</IntIoRef>’ plaatsvinden.</Al>
+                        </Li>
+                     </Lijst>
+                  </Inhoud>
+               </Artikel>
+               <Artikel eId="chp_2__subchp_2.2__art_2.5" wId="gm0297_1__chp_2__subchp_2.2__art_2.5" owId="nl.imow-gm0297.regeltekst.2019000003">
+                  <Kop>
+                     <Label>Artikel</Label>
+                     <Nummer>2.5</Nummer>
+                     <Opschrift>Gebruiksactiviteiten die verboden zijn</Opschrift>
+                  </Kop>
+                  <Regel soort="regelVoorIedereen" idealisatie="exact" owId="nl.imow-gm0297.juridischeregel.2019000008">
+                     <ActiviteitToedeling activiteitRef="nl.imow-gm0297.activiteit.2019000730" kwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Verbod" owId="nl.imow-gm0297.activiteitlocatieaanduiding.2019000007">
+                        <Locatieaanduiding>
+                           <GioRef ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2" />
+                        </Locatieaanduiding>
+                     </ActiviteitToedeling>
+                  </Regel>
+                  <Regel soort="regelVoorIedereen" idealisatie="exact" owId="nl.imow-gm0297.juridischeregel.2019000009">
+                     <ActiviteitToedeling activiteitRef="nl.imow-gm0297.activiteit.2019000740" kwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Verbod" owId="nl.imow-gm0297.activiteitlocatieaanduiding.2019000008">
+                        <Locatieaanduiding>
+                           <GioRef ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2" />
+                        </Locatieaanduiding>
+                     </ActiviteitToedeling>
+                  </Regel>
+                  <Regel soort="regelVoorIedereen" idealisatie="exact" owId="nl.imow-gm0297.juridischeregel.2019000010">
+                     <ActiviteitToedeling activiteitRef="nl.imow-gm0297.activiteit.2019000750" kwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Verbod" owId="nl.imow-gm0297.activiteitlocatieaanduiding.2019000009">
+                        <Locatieaanduiding>
+                           <GioRef ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2" />
+                        </Locatieaanduiding>
+                     </ActiviteitToedeling>
+                  </Regel>
+                  <Inhoud>
+                     <Al>Ter plaatse van het werkingsgebied van de functie '<IntIoRef eId="chp_2__subchp_2.2__art_2.5__ref_o_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.5__ref_o_1" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1">Bedrijf categorie 2</IntIoRef>' is het verboden de locatie en de daarop voorkomende bouwwerken te gebruiken:</Al>
+                     <Lijst eId="chp_2__subchp_2.2__art_2.5__list_o_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.5__list_o_1" type="expliciet">
+                        <Li eId="chp_2__subchp_2.2__art_2.5__list_o_1__item_a" wId="gm0297_1__chp_2__subchp_2.2__art_2.5__list_o_1__item_a">
+                           <LiNummer>a.</LiNummer>
+                           <Al>voor het exploiteren van inrichtingen als bedoeld in artikel 2.1 lid 3 juncto Bijlage 1 onderdeel D van het Besluit omgevingsrecht;</Al>
+                        </Li>
+                        <Li eId="chp_2__subchp_2.2__art_2.5__list_o_1__item_b" wId="gm0297_1__chp_2__subchp_2.2__art_2.5__list_o_1__item_b">
+                           <LiNummer>b.</LiNummer>
+                           <Al>voor het exploiteren van risicovolle inrichtingen;</Al>
+                        </Li>
+                        <Li eId="chp_2__subchp_2.2__art_2.5__list_o_1__item_c" wId="gm0297_1__chp_2__subchp_2.2__art_2.5__list_o_1__item_c">
+                           <LiNummer>c.</LiNummer>
+                           <Al>als opslagterrein, voor zover het betreft het gebied gelegen voor de voorgevels van de bedrijfsgebouwen. </Al>
+                        </Li>
+                     </Lijst>
+                  </Inhoud>
+               </Artikel>
+               <Artikel eId="chp_2__subchp_2.2__art_2.6" wId="gm0297_1__chp_2__subchp_2.2__art_2.6">
+                  <Kop>
+                     <Label>Artikel</Label>
+                     <Nummer>2.6</Nummer>
+                     <Opschrift>Gebruiksactiviteiten die zijn toegelaten na voorafgaande melding</Opschrift>
+                  </Kop>
+                  <Lid eId="chp_2__subchp_2.2__art_2.6__para_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.6__para_1" owId="nl.imow-gm0297.regeltekst.2019000004" regelType="regelVoorIedereen" idealisatie="exact">
+                     <LidNummer>1.</LidNummer>
+                     <Regel soort="regelVoorIedereen" idealisatie="exact" owId="nl.imow-gm0297.juridischeregel.2019000011">
+                        <Locatieaanduiding>
+                           <GioRef ref="nl.imow-gm0297.gebiedengroep.zoneB" />
+                        </Locatieaanduiding>
+                        <ActiviteitToedeling activiteitRef="nl.imow-gm0297.activiteit.2019000590" kwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Meldingsplicht" owId="nl.imow-gm0297.activiteitlocatieaanduiding.2019000010">
+                           <Locatieaanduiding>
+                              <GioRef ref="nl.imow-gm0297.gebiedengroep.zoneB" />
+                           </Locatieaanduiding>
+                        </ActiviteitToedeling>
+                     </Regel>
+                     <Inhoud>
+                        <Al>Meldingplichtige gebruiksactiviteiten</Al>
+                        <Al>Ter plaatse van het werkingsgebied van de functie '<IntIoRef eId="chp_2__subchp_2.2__art_2.6__para_1__ref_o_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.6__para_1__ref_o_1" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1">Bedrijf categorie 2</IntIoRef>' is het binnen '<IntIoRef eId="chp_2__subchp_2.2__art_2.6__para_1__ref_o_2" wId="gm0297_1__chp_2__subchp_2.2__art_2.6__para_1__ref_o_2" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_7__ref_o_1">Zone B</IntIoRef>' verboden de gebruiksactiviteit 'het uitoefenen van detailhandel in ter plaatse vervaardigde goederen' te verrichten zonder dat daarvoor aan het bevoegd gezag een melding is gedaan</Al>
+                     </Inhoud>
+                  </Lid>
+                  <Lid eId="chp_2__subchp_2.2__art_2.6__para_2" wId="gm0297_1__chp_2__subchp_2.2__art_2.6__para_2">
+                     <LidNummer>2.</LidNummer>
+                     <Inhoud>
+                        <Al>Indieningsvereisten melding</Al>
+                        <Al>Bij het doen van de melding dienen de volgende indieningsvereisten in acht te worden genomen:</Al>
+                        <Lijst eId="chp_2__subchp_2.2__art_2.6__para_2__list_o_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.6__para_2__list_o_1" type="expliciet">
+                           <Li eId="chp_2__subchp_2.2__art_2.6__para_2__list_o_1__item_a" wId="gm0297_1__chp_2__subchp_2.2__art_2.6__para_2__list_o_1__item_a">
+                              <LiNummer>a.</LiNummer>
+                              <Al>de melding dient te worden gedaan door middel van het inzenden van het bij deze regels behorende Formulier Melding;</Al>
+                           </Li>
+                           <Li eId="chp_2__subchp_2.2__art_2.6__para_2__list_o_1__item_b" wId="gm0297_1__chp_2__subchp_2.2__art_2.6__para_2__list_o_1__item_b">
+                              <LiNummer>b.</LiNummer>
+                              <Al>toegevoegd moet worden een terreininrichtingstekening. </Al>
+                           </Li>
+                        </Lijst>
+                     </Inhoud>
+                  </Lid>
+               </Artikel>
+               <Artikel eId="chp_2__subchp_2.2__art_2.7" wId="gm0297_1__chp_2__subchp_2.2__art_2.7">
+                  <Kop>
+                     <Label>Artikel</Label>
+                     <Nummer>2.7</Nummer>
+                     <Opschrift>Gebruiksactiviteiten die zijn toegelaten nadat daarvoor omgevingsvergunning is verleend</Opschrift>
+                  </Kop>
+                  <Lid eId="chp_2__subchp_2.2__art_2.7__para_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_1" owId="nl.imow-gm0297.regeltekst.2019000007" regelType="regelVoorIedereen" idealisatie="exact">
+                     <LidNummer>1.</LidNummer>
+                     <Regel soort="regelVoorIedereen" idealisatie="exact" owId="nl.imow-gm0297.juridischeregel.2019000012">
+                        <ActiviteitToedeling activiteitRef="nl.imow-gm0297.activiteit.2019000540" kwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Vergunningplicht" owId="nl.imow-gm0297.activiteitlocatieaanduiding.2019000011">
+                           <Locatieaanduiding>
+                              <GioRef ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2" />
+                           </Locatieaanduiding>
+                        </ActiviteitToedeling>
+                        <ActiviteitToedeling activiteitRef="nl.imow-gm0297.activiteit.2019000760" kwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Vergunningplicht" owId="nl.imow-gm0297.activiteitlocatieaanduiding.2019000013">
+                           <Locatieaanduiding>
+                              <GioRef ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2" />
+                           </Locatieaanduiding>
+                        </ActiviteitToedeling>
+                     </Regel>
+                     <Inhoud>
+                        <Al>Vergunningplichtige gebruiksactiviteiten</Al>
+                        <Al>Ter plaatse van het werkingsgebied van de functie '<IntIoRef eId="chp_2__subchp_2.2__art_2.7__para_1__ref_o_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_1__ref_o_1" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1">Bedrijf categorie 2</IntIoRef>' is het verboden om zonder omgevingsvergunning de gebruiksactiviteit 'het exploiteren van een verkooppunt voor motorbrandstoffen niet zijnde lpg' te verrichten. Daarnaast is het eveneens verboden om deze gebruiksactiviteit uit te voeren zonder een vergunning voor de milieubelastende activiteit ‘het opslaan van motorbrandstoffen niet zijnde lpg’, zoals beschreven in Artikel 13.24.</Al>
+                     </Inhoud>
+                  </Lid>
+                  <Lid eId="chp_2__subchp_2.2__art_2.7__para_2" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_2">
+                     <LidNummer>2.</LidNummer>
+                     <Inhoud>
+                        <Al>Indieningsvereisten aanvraag omgevingsvergunning</Al>
+                        <Al>Bij het indienen van de aanvraag om omgevingsvergunning dienen de volgende indieningsvereisten in acht te worden genomen:</Al>
+                        <Lijst eId="chp_2__subchp_2.2__art_2.7__para_2__list_o_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_2__list_o_1" type="expliciet">
+                           <Li eId="chp_2__subchp_2.2__art_2.7__para_2__list_o_1__item_a" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_2__list_o_1__item_a">
+                              <LiNummer>a.</LiNummer>
+                              <Al>de aanvraag dient te worden ingediend door middel van het inzenden van het bij deze regels behorende Formulier Aanvraag omgevingsvergunning;</Al>
+                           </Li>
+                           <Li eId="chp_2__subchp_2.2__art_2.7__para_2__list_o_1__item_b" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_2__list_o_1__item_b">
+                              <LiNummer>b.</LiNummer>
+                              <Al>toegevoegd moet worden een terreininrichtingstekening;</Al>
+                           </Li>
+                           <Li eId="chp_2__subchp_2.2__art_2.7__para_2__list_o_1__item_c" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_2__list_o_1__item_c">
+                              <LiNummer>c.</LiNummer>
+                              <Al>toegevoegd moet worden een RisicoEffectRapportage.</Al>
+                           </Li>
+                        </Lijst>
+                     </Inhoud>
+                  </Lid>
+                  <Lid eId="chp_2__subchp_2.2__art_2.7__para_3" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_3">
+                     <LidNummer>3.</LidNummer>
+                     <Inhoud>
+                        <Al>Beoordelingsregels aanvraag omgevingsvergunning</Al>
+                        <Al>De omgevingsvergunning wordt alleen verleend als aan de volgende regels wordt voldaan:</Al>
+                        <Lijst eId="chp_2__subchp_2.2__art_2.7__para_3__list_o_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_3__list_o_1" type="expliciet">
+                           <Li eId="chp_2__subchp_2.2__art_2.7__para_3__list_o_1__item_a" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_3__list_o_1__item_a">
+                              <LiNummer>a.</LiNummer>
+                              <Al>Uit de RisicoEffectRapportage is gebleken dat het gevaar voor de omliggende gevoelige functies ten hoogste 0.1 is.</Al>
+                           </Li>
+                           <Li eId="chp_2__subchp_2.2__art_2.7__para_3__list_o_1__item_b" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_3__list_o_1__item_b">
+                              <LiNummer>b.</LiNummer>
+                              <Al>Bebouwing wordt uitsluitend gebruikt als technische ruimte, zoals een werkplaats, en als servicegebouw ten dienste van het verkooppunt motorbrandstoffen, waaronder in ieder geval begrepen winkel, magazijn en sanitaire ruimten.</Al>
+                           </Li>
+                           <Li eId="chp_2__subchp_2.2__art_2.7__para_3__list_o_1__item_c" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_3__list_o_1__item_c">
+                              <LiNummer>c.</LiNummer>
+                              <Al>In het servicegebouw zijn geen afzonderlijke ruimten voor detailhandel.</Al>
+                           </Li>
+                           <Li eId="chp_2__subchp_2.2__art_2.7__para_3__list_o_1__item_d" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_3__list_o_1__item_d">
+                              <LiNummer>d.</LiNummer>
+                              <Al>Er zijn geen zelfstandige en onzelfstandige horecaruimten in de zin van café/bar, restaurant, snackbar, et cetera. Buffetverkoop en verkoop uit automatiek zijn, als onderdeel van de winkel, wel toegestaan.</Al>
+                           </Li>
+                        </Lijst>
+                     </Inhoud>
+                  </Lid>
+               </Artikel>
+            </Afdeling>
+            <Afdeling eId="chp_2__subchp_2.3" wId="gm0297_1__chp_2__subchp_2.3">
+               <Kop>
+                  <Label>Afdeling</Label>
+                  <Nummer>2.3</Nummer>
+                  <Opschrift>Centrumgebied</Opschrift>
+               </Kop>
+               <Artikel eId="chp_2__subchp_2.3__art_2.9" wId="gm0297_1__chp_2__subchp_2.3__art_2.9" owId="nl.imow-gm0297.regeltekst.2019000012" regelType="regelVoorIedereen" idealisatie="exact">
+                  <Kop>
+                     <Label>Artikel</Label>
+                     <Nummer>2.9</Nummer>
+                     <Opschrift>Doel functietoedeling</Opschrift>
+                  </Kop>
+                  <Regel soort="regelVoorIedereen" idealisatie="exact" owId="nl.imow-gm0297.juridischeregel.2019000013">
+                     <GebiedsaanwijzingRef ref="nl.imow-gm0297.gebiedsaanwijzing.2019000002" />
+                  </Regel>
+                  <Inhoud>
+                     <Al>Het werkingsgebied van de functie '<IntIoRef eId="chp_2__subchp_2.3__art_2.9__ref_o_1" wId="gm0297_1__chp_2__subchp_2.3__art_2.9__ref_o_1" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_2__ref_o_1">Centrumgebied</IntIoRef>' is bedoeld voor het verrichten van gebruiksactiviteiten die passen in een stadscentrum met een overwegend stedelijke inrichting en die geen onevenredige afbreuk doen aan het stedelijke karakter of aan de beleving van het bezoekende publiek.</Al>
+                  </Inhoud>
+               </Artikel>
+               <Artikel eId="chp_2__subchp_2.3__art_2.10" wId="gm0297_1__chp_2__subchp_2.3__art_2.10" owId="nl.imow-gm0297.regeltekst.2019000008" regelType="regelVoorIedereen" idealisatie="exact">
+                  <Kop>
+                     <Label>Artikel</Label>
+                     <Nummer>2.10</Nummer>
+                     <Opschrift>Gebruiksactiviteiten die zonder vergunning of melding zijn toegestaan</Opschrift>
+                  </Kop>
+                  <GerelateerdRef ref="nl.imow-gm0297.regeltekst.2019000012" />
+                  <Regel soort="regelVoorIedereen" idealisatie="exact" owId="nl.imow-gm0297.juridischeregel.2019000014">
+                     <Locatieaanduiding>
+                        <GioRef ref="nl.imow-gm0297.gebiedengroep.speelhal" />
+                        <GioRef ref="nl.imow-gm0297.gebied.2019000008" />
+                        <GioRef ref="nl.imow-gm0297.gebied.2019000009" />
+                        <GioRef ref="nl.imow-gm0297.gebied.2019000010" />
+                        <GioRef ref="nl.imow-gm0297.gebiedengroep.zuilichem" />
+                     </Locatieaanduiding>
+                     <ActiviteitToedeling activiteitRef="nl.imow-gm0297.activiteit.2019000660" kwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan" owId="nl.imow-gm0297.activiteitlocatieaanduiding.2019000012">
+                        <Locatieaanduiding>
+                           <GioRef ref="nl.imow-gm0297.gebiedengroep.speelhal" />
+                        </Locatieaanduiding>
+                     </ActiviteitToedeling>
+                     <ActiviteitToedeling activiteitRef="nl.imow-gm0297.activiteit.2019000680" kwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan" owId="nl.imow-gm0297.activiteitlocatieaanduiding.2019000014">
+                        <Locatieaanduiding>
+                           <GioRef ref="nl.imow-gm0297.gebiedengroep.centrumgebied" />
+                        </Locatieaanduiding>
+                     </ActiviteitToedeling>
+                  </Regel>
+                  <Inhoud>
+                     <Al>Ter plaatse van het werkingsgebied van de functie '<IntIoRef eId="chp_2__subchp_2.3__art_2.10__ref_o_1" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__ref_o_1" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_2__ref_o_1">Centrumgebied</IntIoRef>', zoals benoemd in<IntRef ref="chp_2__subchp_2.3__art_2.9" scope="Artikel">artikel 2.9</IntRef> mag de locatie in ieder geval worden gebruikt voor het verrichten van de volgende gebruiksactiviteiten:</Al>
+                     <Lijst eId="chp_2__subchp_2.3__art_2.10__list_o_1" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1" type="expliciet">
+                        <Li eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_a" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_a">
+                           <LiNummer>a.</LiNummer>
+                           <Al>het exploiteren van een bedrijf;</Al>
+                        </Li>
+                        <Li eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_b" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_b">
+                           <LiNummer>b.</LiNummer>
+                           <Al>het exploiteren van een instelling voor cultuur en ontspanning;</Al>
+                        </Li>
+                        <Li eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_c" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_c">
+                           <LiNummer>c.</LiNummer>
+                           <Al>het uitoefenen van detailhandel;</Al>
+                        </Li>
+                        <Li eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_d" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_d">
+                           <LiNummer>d.</LiNummer>
+                           <Al>het uitoefenen van dienstverlening;</Al>
+                        </Li>
+                        <Li eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_e" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_e">
+                           <LiNummer>e.</LiNummer>
+                           <Al>het exploiteren van een horeca-inrichting;</Al>
+                        </Li>
+                        <Li eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_f" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_f">
+                           <LiNummer>f.</LiNummer>
+                           <Al>het exploiteren van een kantoor;</Al>
+                        </Li>
+                        <Li eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_g" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_g">
+                           <LiNummer>g.</LiNummer>
+                           <Al>het exploiteren van een instelling voor maatschappelijke voorzieningen;</Al>
+                        </Li>
+                        <Li eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_h" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_h">
+                           <LiNummer>h.</LiNummer>
+                           <Al>het exploiteren van een centrale voor het verwerken van huishoudelijk afval;</Al>
+                        </Li>
+                        <Li eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_i" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_i">
+                           <LiNummer>i.</LiNummer>
+                           <Al>het exploiteren van een speelautomatenhal, uitsluitend ter plaatse van het werkingsgebied '<IntIoRef eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_i__ref_o_1" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_i__ref_o_1" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_3__ref_o_1">exploiteren speelautomatenhal</IntIoRef>'; </Al>
+                        </Li>
+                        <Li eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_j" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_j">
+                           <LiNummer>j.</LiNummer>
+                           <Al>het aanleggen en instandhouden van openbaar groen;</Al>
+                        </Li>
+                        <Li eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_k" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_k">
+                           <LiNummer>k.</LiNummer>
+                           <Al>het recreëren;</Al>
+                        </Li>
+                        <Li eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_l" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_l">
+                           <LiNummer>l.</LiNummer>
+                           <Al>het sporten;</Al>
+                        </Li>
+                        <Li eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_m" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_m">
+                           <LiNummer>m.</LiNummer>
+                           <Al>het wonen;</Al>
+                        </Li>
+                        <Li eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_n" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_n">
+                           <LiNummer>n.</LiNummer>
+                           <Al>het uitoefenen van een beroep aan huis;</Al>
+                        </Li>
+                        <Li eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_o" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_o">
+                           <LiNummer>o.</LiNummer>
+                           <Al>het exploiteren van een aan de woonfunctie ondergeschikt bedrijf aan huis;</Al>
+                        </Li>
+                        <Li eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_p" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_p">
+                           <LiNummer>p.</LiNummer>
+                           <Al>het aanleggen en instandhouden van tuin en/of erf;</Al>
+                        </Li>
+                        <Li eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_q" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_q">
+                           <LiNummer>q.</LiNummer>
+                           <Al>het aanleggen en instandhouden van de openbare ruimte , waaronder in ieder geval worden begrepen voorzieningen voor de waterhuishouding, voetpaden, fietspaden, wegen en voorzieningen die het verblijf in de openbare ruimte vergemakkelijken, zoals verlichting,</Al>
+                        </Li>
+                     </Lijst>
+                  </Inhoud>
+               </Artikel>
+               <Artikel eId="chp_2__subchp_2.3__art_2.11" wId="gm0297_1__chp_2__subchp_2.3__art_2.11">
+                  <Kop>
+                     <Label>Artikel</Label>
+                     <Nummer>2.11</Nummer>
+                     <Opschrift>Gebruiksactiviteiten die zijn toegelaten na voorafgaande melding</Opschrift>
+                  </Kop>
+                  <Lid eId="chp_2__subchp_2.3__art_2.11__para_1" wId="gm0297_1__chp_2__subchp_2.3__art_2.11__para_1">
+                     <LidNummer>1.</LidNummer>
+                     <Inhoud>
+                        <Al>Meldingplichtige gebruiksactiviteiten</Al>
+                        <Al>Ter plaatse van het werkingsgebied van de functie '<IntIoRef eId="chp_2__subchp_2.3__art_2.11__para_1__ref_o_1" wId="gm0297_1__chp_2__subchp_2.3__art_2.11__para_1__ref_o_1" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_2__ref_o_1">Centrumgebied</IntIoRef>' is het verboden de gebruiksactiviteit 'het wonen in een bedrijfswoning' te verrichten zonder dat daarvoor aan het bevoegd gezag een melding is gedaan.</Al>
+                     </Inhoud>
+                  </Lid>
+                  <Lid eId="chp_2__subchp_2.3__art_2.11__para_2" wId="gm0297_1__chp_2__subchp_2.3__art_2.11__para_2">
+                     <LidNummer>2.</LidNummer>
+                     <Inhoud>
+                        <Al>Indieningsvereisten melding</Al>
+                        <Al>Bij het doen van de melding dienen de volgende indieningsvereisten in acht te worden genomen:</Al>
+                        <Lijst eId="chp_2__subchp_2.3__art_2.11__para_2__list_o_1" wId="gm0297_1__chp_2__subchp_2.3__art_2.11__para_2__list_o_1" type="expliciet">
+                           <Li eId="chp_2__subchp_2.3__art_2.11__para_2__list_o_1__item_o_1" wId="gm0297_1__chp_2__subchp_2.3__art_2.11__para_2__list_o_1__item_o_1">
+                              <LiNummer>a.</LiNummer>
+                              <Al>de melding dient te worden gedaan door middel van het inzenden van het bij deze regels behorende Formulier Melding;</Al>
+                           </Li>
+                        </Lijst>
+                     </Inhoud>
+                  </Lid>
+               </Artikel>
+            </Afdeling>
+            <Afdeling eId="chp_2__subchp_2.4" wId="gm0297_1__chp_2__subchp_2.4">
+               <Kop>
+                  <Label>Afdeling</Label>
+                  <Nummer>2.4</Nummer>
+                  <Opschrift>Voorbeeld omgevingswaarde</Opschrift>
+               </Kop>
+               <Artikel eId="chp_2__subchp_2.4__art_2.12" wId="gm0297_1__chp_2__subchp_2.4__art_2.12" owId="nl.imow-gm0297.regeltekst.2019000009" regelType="omgevingswaarderegel" idealisatie="exact">
+                  <Kop>
+                     <Label>Artikel</Label>
+                     <Nummer>2.12</Nummer>
+                     <Opschrift>Omgevingswaarde stikstofdioxide</Opschrift>
+                  </Kop>
+                  <Regel soort="omgevingswaarderegel" idealisatie="exact" owId="nl.imow-gm0297.juridischeregel.2019000015">
+                     <NormRef ref="nl.imow-gm0297.omgevingswaarde.2019000001" />
+                  </Regel>
+                  <Inhoud>
+                     <Al>Voor stikstofdioxide geldt in '<IntIoRef eId="chp_2__subchp_2.4__art_2.12__ref_o_1" wId="gm0297_1__chp_2__subchp_2.4__art_2.12__ref_o_1" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_8__ref_o_1">Zuilichem</IntIoRef>' de volgende ten hoogste toelaatbare concentraties:</Al>
+                     <Lijst eId="chp_2__subchp_2.4__art_2.12__list_o_1" wId="gm0297_1__chp_2__subchp_2.4__art_2.12__list_o_1" type="expliciet">
+                        <Li eId="chp_2__subchp_2.4__art_2.12__list_o_1__item_a" wId="gm0297_1__chp_2__subchp_2.4__art_2.12__list_o_1__item_a">
+                           <LiNummer>a.</LiNummer>
+                           <Al>150 μg/m<sup>3</sup> uurgemiddelde, dat ten hoogste twaalf maal per kalenderjaar wordt overschreden; en</Al>
+                        </Li>
+                        <Li eId="chp_2__subchp_2.4__art_2.12__list_o_1__item_b" wId="gm0297_1__chp_2__subchp_2.4__art_2.12__list_o_1__item_b">
+                           <LiNummer>b.</LiNummer>
+                           <Al>30 μg/m<sup>3</sup> als kalenderjaargemiddelde.</Al>
+                        </Li>
+                     </Lijst>
+                     <Al>Dit komt overeen met wat er in de <ExtRef soort="AKN" ref="/akn/nl/act/mnre1034/2020/reg1001">Omgevingsregeling</ExtRef> staat in <ExtRef soort="AKN" ref="/akn/nl/act/mnre1034/2020/reg1001#cmp_XXIII__content_1_inst2">bijlage XXIII B</ExtRef>.</Al>
+                  </Inhoud>
+               </Artikel>
+            </Afdeling>
+            <Afdeling eId="chp_2__subchp_2.5" wId="gm0297_1__chp_2__subchp_2.5">
+               <Kop>
+                  <Label>Afdeling</Label>
+                  <Nummer>2.5</Nummer>
+                  <Opschrift>Voorbeeld omgevingsnorm</Opschrift>
+               </Kop>
+               <Artikel eId="chp_2__subchp_2.5__art_2.13" wId="gm0297_1__chp_2__subchp_2.5__art_2.13">
+                  <Kop>
+                     <Label>Artikel</Label>
+                     <Nummer>2.13</Nummer>
+                     <Opschrift>Omgevingsplanactiviteiten bouwen die zonder vergunning of melding zijn toegestaan</Opschrift>
+                  </Kop>
+                  <Inhoud>
+                     <Al>Een vergunning voor de omgevingsplanactiviteit bouwen is niet vereist indien deze activiteit bestaat uit:</Al>
+                     <Lijst eId="chp_2__subchp_2.5__art_2.13__list_o_1" wId="gm0297_1__chp_2__subchp_2.5__art_2.13__list_o_1" type="expliciet">
+                        <Li eId="chp_2__subchp_2.5__art_2.13__list_o_1__item_a" wId="gm0297_1__chp_2__subchp_2.5__art_2.13__list_o_1__item_a">
+                           <LiNummer>a.</LiNummer>
+                           <Al>het verrichten van gewoon onderhoud aan een<IntRef ref="cmp_II__content_o_1__list_o_1__item_o_1" scope="Begrip">bouwwerk</IntRef>, voor zover maatvoering en vormgeving van dat bouwwerk niet wijzigen;</Al>
+                        </Li>
+                        <Li eId="chp_2__subchp_2.5__art_2.13__list_o_1__item_b" wId="gm0297_1__chp_2__subchp_2.5__art_2.13__list_o_1__item_b">
+                           <LiNummer>b.</LiNummer>
+                           <Al>het plaatsen van straatmeubilair;</Al>
+                        </Li>
+                        <Li eId="chp_2__subchp_2.5__art_2.13__list_o_1__item_c" wId="gm0297_1__chp_2__subchp_2.5__art_2.13__list_o_1__item_c">
+                           <LiNummer>c.</LiNummer>
+                           <Al>het bouwen van bouwwerken, geen gebouw zijnde, ter plaatse van het werkingsgebied 'voorerfgebied' mits de bouwhoogte niet hoger is dan 1 meter;</Al>
+                        </Li>
+                        <Li eId="chp_2__subchp_2.5__art_2.13__list_o_1__item_d" wId="gm0297_1__chp_2__subchp_2.5__art_2.13__list_o_1__item_d">
+                           <LiNummer>d.</LiNummer>
+                           <Al>het bouwen van bouwwerken ter plaatse van het werkingsgebied 'achtererfgebied', mits de bouwhoogte niet hoger is dan 3 meter en de grondoppervlakte niet groter is dan 30 m<sup>2</sup>.</Al>
+                        </Li>
+                     </Lijst>
+                  </Inhoud>
+               </Artikel>
+               <Artikel eId="chp_2__subchp_2.5__art_2.14" wId="gm0297_1__chp_2__subchp_2.5__art_2.14" owId="nl.imow-gm0297.regeltekst.2019000010" regelType="regelVoorIedereen" idealisatie="exact">
+                  <Kop>
+                     <Label>Artikel</Label>
+                     <Nummer>2.14</Nummer>
+                     <Opschrift>Bouwregels bedrijfsgebouwen</Opschrift>
+                  </Kop>
+                  <Regel soort="regelVoorIedereen" idealisatie="exact" owId="nl.imow-gm0297.juridischeregel.2019000016">
+                     <Locatieaanduiding>
+                        <GioRef ref="nl.imow-gm0297.gebiedengroep.speelhal" />
+                        <GioRef ref="nl.imow-gm0297.gebied.2019000008" />
+                        <GioRef ref="nl.imow-gm0297.gebied.2019000009" />
+                        <GioRef ref="nl.imow-gm0297.gebied.2019000010" />
+                        <GioRef ref="nl.imow-gm0297.gebiedengroep.zuilichem" />
+                        <GioRef ref="nl.imow-gm0297.gebied.2019000013" />
+                     </Locatieaanduiding>
+                     <NormRef ref="nl.imow-gm0297.omgevingsnorm.2019000002" />
+                  </Regel>
+                  <Inhoud>
+                     <Al>Voor het bouwen en instandhouden van bedrijfsgebouwen gelden de volgende regels:</Al>
+                     <Lijst eId="chp_2__subchp_2.5__art_2.14__list_o_1" wId="gm0297_1__chp_2__subchp_2.5__art_2.14__list_o_1" type="expliciet">
+                        <Li eId="chp_2__subchp_2.5__art_2.14__list_o_1__item_a" wId="gm0297_1__chp_2__subchp_2.5__art_2.14__list_o_1__item_a">
+                           <LiNummer>a.</LiNummer>
+                           <Al>Een bedrijfsgebouw moet worden gesitueerd binnen het werkingsgebied 'bouwactiviteit toegestaan'.</Al>
+                        </Li>
+                        <Li eId="chp_2__subchp_2.5__art_2.14__list_o_1__item_b" wId="gm0297_1__chp_2__subchp_2.5__art_2.14__list_o_1__item_b">
+                           <LiNummer>b.</LiNummer>
+                           <Al>De maximum oppervlakte van een bedrijfsgebouw is gelijk aan het werkingsgebied 'maximum oppervlakte'.</Al>
+                        </Li>
+                        <Li eId="chp_2__subchp_2.5__art_2.14__list_o_1__item_c" wId="gm0297_1__chp_2__subchp_2.5__art_2.14__list_o_1__item_c">
+                           <LiNummer>c.</LiNummer>
+                           <Al>De maximum goothoogte van een bedrijfsgebouw is de ter plaatse van het werkingsgebied 'maximum goothoogte bedrijfsgebouw' bepaalde waarde.</Al>
+                        </Li>
+                        <Li eId="chp_2__subchp_2.5__art_2.14__list_o_1__item_d" wId="gm0297_1__chp_2__subchp_2.5__art_2.14__list_o_1__item_d">
+                           <LiNummer>d.</LiNummer>
+                           <Al>De maximum bouwhoogte van een bedrijfsgebouw is de ter plaatse van het werkingsgebied '<IntIoRef eId="chp_2__subchp_2.5__art_2.14__list_o_1__item_d__ref_o_1" wId="gm0297_1__chp_2__subchp_2.5__art_2.14__list_o_1__item_d__ref_o_1" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_4__ref_o_1">maximum bouwhoogte bedrijfsgebouw</IntIoRef>' bepaalde waarde.</Al>
+                        </Li>
+                        <Li eId="chp_2__subchp_2.5__art_2.14__list_o_1__item_e" wId="gm0297_1__chp_2__subchp_2.5__art_2.14__list_o_1__item_e">
+                           <LiNummer>e.</LiNummer>
+                           <Al>Binnen het werkingsgebied bouwactiviteit toegestaan bedraagt de afstand tussen een bedrijfsgebouw en de zijdelingse perceelsgrens ten minste 3 meter.</Al>
+                        </Li>
+                     </Lijst>
+                  </Inhoud>
+               </Artikel>
+               <Artikel eId="chp_2__subchp_2.5__art_2.15" wId="gm0297_1__chp_2__subchp_2.5__art_2.15" owId="nl.imow-gm0297.regeltekst.2019000015" regelType="regelVoorIedereen" idealisatie="exact">
+                  <Kop>
+                     <Label>Artikel</Label>
+                     <Nummer>2.15</Nummer>
+                     <Opschrift>Regels voor het uiterlijk van bouwwerken</Opschrift>
+                  </Kop>
+                  <Regel soort="regelVoorIedereen" idealisatie="exact" owId="nl.imow-gm0297.juridischeregel.2019000017">
+                     <Locatieaanduiding>
+                        <GioRef ref="nl.imow-gm0297.gebiedengroep.zoneA" />
+                        <GioRef ref="nl.imow-gm0297.gebiedengroep.zoneB" />
+                        <GioRef ref="nl.imow-gm0297.gebiedengroep.centrumgebied" />
+                     </Locatieaanduiding>
+                     <NormRef ref="nl.imow-gm0297.omgevingsnorm.2019000003" />
+                  </Regel>
+                  <Inhoud>
+                     <Al>Het uiterlijk van bouwwerken dient te voldoen aan het niveau van redelijke eisen van welstand dat ter plaatse van het werkingsgebied ‘<IntIoRef eId="chp_2__subchp_2.5__art_2.15__ref_o_1" wId="gm0297_1__chp_2__subchp_2.5__art_2.15__ref_o_1" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_5__ref_o_1">welstandsniveau</IntIoRef>’ is vastgelegd.</Al>
+                  </Inhoud>
+               </Artikel>
+            </Afdeling>
+            <Afdeling eId="chp_2__subchp_2.6" wId="gm0297_1__chp_2__subchp_2.6">
+               <Kop>
+                  <Label>Afdeling</Label>
+                  <Nummer>2.6</Nummer>
+                  <Opschrift>Centrumgebied</Opschrift>
+               </Kop>
+               <Artikel eId="chp_2__subchp_2.6__art_2.16" wId="gm0297_1__chp_2__subchp_2.6__art_2.16">
+                  <Kop>
+                     <Label>Artikel</Label>
+                     <Nummer>2.16</Nummer>
+                     <Opschrift>Toedeling functie landelijk gebied</Opschrift>
+                  </Kop>
+                  <Gereserveerd />
+               </Artikel>
+            </Afdeling>
+         </Hoofdstuk>
+         <Hoofdstuk eId="chp_5" wId="gm0297_1__chp_5">
+            <Kop>
+               <Label>Hoofdstuk</Label>
+               <Nummer>5</Nummer>
+               <Opschrift>Bouwregels</Opschrift>
+            </Kop>
+            <Afdeling eId="chp_5__subchp_5.1" wId="gm0297_1__chp_5__subchp_5.1">
+               <Kop>
+                  <Label>Afdeling</Label>
+                  <Nummer>5.1</Nummer>
+                  <Opschrift>Bouwregels landelijk gebied</Opschrift>
+               </Kop>
+               <Artikel eId="chp_5__subchp_5.1__art_5.1" wId="gm0297_1__chp_5__subchp_5.1__art_5.1" owId="nl.imow-gm0297.regeltekst.2019000113" regelType="regelVoorIedereen" idealisatie="exact">
+                  <Kop>
+                     <Label>Artikel</Label>
+                     <Nummer>5.1</Nummer>
+                     <Opschrift>Bouwen van een bijgebouw</Opschrift>
+                  </Kop>
+                  <Regel soort="regelVoorIedereen" idealisatie="exact" owId="nl.imow-gm0297.juridischeregel.2019000113">
+                     <ActiviteitToedeling activiteitRef="nl.imow-gm0297.activiteit.2019000800" kwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan" owId="nl.imow-gm0297.activiteitlocatieaanduiding.20190000111">
+                        <Locatieaanduiding>
+                           <GioRef ref="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied" />
+                        </Locatieaanduiding>
+                     </ActiviteitToedeling>
+                     <ActiviteitToedeling activiteitRef="nl.imow-gm0297.activiteit.2019000800" kwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Meldingsplicht" owId="nl.imow-gm0297.activiteitlocatieaanduiding.20190000112">
+                        <Locatieaanduiding>
+                           <GioRef ref="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied" />
+                        </Locatieaanduiding>
+                     </ActiviteitToedeling>
+                     <ActiviteitToedeling activiteitRef="nl.imow-gm0297.activiteit.2019000800" kwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Vergunningplicht" owId="nl.imow-gm0297.activiteitlocatieaanduiding.20190000113">
+                        <Locatieaanduiding>
+                           <GioRef ref="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied" />
+                        </Locatieaanduiding>
+                     </ActiviteitToedeling>
+                  </Regel>
+                  <Inhoud>
+                     <Al>Voor het bouwen van een bijgebouw gelden de volgende toestemmingen:</Al>
+                     <Lijst eId="chp_5__subchp_5.1__art_5.1__list_o_1" wId="gm0297_1__chp_5__subchp_5.1__art_5.1__list_o_1" type="expliciet">
+                        <Li eId="chp_5__subchp_5.1__art_5.1__list_o_1__item_a" wId="gm0297_1__chp_5__subchp_5.1__art_5.1__list_o_1__item_a">
+                           <LiNummer>a.</LiNummer>
+                           <Al>Het is toegestaan om een bijgebouw met een oppervlakte kleiner dan 20 m² te bouwen.</Al>
+                        </Li>
+                        <Li eId="chp_5__subchp_5.1__art_5.1__list_o_1__item_b" wId="gm0297_1__chp_5__subchp_5.1__art_5.1__list_o_1__item_b">
+                           <LiNummer>b.</LiNummer>
+                           <Al>Het is verboden om zonder voorafgaande melding een bijgebouw met een oppervlakte groter dan of gelijk aan 20 m² en kleiner dan 30 m² te bouwen.</Al>
+                        </Li>
+                        <Li eId="chp_5__subchp_5.1__art_5.1__list_o_1__item_c" wId="gm0297_1__chp_5__subchp_5.1__art_5.1__list_o_1__item_c">
+                           <LiNummer>c.</LiNummer>
+                           <Al>Het is verboden om zonder omgevingsvergunning een bijgebouw met een oppervlakte groter dan of gelijk aan 30 m² te bouwen.</Al>
+                        </Li>
+                     </Lijst>
+                  </Inhoud>
+               </Artikel>
+            </Afdeling>
+         </Hoofdstuk>
+         <Hoofdstuk eId="chp_6" wId="gm0297_1__chp_6">
+            <Kop>
+               <Label>Hoofdstuk</Label>
+               <Nummer>6</Nummer>
+               <Opschrift>Activiteiten</Opschrift>
+            </Kop>
+            <Afdeling eId="chp_6__subchp_6.1" wId="gm0297_1__chp_6__subchp_6.1">
+               <Kop>
+                  <Label>Afdeling</Label>
+                  <Nummer>6.1</Nummer>
+                  <Opschrift>Kappen van bomen</Opschrift>
+               </Kop>
+               <Artikel eId="chp_6__subchp_6.1__art_6.1" wId="gm0297_1__chp_6__subchp_6.1__art_6.1">
+                  <Kop>
+                     <Label>Artikel</Label>
+                     <Nummer>6.1</Nummer>
+                     <Opschrift>Aanwijzing vergunningplichtige gevallen</Opschrift>
+                  </Kop>
+                  <Lid eId="chp_6__subchp_6.1__art_6.1__para_1" wId="gm0297_1__chp_6__subchp_6.1__art_6.1__para_1" owId="nl.imow-gm0297.regeltekst.2019000114" regelType="regelVoorIedereen" idealisatie="exact">
+                     <LidNummer>1.</LidNummer>
+                     <Regel soort="regelVoorIedereen" idealisatie="exact" owId="nl.imow-gm0297.juridischeregel.2019000114">
+                        <ActiviteitToedeling activiteitRef="nl.imow-gm0297.activiteit.2019000810" kwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Vergunningplicht" owId="nl.imow-gm0297.activiteitlocatieaanduiding.20190000114">
+                           <Locatieaanduiding>
+                              <GioRef ref="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied" />
+                           </Locatieaanduiding>
+                        </ActiviteitToedeling>
+                     </Regel>
+                     <Inhoud>
+                        <Al>Het is verboden zonder omgevingsvergunning een boom te kappen.</Al>
+                     </Inhoud>
+                  </Lid>
+                  <Lid eId="chp_6__subchp_6.1__art_6.1__para_2" wId="gm0297_1__chp_6__subchp_6.1__art_6.1__para_2" owId="nl.imow-gm0297.regeltekst.2019000115" regelType="regelVoorIedereen" idealisatie="exact">
+                     <LidNummer>2.</LidNummer>
+                     <Regel soort="regelVoorIedereen" idealisatie="exact" owId="nl.imow-gm0297.juridischeregel.2019000115">
+                        <ActiviteitToedeling activiteitRef="nl.imow-gm0297.activiteit.2019000810" kwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan" owId="nl.imow-gm0297.activiteitlocatieaanduiding.20190000115">
+                           <Locatieaanduiding>
+                              <GioRef ref="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied" />
+                           </Locatieaanduiding>
+                        </ActiviteitToedeling>
+                     </Regel>
+                     <Inhoud>
+                        <Al>Het verbod geldt niet voor:</Al>
+                        <Lijst eId="chp_6__subchp_6.1__art_6.1__para_2__list_o_1" wId="gm0297_1__chp_6__subchp_6.1__art_6.1__para_2__list_o_1" type="expliciet">
+                           <Li eId="chp_6__subchp_6.1__art_6.1__para_2__list_o_1__item_a" wId="gm0297_1__chp_6__subchp_6.1__art_6.1__para_2__list_o_1__item_a">
+                              <LiNummer>a.</LiNummer>
+                              <Al>bomen met een stamomtrek van minder dan 50 cm;</Al>
+                           </Li>
+                           <Li eId="chp_6__subchp_6.1__art_6.1__para_2__list_o_1__item_b" wId="gm0297_1__chp_6__subchp_6.1__art_6.1__para_2__list_o_1__item_b">
+                              <LiNummer>b.</LiNummer>
+                              <Al>bomen die niet zichtbaar zijn vanaf openbaar toegankelijk gebied; en</Al>
+                           </Li>
+                           <Li eId="chp_6__subchp_6.1__art_6.1__para_2__list_o_1__item_c" wId="gm0297_1__chp_6__subchp_6.1__art_6.1__para_2__list_o_1__item_c">
+                              <LiNummer>c.</LiNummer>
+                              <Al>bomen die moeten worden gekapt op grond van de Plantenziektenwet of vanwege een aanschrijving op grond van artikel PM van de Algemene plaatselijke verordening.</Al>
+                           </Li>
+                        </Lijst>
+                     </Inhoud>
+                  </Lid>
+               </Artikel>
+               <Artikel eId="chp_6__subchp_6.1__art_6.2" wId="gm0297_1__chp_6__subchp_6.1__art_6.2">
+                  <Kop>
+                     <Label>Artikel</Label>
+                     <Nummer>6.2</Nummer>
+                     <Opschrift>Bijzondere aanvraagvereisten</Opschrift>
+                  </Kop>
+                  <Inhoud>
+                     <Al>Bij de aanvraag om een omgevingsvergunning wordt:</Al>
+                     <Lijst eId="chp_6__subchp_6.1__art_6.2__list_o_1" wId="gm0297_1__chp_6__subchp_6.1__art_6.2__list_o_1" type="expliciet">
+                        <Li eId="chp_6__subchp_6.1__art_6.2__list_o_1__item_a" wId="gm0297_1__chp_6__subchp_6.1__art_6.2__list_o_1__item_a">
+                           <LiNummer>a.</LiNummer>
+                           <Al>iedere te kappen boom op een kaart, foto of tekening geïdentificeerd met een nummer en de locatie;</Al>
+                        </Li>
+                        <Li eId="chp_6__subchp_6.1__art_6.2__list_o_1__item_b" wId="gm0297_1__chp_6__subchp_6.1__art_6.2__list_o_1__item_b">
+                           <LiNummer>b.</LiNummer>
+                           <Al>de reden voor het kappen van iedere boom opgenomen; en</Al>
+                        </Li>
+                        <Li eId="chp_6__subchp_6.1__art_6.2__list_o_1__item_c" wId="gm0297_1__chp_6__subchp_6.1__art_6.2__list_o_1__item_c">
+                           <LiNummer>c.</LiNummer>
+                           <Al>de stamomtrek in centimeters van iedere boom aangegeven.</Al>
+                        </Li>
+                     </Lijst>
+                  </Inhoud>
+               </Artikel>
+               <Artikel eId="chp_6__subchp_6.1__art_6.3" wId="gm0297_1__chp_6__subchp_6.1__art_6.3">
+                  <Kop>
+                     <Label>Artikel</Label>
+                     <Nummer>6.3</Nummer>
+                     <Opschrift>Beoordelingsregels omgevingsvergunning</Opschrift>
+                  </Kop>
+                  <Inhoud>
+                     <Al>De omgevingsvergunning kan worden verleend:</Al>
+                     <Lijst eId="chp_6__subchp_6.1__art_6.3__list_o_1" wId="gm0297_1__chp_6__subchp_6.1__art_6.3__list_o_1" type="expliciet">
+                        <Li eId="chp_6__subchp_6.1__art_6.3__list_o_1__item_a" wId="gm0297_1__chp_6__subchp_6.1__art_6.3__list_o_1__item_a">
+                           <LiNummer>a.</LiNummer>
+                           <Al>als de boom gevaar of ernstige hinder veroorzaakt; of</Al>
+                        </Li>
+                        <Li eId="chp_6__subchp_6.1__art_6.3__list_o_1__item_b" wId="gm0297_1__chp_6__subchp_6.1__art_6.3__list_o_1__item_b">
+                           <LiNummer>b.</LiNummer>
+                           <Al>vanwege een individueel of maatschappelijk belang, dat zwaarder moet wegen dan de belangen, bedoeld in artikel 5.27.</Al>
+                        </Li>
+                     </Lijst>
+                  </Inhoud>
+               </Artikel>
+            </Afdeling>
+         </Hoofdstuk>
+         <Hoofdstuk eId="chp_7" wId="gm0297_1__chp_7">
+            <Kop>
+               <Label>Hoofdstuk</Label>
+               <Nummer>7</Nummer>
+               <Opschrift>Gebruiksverboden</Opschrift>
+            </Kop>
+            <Afdeling eId="chp_7__subchp_7.1" wId="gm0297_1__chp_7__subchp_7.1">
+               <Kop>
+                  <Label>Afdeling</Label>
+                  <Nummer>7.1</Nummer>
+                  <Opschrift>Gebruiksverboden agrarische activiteiten</Opschrift>
+               </Kop>
+               <Artikel eId="chp_7__subchp_7.1__art_7.1" wId="gm0297_1__chp_7__subchp_7.1__art_7.1">
+                  <Kop>
+                     <Label>Artikel</Label>
+                     <Nummer>7.1</Nummer>
+                     <Opschrift>Geitenfokkerijverbod</Opschrift>
+                  </Kop>
+                  <Inhoud>
+                     <Al>Het oprichten, instandhouden en gebruiken van bouwwerken en het gebruik van gronden ten behoeve van geitenfokkerijen is verboden.</Al>
+                  </Inhoud>
+               </Artikel>
+               <Artikel eId="chp_7__subchp_7.1__art_7.2" wId="gm0297_1__chp_7__subchp_7.1__art_7.2">
+                  <Kop>
+                     <Label>Artikel</Label>
+                     <Nummer>7.2</Nummer>
+                     <Opschrift>Wormenkwekerijverbod</Opschrift>
+                  </Kop>
+                  <Inhoud>
+                     <Al>Het oprichten, instandhouden en gebruiken van bouwwerken en het gebruik van gronden ten behoeve van wormenkwekerijen is verboden.</Al>
+                  </Inhoud>
+               </Artikel>
+            </Afdeling>
+         </Hoofdstuk>
+         <Hoofdstuk eId="chp_10" wId="gm0297_1__chp_10">
+            <Kop>
+               <Label>Hoofdstuk</Label>
+               <Nummer>10</Nummer>
+               <Opschrift>Bedrijfsmatige activiteiten</Opschrift>
+            </Kop>
+            <Afdeling eId="chp_10__subchp_10.1" wId="gm0297_1__chp_10__subchp_10.1">
+               <Kop>
+                  <Label>Afdeling</Label>
+                  <Nummer>10.1</Nummer>
+                  <Opschrift>Agrarische activiteiten</Opschrift>
+               </Kop>
+               <Artikel eId="chp_10__subchp_10.1__art_10.1" wId="gm0297_1__chp_10__subchp_10.1__art_10.1">
+                  <Kop>
+                     <Label>Artikel</Label>
+                     <Nummer>10.1</Nummer>
+                     <Opschrift>Landbouwhuisdieren</Opschrift>
+                  </Kop>
+                  <Inhoud>
+                     <Al>De regels omtrent hygiëne van landbouwhuisdieren is vastgelegd in het werkingsgebied 'landbouwhuisdierenverblijfhygiëne'.</Al>
+                  </Inhoud>
+               </Artikel>
+               <Artikel eId="chp_10__subchp_10.1__art_10.2" wId="gm0297_1__chp_10__subchp_10.1__art_10.2">
+                  <Kop>
+                     <Label>Artikel</Label>
+                     <Nummer>10.2</Nummer>
+                     <Opschrift>Dierlijke bijproducten</Opschrift>
+                  </Kop>
+                  <Lid eId="chp_10__subchp_10.1__art_10.2__para_1" wId="gm0297_1__chp_10__subchp_10.1__art_10.2__para_1">
+                     <LidNummer>1</LidNummer>
+                     <Inhoud>
+                        <Al>Ter plaatse van het werkingsgebied 'Verwerking organische reststromen en dierlijke bijproducten' is het verboden om zonder omgevingsvergunning activiteiten te verrichten op het gebied van het verwerken van organische reststromen en dierlijke bijproducten.</Al>
+                     </Inhoud>
+                  </Lid>
+                  <Lid eId="chp_10__subchp_10.1__art_10.2__para_2" wId="gm0297_1__chp_10__subchp_10.1__art_10.2__para_2">
+                     <LidNummer>2</LidNummer>
+                     <Inhoud>
+                        <Al>De omgevingsvergunning wordt slechts verleend wanneer wordt voldaan aan de volgende vereisten:</Al>
+                     </Inhoud>
+                  </Lid>
+               </Artikel>
+            </Afdeling>
+         </Hoofdstuk>
+      </Lichaam>
+      <Bijlage eId="cmp_I" wId="gm0297_1__cmp_I">
+         <Kop>
+            <Label>Bijlage</Label>
+            <Nummer>I</Nummer>
+            <Opschrift>Overzicht Informatieobjecten</Opschrift>
+         </Kop>
+         <Divisietekst eId="cmp_I__content_o_1" wId="gm0297_1__cmp_I__content_o_1">
+            <Inhoud>
+               <Begrippenlijst eId="cmp_I__content_o_1__list_o_1" wId="gm0297_1__cmp_I__content_o_1__list_o_1">
+                  <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_1" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1">
+                     <Term>Bedrijf categorie 2</Term>
+                     <Definitie>
+                        <Al>
+                           <ExtIoRef eId="cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0297/2019/Bedrijf_categorie_2/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/Bedrijf_categorie_2/nld@2019-06-18;3520</ExtIoRef>
+                        </Al>
+                     </Definitie>
+                  </Begrip>
+                  <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_2" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_2">
+                     <Term>Centrumgebied</Term>
+                     <Definitie>
+                        <Al>
+                           <ExtIoRef eId="cmp_I__content_o_1__list_o_1__item_o_2__ref_o_1" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_2__ref_o_1" ref="/join/id/regdata/gm0297/2019/Centrumgebied/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/Centrumgebied/nld@2019-06-18;3520</ExtIoRef>
+                        </Al>
+                     </Definitie>
+                  </Begrip>
+                  <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_3" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_3">
+                     <Term>Exploiteren speelautomatenhal</Term>
+                     <Definitie>
+                        <Al>
+                           <ExtIoRef eId="cmp_I__content_o_1__list_o_1__item_o_3__ref_o_1" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_3__ref_o_1" ref="/join/id/regdata/gm0297/2019/Speelhal/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/Speelhal/nld@2019-06-18;3520</ExtIoRef>
+                        </Al>
+                     </Definitie>
+                  </Begrip>
+                  <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_4" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_4">
+                     <Term>Maximum bouwhoogte bedrijfsgebouw</Term>
+                     <Definitie>
+                        <Al>
+                           <ExtIoRef eId="cmp_I__content_o_1__list_o_1__item_o_4__ref_o_1" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_4__ref_o_1" ref="/join/id/regdata/gm0297/2019/Bouwhoogte/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/Bouwhoogte/nld@2019-06-18;3520</ExtIoRef>
+                        </Al>
+                     </Definitie>
+                  </Begrip>
+                  <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_5" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_5">
+                     <Term>Welstandsniveau</Term>
+                     <Definitie>
+                        <Al>
+                           <ExtIoRef eId="cmp_I__content_o_1__list_o_1__item_o_5__ref_o_1" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_5__ref_o_1" ref="/join/id/regdata/gm0297/2019/Welstand/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/Welstand/nld@2019-06-18;3520</ExtIoRef>
+                        </Al>
+                     </Definitie>
+                  </Begrip>
+                  <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_6" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_6">
+                     <Term>Zone A</Term>
+                     <Definitie>
+                        <Al>
+                           <ExtIoRef eId="cmp_I__content_o_1__list_o_1__item_o_6__ref_o_1" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_6__ref_o_1" ref="/join/id/regdata/gm0297/2019/Zone_A/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/Zone_A/nld@2019-06-18;3520</ExtIoRef>
+                        </Al>
+                     </Definitie>
+                  </Begrip>
+                  <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_7" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_7">
+                     <Term>Zone B</Term>
+                     <Definitie>
+                        <Al>
+                           <ExtIoRef eId="cmp_I__content_o_1__list_o_1__item_o_7__ref_o_1" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_7__ref_o_1" ref="/join/id/regdata/gm0297/2019/Zone_B/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/Zone_B/nld@2019-06-18;3520</ExtIoRef>
+                        </Al>
+                     </Definitie>
+                  </Begrip>
+                  <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_8" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_8">
+                     <Term>Zuilichem</Term>
+                     <Definitie>
+                        <Al>
+                           <ExtIoRef eId="cmp_I__content_o_1__list_o_1__item_o_8__ref_o_1" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_8__ref_o_1" ref="/join/id/regdata/gm0297/2019/Zuilichem/nld@2019-06-18;3520">/join/id/regdata/gm0297/2019/Zuilichem/nld@2019-06-18;3520</ExtIoRef>
+                        </Al>
+                     </Definitie>
+                  </Begrip>
+               </Begrippenlijst>
+            </Inhoud>
+         </Divisietekst>
+      </Bijlage>
+      <Bijlage eId="cmp_II" wId="gm0297_1__cmp_II">
+         <Kop>
+            <Label>Bijlage</Label>
+            <Nummer>II</Nummer>
+            <Opschrift>Begrippen</Opschrift>
+         </Kop>
+         <Divisietekst eId="cmp_II__content_o_1" wId="gm0297_1__cmp_II__content_o_1">
+            <Inhoud>
+               <Begrippenlijst eId="cmp_II__content_o_1__list_o_1" wId="gm0297_1__cmp_II__content_o_1__list_o_1">
+                  <Begrip eId="cmp_II__content_o_1__list_o_1__item_o_1" wId="gm0297_1__cmp_II__content_o_1__list_o_1__item_o_1">
+                     <Term>Bouwwerk</Term>
+                     <Definitie>
+                        <Al>Elke constructie van enige omvang van hout, steen, metaal of ander materiaal, die hetzij direct of indirect met de grond verbonden is, hetzij direct of indirect steun vindt in of op de grond.</Al>
+                     </Definitie>
+                  </Begrip>
+               </Begrippenlijst>
+            </Inhoud>
+         </Divisietekst>
+      </Bijlage>
+      <Bijlage eId="cmp_III" wId="gm0297_1__cmp_III">
+         <Kop>
+            <Label>Bijlage</Label>
+            <Nummer>III</Nummer>
+            <Opschrift>Lijst van toegelaten bedrijfstypen</Opschrift>
+         </Kop>
+         <Divisietekst eId="cmp_III__content_o_1" wId="gm0297_1__cmp_III__content_o_1">
+            <Inhoud>
+               <Al>Vervaardiging van voedingsmiddelen en dranken.</Al>
+               <Al>Slachterijen en overige vleesverwerking:</Al>
+               <Lijst eId="cmp_III__content_o_1__list_o_1" wId="gm0297_1__cmp_III__content_o_1__list_o_1" type="ongemarkeerd">
+                  <Li eId="cmp_III__content_o_1__list_o_1__item_o_1" wId="gm0297_1__cmp_III__content_o_1__list_o_1__item_o_1">
+                     <Al>Slachterijen en overige vleesverwerking:</Al>
+                  </Li>
+                  <Li eId="cmp_III__content_o_1__list_o_1__item_o_2" wId="gm0297_1__cmp_III__content_o_1__list_o_1__item_o_2">
+                     <Al>vleeswaren- en vleesconservenfabrieken: p.o. kleiner of gelijk aan 1000 m² 2</Al>
+                  </Li>
+                  <Li eId="cmp_III__content_o_1__list_o_1__item_o_3" wId="gm0297_1__cmp_III__content_o_1__list_o_1__item_o_3">
+                     <Al>vleeswaren- en vleesconservenfabrieken: p.o. kleiner of gelijk aan 200 m² 2</Al>
+                  </Li>
+                  <Li eId="cmp_III__content_o_1__list_o_1__item_o_4" wId="gm0297_1__cmp_III__content_o_1__list_o_1__item_o_4">
+                     <Al>loonslachterijen 2</Al>
+                  </Li>
+                  <Li eId="cmp_III__content_o_1__list_o_1__item_o_5" wId="gm0297_1__cmp_III__content_o_1__list_o_1__item_o_5">
+                     <Al>vervaardiging van snacks en vervaardiging van kant-en-klaar-maaltijden met p.o. kleiner of gelijk aan 2.000 m² 2</Al>
+                  </Li>
+               </Lijst>
+            </Inhoud>
+         </Divisietekst>
+      </Bijlage>
+      <Bijlage eId="cmp_IV" wId="gm0297_1__cmp_IV">
+         <Kop>
+            <Label>Bijlage</Label>
+            <Nummer>IV</Nummer>
+            <Opschrift>Overzicht PDF-informatieobjecten</Opschrift>
+         </Kop>
+         <Divisietekst eId="cmp_IV__content_o_1" wId="gm0297_1__cmp_IV__content_o_1">
+            <Inhoud>
+               <Begrippenlijst eId="cmp_IV__content_o_1__list_o_1" wId="gm0297_1__cmp_IV__content_o_1__list_o_1">
+                  <Begrip eId="cmp_IV__content_o_1__list_o_1__item_o_1" wId="gm0297_1__cmp_IV__content_o_1__list_o_1__item_o_1">
+                     <Term>PDF-bestand</Term>
+                     <Definitie>
+                        <Al>
+                           <ExtIoRef eId="cmp_IV__content_o_1__list_o_1__item_o_1__ref_o_1" wId="gm0297_1__cmp_IV__content_o_1__list_o_1__item_o_1__ref_o_1" ref="/join/id/regdata/gm0297/2020/PDF/nld@2020-06-18;3520">/join/id/regdata/gm0297/2020/PDF/nld@2020-06-18;3520</ExtIoRef>
+                        </Al>
+                     </Definitie>
+                  </Begrip>
+               </Begrippenlijst>
+            </Inhoud>
+         </Divisietekst>
+      </Bijlage>
+      <ArtikelgewijzeToelichting eId="artrecital_o_1" wId="artrecital_o_1">
+         <Kop>
+            <Opschrift>Artikelsgewijze Toelichting</Opschrift>
+         </Kop>
+         <Divisie eId="artrecital_o_1__div_o_1" wId="artrecital_o_1__div_o_1">
+            <Kop>
+               <Opschrift>Toelichting op artikelen uit hoofdstuk 2</Opschrift>
+            </Kop>
+            <Divisietekst eId="artrecital_o_1__div_o_1__content_o_1" wId="artrecital_o_1__div_o_1__content_o_1">
+               <Kop>
+                  <Opschrift>Toelichting artikel 2.10</Opschrift>
+               </Kop>
+               <Inhoud>
+                  <Al>Toelichting op <IntRef ref="chp_2__subchp_2.3__art_2.10" scope="Artikel">Artikel 2.10</IntRef>. Ook te vinden op<ExtRef soort="URL" ref="https://decentrale.regelgeving.overheid.nl/cvdr/xhtmloutput/Historie/Zaltbommel/637099/CVDR637099_1.html">de website van de gemeente Zaltbommel</ExtRef>.</Al>
+               </Inhoud>
+            </Divisietekst>
+         </Divisie>
+      </ArtikelgewijzeToelichting>
+   </Tekst>
+   <OwObjecten>
+      <Activiteit id="nl.imow-gm0297.activiteit.2019000241">
+         <naam>uitoefenen van bedrijfstypen van categorie 2</naam>
+         <groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/MilieubelastendeActiviteit</groep>
+         <bovenliggendeActiviteitRef ref="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem" />
+      </Activiteit>
+      <Activiteit id="nl.imow-gm0297.activiteit.2019000243">
+         <naam>aanleggen en instandhouden van nutsvoorzieningen</naam>
+         <groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/BouwactiviteitTechnisch</groep>
+         <bovenliggendeActiviteitRef ref="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem" />
+      </Activiteit>
+      <Activiteit id="nl.imow-gm0297.activiteit.2019000244">
+         <naam>aanleggen en instandhouden van voorzieningen voor de waterhuishouding</naam>
+         <groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/BouwactiviteitTechnisch</groep>
+         <bovenliggendeActiviteitRef ref="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem" />
+      </Activiteit>
+      <Activiteit id="nl.imow-gm0297.activiteit.2019000245">
+         <naam>aanleggen en instandhouden van tuin en/of erf</naam>
+         <groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/BouwactiviteitTechnisch</groep>
+         <bovenliggendeActiviteitRef ref="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem" />
+      </Activiteit>
+      <Activiteit id="nl.imow-gm0297.activiteit.2019000246">
+         <naam>uitoefenen van detailhandel in ter plaatse vervaardigde goederen</naam>
+         <groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/ExploitatieactiviteitDetailhandel</groep>
+         <bovenliggendeActiviteitRef ref="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem" />
+      </Activiteit>
+      <Activiteit id="nl.imow-gm0297.activiteit.2019000730">
+         <naam>exploiteren van inrichtingen</naam>
+         <groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/ExploitatieactiviteitBedrijf</groep>
+         <bovenliggendeActiviteitRef ref="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem" />
+      </Activiteit>
+      <Activiteit id="nl.imow-gm0297.activiteit.2019000740">
+         <naam>exploiteren van risicovolle inrichtingen</naam>
+         <groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/ExploitatieactiviteitBedrijf</groep>
+         <bovenliggendeActiviteitRef ref="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem" />
+      </Activiteit>
+      <Activiteit id="nl.imow-gm0297.activiteit.2019000750">
+         <naam>opslagterrein</naam>
+         <groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Opslagactiviteit</groep>
+         <bovenliggendeActiviteitRef ref="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem" />
+      </Activiteit>
+      <Activiteit id="nl.imow-gm0297.activiteit.2019000590">
+         <naam>uitoefenen van detailhandel in ter plaatse vervaardigde goederen</naam>
+         <groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/ExploitatieactiviteitDetailhandel</groep>
+         <bovenliggendeActiviteitRef ref="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem" />
+      </Activiteit>
+      <Activiteit id="nl.imow-gm0297.activiteit.2019000540">
+         <naam>exploiteren van een verkooppunt voor motorbrandstoffen niet zijnde lpg</naam>
+         <groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/ExploitatieactiviteitDetailhandel</groep>
+         <bovenliggendeActiviteitRef ref="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem" />
+         <gerelateerdeActiviteitRef ref="nl.imow-gm0297.activiteit.2019000760" />
+      </Activiteit>
+      <Activiteit id="nl.imow-gm0297.activiteit.2019000760">
+         <naam>opslaan van motorbrandstoffen niet zijnde lpg</naam>
+         <groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Opslagactiviteit</groep>
+         <bovenliggendeActiviteitRef ref="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem" />
+      </Activiteit>
+      <Activiteit id="nl.imow-gm0297.activiteit.2019000660">
+         <naam>exploiteren van een speelautomatenhal</naam>
+         <groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/ExploitatieactiviteitHoreca</groep>
+         <bovenliggendeActiviteitRef ref="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem" />
+      </Activiteit>
+      <Activiteit id="nl.imow-gm0297.activiteit.2019000680">
+         <naam>exploiteren van een kantoor</naam>
+         <groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/ExploitatieactiviteitKantoor</groep>
+         <bovenliggendeActiviteitRef ref="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem" />
+      </Activiteit>
+      <Activiteit id="nl.imow-gm0297.activiteit.2019000530">
+         <naam>wonen in een bedrijfswoning</naam>
+         <groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Woonactiviteit</groep>
+         <bovenliggendeActiviteitRef ref="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem" />
+      </Activiteit>
+      <Activiteit id="nl.imow-gm0297.activiteit.2019000800">
+         <naam>bouwen van een bijgebouw</naam>
+         <groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/BouwactiviteitRuimtelijk</groep>
+         <bovenliggendeActiviteitRef ref="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem" />
+      </Activiteit>
+      <Activiteit id="nl.imow-gm0297.activiteit.2019000810">
+         <naam>boom kappen</naam>
+         <groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Kapactiviteit</groep>
+         <bovenliggendeActiviteitRef ref="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem" />
+      </Activiteit>
+      <Pons id="nl.imow-gm0297.pons.2019000001">
+         <Locatieaanduiding>
+            <GioRef ref="nl.imow-gm0297.gebied.pons" />
+         </Locatieaanduiding>
+      </Pons>
+      <Regelingsgebied id="nl.imow-gm0297.regelingsgebied.2019000001">
+         <Locatieaanduiding>
+            <GioRef ref="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied" />
+         </Locatieaanduiding>
+      </Regelingsgebied>
+   </OwObjecten>
+   <Geo>
+      <Gio work="/join/id/regdata/gm0297/2019/Bedrijf_categorie_2" expressie="/join/id/regdata/gm0297/2019/Bedrijf_categorie_2/nld@2019-06-18;3520" bestand="gio/Bedrijf_categorie_2.gml">
+         <Gebiedsaanwijzing owId="nl.imow-gm0297.gebiedsaanwijzing.2019000001" locatieRef="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2">
+            <type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</type>
+            <naam>Bedrijf categorie 2</naam>
+            <groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Bedrijf</groep>
+         </Gebiedsaanwijzing>
+      </Gio>
+      <Gio work="/join/id/regdata/gm0297/2019/Bouwhoogte" expressie="/join/id/regdata/gm0297/2019/Bouwhoogte/nld@2019-06-18;3520" bestand="gio/Bouwhoogte.gml" />
+      <Gio work="/join/id/regdata/gm0297/2019/Centrumgebied" expressie="/join/id/regdata/gm0297/2019/Centrumgebied/nld@2019-06-18;3520" bestand="gio/Centrumgebied.gml">
+         <Gebiedsaanwijzing owId="nl.imow-gm0297.gebiedsaanwijzing.2019000002" locatieRef="nl.imow-gm0297.gebiedengroep.centrumgebied">
+            <type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</type>
+            <naam>Centrumgebied</naam>
+            <groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Centrumgebied</groep>
+         </Gebiedsaanwijzing>
+      </Gio>
+      <Gio work="/join/id/regdata/gm0297/2019/Zone_A" expressie="/join/id/regdata/gm0297/2019/Zone_A/nld@2019-06-18;3520" bestand="gio/Zone_A.gml" />
+      <Gio work="/join/id/regdata/gm0297/2019/Zone_B" expressie="/join/id/regdata/gm0297/2019/Zone_B/nld@2019-06-18;3520" bestand="gio/Zone_B.gml" />
+      <Gio work="/join/id/regdata/gm0297/2019/Speelhal" expressie="/join/id/regdata/gm0297/2019/Speelhal/nld@2019-06-18;3520" bestand="gio/Speelhal.gml" />
+      <Gio work="/join/id/regdata/gm0297/2019/Welstand" expressie="/join/id/regdata/gm0297/2019/Welstand/nld@2019-06-18;3520" bestand="gio/Welstand.gml" />
+      <Gio work="/join/id/regdata/gm0297/2019/Zuilichem" expressie="/join/id/regdata/gm0297/2019/Zuilichem/nld@2019-06-18;3520" bestand="gio/Zuilichem.gml" />
+      <Gio work="/join/id/regdata/gm0297/2021/Ponsgebied" expressie="/join/id/regdata/gm0297/2021/Ponsgebied/nld@2021-01-01;1" bestand="gio/PonsGebied.gml" />
+      <Ambtsgebied id="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied">
+         <BestuurlijkeGrenzen id="GM0297" domein="NL.BI.BestuurlijkGebied" geldigOp="2021-01-01" />
+      </Ambtsgebied>
+   </Geo>
+   <Exportregels>
+      <ImowLocatie owId="nl.imow-gm0297.gebied.2019000001" soort="Gebied" basisgeoId="50EA019E-3C96-4631-A76C-35BCF4D7AB6D" />
+      <ImowLocatie owId="nl.imow-gm0297.gebied.2019000002" soort="Gebied" basisgeoId="B3AF6AF7-5EFA-4A87-9C66-BFB046DD89AC" />
+      <ImowLocatie owId="nl.imow-gm0297.gebied.2019000003" soort="Gebied" basisgeoId="0868A0B1-DA79-4C33-8305-1BDE0126FA9A" />
+      <ImowLocatie owId="nl.imow-gm0297.gebied.2019000004" soort="Gebied" basisgeoId="D28AF779-7EDD-4A88-8B11-809798F53636" />
+      <ImowLocatie owId="nl.imow-gm0297.gebied.2019000007" soort="Gebied" basisgeoId="33B7D2D0-BF32-4CA1-B7F6-EB0FEF30175A" />
+      <ImowLocatie owId="nl.imow-gm0297.gebied.2019000008" soort="Gebied" noemer="Zuilichem industriegebied 1" basisgeoId="772B4B37-69F8-4671-B92E-3BCED242409D" />
+      <ImowLocatie owId="nl.imow-gm0297.gebied.2019000009" soort="Gebied" noemer="Zuilichem industriegebied 2" basisgeoId="D24C3416-4790-461C-A4D0-A82BA60CA7D6" />
+      <ImowLocatie owId="nl.imow-gm0297.gebied.2019000010" soort="Gebied" noemer="Zuilichem industriegebied 3" basisgeoId="954BA8CC-6E90-4698-BEEC-005A65C63E98" />
+      <ImowLocatie owId="nl.imow-gm0297.gebied.2019000013" soort="Gebied" noemer="Zuilichem industriegebied 4" basisgeoId="EFAAD5E9-B181-4C22-9C3B-B290F4586D82" />
+      <ImowLocatie owId="nl.imow-gm0297.gebied.2019000011" soort="Gebied" basisgeoId="b69221bd-8121-4368-9058-ad4ff7618dcd" />
+      <ImowLocatie owId="nl.imow-gm0297.gebied.2019000014" soort="Gebied" basisgeoId="d775e368-6c81-40b9-9a7a-c2acb70831f3" />
+      <ImowLocatie owId="nl.imow-gm0297.gebied.2019000015" soort="Gebied" basisgeoId="3ce37c9c-1721-4eec-9b4a-5380fd30fbac" />
+      <ImowLocatie owId="nl.imow-gm0297.gebied.2019000016" soort="Gebied" basisgeoId="dc57c9d5-a5ca-470c-b9f6-43eb30abdf8a" />
+      <ImowLocatie owId="nl.imow-gm0297.gebied.pons" soort="Gebied" basisgeoId="e8028788-a5bd-4d1c-ab6e-ae8258c7097d" gioWork="/join/id/regdata/gm0297/2021/Ponsgebied" />
+      <ImowLocatie owId="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2" soort="Gebiedengroep" noemer="Bedrijf categorie 2" gioWork="/join/id/regdata/gm0297/2019/Bedrijf_categorie_2">
+         <LidRef ref="nl.imow-gm0297.gebied.2019000001" />
+      </ImowLocatie>
+      <ImowLocatie owId="nl.imow-gm0297.gebiedengroep.zoneA" soort="Gebiedengroep" noemer="zone A" gioWork="/join/id/regdata/gm0297/2019/Zone_A">
+         <LidRef ref="nl.imow-gm0297.gebied.2019000002" />
+      </ImowLocatie>
+      <ImowLocatie owId="nl.imow-gm0297.gebiedengroep.zoneB" soort="Gebiedengroep" noemer="zone B" gioWork="/join/id/regdata/gm0297/2019/Zone_B">
+         <LidRef ref="nl.imow-gm0297.gebied.2019000003" />
+      </ImowLocatie>
+      <ImowLocatie owId="nl.imow-gm0297.gebiedengroep.centrumgebied" soort="Gebiedengroep" noemer="Centrumgebied" gioWork="/join/id/regdata/gm0297/2019/Centrumgebied">
+         <LidRef ref="nl.imow-gm0297.gebied.2019000004" />
+      </ImowLocatie>
+      <ImowLocatie owId="nl.imow-gm0297.gebiedengroep.speelhal" soort="Gebiedengroep" noemer="exploiteren speelautomatenhal" gioWork="/join/id/regdata/gm0297/2019/Speelhal">
+         <LidRef ref="nl.imow-gm0297.gebied.2019000007" />
+      </ImowLocatie>
+      <ImowLocatie owId="nl.imow-gm0297.gebiedengroep.zuilichem" soort="Gebiedengroep" noemer="Zuilichem" gioWork="/join/id/regdata/gm0297/2019/Zuilichem">
+         <LidRef ref="nl.imow-gm0297.gebied.2019000011" />
+      </ImowLocatie>
+      <ImowNorm owId="nl.imow-gm0297.omgevingswaarde.2019000001" soort="omgevingswaarde" groep="http://standaarden.omgevingswet.overheid.nl/omgevingswaarde/id/concept/Luchtkwaliteit" naam="fijnstof" type="http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/Volume">
+         <Normwaarde owId="nl.imow-gm0297.normwaarde.2019000001" kwantitatieveWaarde="6">
+            <LocatieRef ref="nl.imow-gm0297.gebiedengroep.zuilichem" />
+         </Normwaarde>
+      </ImowNorm>
+      <ImowNorm owId="nl.imow-gm0297.omgevingsnorm.2019000002" soort="omgevingsnorm" groep="http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Bouwaanduiding" gioWork="/join/id/regdata/gm0297/2019/Bouwhoogte">
+         <Normwaarde owId="nl.imow-gm0297.normwaarde.2019000002">
+            <LocatieRef ref="nl.imow-gm0297.gebied.2019000010" />
+            <LocatieRef ref="nl.imow-gm0297.gebied.2019000013" />
+         </Normwaarde>
+         <Normwaarde owId="nl.imow-gm0297.normwaarde.2019000003">
+            <LocatieRef ref="nl.imow-gm0297.gebied.2019000008" />
+            <LocatieRef ref="nl.imow-gm0297.gebied.2019000009" />
+         </Normwaarde>
+      </ImowNorm>
+      <ImowNorm owId="nl.imow-gm0297.omgevingsnorm.2019000003" soort="omgevingsnorm" groep="http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Bouwaanduiding" naam="welstandsniveau" type="http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumBouwhoogte">
+         <Normwaarde owId="nl.imow-gm0297.normwaarde.2019000004" kwalitatieveWaarde="laag">
+            <LocatieRef ref="nl.imow-gm0297.gebied.2019000015" />
+         </Normwaarde>
+         <Normwaarde owId="nl.imow-gm0297.normwaarde.2019000005" kwalitatieveWaarde="midden">
+            <LocatieRef ref="nl.imow-gm0297.gebied.2019000014" />
+         </Normwaarde>
+         <Normwaarde owId="nl.imow-gm0297.normwaarde.2019000006" kwalitatieveWaarde="hoog">
+            <LocatieRef ref="nl.imow-gm0297.gebied.2019000016" />
+         </Normwaarde>
+      </ImowNorm>
+   </Exportregels>
+   <ToepasbareRegels>
+      <ToepasbareActiviteit activiteitRef="nl.imow-gm0297.activiteit.2019000800" soort="conclusie" naam="Conclusie Bouwen van een bijgebouw - Initiele versie" namespace="http://toepasbare-regels.omgevingswet.overheid.nl/00000001807288111000">
+         <Regelgroep id="Regelgroep1" prioriteit="1">Bouwen van een bijgebouw</Regelgroep>
+         <Uitvoeringsregel id="UitvId0001" regelgroepRef="Regelgroep1" prioriteit="10" gegevensType="number">
+            <VraagTekst>Wat is de oppervlakte van het bijgebouw?</VraagTekst>
+         </Uitvoeringsregel>
+         <Beslislogica>
+            <ns1:definitions exporter="Decision Modeler" exporterVersion="7.2.0" id="_0d28736f-5b50-4d24-9e3e-327304ae6807" name="Conclusie Bouwen van een bijgebouw - Initiele versie" namespace="http://toepasbare-regels.omgevingswet.overheid.nl/00000001807288111000">
+	<ns1:extensionElements>
+		<ns2:regelgroepen>
+			<ns2:regelgroep id="Regelgroep1">
+				<ns2:naam>Bouwen van een bijgebouw</ns2:naam>
+				<ns2:prioriteit>1</ns2:prioriteit>
+			</ns2:regelgroep>
+		</ns2:regelgroepen>
+		<ns3:uitvoeringsregels>
+			<ns3:uitvoeringsregel id="UitvId0001">
+				<ns3:regelgroepRef href="#Regelgroep1" />
+				<ns3:bereik>werkzaamheid</ns3:bereik>
+				<ns2:classificatie>activiteit</ns2:classificatie>
+				<ns3:publiceerbaar>true</ns3:publiceerbaar>
+				<ns3:potentieelVertrouwelijk>true</ns3:potentieelVertrouwelijk>
+				<ns2:prioriteit>10</ns2:prioriteit>
+				<ns3:vraag>
+					<ns3:gegevensType>number</ns3:gegevensType>
+					<ns3:vraagTekst>Wat is de oppervlakte van het bijgebouw?</ns3:vraagTekst>
+				</ns3:vraag>
+			</ns3:uitvoeringsregel>
+		</ns3:uitvoeringsregels>			
+	</ns1:extensionElements>
+	<ns1:itemDefinition isCollection="false" label="TConclusie" name="TConclusie">
+		<ns1:typeRef>feel:string</ns1:typeRef>
+		<ns1:allowedValues ns4:constraintsType="enumeration">
+			<ns1:extensionElements>
+				<ns4:constraintDetails>
+					<ns4:display>"NietVanToepassing", "NeemContactOpMet", "Meldingsplicht", "Vergunningplicht", "Informatieplicht", "Toestemmingsvrij", "Verbod"</ns4:display>
+					<ns4:choices>
+						<ns4:value>"NietVanToepassing"</ns4:value>
+						<ns4:display>"NietVanToepassing"</ns4:display>
+					</ns4:choices>
+					<ns4:choices>
+						<ns4:value>"NeemContactOpMet"</ns4:value>
+						<ns4:display>"NeemContactOpMet"</ns4:display>
+					</ns4:choices>
+					<ns4:choices>
+						<ns4:value>"Meldingsplicht"</ns4:value>
+						<ns4:display>"Meldingsplicht"</ns4:display>
+					</ns4:choices>
+					<ns4:choices>
+						<ns4:value>"Vergunningplicht"</ns4:value>
+						<ns4:display>"Vergunningplicht"</ns4:display>
+					</ns4:choices>
+					<ns4:choices>
+						<ns4:value>"Informatieplicht"</ns4:value>
+						<ns4:display>"Informatieplicht"</ns4:display>
+					</ns4:choices>
+					<ns4:choices>
+						<ns4:value>"Toestemmingsvrij"</ns4:value>
+						<ns4:display>"Toestemmingsvrij"</ns4:display>
+					</ns4:choices>
+					<ns4:choices>
+						<ns4:value>"Verbod"</ns4:value>
+						<ns4:display>"Verbod"</ns4:display>
+					</ns4:choices>
+				</ns4:constraintDetails>
+			</ns1:extensionElements>
+			<ns1:text>"NietVanToepassing","NeemContactOpMet","Meldingsplicht","Vergunningplicht","Informatieplicht","Toestemmingsvrij","Verbod"</ns1:text>
+		</ns1:allowedValues>
+	</ns1:itemDefinition>	
+	<ns1:inputData id="InputData0001" name="oppervlakte m2">
+		<ns1:extensionElements>
+			<ns3:uitvoeringsregelRef href="#UitvId0001" />
+		</ns1:extensionElements>							 					 
+		<ns1:variable id="_d4aea971-c2fc-4894-bbfb-bb92a364d628" name="oppervlakte m2" typeRef="feel:number" />
+	</ns1:inputData>	
+	<ns1:decision id="_2dee2620-8640-4061-bf2c-c00beb1f8602" name="Besluit - Bouwen van een bijgebouw">
+		<ns1:extensionElements>
+			<ns5:functioneleStructuurRef href="#http://toepasbare-regels.omgevingswet.overheid.nl/00000001807288111000/id/concept/Conclusienl.imow-gm0297.activiteit.2019000800" />
+		</ns1:extensionElements>					
+		<ns1:variable id="_5c41771c-515c-4d34-8adc-ac7474fb6f2b" name="Besluit - Bouwen van een bijgebouw" typeRef="TConclusie" />
+		<ns1:informationRequirement>
+			<ns1:requiredInput href="#InputData0001" />
+		</ns1:informationRequirement>
+		<ns1:decisionTable hitPolicy="UNIQUE" id="_ede1da70-67bb-4944-bee8-dfd3f5ef17ee" outputLabel="Besluit - Bouwen van een bijgebouw" ns4:descriptionVisible="false" ns4:expressionId="_ee613fb9-9da1-4b4f-b737-57ea9e8967be" typeRef="TConclusie">
+			<ns1:input id="_d26a8cc4-bf55-4df6-8ae2-d5a7c1e5a3d3" label="oppervlakte m2">
+				<ns1:inputExpression typeRef="feel:number">
+					<ns1:text>oppervlakte m2</ns1:text>
+				</ns1:inputExpression>
+			</ns1:input>
+			<ns1:output id="_2c8a345e-bbd7-4de3-8cd5-433a7d8b005b" ns4:allowNull="true">
+				<ns1:outputValues ns4:constraintsType="enumeration">
+					<ns1:text>"NietVanToepassing","NeemContactOpMet","Meldingsplicht","Vergunningplicht","Informatieplicht","Toestemmingsvrij","Verbod",null</ns1:text>
+				</ns1:outputValues>	
+			</ns1:output>	
+			<ns1:rule id="_718ab23d-7381-4281-8070-be5c5d37db8d">
+				<ns1:inputEntry id="_4bd5e571-57cf-47b3-af69-30987cc7433d">
+					<ns1:text>&lt;20</ns1:text>
+				</ns1:inputEntry>
+				<ns1:outputEntry id="_7fa89330-adba-40d7-9009-c63101e3fd79">
+					<ns1:text>"Toestemmingsvrij"</ns1:text>
+				</ns1:outputEntry>
+			</ns1:rule>
+			<ns1:rule id="_8828d4cb-61e8-4a9d-abc9-6b04dc01f578">
+				<ns1:inputEntry id="_7c127fea-ac33-4163-b956-5a1d10e73548">
+					<ns1:text>[20..30)</ns1:text>
+				</ns1:inputEntry>
+				<ns1:outputEntry id="_d6df12a8-0cb0-4a85-8204-a9f54218d827">
+					<ns1:text>"Meldingsplicht"</ns1:text>
+				</ns1:outputEntry>
+			</ns1:rule>
+			<ns1:rule id="_4e22fe95-282d-4814-831c-65c837fc62e9">
+				<ns1:inputEntry id="_4aa7b110-8efd-4e17-9dbd-87117bd2b47c">
+					<ns1:text>&gt;=30</ns1:text>
+				</ns1:inputEntry>
+				<ns1:outputEntry id="_2e4bd114-3d22-4378-9b8c-bca4b1731edc">
+					<ns1:text>"Vergunningplicht"</ns1:text>
+				</ns1:outputEntry>
+			</ns1:rule>
+		</ns1:decisionTable>
+	</ns1:decision>
+</ns1:definitions>
+         </Beslislogica>
+      </ToepasbareActiviteit>
+      <ToepasbareActiviteit activiteitRef="nl.imow-gm0297.activiteit.2019000810" soort="conclusie" naam="Conclusie Kappen van een boom - Initiele versie" namespace="http://toepasbare-regels.omgevingswet.overheid.nl/00000001807288111000">
+         <Regelgroep id="Regelgroep1" prioriteit="1">Kappen van een boom</Regelgroep>
+         <Uitvoeringsregel id="UitvId0001" regelgroepRef="Regelgroep1" prioriteit="10" gegevensType="number">
+            <VraagTekst>Wat is de stamomtrek van de boom?</VraagTekst>
+         </Uitvoeringsregel>
+         <Uitvoeringsregel id="UitvId0002" regelgroepRef="Regelgroep1" prioriteit="20" gegevensType="boolean">
+            <VraagTekst>Is de boom zichtbaar vanaf openbaar toegankelijk gebied?</VraagTekst>
+         </Uitvoeringsregel>
+         <Uitvoeringsregel id="UitvId0003" regelgroepRef="Regelgroep1" prioriteit="30" gegevensType="boolean">
+            <VraagTekst>Wordt de boom gekapt op grond van de Plantenziektenwet?</VraagTekst>
+         </Uitvoeringsregel>
+         <Uitvoeringsregel id="UitvId0004" regelgroepRef="Regelgroep1" prioriteit="40" gegevensType="boolean">
+            <VraagTekst>Wordt de boom gekapt vanwege een aanschrijving op grond van artikel PM van de Algemene plaatselijke verordening?</VraagTekst>
+         </Uitvoeringsregel>
+         <Beslislogica>
+            <ns1:definitions exporter="Decision Modeler" exporterVersion="7.2.0" id="_ea4a7081-2efa-4dab-8169-51b40775a8ec" name="Conclusie Kappen van een boom - Initiele versie" namespace="http://toepasbare-regels.omgevingswet.overheid.nl/00000001807288111000">
+	<ns1:extensionElements>
+		<ns2:regelgroepen>
+			<ns2:regelgroep id="Regelgroep1">
+				<ns2:naam>Kappen van een boom</ns2:naam>
+				<ns2:prioriteit>1</ns2:prioriteit>
+			</ns2:regelgroep>
+		</ns2:regelgroepen>
+		<ns3:uitvoeringsregels>
+			<ns3:uitvoeringsregel id="UitvId0001">
+				<ns3:regelgroepRef href="#Regelgroep1" />
+				<ns3:bereik>werkzaamheid</ns3:bereik>
+				<ns2:classificatie>activiteit</ns2:classificatie>
+				<ns3:publiceerbaar>true</ns3:publiceerbaar>
+				<ns3:potentieelVertrouwelijk>true</ns3:potentieelVertrouwelijk>
+				<ns2:prioriteit>10</ns2:prioriteit>
+				<ns3:vraag>
+					<ns3:gegevensType>number</ns3:gegevensType>
+					<ns3:vraagTekst>Wat is de stamomtrek van de boom?</ns3:vraagTekst>
+				</ns3:vraag>
+			</ns3:uitvoeringsregel>			
+			<ns3:uitvoeringsregel id="UitvId0002">
+				<ns3:regelgroepRef href="#Regelgroep1" />
+				<ns3:bereik>werkzaamheid</ns3:bereik>
+				<ns2:classificatie>activiteit</ns2:classificatie>
+				<ns3:publiceerbaar>true</ns3:publiceerbaar>
+				<ns3:potentieelVertrouwelijk>true</ns3:potentieelVertrouwelijk>
+				<ns2:prioriteit>20</ns2:prioriteit>
+				<ns3:vraag>
+					<ns3:gegevensType>boolean</ns3:gegevensType>
+					<ns3:vraagTekst>Is de boom zichtbaar vanaf openbaar toegankelijk gebied?</ns3:vraagTekst>
+				</ns3:vraag>
+			</ns3:uitvoeringsregel>			
+			<ns3:uitvoeringsregel id="UitvId0003">
+				<ns3:regelgroepRef href="#Regelgroep1" />
+				<ns3:bereik>werkzaamheid</ns3:bereik>
+				<ns2:classificatie>activiteit</ns2:classificatie>
+				<ns3:publiceerbaar>true</ns3:publiceerbaar>
+				<ns3:potentieelVertrouwelijk>true</ns3:potentieelVertrouwelijk>
+				<ns2:prioriteit>30</ns2:prioriteit>
+				<ns3:vraag>
+					<ns3:gegevensType>boolean</ns3:gegevensType>
+					<ns3:vraagTekst>Wordt de boom gekapt op grond van de Plantenziektenwet?</ns3:vraagTekst>
+				</ns3:vraag>
+			</ns3:uitvoeringsregel>			
+			<ns3:uitvoeringsregel id="UitvId0004">
+				<ns3:regelgroepRef href="#Regelgroep1" />
+				<ns3:bereik>werkzaamheid</ns3:bereik>
+				<ns2:classificatie>activiteit</ns2:classificatie>
+				<ns3:publiceerbaar>true</ns3:publiceerbaar>
+				<ns3:potentieelVertrouwelijk>true</ns3:potentieelVertrouwelijk>
+				<ns2:prioriteit>40</ns2:prioriteit>
+				<ns3:vraag>
+					<ns3:gegevensType>boolean</ns3:gegevensType>
+					<ns3:vraagTekst>Wordt de boom gekapt vanwege een aanschrijving op grond van artikel PM van de Algemene plaatselijke verordening?</ns3:vraagTekst>
+				</ns3:vraag>
+			</ns3:uitvoeringsregel>		
+		</ns3:uitvoeringsregels>
+	</ns1:extensionElements>	
+	<ns1:itemDefinition isCollection="false" label="TConclusie" name="TConclusie">
+		<ns1:typeRef>feel:string</ns1:typeRef>
+		<ns1:allowedValues ns4:constraintsType="enumeration">
+			<ns1:extensionElements>
+				<ns4:constraintDetails>
+					<ns4:display>"NietVanToepassing", "NeemContactOpMet", "Meldingsplicht", "Vergunningplicht", "Informatieplicht", "Toestemmingsvrij", "Verbod"</ns4:display>
+					<ns4:choices>
+						<ns4:value>"NietVanToepassing"</ns4:value>
+						<ns4:display>"NietVanToepassing"</ns4:display>
+					</ns4:choices>
+					<ns4:choices>
+						<ns4:value>"NeemContactOpMet"</ns4:value>
+						<ns4:display>"NeemContactOpMet"</ns4:display>
+					</ns4:choices>
+					<ns4:choices>
+						<ns4:value>"Meldingsplicht"</ns4:value>
+						<ns4:display>"Meldingsplicht"</ns4:display>
+					</ns4:choices>
+					<ns4:choices>
+						<ns4:value>"Vergunningplicht"</ns4:value>
+						<ns4:display>"Vergunningplicht"</ns4:display>
+					</ns4:choices>
+					<ns4:choices>
+						<ns4:value>"Informatieplicht"</ns4:value>
+						<ns4:display>"Informatieplicht"</ns4:display>
+					</ns4:choices>
+					<ns4:choices>
+						<ns4:value>"Toestemmingsvrij"</ns4:value>
+						<ns4:display>"Toestemmingsvrij"</ns4:display>
+					</ns4:choices>
+					<ns4:choices>
+						<ns4:value>"Verbod"</ns4:value>
+						<ns4:display>"Verbod"</ns4:display>
+					</ns4:choices>
+				</ns4:constraintDetails>
+			</ns1:extensionElements>
+			<ns1:text>"NietVanToepassing","NeemContactOpMet","Meldingsplicht","Vergunningplicht","Informatieplicht","Toestemmingsvrij","Verbod"</ns1:text>
+		</ns1:allowedValues>
+	</ns1:itemDefinition>
+	<ns1:inputData id="InputData0001" name="stamomtrek">
+		<ns1:extensionElements>
+			<ns3:uitvoeringsregelRef href="#UitvId0001" />
+		</ns1:extensionElements>							 
+		<ns1:variable id="_08a003e2-42c0-46da-b622-40e63672b84d" name="stamomtrek" typeRef="feel:number" />
+	</ns1:inputData>
+	<ns1:inputData id="InputData0002" name="zichtbaar vanaf openbaar toegankelijk gebied">
+		<ns1:extensionElements>
+			<ns3:uitvoeringsregelRef href="#UitvId0002" />
+		</ns1:extensionElements>		
+		<ns1:variable id="_049b8e57-6735-44ac-826f-922f3f56dd66" name="zichtbaar vanaf openbaar toegankelijk gebied" typeRef="feel:boolean" />
+	</ns1:inputData>
+	<ns1:inputData id="_InputData0003" name="gekapt op grond van de Plantenziektenwet">
+		<ns1:extensionElements>
+			<ns3:uitvoeringsregelRef href="#UitvId0003" />
+		</ns1:extensionElements>							 
+		<ns1:variable id="_ccbee686-2119-4560-b1f4-2e8464e73814" name="gekapt op grond van de Plantenziektenwet" typeRef="feel:boolean" />
+	</ns1:inputData>
+	<ns1:inputData id="InputData0004" name="aanschrijving op grond van artikel PM van de Algemene plaatselijke verordening">
+		<ns1:extensionElements>
+			<ns3:uitvoeringsregelRef href="#UitvId0004" />
+		</ns1:extensionElements>							 
+		<ns1:variable id="_68e9f3a3-c767-438c-a4ab-7f7d2158b258" name="aanschrijving op grond van artikel PM van de Algemene plaatselijke verordening" typeRef="feel:boolean" />
+	</ns1:inputData>	
+	<ns1:decision id="_Decision0001" name="Besluit - Kappen van een boom" ns4:useOutputTypeAsAnswer="false">
+		<ns1:extensionElements>
+			<ns5:functioneleStructuurRef href="#http://toepasbare-regels.omgevingswet.overheid.nl/00000001807288111000/id/concept/Conclusienl.imow-gm0297.activiteit.2019000810" />
+		</ns1:extensionElements>
+		<ns1:variable id="_0509e494-4d26-468c-8a75-d75075e2e744" name="Besluit - Kappen van een boom" typeRef="TConclusie" />
+		<ns1:informationRequirement>
+			<ns1:requiredInput href="#InputData0001" />
+		</ns1:informationRequirement>
+		<ns1:informationRequirement>
+			<ns1:requiredInput href="#InputData0002" />
+		</ns1:informationRequirement>
+		<ns1:informationRequirement>
+			<ns1:requiredDecision href="#Decision0002" />
+		</ns1:informationRequirement>
+		<ns1:decisionTable hitPolicy="UNIQUE" id="_bb1183d5-26c4-4c27-ae95-cdccc9af4e22" outputLabel="Besluit - Kappen van een boom" ns4:descriptionVisible="false" ns4:expressionId="_78263a1a-571a-43e6-8d4a-663bba47381a" typeRef="TConclusie">
+			<ns1:input id="_8a9de060-1ed8-4a17-9810-88363956050d" label="stamomtrek" ns4:allowNull="true">
+				<ns1:inputExpression typeRef="feel:number">
+					<ns1:text>stamomtrek</ns1:text>
+				</ns1:inputExpression>
+			</ns1:input>
+			<ns1:input id="_9eb0066f-69e6-4bed-82af-1f70f576e26e" label="zichtbaar vanaf openbaar toegankelijk gebied" ns4:allowNull="true">
+				<ns1:inputExpression typeRef="feel:boolean">
+					<ns1:text>zichtbaar vanaf openbaar toegankelijk gebied</ns1:text>
+				</ns1:inputExpression>
+			</ns1:input>
+			<ns1:input id="_ad5d4458-ad7d-4296-9bbe-e79dab2e462a" label="Plantenziektewet of artikel PM in APV" ns4:allowNull="true">
+				<ns1:inputExpression typeRef="feel:boolean">
+					<ns1:text>Plantenziektewet of artikel PM in APV</ns1:text>
+				</ns1:inputExpression>
+			</ns1:input>
+			<ns1:output id="_53dff9e4-dda5-48a2-a2d6-d7ac73ba23ef" ns4:allowNull="true">
+				<ns1:outputValues ns4:constraintsType="enumeration">
+					<ns1:text>"NietVanToepassing","NeemContactOpMet","Meldingsplicht","Vergunningplicht","Informatieplicht","Toestemmingsvrij","Verbod",null</ns1:text>
+				</ns1:outputValues>
+			</ns1:output>
+			<ns1:rule id="_1df5d8f8-7d6e-4b53-b417-ec85ac5237fd">
+				<ns1:inputEntry id="_c952e6f4-7621-492d-b400-781c880cd17b">
+					<ns1:text>&lt; 50</ns1:text>
+				</ns1:inputEntry>
+				<ns1:inputEntry id="_9d07816c-04d9-4bcf-b231-8f30c6eaaa9c">
+					<ns1:text>-</ns1:text>
+				</ns1:inputEntry>
+				<ns1:inputEntry id="_c6f674af-1522-4942-9843-453c65478381">
+					<ns1:text>-</ns1:text>
+				</ns1:inputEntry>
+				<ns1:outputEntry id="_c88334f2-f366-4edc-9780-40ed818f67c7">
+					<ns1:text>"Toestemmingsvrij"</ns1:text>
+				</ns1:outputEntry>
+			</ns1:rule>
+			<ns1:rule id="_853e9218-e96d-4e12-878f-623aab0d4c32">
+				<ns1:inputEntry id="_b7bbcf66-33ba-4508-8cd2-330e66eb702b">
+					<ns1:text>&gt;= 50</ns1:text>
+				</ns1:inputEntry>
+				<ns1:inputEntry id="_b43b6241-f88d-4377-bcdb-8d84e1d9d9b7">
+					<ns1:text>false</ns1:text>
+				</ns1:inputEntry>
+				<ns1:inputEntry id="_32851144-d786-4829-8cd4-124073fd1438">
+					<ns1:text>-</ns1:text>
+				</ns1:inputEntry>
+				<ns1:outputEntry id="_c356709f-cfce-483e-a425-c9cf405bf4f4">
+					<ns1:text>"Toestemmingsvrij"</ns1:text>
+				</ns1:outputEntry>
+			</ns1:rule>
+			<ns1:rule id="_5907102e-8f04-4ee0-a0c7-36a278daeb23">
+				<ns1:inputEntry id="_8a12f1c0-34cc-4faa-9929-3cbb8ecb054a">
+					<ns1:text>&gt;= 50</ns1:text>
+				</ns1:inputEntry>
+				<ns1:inputEntry id="_d8b8fa17-75e1-4518-ab67-3834fc49f1ee">
+					<ns1:text>true</ns1:text>
+				</ns1:inputEntry>
+				<ns1:inputEntry id="_aad9486b-45d3-45ff-8e53-ca26a2064a7e">
+					<ns1:text>true</ns1:text>
+				</ns1:inputEntry>
+				<ns1:outputEntry id="_b453801c-9c18-4a6b-bb9f-f4dcf6ea83c0">
+					<ns1:text>"Toestemmingsvrij"</ns1:text>
+				</ns1:outputEntry>
+			</ns1:rule>
+			<ns1:rule id="_96eba2f8-277f-4410-8862-45b3f9d6d327">
+				<ns1:inputEntry id="_a8ab2218-efbb-4636-a974-f4142ce7f282">
+					<ns1:text>&gt;= 50</ns1:text>
+				</ns1:inputEntry>
+				<ns1:inputEntry id="_1bf04921-8903-4bfb-ab8e-388db220cc9f">
+					<ns1:text>true</ns1:text>
+				</ns1:inputEntry>
+				<ns1:inputEntry id="_5d4ca6c1-0196-4337-b25a-46ba43edd55a">
+					<ns1:text>false</ns1:text>
+				</ns1:inputEntry>
+				<ns1:outputEntry id="_de738c36-1625-4cb3-be1b-b4aa0f68847f">
+					<ns1:text>"Vergunningplicht"</ns1:text>
+				</ns1:outputEntry>
+			</ns1:rule>
+		</ns1:decisionTable>
+	</ns1:decision>
+	<ns1:decision id="Decision0002" name="Plantenziektewet of artikel PM in APV">
+		<ns1:variable id="_2395d36b-5a56-4099-b03b-cae9743aa267" name="Plantenziektewet of artikel PM in APV" typeRef="feel:boolean" />
+		<ns1:informationRequirement>
+			<ns1:requiredInput href="#_InputData0003" />
+		</ns1:informationRequirement>
+		<ns1:informationRequirement>
+			<ns1:requiredInput href="#InputData0004" />
+		</ns1:informationRequirement>
+		<ns1:decisionTable hitPolicy="UNIQUE" id="_d5f137c5-26ab-438d-b148-4bbb2969e59e" outputLabel="Plantenziektewet of artikel PM in APV" ns4:descriptionVisible="false" ns4:expressionId="_2a9929a2-1b07-4798-9043-61ce311af506" typeRef="feel:boolean">
+			<ns1:input id="_461c05be-8ac2-4d58-bf7e-677cb6552730" label="gekapt op grond van de Plantenziektenwet">
+				<ns1:inputExpression typeRef="feel:boolean">
+					<ns1:text>gekapt op grond van de Plantenziektenwet</ns1:text>
+				</ns1:inputExpression>
+			</ns1:input>
+			<ns1:input id="_fcf92753-26b0-4faa-b9ef-a0ada45357df" label="aanschrijving op grond van artikel PM van de Algemene plaatselijke verordening">
+				<ns1:inputExpression typeRef="feel:boolean">
+					<ns1:text>aanschrijving op grond van artikel PM van de Algemene plaatselijke verordening</ns1:text>
+				</ns1:inputExpression>
+			</ns1:input>
+			<ns1:output id="_afa5fe3c-ee19-43c2-b702-8fcca50b9fb3" ns4:allowNull="true" />
+			<ns1:rule id="_bd7338ae-baaa-4019-bcfc-d99daa3fab86">
+				<ns1:inputEntry id="_eab97adc-6a97-40da-93e5-03ade1c83f97">
+					<ns1:text>true</ns1:text>
+				</ns1:inputEntry>
+				<ns1:inputEntry id="_1e7cf76a-16c8-4043-bc4c-506f5cefb512">
+					<ns1:text>-</ns1:text>
+				</ns1:inputEntry>
+				<ns1:outputEntry id="_79af9a6d-fcc2-4181-858d-2a7578b5416d">
+					<ns1:text>true</ns1:text>
+				</ns1:outputEntry>
+			</ns1:rule>
+			<ns1:rule id="_fde4917f-1ff6-4202-8402-84fbe0aedde9">
+				<ns1:inputEntry id="_df02e1e5-1dcb-40fa-8db7-6f809ee68b15">
+					<ns1:text>false</ns1:text>
+				</ns1:inputEntry>
+				<ns1:inputEntry id="_c80ee37c-01be-44e2-a04d-0e211f038a9b">
+					<ns1:text>true</ns1:text>
+				</ns1:inputEntry>
+				<ns1:outputEntry id="_7fbf839f-4c6e-4ae1-9295-1a9399b5bf91">
+					<ns1:text>true</ns1:text>
+				</ns1:outputEntry>
+			</ns1:rule>
+			<ns1:rule id="_4e1193cd-8c8b-4cc9-b1b9-18e638959b5a">
+				<ns1:inputEntry id="_b7fe898a-7e78-4280-b969-81a4ba09c64c">
+					<ns1:text>false</ns1:text>
+				</ns1:inputEntry>
+				<ns1:inputEntry id="_521a8bf0-c60b-4813-98f2-6ebb2fa61e04">
+					<ns1:text>false</ns1:text>
+				</ns1:inputEntry>
+				<ns1:outputEntry id="_817c57e6-9c1b-4a4c-9733-331253e4db8c">
+					<ns1:text>false</ns1:text>
+				</ns1:outputEntry>
+			</ns1:rule>
+		</ns1:decisionTable>
+	</ns1:decision>
+</ns1:definitions>
+         </Beslislogica>
+      </ToepasbareActiviteit>
+      <ToepasbareActiviteit activiteitRef="nl.imow-gm0297.activiteit.2019000810" soort="indieningsvereistenvergunning" naam="Indieningsvereisten Vergunning Kappen van een boom - Initiele versie" namespace="http://toepasbare-regels.omgevingswet.overheid.nl/00000001807288111000">
+         <Regelgroep id="Regelgroep1" prioriteit="1">Kappen van een boom</Regelgroep>
+         <Uitvoeringsregel id="UitvId0001" regelgroepRef="Regelgroep1" prioriteit="10" gegevensType="number">
+            <VraagTekst>Wat is de stamomtrek van de boom?</VraagTekst>
+         </Uitvoeringsregel>
+         <Uitvoeringsregel id="UitvId0002" regelgroepRef="Regelgroep1" prioriteit="20" gegevensType="boolean">
+            <VraagTekst>Veroorzaakt de boom gevaar of ernstige hinder?</VraagTekst>
+         </Uitvoeringsregel>
+         <Uitvoeringsregel id="UitvId0003" regelgroepRef="Regelgroep1" prioriteit="30" gegevensType="boolean">
+            <VraagTekst>Wordt de boom gekapt vanwege een individueel of maatschappelijk belang?</VraagTekst>
+         </Uitvoeringsregel>
+         <Uitvoeringsregel id="UitvId0004">
+            <Toelichting>Teken de te kappen boom op een kaart, foto of tekening geïdentificeerd met een nummer en de locatie</Toelichting>
+         </Uitvoeringsregel>
+         <Uitvoeringsregel id="UitvId0005" regelgroepRef="Regelgroep1" prioriteit="50" gegevensType="string">
+            <VraagTekst>Wat is de reden voor het kappen van de boom?</VraagTekst>
+         </Uitvoeringsregel>
+         <Beslislogica>
+            <ns1:definitions exporter="Decision Modeler" exporterVersion="7.3.1" id="_f97bca96-7ebe-4a6b-9e60-a9f0d65147fa" name="Indieningsvereisten Vergunning Kappen van een boom - Initiele versie" namespace="http://toepasbare-regels.omgevingswet.overheid.nl/00000001807288111000" ns4:logoChoice="Default" ns4:translationLanguages="" xml:lang="en">
+	<ns1:extensionElements>
+		<ns2:regelgroepen>
+			<ns2:regelgroep id="Regelgroep1">
+				<ns2:naam>Kappen van een boom</ns2:naam>
+				<ns2:prioriteit>1</ns2:prioriteit>
+			</ns2:regelgroep>
+		</ns2:regelgroepen>
+		<ns3:uitvoeringsregels>
+			<ns3:uitvoeringsregel id="UitvId0001">
+				<ns3:regelgroepRef href="#Regelgroep1" />
+				<ns3:bereik>werkzaamheid</ns3:bereik>
+				<ns2:classificatie>activiteit</ns2:classificatie>
+				<ns3:publiceerbaar>true</ns3:publiceerbaar>
+				<ns3:potentieelVertrouwelijk>true</ns3:potentieelVertrouwelijk>
+				<ns2:prioriteit>10</ns2:prioriteit>
+				<ns3:vraag>
+					<ns3:gegevensType>number</ns3:gegevensType>
+					<ns3:vraagTekst>Wat is de stamomtrek van de boom?</ns3:vraagTekst>
+				</ns3:vraag>
+			</ns3:uitvoeringsregel>
+			<ns3:uitvoeringsregel id="UitvId0002">
+				<ns3:regelgroepRef href="#Regelgroep1" />
+				<ns3:bereik>werkzaamheid</ns3:bereik>
+				<ns2:classificatie>activiteit</ns2:classificatie>
+				<ns3:publiceerbaar>true</ns3:publiceerbaar>
+				<ns3:potentieelVertrouwelijk>true</ns3:potentieelVertrouwelijk>
+				<ns2:prioriteit>20</ns2:prioriteit>
+				<ns3:vraag>
+					<ns3:gegevensType>boolean</ns3:gegevensType>
+					<ns3:vraagTekst>Veroorzaakt de boom gevaar of ernstige hinder?</ns3:vraagTekst>
+				</ns3:vraag>
+			</ns3:uitvoeringsregel>
+			<ns3:uitvoeringsregel id="UitvId0003">
+				<ns3:regelgroepRef href="#Regelgroep1" />
+				<ns3:bereik>werkzaamheid</ns3:bereik>
+				<ns2:classificatie>activiteit</ns2:classificatie>
+				<ns3:publiceerbaar>true</ns3:publiceerbaar>
+				<ns3:potentieelVertrouwelijk>true</ns3:potentieelVertrouwelijk>
+				<ns2:prioriteit>30</ns2:prioriteit>
+				<ns3:vraag>
+					<ns3:gegevensType>boolean</ns3:gegevensType>
+					<ns3:vraagTekst>Wordt de boom gekapt vanwege een individueel of maatschappelijk belang?</ns3:vraagTekst>
+				</ns3:vraag>
+			</ns3:uitvoeringsregel>
+			<ns3:uitvoeringsregel id="UitvId0004">
+				<ns3:bijlage>
+					<ns3:bijlageType>Situatieschets</ns3:bijlageType>
+				</ns3:bijlage>
+				<ns6:uitvoeringsregelToelichting>
+					<ns6:toelichting>Teken de te kappen boom op een kaart, foto of tekening geïdentificeerd met een nummer en de locatie</ns6:toelichting>
+				</ns6:uitvoeringsregelToelichting>
+			</ns3:uitvoeringsregel>
+			<ns3:uitvoeringsregel id="UitvId0005">
+				<ns3:regelgroepRef href="#Regelgroep1" />
+				<ns3:bereik>werkzaamheid</ns3:bereik>
+				<ns2:classificatie>activiteit</ns2:classificatie>
+				<ns3:publiceerbaar>true</ns3:publiceerbaar>
+				<ns3:potentieelVertrouwelijk>true</ns3:potentieelVertrouwelijk>
+				<ns2:prioriteit>50</ns2:prioriteit>
+				<ns3:vraag>
+					<ns3:gegevensType>string</ns3:gegevensType>
+					<ns3:vraagTekst>Wat is de reden voor het kappen van de boom?</ns3:vraagTekst>
+				</ns3:vraag>
+			</ns3:uitvoeringsregel>
+		</ns3:uitvoeringsregels>
+	</ns1:extensionElements>
+	<ns1:itemDefinition isCollection="false" label="TConclusie" name="TConclusie">
+		<ns1:typeRef>feel:string</ns1:typeRef>
+		<ns1:allowedValues ns4:constraintsType="enumeration">
+			<ns1:extensionElements>
+				<ns4:constraintDetails>
+					<ns4:display>"NietVanToepassing", "NeemContactOpMet", "Meldingsplicht", "Vergunningplicht", "Informatieplicht", "Toestemmingsvrij", "Verbod"</ns4:display>
+					<ns4:choices>
+						<ns4:value>"NietVanToepassing"</ns4:value>
+						<ns4:display>"NietVanToepassing"</ns4:display>
+					</ns4:choices>
+					<ns4:choices>
+						<ns4:value>"NeemContactOpMet"</ns4:value>
+						<ns4:display>"NeemContactOpMet"</ns4:display>
+					</ns4:choices>
+					<ns4:choices>
+						<ns4:value>"Meldingsplicht"</ns4:value>
+						<ns4:display>"Meldingsplicht"</ns4:display>
+					</ns4:choices>
+					<ns4:choices>
+						<ns4:value>"Vergunningplicht"</ns4:value>
+						<ns4:display>"Vergunningplicht"</ns4:display>
+					</ns4:choices>
+					<ns4:choices>
+						<ns4:value>"Informatieplicht"</ns4:value>
+						<ns4:display>"Informatieplicht"</ns4:display>
+					</ns4:choices>
+					<ns4:choices>
+						<ns4:value>"Toestemmingsvrij"</ns4:value>
+						<ns4:display>"Toestemmingsvrij"</ns4:display>
+					</ns4:choices>
+					<ns4:choices>
+						<ns4:value>"Verbod"</ns4:value>
+						<ns4:display>"Verbod"</ns4:display>
+					</ns4:choices>
+				</ns4:constraintDetails>
+			</ns1:extensionElements>
+			<ns1:text>"NietVanToepassing","NeemContactOpMet","Meldingsplicht","Vergunningplicht","Informatieplicht","Toestemmingsvrij","Verbod"</ns1:text>
+		</ns1:allowedValues>
+	</ns1:itemDefinition>
+	<ns1:inputData id="_5856e129-98dd-4797-9329-3bde20199196" name="stamomtrek">
+		<ns1:extensionElements>
+			<ns3:uitvoeringsregelRef href="#UitvId0001" />
+		</ns1:extensionElements>
+		<ns1:variable id="_4d41004e-ce40-43c3-b04f-d7b71d7972dd" name="stamomtrek" typeRef="feel:number" />
+	</ns1:inputData>
+	<ns1:inputData id="_98dc0d35-f785-415e-b93f-461b5a2c35fe" name="gevaar of ernstige hinder">
+		<ns1:extensionElements>
+			<ns3:uitvoeringsregelRef href="#UitvId0002" />
+		</ns1:extensionElements>
+		<ns1:variable id="_c5c9ccc4-a947-43d9-bf82-94a91a32b0ed" name="gevaar of ernstige hinder" typeRef="feel:boolean" />
+	</ns1:inputData>
+	<ns1:inputData id="_3bbfecd5-865c-4e7c-89af-19c6fa08f0cc" name="individueel of maatschappelijk belang">
+		<ns1:extensionElements>
+			<ns3:uitvoeringsregelRef href="#UitvId0003" />
+		</ns1:extensionElements>
+		<ns1:variable id="_16536717-db35-48dc-b37a-aeaf09a87d0d" name="individueel of maatschappelijk belang" typeRef="feel:boolean" />
+	</ns1:inputData>
+	<ns1:inputData id="_247c495c-831a-4b69-b1d0-e3a2ec233d2a" name="situatieschets">
+		<ns1:extensionElements>
+			<ns3:uitvoeringsregelRef href="#UitvId0004" />
+		</ns1:extensionElements>
+		<ns1:variable id="_062acbcf-fe37-4f5d-b227-b2c3aebe7a0f" name="situatieschets" typeRef="feel:boolean" />
+	</ns1:inputData>
+	<ns1:inputData id="_23042866-38e0-48d8-9b1b-71c064482a66" name="reden">
+		<ns1:extensionElements>
+			<ns3:uitvoeringsregelRef href="#UitvId0005" />
+		</ns1:extensionElements>
+		<ns1:variable id="_e5175d51-6a25-466f-b3ae-fd3a8a07e33f" name="reden" typeRef="feel:string" />
+	</ns1:inputData>
+	<ns1:decision id="_2dee2620-8640-4061-bf2c-c00beb1f8602" name="Indieningsvereisten Vergunning - Kappen van een boom" ns4:useOutputTypeAsAnswer="false">
+		<ns1:extensionElements>
+			<ns5:functioneleStructuurRef href="#http://toepasbare-regels.omgevingswet.overheid.nl/00000001807288111000/id/concept/IndieningsvereistenVergunningnl.imow-gm0297.activiteit.2019000810" />
+		</ns1:extensionElements>
+		<ns1:variable id="_5c41771c-515c-4d34-8adc-ac7474fb6f2b" name="Indieningsvereisten Vergunning - Kappen van een boom" typeRef="feel:boolean" />
+		<ns1:informationRequirement>
+			<ns1:requiredInput href="#_247c495c-831a-4b69-b1d0-e3a2ec233d2a" />
+		</ns1:informationRequirement>
+		<ns1:informationRequirement>
+			<ns1:requiredDecision href="#_4622a149-f0f7-441f-9ac1-4695ac5fb46c" />
+		</ns1:informationRequirement>
+		<ns1:informationRequirement>
+			<ns1:requiredDecision href="#_e2344361-239f-463c-ad74-e48319571f76" />
+		</ns1:informationRequirement>
+		<ns1:informationRequirement>
+			<ns1:requiredDecision href="#_8a33fcea-950a-46e4-9bf1-4eae99700d35" />
+		</ns1:informationRequirement>
+		<ns1:decisionTable hitPolicy="ANY" id="_ede1da70-67bb-4944-bee8-dfd3f5ef17ee" outputLabel="Indieningsvereisten Vergunning - Kappen van een boom" ns4:descriptionVisible="false" ns4:expressionId="_ee613fb9-9da1-4b4f-b737-57ea9e8967be" typeRef="feel:boolean">
+			<ns1:input id="_8a7e1c8b-1b75-477a-9235-5efa061ba737" label="conv stamomtrek" ns4:allowNull="true">
+				<ns1:inputExpression typeRef="feel:boolean">
+					<ns1:text>conv stamomtrek</ns1:text>
+				</ns1:inputExpression>
+			</ns1:input>
+			<ns1:input id="_8caae66a-8e72-4c23-9751-c7af025f5e2b" label="conv reden" ns4:allowNull="true">
+				<ns1:inputExpression typeRef="feel:boolean">
+					<ns1:text>conv reden</ns1:text>
+				</ns1:inputExpression>
+			</ns1:input>
+			<ns1:input id="_b8967a6f-e51c-45b7-87ea-2bf09b12ab09" label="situatieschets" ns4:allowNull="true">
+				<ns1:inputExpression typeRef="feel:boolean">
+					<ns1:text>situatieschets</ns1:text>
+				</ns1:inputExpression>
+			</ns1:input>
+			<ns1:input id="_8f9a3f1f-19a3-47e0-9dcc-49aa1ba0b1de" label="beoordelingsregels" ns4:allowNull="true">
+				<ns1:inputExpression typeRef="feel:string">
+					<ns1:text>beoordelingsregels</ns1:text>
+				</ns1:inputExpression>
+			</ns1:input>
+			<ns1:output id="_2c8a345e-bbd7-4de3-8cd5-433a7d8b005b" ns4:allowNull="true" />
+			<ns1:rule id="_718ab23d-7381-4281-8070-be5c5d37db8d">
+				<ns1:inputEntry id="_521eec67-a69b-4b68-82c7-080fdcb46f6d">
+					<ns1:text>true</ns1:text>
+				</ns1:inputEntry>
+				<ns1:inputEntry id="_743b74ad-d77e-4381-a23f-627fb79279ea">
+					<ns1:text>true</ns1:text>
+				</ns1:inputEntry>
+				<ns1:inputEntry id="_52ee3437-e3c2-4d01-ab48-0be2607e7a87">
+					<ns1:text>true</ns1:text>
+				</ns1:inputEntry>
+				<ns1:inputEntry id="_64ee0ccd-45ab-43bf-8588-e4ce79264c29">
+					<ns1:text>true</ns1:text>
+				</ns1:inputEntry>
+				<ns1:outputEntry id="_7fa89330-adba-40d7-9009-c63101e3fd79">
+					<ns1:text>true</ns1:text>
+				</ns1:outputEntry>
+			</ns1:rule>
+			<ns1:rule id="_2649fc4e-8374-4ce5-8a88-038ef165ad03">
+				<ns1:inputEntry id="_e7c9f918-d15d-4af4-871c-6fad9cbe0cd3">
+					<ns1:text>false</ns1:text>
+				</ns1:inputEntry>
+				<ns1:inputEntry id="_c8a1ca3f-5f56-4fcf-b086-4bbc0dbe9c30">
+					<ns1:text>-</ns1:text>
+				</ns1:inputEntry>
+				<ns1:inputEntry id="_69b2b002-6348-449a-a9c5-fea9cca4d7cd">
+					<ns1:text>-</ns1:text>
+				</ns1:inputEntry>
+				<ns1:inputEntry id="_230e3847-b8c2-4876-9880-cb91262542d0">
+					<ns1:text>-</ns1:text>
+				</ns1:inputEntry>
+				<ns1:outputEntry id="_248d2d63-dce7-4928-b081-e703e57c0f06">
+					<ns1:text>false</ns1:text>
+				</ns1:outputEntry>
+			</ns1:rule>
+			<ns1:rule id="_4fc6627a-7497-4427-a7e2-03c968123df0">
+				<ns1:inputEntry id="_a04c97c5-b1ad-4a69-8fde-7875a80fd93b">
+					<ns1:text>-</ns1:text>
+				</ns1:inputEntry>
+				<ns1:inputEntry id="_f6532185-be25-4683-bae9-421623a0582a">
+					<ns1:text>false</ns1:text>
+				</ns1:inputEntry>
+				<ns1:inputEntry id="_82424a27-b81d-40cc-ad1f-0d167996e3a6">
+					<ns1:text>-</ns1:text>
+				</ns1:inputEntry>
+				<ns1:inputEntry id="_4e97883b-4874-47ac-af32-2981b9e724d4">
+					<ns1:text>-</ns1:text>
+				</ns1:inputEntry>
+				<ns1:outputEntry id="_e4a1f18d-44b9-404e-adc7-2c316d2c3e86">
+					<ns1:text>false</ns1:text>
+				</ns1:outputEntry>
+			</ns1:rule>
+			<ns1:rule id="_1a488617-8b22-4245-8a5b-759e883d79ec">
+				<ns1:inputEntry id="_b0936bd3-7dbf-423c-9b2f-6a9aaf6bb41c">
+					<ns1:text>-</ns1:text>
+				</ns1:inputEntry>
+				<ns1:inputEntry id="_301267d7-003e-47ef-93c3-b80d7195a5ee">
+					<ns1:text>-</ns1:text>
+				</ns1:inputEntry>
+				<ns1:inputEntry id="_eadf3d3a-5c69-4671-a70a-aa1ef8bffadb">
+					<ns1:text>false</ns1:text>
+				</ns1:inputEntry>
+				<ns1:inputEntry id="_18010df6-d802-4789-aa39-f3ab8e33fa87">
+					<ns1:text>-</ns1:text>
+				</ns1:inputEntry>
+				<ns1:outputEntry id="_4c6e57f5-9408-4acf-bc2d-3c97019ba9e8">
+					<ns1:text>false</ns1:text>
+				</ns1:outputEntry>
+			</ns1:rule>
+			<ns1:rule id="_fa073c18-6ffc-46e6-8af2-c57c8fd1f0d8">
+				<ns1:inputEntry id="_532f345f-9991-4fec-82cf-e6003b471b46">
+					<ns1:text>-</ns1:text>
+				</ns1:inputEntry>
+				<ns1:inputEntry id="_1d275d41-633d-4e5f-b212-722301f7f156">
+					<ns1:text>-</ns1:text>
+				</ns1:inputEntry>
+				<ns1:inputEntry id="_38082e2c-89d9-4143-b801-13c908197a0b">
+					<ns1:text>-</ns1:text>
+				</ns1:inputEntry>
+				<ns1:inputEntry id="_6a9b071a-8293-4bd9-a4e7-369c36b31ebb">
+					<ns1:text>false</ns1:text>
+				</ns1:inputEntry>
+				<ns1:outputEntry id="_afc98aa1-bc6c-4c64-a3d2-622d5353213f">
+					<ns1:text>false</ns1:text>
+				</ns1:outputEntry>
+			</ns1:rule>
+		</ns1:decisionTable>
+	</ns1:decision>
+	<ns1:decision id="_4622a149-f0f7-441f-9ac1-4695ac5fb46c" name="beoordelingsregels" ns4:useOutputTypeAsAnswer="false">
+		<ns1:variable id="_685d9196-1f1c-40e4-9b3c-070624abbf0b" name="beoordelingsregels" typeRef="feel:string" />
+		<ns1:informationRequirement>
+			<ns1:requiredInput href="#_98dc0d35-f785-415e-b93f-461b5a2c35fe" />
+		</ns1:informationRequirement>
+		<ns1:informationRequirement>
+			<ns1:requiredInput href="#_3bbfecd5-865c-4e7c-89af-19c6fa08f0cc" />
+		</ns1:informationRequirement>
+		<ns1:decisionTable hitPolicy="ANY" id="_f5754b0a-22f7-47b5-af83-0324016f4e17" outputLabel="beoordelingsregels" ns4:descriptionVisible="false" ns4:expressionId="_ead10b2c-d4ef-4950-b57f-966ae52e87ec" typeRef="feel:string">
+			<ns1:input id="_0fa90d2b-176f-432f-bee9-677a6cdae440" label="gevaar of ernstige hinder">
+				<ns1:inputExpression typeRef="feel:boolean">
+					<ns1:text>gevaar of ernstige hinder</ns1:text>
+				</ns1:inputExpression>
+			</ns1:input>
+			<ns1:input id="_b1e0f197-dc29-4caf-8f5b-3e648b8fc480" label="individueel of maatschappelijk belang">
+				<ns1:inputExpression typeRef="feel:boolean">
+					<ns1:text>individueel of maatschappelijk belang</ns1:text>
+				</ns1:inputExpression>
+			</ns1:input>
+			<ns1:output id="_3fa10b81-423c-4569-bd05-8408d719d83a" ns4:allowNull="true" />
+			<ns1:rule id="_c95fe594-b499-493d-b15e-f5c9619db51c">
+				<ns1:inputEntry id="_4a692aa7-7ec7-4e0b-8160-3e9cd3de6221">
+					<ns1:text>true</ns1:text>
+				</ns1:inputEntry>
+				<ns1:inputEntry id="_857df16a-d75f-46e9-97be-c2a0b258983d">
+					<ns1:text>-</ns1:text>
+				</ns1:inputEntry>
+				<ns1:outputEntry id="_cbcac2d3-659b-436b-bd18-404a6ba1a2b4">
+					<ns1:text>true</ns1:text>
+				</ns1:outputEntry>
+			</ns1:rule>
+			<ns1:rule id="_1e5adec0-52a3-483a-9364-c43f6defb464">
+				<ns1:inputEntry id="_312b1ded-d198-40ca-b42e-5fb6351909a9">
+					<ns1:text>-</ns1:text>
+				</ns1:inputEntry>
+				<ns1:inputEntry id="_580e3cfd-959e-4005-b821-05fba2859fcd">
+					<ns1:text>true</ns1:text>
+				</ns1:inputEntry>
+				<ns1:outputEntry id="_54a00504-82a0-4894-8d7a-9bca6c2d812c">
+					<ns1:text>true</ns1:text>
+				</ns1:outputEntry>
+			</ns1:rule>
+			<ns1:rule id="_50a28b23-14ac-4777-a9ec-214d4e400148">
+				<ns1:inputEntry id="_24b2cdf4-ac11-4a81-a7ce-f3a4f529f921">
+					<ns1:text>false</ns1:text>
+				</ns1:inputEntry>
+				<ns1:inputEntry id="_fac5b1a0-e366-4e35-8a8c-606a0cd67385">
+					<ns1:text>false</ns1:text>
+				</ns1:inputEntry>
+				<ns1:outputEntry id="_a0ff2309-adc6-417f-9b23-9b98f39e3c9b">
+					<ns1:text>true</ns1:text>
+				</ns1:outputEntry>
+			</ns1:rule>
+		</ns1:decisionTable>
+	</ns1:decision>
+	<ns1:decision id="_e2344361-239f-463c-ad74-e48319571f76" name="conv stamomtrek">
+		<ns1:variable id="_208d7ccd-bf79-4a78-8e48-1dce4d2a220c" name="conv stamomtrek" typeRef="feel:boolean" />
+		<ns1:informationRequirement>
+			<ns1:requiredInput href="#_5856e129-98dd-4797-9329-3bde20199196" />
+		</ns1:informationRequirement>
+		<ns1:decisionTable hitPolicy="FIRST" id="_17e905df-3ecc-4fa6-a118-0eaf21063782" outputLabel="conv stamomtrek" ns4:descriptionVisible="false" ns4:expressionId="_490597c2-5b6f-4a37-a03b-4b97d20e091b" typeRef="feel:boolean">
+			<ns1:input id="_ada54fea-e9de-40a0-a5b1-94cb734db956" label="stamomtrek">
+				<ns1:inputExpression typeRef="feel:number">
+					<ns1:text>stamomtrek</ns1:text>
+				</ns1:inputExpression>
+			</ns1:input>
+			<ns1:output id="_14fa13fe-3c3f-4459-85c5-7b373de28ab6" ns4:allowNull="true" />
+			<ns1:rule id="_f653f9db-731f-4b92-aa7b-182ff1b48934">
+				<ns1:inputEntry id="_3eda589f-c62c-4671-bdd5-59850d6fe5ec">
+					<ns1:text>not(null)</ns1:text>
+				</ns1:inputEntry>
+				<ns1:outputEntry id="_a789388f-fa22-49a3-ae4d-f64252dc6be5">
+					<ns1:text>true</ns1:text>
+				</ns1:outputEntry>
+			</ns1:rule>
+		</ns1:decisionTable>
+	</ns1:decision>
+	<ns1:decision id="_8a33fcea-950a-46e4-9bf1-4eae99700d35" name="conv reden">
+		<ns1:variable id="_364c8443-ba73-4c32-b767-4f3678c9515d" name="conv reden" typeRef="feel:boolean" />
+		<ns1:informationRequirement>
+			<ns1:requiredInput href="#_23042866-38e0-48d8-9b1b-71c064482a66" />
+		</ns1:informationRequirement>
+		<ns1:decisionTable hitPolicy="FIRST" id="_dc706f0b-f691-4c61-9d09-ddbc9bc054ae" outputLabel="conv reden" ns4:descriptionVisible="false" ns4:expressionId="_a567f8cf-7a0e-4628-83e3-b1c115dcf328" typeRef="feel:boolean">
+			<ns1:input id="_45967d5f-a3bb-4e16-9cff-195ea4bb5694" label="reden">
+				<ns1:inputExpression typeRef="feel:string">
+					<ns1:text>reden</ns1:text>
+				</ns1:inputExpression>
+			</ns1:input>
+			<ns1:output id="_c7099cc7-d2fa-4b28-a7c4-2cf355b074ca" ns4:allowNull="true" />
+			<ns1:rule id="_5852e7ae-43bf-4c2e-a105-526ec0aa34a2">
+				<ns1:inputEntry id="_fc0bd398-97ea-49d6-87c4-3c4c19cc56a4">
+					<ns1:text>not(null)</ns1:text>
+				</ns1:inputEntry>
+				<ns1:outputEntry id="_e77221dd-ab16-4ad5-91e3-d9e2da5d1216">
+					<ns1:text>true</ns1:text>
+				</ns1:outputEntry>
+			</ns1:rule>
+		</ns1:decisionTable>
+	</ns1:decision>
+</ns1:definitions>
+         </Beslislogica>
+      </ToepasbareActiviteit>
+   </ToepasbareRegels>
+</Regeling>

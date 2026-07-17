@@ -4,6 +4,23 @@ Versiebeleid: semver op `xsd/storm.xsd`. Major = breaking voor bestaande
 STORM-pakketten, minor = nieuwe optionele elementen/attributen, patch =
 verduidelijking zonder schema-effect.
 
+## 0.5.0 — 2026-07-17
+
+**Aanleverlaag (fase 1).**
+
+- Nieuw `Envelop`-compartiment: de LVBB-aanleveradministratie
+  (AanleveringBesluit, publicatieOpdracht) verbatim bewaard per
+  `Envelopdeel@bestand`; in het besluit markeert `Tekstinvoegpunt` de
+  plek van de regelingtekst. De bhkv-rondreis is daarmee
+  envelop-verliesvrij.
+- `Gio@wrapper`: relatief pad naar de verbatim bewaarde
+  AanleveringInformatieObject-wrapper (metadata, hash, symbolisatie);
+  niet-geo informatieobjecten (bv. PDF-bijlagen) reizen mee in `io/`.
+- `ToepasbareActiviteit@geldigBegindatum` (uit de KV-TR-opdracht).
+- Documenten dragen `xsi:schemaLocation` naar het online schema
+  (raw.githubusercontent.com/RicharddeGraaf1/Storm) zodat ze in bv.
+  Oxygen direct valideren.
+
 ## 0.4.0 — 2026-07-17
 
 **Complete + compact.** Besluit: de standaard kent één vocabulaire
