@@ -16,14 +16,19 @@
     <xs:attribute name="wId" type="xs:string"/>
   </xs:attributeGroup>
 
-  <!-- Tekst-root -->
+  <!-- Tekst-root.
+       'volledig' draagt de STOP-tekst VERBATIM (deepcopy + alleen namespace
+       hernoemd naar urn:storm:tekst): tabellen, inline-opmaak, eId/wId en de
+       volledige Divisie/Groep/Toelichting-structuur blijven behouden. Faithful
+       hoort permissief te zijn, dus valideren we die inhoud met een wildcard
+       (processContents="skip"). De gemodelleerde tekst-elementen hieronder
+       (Artikel, Lid, table, inline, ...) blijven het vocabulaire vastleggen en
+       zijn bedoeld voor de strak-gevalideerde varianten integrated/compact. -->
   <xs:element name="Tekst">
     <xs:complexType>
       <xs:sequence>
-        <xs:element ref="RegelingOpschrift"/>
-        <xs:element ref="Lichaam"/>
-        <xs:element ref="Bijlage" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element ref="ArtikelgewijzeToelichting" minOccurs="0"/>
+        <xs:any namespace="##any" processContents="skip"
+                minOccurs="0" maxOccurs="unbounded"/>
       </xs:sequence>
       <xs:attribute name="structuur" default="compact">
         <xs:simpleType>
@@ -35,6 +40,9 @@
           </xs:restriction>
         </xs:simpleType>
       </xs:attribute>
+      <!-- root-attributen van de STOP-regeling verbatim behouden
+           (componentnaam, wordt, schemaversie, ...) -->
+      <xs:anyAttribute namespace="##any" processContents="lax"/>
     </xs:complexType>
   </xs:element>
 
