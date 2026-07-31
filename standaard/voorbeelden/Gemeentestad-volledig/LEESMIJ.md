@@ -11,19 +11,24 @@ Inhoud:
   - **Metadata** (`urn:storm:data`): besluit- + regeling-metadata verbatim
     (`BesluitMetadata`, `Procedureverloop`, `ConsolidatieInformatie`,
     `RegelingMetadata`) — nodig voor verliesvrij `volledig ↔ download`.
-  - **Tekstlaag** (`urn:storm:tekst`): regelingstructuur, 22 artikelen.
+  - **Tekstlaag** (`urn:storm:tekst`): regelingstructuur (22 artikelen) plus de
+    4 bijlagen en de artikelgewijze toelichting.
   - **Objectlaag** (`urn:storm:ow`): 14 Regelteksten, 21 juridische regels,
     16 activiteiten, 14 gebieden + 6 gebiedengroepen + ambtsgebied,
-    2 gebiedsaanwijzingen, 3 normen met 6 normwaarden, regelingsgebied, pons.
+    2 gebiedsaanwijzingen, 3 normen met 6 normwaarden. `Regelingsgebied`, `Pons`
+    en `Kaarten` (met de welstandskaart) zijn eigen secties direct onder
+    `OwObjecten`.
 - **`*.storm-gio.xml`** (`urn:storm:gio`): per GIO één zelfstandig bestand dat
   de informatieobject-metadata + symbolisatie + de geometrie bundelt (voorheen
   verspreid over de `AanleveringInformatieObject`-wrapper en het losse `.gml`).
   `storm-volledig.xml` verwijst er via `GeometrieRef` (basisgeo:id) naar.
 - **`manifest.xml`**: gecombineerd (STOP `manifest.xml` + IMOW `manifest-ow.xml`).
 
-Bewust nog **niet** meegenomen (schema v0.6.0 eerste-pass):
-`Kaart`/`SymbolisatieItem`, de inline-opmaak binnen de tekst (`Al` draagt hier
-platte tekst), en de niet-geo IO (`Regdata.pdf`). De besluit/mutatie-tekstlaag
-is leeg (geconsolideerde regeling).
+Bewust nog **niet** meegenomen (schema v0.6.0 eerste-pass): de inline-opmaak
+binnen de tekst (`Al` draagt hier platte tekst) en de niet-geo IO
+(`Regdata.pdf`). De besluit/mutatie-tekstlaag is leeg (geconsolideerde
+regeling). `SymbolisatieItem` is in de laatste IMOW vervallen en zit daarom
+niet in het model. `Regelingsgebied`/`Pons` staan als `0..1` in de `xs:all`
+van `OwObjecten` (XSD 1.0-beperking); meerdere per regeling is een latere stap.
 
 Gegenereerd met de kiem van `download2volledig`.

@@ -812,6 +812,153 @@
         </tekst:Afdeling>
       </tekst:Hoofdstuk>
     </tekst:Lichaam>
+    <tekst:Bijlage eId="cmp_I" wId="gm0297_1__cmp_I">
+      <tekst:Kop>
+        <tekst:Label>Bijlage</tekst:Label>
+        <tekst:Nummer>I</tekst:Nummer>
+        <tekst:Opschrift>Overzicht Informatieobjecten</tekst:Opschrift>
+      </tekst:Kop>
+      <tekst:Divisietekst eId="cmp_I__content_o_1" wId="gm0297_1__cmp_I__content_o_1">
+        <tekst:Inhoud>
+          <tekst:Begrippenlijst>
+            <tekst:Begrip>
+              <tekst:Term>Bedrijf categorie 2</tekst:Term>
+              <tekst:Definitie>
+                <tekst:Al>/join/id/regdata/gm0297/2019/Bedrijf_categorie_2/nld@2019-06-18;3520</tekst:Al>
+              </tekst:Definitie>
+            </tekst:Begrip>
+            <tekst:Begrip>
+              <tekst:Term>Centrumgebied</tekst:Term>
+              <tekst:Definitie>
+                <tekst:Al>/join/id/regdata/gm0297/2019/Centrumgebied/nld@2019-06-18;3520</tekst:Al>
+              </tekst:Definitie>
+            </tekst:Begrip>
+            <tekst:Begrip>
+              <tekst:Term>Exploiteren speelautomatenhal</tekst:Term>
+              <tekst:Definitie>
+                <tekst:Al>/join/id/regdata/gm0297/2019/Speelhal/nld@2019-06-18;3520</tekst:Al>
+              </tekst:Definitie>
+            </tekst:Begrip>
+            <tekst:Begrip>
+              <tekst:Term>Maximum bouwhoogte bedrijfsgebouw</tekst:Term>
+              <tekst:Definitie>
+                <tekst:Al>/join/id/regdata/gm0297/2019/Bouwhoogte/nld@2019-06-18;3520</tekst:Al>
+              </tekst:Definitie>
+            </tekst:Begrip>
+            <tekst:Begrip>
+              <tekst:Term>Welstandsniveau</tekst:Term>
+              <tekst:Definitie>
+                <tekst:Al>/join/id/regdata/gm0297/2019/Welstand/nld@2019-06-18;3520</tekst:Al>
+              </tekst:Definitie>
+            </tekst:Begrip>
+            <tekst:Begrip>
+              <tekst:Term>Zone A</tekst:Term>
+              <tekst:Definitie>
+                <tekst:Al>/join/id/regdata/gm0297/2019/Zone_A/nld@2019-06-18;3520</tekst:Al>
+              </tekst:Definitie>
+            </tekst:Begrip>
+            <tekst:Begrip>
+              <tekst:Term>Zone B</tekst:Term>
+              <tekst:Definitie>
+                <tekst:Al>/join/id/regdata/gm0297/2019/Zone_B/nld@2019-06-18;3520</tekst:Al>
+              </tekst:Definitie>
+            </tekst:Begrip>
+            <tekst:Begrip>
+              <tekst:Term>Zuilichem</tekst:Term>
+              <tekst:Definitie>
+                <tekst:Al>/join/id/regdata/gm0297/2019/Zuilichem/nld@2019-06-18;3520</tekst:Al>
+              </tekst:Definitie>
+            </tekst:Begrip>
+          </tekst:Begrippenlijst>
+        </tekst:Inhoud>
+      </tekst:Divisietekst>
+    </tekst:Bijlage>
+    <tekst:Bijlage eId="cmp_II" wId="gm0297_1__cmp_II">
+      <tekst:Kop>
+        <tekst:Label>Bijlage</tekst:Label>
+        <tekst:Nummer>II</tekst:Nummer>
+        <tekst:Opschrift>Begrippen</tekst:Opschrift>
+      </tekst:Kop>
+      <tekst:Divisietekst eId="cmp_II__content_o_1" wId="gm0297_1__cmp_II__content_o_1">
+        <tekst:Inhoud>
+          <tekst:Begrippenlijst>
+            <tekst:Begrip>
+              <tekst:Term>Bouwwerk</tekst:Term>
+              <tekst:Definitie>
+                <tekst:Al>Elke constructie van enige omvang van hout, steen, metaal of ander materiaal, die hetzij direct of indirect met de grond verbonden is, hetzij direct of indirect steun vindt in of op de grond.</tekst:Al>
+              </tekst:Definitie>
+            </tekst:Begrip>
+          </tekst:Begrippenlijst>
+        </tekst:Inhoud>
+      </tekst:Divisietekst>
+    </tekst:Bijlage>
+    <tekst:Bijlage eId="cmp_III" wId="gm0297_1__cmp_III">
+      <tekst:Kop>
+        <tekst:Label>Bijlage</tekst:Label>
+        <tekst:Nummer>III</tekst:Nummer>
+        <tekst:Opschrift>Lijst van toegelaten bedrijfstypen</tekst:Opschrift>
+      </tekst:Kop>
+      <tekst:Divisietekst eId="cmp_III__content_o_1" wId="gm0297_1__cmp_III__content_o_1">
+        <tekst:Inhoud>
+          <tekst:Al>Vervaardiging van voedingsmiddelen en dranken.</tekst:Al>
+          <tekst:Al>Slachterijen en overige vleesverwerking:</tekst:Al>
+          <tekst:Lijst>
+            <tekst:Li>
+              <tekst:Al>Slachterijen en overige vleesverwerking:</tekst:Al>
+            </tekst:Li>
+            <tekst:Li>
+              <tekst:Al>vleeswaren- en vleesconservenfabrieken: p.o. kleiner of gelijk aan 1000 m² 2</tekst:Al>
+            </tekst:Li>
+            <tekst:Li>
+              <tekst:Al>vleeswaren- en vleesconservenfabrieken: p.o. kleiner of gelijk aan 200 m² 2</tekst:Al>
+            </tekst:Li>
+            <tekst:Li>
+              <tekst:Al>loonslachterijen 2</tekst:Al>
+            </tekst:Li>
+            <tekst:Li>
+              <tekst:Al>vervaardiging van snacks en vervaardiging van kant-en-klaar-maaltijden met p.o. kleiner of gelijk aan 2.000 m² 2</tekst:Al>
+            </tekst:Li>
+          </tekst:Lijst>
+        </tekst:Inhoud>
+      </tekst:Divisietekst>
+    </tekst:Bijlage>
+    <tekst:Bijlage eId="cmp_IV" wId="gm0297_1__cmp_IV">
+      <tekst:Kop>
+        <tekst:Label>Bijlage</tekst:Label>
+        <tekst:Nummer>IV</tekst:Nummer>
+        <tekst:Opschrift>Overzicht PDF-informatieobjecten</tekst:Opschrift>
+      </tekst:Kop>
+      <tekst:Divisietekst eId="cmp_IV__content_o_1" wId="gm0297_1__cmp_IV__content_o_1">
+        <tekst:Inhoud>
+          <tekst:Begrippenlijst>
+            <tekst:Begrip>
+              <tekst:Term>PDF-bestand</tekst:Term>
+              <tekst:Definitie>
+                <tekst:Al>/join/id/regdata/gm0297/2020/PDF/nld@2020-06-18;3520</tekst:Al>
+              </tekst:Definitie>
+            </tekst:Begrip>
+          </tekst:Begrippenlijst>
+        </tekst:Inhoud>
+      </tekst:Divisietekst>
+    </tekst:Bijlage>
+    <tekst:ArtikelgewijzeToelichting eId="artrecital_o_1" wId="artrecital_o_1">
+      <tekst:Kop>
+        <tekst:Opschrift>Artikelsgewijze Toelichting</tekst:Opschrift>
+      </tekst:Kop>
+      <tekst:Divisie eId="artrecital_o_1__div_o_1" wId="artrecital_o_1__div_o_1">
+        <tekst:Kop>
+          <tekst:Opschrift>Toelichting op artikelen uit hoofdstuk 2</tekst:Opschrift>
+        </tekst:Kop>
+        <tekst:Divisietekst eId="artrecital_o_1__div_o_1__content_o_1" wId="artrecital_o_1__div_o_1__content_o_1">
+          <tekst:Kop>
+            <tekst:Opschrift>Toelichting artikel 2.10</tekst:Opschrift>
+          </tekst:Kop>
+          <tekst:Inhoud>
+            <tekst:Al>Toelichting op Artikel 2.10. Ook te vinden opde website van de gemeente Zaltbommel.</tekst:Al>
+          </tekst:Inhoud>
+        </tekst:Divisietekst>
+      </tekst:Divisie>
+    </tekst:ArtikelgewijzeToelichting>
   </tekst:Tekst>
   <ow:OwObjecten>
     <ow:Regels>
@@ -1153,14 +1300,6 @@
         <ow:artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000116"/>
         <ow:locatieaanduiding ref="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
       </ow:RegelVoorIedereen>
-      <ow:Regelingsgebied>
-        <ow:identificatie>nl.imow-gm0297.regelingsgebied.2019000001</ow:identificatie>
-        <ow:locatieaanduiding ref="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
-      </ow:Regelingsgebied>
-      <ow:Pons>
-        <ow:identificatie>nl.imow-gm0297.pons.2019000001</ow:identificatie>
-        <ow:locatieaanduiding ref="nl.imow-gm0297.gebied.pons"/>
-      </ow:Pons>
     </ow:Regels>
     <ow:Normen>
       <ow:Omgevingswaarde>
@@ -1464,5 +1603,36 @@
         <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.centrumgebied"/>
       </ow:Gebiedsaanwijzing>
     </ow:Gebiedsaanwijzingen>
+    <ow:Regelingsgebied>
+      <ow:identificatie>nl.imow-gm0297.regelingsgebied.2019000001</ow:identificatie>
+      <ow:locatieaanduiding ref="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+    </ow:Regelingsgebied>
+    <ow:Pons>
+      <ow:identificatie>nl.imow-gm0297.pons.2019000001</ow:identificatie>
+      <ow:locatieaanduiding ref="nl.imow-gm0297.gebied.pons"/>
+    </ow:Pons>
+    <ow:Kaarten>
+      <ow:Kaart>
+        <ow:identificatie>nl.imow-gm0297.kaart.2019000001</ow:identificatie>
+        <ow:naam>Welstandskaart</ow:naam>
+        <ow:nummer>001</ow:nummer>
+        <ow:uitsnede>
+          <ow:Kaartextent>
+            <ow:minX>134216</ow:minX>
+            <ow:minY>421753</ow:minY>
+            <ow:maxX>140251</ow:maxX>
+            <ow:maxY>426020</ow:maxY>
+          </ow:Kaartextent>
+        </ow:uitsnede>
+        <ow:kaartlagen>
+          <ow:Kaartlaag>
+            <ow:identificatie>nl.imow-gm0297.kaartlaag.2019000001</ow:identificatie>
+            <ow:naam>welstandslaag</ow:naam>
+            <ow:niveau>1</ow:niveau>
+            <ow:normweergave ref="nl.imow-gm0297.omgevingsnorm.2019000003"/>
+          </ow:Kaartlaag>
+        </ow:kaartlagen>
+      </ow:Kaart>
+    </ow:Kaarten>
   </ow:OwObjecten>
 </Regeling>

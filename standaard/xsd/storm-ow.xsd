@@ -44,6 +44,8 @@
         <xs:element ref="Activiteiten" minOccurs="0"/>
         <xs:element ref="Locaties" minOccurs="0"/>
         <xs:element ref="Gebiedsaanwijzingen" minOccurs="0"/>
+        <xs:element ref="Regelingsgebied" minOccurs="0"/>
+        <xs:element ref="Pons" minOccurs="0"/>
         <xs:element ref="VrijeTekst" minOccurs="0"/>
         <xs:element ref="Kaarten" minOccurs="0"/>
       </xs:all>
@@ -60,8 +62,6 @@
           <xs:element ref="Instructieregel"/>
           <xs:element ref="Omgevingswaarderegel"/>
         </xs:choice>
-        <xs:element ref="Regelingsgebied" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element ref="Pons" minOccurs="0" maxOccurs="unbounded"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -434,12 +434,11 @@
     </xs:complexType>
   </xs:element>
 
-  <!-- Kaarten -->
+  <!-- Kaarten (SymbolisatieItem is in de laatste IMOW vervallen) -->
   <xs:element name="Kaarten">
     <xs:complexType>
       <xs:sequence>
         <xs:element ref="Kaart" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element ref="SymbolisatieItem" minOccurs="0" maxOccurs="unbounded"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -453,48 +452,41 @@
         <xs:element name="uitsnede">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="minX" type="xs:decimal"/>
-              <xs:element name="minY" type="xs:decimal"/>
-              <xs:element name="maxX" type="xs:decimal"/>
-              <xs:element name="maxY" type="xs:decimal"/>
+              <xs:element name="Kaartextent">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="minX" type="xs:decimal"/>
+                    <xs:element name="minY" type="xs:decimal"/>
+                    <xs:element name="maxX" type="xs:decimal"/>
+                    <xs:element name="maxY" type="xs:decimal"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Kaartlaag" maxOccurs="unbounded">
+        <xs:element name="kaartlagen">
           <xs:complexType>
             <xs:sequence>
-              <xs:group ref="gOwObject"/>
-              <xs:element name="identificatie" type="b:NEN3610ID"/>
-              <xs:element name="naam" type="xs:string" minOccurs="0"/>
-              <xs:element name="niveau" type="xs:integer"/>
-              <xs:element name="activiteitlocatieweergave" type="b:Ref"
-                          minOccurs="0" maxOccurs="unbounded"/>
-              <xs:element name="normweergave" type="b:Ref"
-                          minOccurs="0" maxOccurs="unbounded"/>
-              <xs:element name="gebiedsaanwijzingweergave" type="b:Ref"
-                          minOccurs="0" maxOccurs="unbounded"/>
+              <xs:element name="Kaartlaag" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:group ref="gOwObject"/>
+                    <xs:element name="identificatie" type="b:NEN3610ID"/>
+                    <xs:element name="naam" type="xs:string" minOccurs="0"/>
+                    <xs:element name="niveau" type="xs:integer"/>
+                    <xs:element name="activiteitlocatieweergave" type="b:Ref"
+                                minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element name="normweergave" type="b:Ref"
+                                minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element name="gebiedsaanwijzingweergave" type="b:Ref"
+                                minOccurs="0" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="SymbolisatieItem">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element name="symboolcode">
-          <xs:simpleType>
-            <xs:restriction base="xs:string">
-              <xs:pattern value="[a-z]{2,4}[0-9]{3}"/>
-            </xs:restriction>
-          </xs:simpleType>
-        </xs:element>
-        <xs:element name="activiteitLocatieaanduidingSymbolisatie" type="b:Ref"
-                    minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element name="gebiedsaanwijzingSymbolisatie" type="b:Ref"
-                    minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element name="normwaardeSymbolisatie" type="b:Ref"
-                    minOccurs="0" maxOccurs="unbounded"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
