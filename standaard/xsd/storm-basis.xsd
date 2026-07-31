@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  storm-basis.xsd — gedeelde bouwstenen voor de STORM-modules.
+  Namespace urn:storm:basis. Importeert niets (blad in de import-DAG).
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="urn:storm:basis"
+           xmlns="urn:storm:basis"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified"
+           version="0.6.0">
+
+  <!-- STORM-eigen verwijzing (vervangt xlink:href van de bron) -->
+  <xs:complexType name="Ref">
+    <xs:attribute name="ref" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <!-- IMOW NEN3610-identificatie -->
+  <xs:simpleType name="NEN3610ID">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="nl\.imow-(gm|pv|ws|mnre)[0-9]{1,6}\.[a-z]+\.[A-Za-z0-9]{1,32}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Waardelijst-verwijzing (bron: xs:anyURI met omgevingswet-pattern) -->
+  <xs:simpleType name="WaardelijstURI">
+    <xs:restriction base="xs:anyURI">
+      <xs:pattern value="(http|https)://(wetgeving|standaarden|regelgeving)\.omgevingswet\.overheid\.nl/.*"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="WaardeEenheid">
+    <xs:sequence>
+      <xs:element name="waarde" type="xs:decimal"/>
+      <xs:element name="eenheid" type="WaardelijstURI"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

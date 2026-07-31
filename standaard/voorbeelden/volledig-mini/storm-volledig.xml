@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Regeling xmlns="urn:storm:1.0"
+          xmlns:tekst="urn:storm:tekst"
+          xmlns:ow="urn:storm:ow"
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="urn:storm:1.0 https://raw.githubusercontent.com/RicharddeGraaf1/Storm/main/standaard/xsd/storm-volledig.xsd"
           variant="volledig" schemaversie="0.6.0">
@@ -9,57 +11,57 @@
     <bevoegdGezag>gm0297</bevoegdGezag>
   </Identificatie>
 
-  <!-- Laag 1: pure STOP-tekst, geen annotatie erop -->
-  <Tekst structuur="compact">
-    <RegelingOpschrift eId="opschrift"><Al>Omgevingsplan Gemeentestad</Al></RegelingOpschrift>
-    <Lichaam eId="lichaam">
-      <Hoofdstuk eId="hfd_2">
-        <Kop><Label>Hoofdstuk</Label><Nummer>2</Nummer><Opschrift>Bouwen</Opschrift></Kop>
-        <Artikel eId="art_2.1" wId="/akn/nl/act/gm0297/2019/reg456/art_2.1">
-          <Kop><Label>Artikel</Label><Nummer>2.1</Nummer><Opschrift>Bouwhoogte</Opschrift></Kop>
-          <Lid eId="art_2.1__lid_1" wId="/akn/nl/act/gm0297/2019/reg456/art_2.1/lid_1">
-            <LidNummer>1</LidNummer>
-            <Inhoud><Al>In het centrumgebied bedraagt de bouwhoogte ten hoogste 11 meter.</Al></Inhoud>
-          </Lid>
-        </Artikel>
-      </Hoofdstuk>
-    </Lichaam>
-  </Tekst>
+  <!-- Laag 1: pure STOP-tekst (urn:storm:tekst), geen annotatie erop -->
+  <tekst:Tekst structuur="compact">
+    <tekst:RegelingOpschrift eId="opschrift"><tekst:Al>Omgevingsplan Gemeentestad</tekst:Al></tekst:RegelingOpschrift>
+    <tekst:Lichaam eId="lichaam">
+      <tekst:Hoofdstuk eId="hfd_2">
+        <tekst:Kop><tekst:Label>Hoofdstuk</tekst:Label><tekst:Nummer>2</tekst:Nummer><tekst:Opschrift>Bouwen</tekst:Opschrift></tekst:Kop>
+        <tekst:Artikel eId="art_2.1" wId="/akn/nl/act/gm0297/2019/reg456/art_2.1">
+          <tekst:Kop><tekst:Label>Artikel</tekst:Label><tekst:Nummer>2.1</tekst:Nummer><tekst:Opschrift>Bouwhoogte</tekst:Opschrift></tekst:Kop>
+          <tekst:Lid eId="art_2.1__lid_1" wId="/akn/nl/act/gm0297/2019/reg456/art_2.1/lid_1">
+            <tekst:LidNummer>1</tekst:LidNummer>
+            <tekst:Inhoud><tekst:Al>In het centrumgebied bedraagt de bouwhoogte ten hoogste 11 meter.</tekst:Al></tekst:Inhoud>
+          </tekst:Lid>
+        </tekst:Artikel>
+      </tekst:Hoofdstuk>
+    </tekst:Lichaam>
+  </tekst:Tekst>
 
-  <!-- Laag 2: IMOW-objecten los, gekoppeld via wId / @ref -->
-  <OwObjecten>
-    <Regels>
-      <Regeltekst wId="/akn/nl/act/gm0297/2019/reg456/art_2.1">
-        <identificatie>nl.imow-gm0297.regeltekst.001</identificatie>
-      </Regeltekst>
-      <Omgevingswaarderegel>
-        <identificatie>nl.imow-gm0297.juridischeregel.001</identificatie>
-        <idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</idealisatie>
-        <artikelOfLid ref="nl.imow-gm0297.regeltekst.001"/>
-        <locatieaanduiding ref="nl.imow-gm0297.gebied.001"/>
-        <omgevingswaardeaanduiding ref="nl.imow-gm0297.omgevingswaarde.001"/>
-      </Omgevingswaarderegel>
-    </Regels>
-    <Normen>
-      <Omgevingswaarde>
-        <identificatie>nl.imow-gm0297.omgevingswaarde.001</identificatie>
-        <naam>maximum bouwhoogte</naam>
-        <type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumBouwhoogte</type>
-        <normwaarde ref="nl.imow-gm0297.normwaarde.001"/>
-        <groep>http://standaarden.omgevingswet.overheid.nl/omgevingswaardegroep/id/concept/Bouwen</groep>
-      </Omgevingswaarde>
-      <Normwaarde>
-        <identificatie>nl.imow-gm0297.normwaarde.001</identificatie>
-        <kwantitatieveWaarde>11</kwantitatieveWaarde>
-        <locatieaanduiding ref="nl.imow-gm0297.gebied.001"/>
-      </Normwaarde>
-    </Normen>
-    <Locaties>
-      <Gebied>
-        <identificatie>nl.imow-gm0297.gebied.001</identificatie>
-        <noemer>Centrumgebied</noemer>
-        <geometrie><GeometrieRef ref="772B4B37-69F8-4671-B92E-3BCED242409D"/></geometrie>
-      </Gebied>
-    </Locaties>
-  </OwObjecten>
+  <!-- Laag 2: IMOW-objecten los (urn:storm:ow), gekoppeld via wId / @ref -->
+  <ow:OwObjecten>
+    <ow:Regels>
+      <ow:Regeltekst wId="/akn/nl/act/gm0297/2019/reg456/art_2.1">
+        <ow:identificatie>nl.imow-gm0297.regeltekst.001</ow:identificatie>
+      </ow:Regeltekst>
+      <ow:Omgevingswaarderegel>
+        <ow:identificatie>nl.imow-gm0297.juridischeregel.001</ow:identificatie>
+        <ow:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</ow:idealisatie>
+        <ow:artikelOfLid ref="nl.imow-gm0297.regeltekst.001"/>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.gebied.001"/>
+        <ow:omgevingswaardeaanduiding ref="nl.imow-gm0297.omgevingswaarde.001"/>
+      </ow:Omgevingswaarderegel>
+    </ow:Regels>
+    <ow:Normen>
+      <ow:Omgevingswaarde>
+        <ow:identificatie>nl.imow-gm0297.omgevingswaarde.001</ow:identificatie>
+        <ow:naam>maximum bouwhoogte</ow:naam>
+        <ow:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumBouwhoogte</ow:type>
+        <ow:normwaarde ref="nl.imow-gm0297.normwaarde.001"/>
+        <ow:groep>http://standaarden.omgevingswet.overheid.nl/omgevingswaardegroep/id/concept/Bouwen</ow:groep>
+      </ow:Omgevingswaarde>
+      <ow:Normwaarde>
+        <ow:identificatie>nl.imow-gm0297.normwaarde.001</ow:identificatie>
+        <ow:kwantitatieveWaarde>11</ow:kwantitatieveWaarde>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.gebied.001"/>
+      </ow:Normwaarde>
+    </ow:Normen>
+    <ow:Locaties>
+      <ow:Gebied>
+        <ow:identificatie>nl.imow-gm0297.gebied.001</ow:identificatie>
+        <ow:noemer>Centrumgebied</ow:noemer>
+        <ow:geometrie><ow:GeometrieRef ref="772B4B37-69F8-4671-B92E-3BCED242409D"/></ow:geometrie>
+      </ow:Gebied>
+    </ow:Locaties>
+  </ow:OwObjecten>
 </Regeling>

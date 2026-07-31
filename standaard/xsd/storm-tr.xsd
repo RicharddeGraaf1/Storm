@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  storm-tr.xsd — IMTR (toepasbare regels). Namespace urn:storm:tr.
+  Eerste pass: ToepasbareActiviteit met verbatim ingebedde DMN-beslislogica.
+  Zelfstandig (geen imports).
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="urn:storm:tr"
+           xmlns="urn:storm:tr"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified"
+           version="0.6.0">
+
+  <xs:element name="ToepasbareRegels">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ToepasbareActiviteit" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Beslislogica" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:any namespace="##other" processContents="skip"
+                            minOccurs="0" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="activiteitRef" type="xs:string"/>
+            <xs:attribute name="soort" type="xs:string"/>
+            <xs:attribute name="naam" type="xs:string"/>
+            <xs:attribute name="namespace" type="xs:string"/>
+            <xs:attribute name="geldigBegindatum" type="xs:string"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  storm-tekst.xsd — faithful spiegel van de STOP 1.4.1-teksstructuur.
+  Namespace urn:storm:tekst. Pure tekst: géén annotatie op de elementen
+  (die staat als IMOW-object in urn:storm:ow). Zelfstandig (geen imports).
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="urn:storm:tekst"
+           xmlns="urn:storm:tekst"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified"
+           version="0.6.0">
+
+  <xs:attributeGroup name="agTekstId">
+    <xs:attribute name="eId" type="xs:string"/>
+    <xs:attribute name="wId" type="xs:string"/>
+  </xs:attributeGroup>
+
+  <!-- Tekst-root -->
+  <xs:element name="Tekst">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="RegelingOpschrift"/>
+        <xs:element ref="Lichaam"/>
+        <xs:element ref="Bijlage" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="ArtikelgewijzeToelichting" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="structuur" default="compact">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="compact"/>
+            <xs:enumeration value="vrijetekst"/>
+            <xs:enumeration value="klassiek"/>
+            <xs:enumeration value="tijdelijkdeel"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="RegelingOpschrift">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Al" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="agTekstId"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Status-/leeg-elementen (child-elementen, geen attribuut) -->
+  <xs:element name="Gereserveerd"><xs:complexType/></xs:element>
+  <xs:element name="Vervallen"><xs:complexType/></xs:element>
+  <xs:element name="NogNietInWerking"><xs:complexType/></xs:element>
+
+  <xs:group name="gStatus">
+    <xs:choice>
+      <xs:element ref="Gereserveerd"/>
+      <xs:element ref="Vervallen"/>
+      <xs:element ref="NogNietInWerking"/>
+    </xs:choice>
+  </xs:group>
+
+  <xs:group name="gStructuur">
+    <xs:choice>
+      <xs:element ref="Boek"/>
+      <xs:element ref="Deel"/>
+      <xs:element ref="Hoofdstuk"/>
+      <xs:element ref="Titel"/>
+      <xs:element ref="Afdeling"/>
+      <xs:element ref="Paragraaf"/>
+      <xs:element ref="Subparagraaf"/>
+      <xs:element ref="Subsubparagraaf"/>
+      <xs:element ref="Artikel"/>
+      <xs:element ref="Divisie"/>
+      <xs:element ref="Divisietekst"/>
+    </xs:choice>
+  </xs:group>
+
+  <xs:complexType name="StructuurElement">
+    <xs:sequence>
+      <xs:element ref="Kop" minOccurs="0"/>
+      <xs:group ref="gStatus" minOccurs="0"/>
+      <xs:group ref="gStructuur" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attributeGroup ref="agTekstId"/>
+  </xs:complexType>
+
+  <xs:element name="Lichaam" type="StructuurElement"/>
+  <xs:element name="Boek" type="StructuurElement"/>
+  <xs:element name="Deel" type="StructuurElement"/>
+  <xs:element name="Hoofdstuk" type="StructuurElement"/>
+  <xs:element name="Titel" type="StructuurElement"/>
+  <xs:element name="Afdeling" type="StructuurElement"/>
+  <xs:element name="Paragraaf" type="StructuurElement"/>
+  <xs:element name="Subparagraaf" type="StructuurElement"/>
+  <xs:element name="Subsubparagraaf" type="StructuurElement"/>
+  <xs:element name="Bijlage" type="StructuurElement"/>
+  <xs:element name="ArtikelgewijzeToelichting" type="StructuurElement"/>
+
+  <xs:element name="Artikel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Kop"/>
+        <xs:choice>
+          <xs:group ref="gStatus"/>
+          <xs:element ref="Inhoud"/>
+          <xs:element ref="Lid" maxOccurs="unbounded"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="agTekstId"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Lid">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="LidNummer" type="xs:string"/>
+        <xs:choice>
+          <xs:element ref="Vervallen"/>
+          <xs:element ref="NogNietInWerking"/>
+          <xs:element ref="Inhoud"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="agTekstId"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Divisie">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Kop" minOccurs="0"/>
+        <xs:element ref="InleidendeTekst" minOccurs="0"/>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="Divisie"/>
+          <xs:element ref="Divisietekst"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="agTekstId"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Divisietekst">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Kop" minOccurs="0"/>
+        <xs:choice>
+          <xs:group ref="gStatus"/>
+          <xs:element ref="Inhoud"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attributeGroup ref="agTekstId"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Kop">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Label" type="xs:string" minOccurs="0"/>
+        <xs:element name="Nummer" type="xs:string" minOccurs="0"/>
+        <xs:element name="Opschrift" type="Tekstregel" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="InleidendeTekst">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Kop" minOccurs="0"/>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element ref="Al"/>
+          <xs:element ref="Lijst"/>
+          <xs:element ref="Figuur"/>
+        </xs:choice>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Inhoud">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Al"/>
+        <xs:element ref="Lijst"/>
+        <xs:element ref="Begrippenlijst"/>
+        <xs:element ref="Figuur"/>
+        <xs:element ref="table"/>
+        <xs:element ref="Tussenkop"/>
+        <xs:element ref="Kadertekst"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Al" type="Tekstregel"/>
+  <xs:element name="Tussenkop" type="Tekstregel"/>
+
+  <xs:element name="Lijst">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Lijstaanhef" type="Tekstregel" minOccurs="0"/>
+        <xs:element ref="Li" maxOccurs="unbounded"/>
+        <xs:element name="Lijstsluiting" type="Tekstregel" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="type" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Li">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="LiNummer" type="xs:string" minOccurs="0"/>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element ref="Al"/>
+          <xs:element ref="Lijst"/>
+          <xs:element ref="Figuur"/>
+          <xs:element ref="table"/>
+        </xs:choice>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Begrippenlijst">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Begrip" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Begrip">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Term" type="Tekstregel"/>
+        <xs:element name="Definitie">
+          <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+              <xs:element ref="Al"/>
+              <xs:element ref="Lijst"/>
+            </xs:choice>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Kadertekst">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Kop" minOccurs="0"/>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element ref="Al"/>
+          <xs:element ref="Lijst"/>
+          <xs:element ref="Figuur"/>
+          <xs:element ref="table"/>
+        </xs:choice>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Figuur">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Titel" type="xs:string" minOccurs="0"/>
+        <xs:element name="Illustratie">
+          <xs:complexType>
+            <xs:attribute name="naam" type="xs:string" use="required"/>
+            <xs:attribute name="alt" type="xs:string"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Bijschrift" type="Tekstregel" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- CALS-tabel (beknopt) -->
+  <xs:element name="table">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="title" type="Tekstregel" minOccurs="0"/>
+        <xs:element name="tgroup" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="colspec" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="colname" type="xs:string"/>
+                  <xs:attribute name="colnum" type="xs:string"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="thead" type="Rijenblok" minOccurs="0"/>
+              <xs:element name="tbody" type="Rijenblok"/>
+            </xs:sequence>
+            <xs:attribute name="cols" type="xs:string"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="Rijenblok">
+    <xs:sequence>
+      <xs:element name="row" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="entry" type="Tekstregel" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Inline: mixed Tekstregel met opmaak, refs, noten -->
+  <xs:complexType name="Tekstregel" mixed="true">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="i" type="Tekstregel"/>
+      <xs:element name="b" type="Tekstregel"/>
+      <xs:element name="u" type="Tekstregel"/>
+      <xs:element name="strong" type="Tekstregel"/>
+      <xs:element name="sup" type="xs:string"/>
+      <xs:element name="sub" type="xs:string"/>
+      <xs:element name="br"><xs:complexType/></xs:element>
+      <xs:element name="IntRef" type="InlineRef"/>
+      <xs:element name="ExtRef" type="InlineRef"/>
+      <xs:element name="IntIoRef" type="InlineRef"/>
+      <xs:element name="ExtIoRef" type="InlineRef"/>
+      <xs:element ref="Noot"/>
+      <xs:element name="Nootref">
+        <xs:complexType><xs:attribute name="refid" type="xs:string"/></xs:complexType>
+      </xs:element>
+    </xs:choice>
+    <xs:anyAttribute namespace="##other" processContents="lax"/>
+  </xs:complexType>
+  <xs:complexType name="InlineRef" mixed="true">
+    <xs:attribute name="ref" type="xs:anyURI"/>
+    <xs:attribute name="soort" type="xs:string"/>
+    <xs:attribute name="scope" type="xs:string"/>
+    <xs:attributeGroup ref="agTekstId"/>
+  </xs:complexType>
+
+  <xs:element name="Noot">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="NootNummer" type="xs:string"/>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element ref="Al"/>
+          <xs:element ref="Lijst"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:string"/>
+      <xs:attribute name="type" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Besluit/mutatie (STOP) — faithful eerste pass -->
+  <xs:element name="Mutatie">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="RegelingMutatie" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="WijzigArtikel" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="componentnaam" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="RegelingMutatie">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="VoegToe" type="Wijzigactie"/>
+        <xs:element name="Vervang" type="Wijzigactie"/>
+        <xs:element name="Verwijder" type="Wijzigactie"/>
+        <xs:element name="VervangKop" type="Wijzigactie"/>
+      </xs:choice>
+      <xs:attribute name="componentnaam" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="Wijzigactie">
+    <xs:sequence>
+      <xs:group ref="gStructuur" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="wat" type="xs:string"/>
+    <xs:attribute name="positie" type="xs:string"/>
+    <xs:attribute name="context" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:element name="WijzigArtikel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Kop"/>
+        <xs:element name="Wat" type="xs:string" minOccurs="0"/>
+        <xs:element ref="RegelingMutatie" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="agTekstId"/>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

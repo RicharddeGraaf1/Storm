@@ -13,9 +13,18 @@ onzekerheden of bron-eigenaardigheden.
 
 ## Ontwerpprincipe (de kern van "volledig")
 
-`storm-volledig` is een **faithful spiegel** in één namespace (`urn:storm:1.0`):
-alle bronelementen naast elkaar, zónder transformatie. Concreet betekent dat
-een **gelaagde** opzet die de bron-realiteit volgt:
+`storm-volledig` is een **faithful spiegel** die de bronelementen naast elkaar
+zet, zónder transformatie. Om de bron-namen **verbatim** te houden (STOP en
+IMOW hebben allebei bv. een `Divisie`) is het opgeknipt in drie STORM-eigen
+namespaces + een gedeelde basis:
+
+- `urn:storm:tekst` (`storm-tekst.xsd`) — pure STOP-tekst
+- `urn:storm:ow` (`storm-ow.xsd`) — IMOW-objecten (één `OwObjecten`)
+- `urn:storm:tr` (`storm-tr.xsd`) — IMTR toepasbare regels
+- `urn:storm:basis` (`storm-basis.xsd`) — gedeelde types (`Ref`, `NEN3610ID`, …)
+- `urn:storm:1.0` (`storm-volledig.xsd`) — envelop: `Regeling` + `Manifest`
+
+Concreet betekent dat een **gelaagde** opzet die de bron-realiteit volgt:
 
 1. **Tekstlaag (STOP)** — *pure tekst, géén annotatie erop.* Geen inline
    `Regel`/`Tekstdeel`-dragers, geen `agAnnotatie` op Artikel/Lid. (Dat inline
@@ -28,10 +37,10 @@ een **gelaagde** opzet die de bron-realiteit volgt:
 4. **IMTR-laag** — toepasbare regels (STTR-kern + DMN verbatim), zoals in de
    huidige `ToepasbareRegels` (nog te finaliseren tegen de voorbeelden).
 
-Namespace-collaps: de bron-namespaces (`owobject`, `opobject`, `regels`,
-`regelsoplocatie`, `locatie`, `gebiedsaanwijzing`, `kaart`, `symbolisatie`,
-`vrijetekst`, `datatypenalgemeen`, `pons`, `regelingsgebied` + STOP-tekst)
-worden alle één `urn:storm:1.0`. Elementnamen blijven **verbatim**.
+De vele bron-namespaces (`owobject`, `regels`, `locatie`, … + STOP-tekst)
+worden samengevat tot drie STORM-lagen (`tekst`/`ow`/`tr`); elementnamen
+blijven **verbatim** en botsingen (STOP `Divisie` vs IMOW `Divisie`) worden
+door de laag-namespace opgelost i.p.v. door hernoemen.
 
 ---
 
