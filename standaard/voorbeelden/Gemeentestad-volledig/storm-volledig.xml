@@ -1607,9 +1607,11 @@
       <ow:Ambtsgebied>
         <ow:identificatie>nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied</ow:identificatie>
         <ow:bestuurlijkeGrenzenVerwijzing>
-          <ow:bestuurlijkeGrenzenID>GM0297</ow:bestuurlijkeGrenzenID>
-          <ow:domein>NL.BI.BestuurlijkGebied</ow:domein>
-          <ow:geldigOp>2021-01-01</ow:geldigOp>
+          <ow:BestuurlijkeGrenzenVerwijzing>
+            <ow:bestuurlijkeGrenzenID>GM0297</ow:bestuurlijkeGrenzenID>
+            <ow:domein>NL.BI.BestuurlijkGebied</ow:domein>
+            <ow:geldigOp>2021-01-01</ow:geldigOp>
+          </ow:BestuurlijkeGrenzenVerwijzing>
         </ow:bestuurlijkeGrenzenVerwijzing>
       </ow:Ambtsgebied>
     </ow:Locaties>

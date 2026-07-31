@@ -334,12 +334,14 @@
     <xs:complexType>
       <xs:sequence>
         <xs:group ref="gLocatie"/>
+        <!-- verbatim behouden: IMOW 2.0 zet de velden vlak in deze wrapper,
+             3.x nest ze in een BestuurlijkeGrenzenVerwijzing-datatype-laag.
+             Permissief zodat beide vormen valideren. -->
         <xs:element name="bestuurlijkeGrenzenVerwijzing">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="bestuurlijkeGrenzenID" type="xs:string"/>
-              <xs:element name="domein" type="xs:string"/>
-              <xs:element name="geldigOp" type="xs:date"/>
+              <xs:any namespace="##any" processContents="skip"
+                      minOccurs="0" maxOccurs="unbounded"/>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
