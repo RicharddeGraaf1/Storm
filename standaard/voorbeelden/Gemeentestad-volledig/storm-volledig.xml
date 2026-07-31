@@ -1,0 +1,1308 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Regeling xmlns="urn:storm:1.0" xmlns:tekst="urn:storm:tekst" xmlns:ow="urn:storm:ow" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" variant="volledig" schemaversie="0.6.0" xsi:schemaLocation="urn:storm:1.0 https://raw.githubusercontent.com/RicharddeGraaf1/Storm/main/standaard/xsd/storm-volledig.xsd">
+  <Identificatie>
+    <FRBRWork>/akn/nl/act/gm0297/2019/reg456</FRBRWork>
+    <bevoegdGezag>gm0297</bevoegdGezag>
+  </Identificatie>
+  <tekst:Tekst structuur="compact">
+    <tekst:RegelingOpschrift eId="longTitle" wId="longTitle">
+      <tekst:Al>Omgevingsplan Zaltbommel (met de nadruk op Zuilichem)</tekst:Al>
+    </tekst:RegelingOpschrift>
+    <tekst:Lichaam eId="body" wId="body">
+      <tekst:Hoofdstuk eId="chp_1" wId="gm0297_1__chp_1">
+        <tekst:Kop>
+          <tekst:Label>Hoofdstuk</tekst:Label>
+          <tekst:Nummer>1</tekst:Nummer>
+          <tekst:Opschrift>Algemene bepalingen</tekst:Opschrift>
+        </tekst:Kop>
+        <tekst:Artikel eId="chp_1__art_1.4" wId="gm0297_1__chp_1__art_1.4">
+          <tekst:Kop>
+            <tekst:Label>Artikel</tekst:Label>
+            <tekst:Nummer>1.4</tekst:Nummer>
+            <tekst:Opschrift>Toepassingsgebied</tekst:Opschrift>
+          </tekst:Kop>
+          <tekst:Inhoud>
+            <tekst:Al>Dit omgevingsplan is van toepassing in Zaltbommel.</tekst:Al>
+          </tekst:Inhoud>
+        </tekst:Artikel>
+      </tekst:Hoofdstuk>
+      <tekst:Hoofdstuk eId="chp_2" wId="gm0297_1__chp_2">
+        <tekst:Kop>
+          <tekst:Label>Hoofdstuk</tekst:Label>
+          <tekst:Nummer>2</tekst:Nummer>
+          <tekst:Opschrift>Functietoedeling</tekst:Opschrift>
+        </tekst:Kop>
+        <tekst:Afdeling eId="chp_2__subchp_2.2" wId="gm0297_1__chp_2__subchp_2.2">
+          <tekst:Kop>
+            <tekst:Label>Afdeling</tekst:Label>
+            <tekst:Nummer>2.2</tekst:Nummer>
+            <tekst:Opschrift>Bedrijf categorie 2</tekst:Opschrift>
+          </tekst:Kop>
+          <tekst:Artikel eId="chp_2__subchp_2.2__art_2.3" wId="gm0297_1__chp_2__subchp_2.2__art_2.3">
+            <tekst:Kop>
+              <tekst:Label>Artikel</tekst:Label>
+              <tekst:Nummer>2.3</tekst:Nummer>
+              <tekst:Opschrift>Doel functietoedeling</tekst:Opschrift>
+            </tekst:Kop>
+            <tekst:Inhoud>
+              <tekst:Al>Het werkingsgebied van de functie 'Bedrijf categorie 2' is bedoeld voor het verrichten van gebruiksactiviteiten die passen bij een bedrijf met een lichte milieucategorie met een beperkte uitstraling op het omringende gebied.</tekst:Al>
+            </tekst:Inhoud>
+          </tekst:Artikel>
+          <tekst:Artikel eId="chp_2__subchp_2.2__art_2.4" wId="gm0297_1__chp_2__subchp_2.2__art_2.4">
+            <tekst:Kop>
+              <tekst:Label>Artikel</tekst:Label>
+              <tekst:Nummer>2.4</tekst:Nummer>
+              <tekst:Opschrift>Gebruiksactiviteiten die zonder vergunning of melding zijn toegestaan</tekst:Opschrift>
+            </tekst:Kop>
+            <tekst:Inhoud>
+              <tekst:Al>Ter plaatse van het werkingsgebied van de functie 'Bedrijf categorie 2' mogen de locatie en de daarop voorkomende bouwwerken in ieder geval worden gebruikt voor het verrichten van de volgende gebruiksactiviteiten:</tekst:Al>
+              <tekst:Lijst>
+                <tekst:Li>
+                  <tekst:LiNummer>a.</tekst:LiNummer>
+                  <tekst:Al>het uitoefenen van bedrijfstypen van categorie 2 die voorkomen op de bij deze regels behorendeLijst van toegelaten bedrijfstypen ;</tekst:Al>
+                </tekst:Li>
+                <tekst:Li>
+                  <tekst:LiNummer>b.</tekst:LiNummer>
+                  <tekst:Al>het wonen in een bedrijfswoning ;</tekst:Al>
+                </tekst:Li>
+                <tekst:Li>
+                  <tekst:LiNummer>c.</tekst:LiNummer>
+                  <tekst:Al>het aanleggen en instandhouden van nutsvoorzieningen</tekst:Al>
+                </tekst:Li>
+                <tekst:Li>
+                  <tekst:LiNummer>d.</tekst:LiNummer>
+                  <tekst:Al>het aanleggen en instandhouden van voorzieningen voor de waterhuishouding;</tekst:Al>
+                </tekst:Li>
+                <tekst:Li>
+                  <tekst:LiNummer>e.</tekst:LiNummer>
+                  <tekst:Al>het aanleggen en instandhouden van tuin en/of erf.</tekst:Al>
+                </tekst:Li>
+                <tekst:Li>
+                  <tekst:LiNummer>f.</tekst:LiNummer>
+                  <tekst:Al>het uitoefenen van detailhandel in ter plaatse vervaardigde goederen, voor zover deze binnen ‘Zone A’ van het werkingsgebied ‘Bedrijf categorie 2’ plaatsvinden.</tekst:Al>
+                </tekst:Li>
+              </tekst:Lijst>
+            </tekst:Inhoud>
+          </tekst:Artikel>
+          <tekst:Artikel eId="chp_2__subchp_2.2__art_2.5" wId="gm0297_1__chp_2__subchp_2.2__art_2.5">
+            <tekst:Kop>
+              <tekst:Label>Artikel</tekst:Label>
+              <tekst:Nummer>2.5</tekst:Nummer>
+              <tekst:Opschrift>Gebruiksactiviteiten die verboden zijn</tekst:Opschrift>
+            </tekst:Kop>
+            <tekst:Inhoud>
+              <tekst:Al>Ter plaatse van het werkingsgebied van de functie 'Bedrijf categorie 2' is het verboden de locatie en de daarop voorkomende bouwwerken te gebruiken:</tekst:Al>
+              <tekst:Lijst>
+                <tekst:Li>
+                  <tekst:LiNummer>a.</tekst:LiNummer>
+                  <tekst:Al>voor het exploiteren van inrichtingen als bedoeld in artikel 2.1 lid 3 juncto Bijlage 1 onderdeel D van het Besluit omgevingsrecht;</tekst:Al>
+                </tekst:Li>
+                <tekst:Li>
+                  <tekst:LiNummer>b.</tekst:LiNummer>
+                  <tekst:Al>voor het exploiteren van risicovolle inrichtingen;</tekst:Al>
+                </tekst:Li>
+                <tekst:Li>
+                  <tekst:LiNummer>c.</tekst:LiNummer>
+                  <tekst:Al>als opslagterrein, voor zover het betreft het gebied gelegen voor de voorgevels van de bedrijfsgebouwen.</tekst:Al>
+                </tekst:Li>
+              </tekst:Lijst>
+            </tekst:Inhoud>
+          </tekst:Artikel>
+          <tekst:Artikel eId="chp_2__subchp_2.2__art_2.6" wId="gm0297_1__chp_2__subchp_2.2__art_2.6">
+            <tekst:Kop>
+              <tekst:Label>Artikel</tekst:Label>
+              <tekst:Nummer>2.6</tekst:Nummer>
+              <tekst:Opschrift>Gebruiksactiviteiten die zijn toegelaten na voorafgaande melding</tekst:Opschrift>
+            </tekst:Kop>
+            <tekst:Lid eId="chp_2__subchp_2.2__art_2.6__para_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.6__para_1">
+              <tekst:LidNummer>1.</tekst:LidNummer>
+              <tekst:Inhoud>
+                <tekst:Al>Meldingplichtige gebruiksactiviteiten</tekst:Al>
+                <tekst:Al>Ter plaatse van het werkingsgebied van de functie 'Bedrijf categorie 2' is het binnen 'Zone B' verboden de gebruiksactiviteit 'het uitoefenen van detailhandel in ter plaatse vervaardigde goederen' te verrichten zonder dat daarvoor aan het bevoegd gezag een melding is gedaan</tekst:Al>
+              </tekst:Inhoud>
+            </tekst:Lid>
+            <tekst:Lid eId="chp_2__subchp_2.2__art_2.6__para_2" wId="gm0297_1__chp_2__subchp_2.2__art_2.6__para_2">
+              <tekst:LidNummer>2.</tekst:LidNummer>
+              <tekst:Inhoud>
+                <tekst:Al>Indieningsvereisten melding</tekst:Al>
+                <tekst:Al>Bij het doen van de melding dienen de volgende indieningsvereisten in acht te worden genomen:</tekst:Al>
+                <tekst:Lijst>
+                  <tekst:Li>
+                    <tekst:LiNummer>a.</tekst:LiNummer>
+                    <tekst:Al>de melding dient te worden gedaan door middel van het inzenden van het bij deze regels behorende Formulier Melding;</tekst:Al>
+                  </tekst:Li>
+                  <tekst:Li>
+                    <tekst:LiNummer>b.</tekst:LiNummer>
+                    <tekst:Al>toegevoegd moet worden een terreininrichtingstekening.</tekst:Al>
+                  </tekst:Li>
+                </tekst:Lijst>
+              </tekst:Inhoud>
+            </tekst:Lid>
+          </tekst:Artikel>
+          <tekst:Artikel eId="chp_2__subchp_2.2__art_2.7" wId="gm0297_1__chp_2__subchp_2.2__art_2.7">
+            <tekst:Kop>
+              <tekst:Label>Artikel</tekst:Label>
+              <tekst:Nummer>2.7</tekst:Nummer>
+              <tekst:Opschrift>Gebruiksactiviteiten die zijn toegelaten nadat daarvoor omgevingsvergunning is verleend</tekst:Opschrift>
+            </tekst:Kop>
+            <tekst:Lid eId="chp_2__subchp_2.2__art_2.7__para_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_1">
+              <tekst:LidNummer>1.</tekst:LidNummer>
+              <tekst:Inhoud>
+                <tekst:Al>Vergunningplichtige gebruiksactiviteiten</tekst:Al>
+                <tekst:Al>Ter plaatse van het werkingsgebied van de functie 'Bedrijf categorie 2' is het verboden om zonder omgevingsvergunning de gebruiksactiviteit 'het exploiteren van een verkooppunt voor motorbrandstoffen niet zijnde lpg' te verrichten. Daarnaast is het eveneens verboden om deze gebruiksactiviteit uit te voeren zonder een vergunning voor de milieubelastende activiteit ‘het opslaan van motorbrandstoffen niet zijnde lpg’, zoals beschreven in Artikel 13.24.</tekst:Al>
+              </tekst:Inhoud>
+            </tekst:Lid>
+            <tekst:Lid eId="chp_2__subchp_2.2__art_2.7__para_2" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_2">
+              <tekst:LidNummer>2.</tekst:LidNummer>
+              <tekst:Inhoud>
+                <tekst:Al>Indieningsvereisten aanvraag omgevingsvergunning</tekst:Al>
+                <tekst:Al>Bij het indienen van de aanvraag om omgevingsvergunning dienen de volgende indieningsvereisten in acht te worden genomen:</tekst:Al>
+                <tekst:Lijst>
+                  <tekst:Li>
+                    <tekst:LiNummer>a.</tekst:LiNummer>
+                    <tekst:Al>de aanvraag dient te worden ingediend door middel van het inzenden van het bij deze regels behorende Formulier Aanvraag omgevingsvergunning;</tekst:Al>
+                  </tekst:Li>
+                  <tekst:Li>
+                    <tekst:LiNummer>b.</tekst:LiNummer>
+                    <tekst:Al>toegevoegd moet worden een terreininrichtingstekening;</tekst:Al>
+                  </tekst:Li>
+                  <tekst:Li>
+                    <tekst:LiNummer>c.</tekst:LiNummer>
+                    <tekst:Al>toegevoegd moet worden een RisicoEffectRapportage.</tekst:Al>
+                  </tekst:Li>
+                </tekst:Lijst>
+              </tekst:Inhoud>
+            </tekst:Lid>
+            <tekst:Lid eId="chp_2__subchp_2.2__art_2.7__para_3" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_3">
+              <tekst:LidNummer>3.</tekst:LidNummer>
+              <tekst:Inhoud>
+                <tekst:Al>Beoordelingsregels aanvraag omgevingsvergunning</tekst:Al>
+                <tekst:Al>De omgevingsvergunning wordt alleen verleend als aan de volgende regels wordt voldaan:</tekst:Al>
+                <tekst:Lijst>
+                  <tekst:Li>
+                    <tekst:LiNummer>a.</tekst:LiNummer>
+                    <tekst:Al>Uit de RisicoEffectRapportage is gebleken dat het gevaar voor de omliggende gevoelige functies ten hoogste 0.1 is.</tekst:Al>
+                  </tekst:Li>
+                  <tekst:Li>
+                    <tekst:LiNummer>b.</tekst:LiNummer>
+                    <tekst:Al>Bebouwing wordt uitsluitend gebruikt als technische ruimte, zoals een werkplaats, en als servicegebouw ten dienste van het verkooppunt motorbrandstoffen, waaronder in ieder geval begrepen winkel, magazijn en sanitaire ruimten.</tekst:Al>
+                  </tekst:Li>
+                  <tekst:Li>
+                    <tekst:LiNummer>c.</tekst:LiNummer>
+                    <tekst:Al>In het servicegebouw zijn geen afzonderlijke ruimten voor detailhandel.</tekst:Al>
+                  </tekst:Li>
+                  <tekst:Li>
+                    <tekst:LiNummer>d.</tekst:LiNummer>
+                    <tekst:Al>Er zijn geen zelfstandige en onzelfstandige horecaruimten in de zin van café/bar, restaurant, snackbar, et cetera. Buffetverkoop en verkoop uit automatiek zijn, als onderdeel van de winkel, wel toegestaan.</tekst:Al>
+                  </tekst:Li>
+                </tekst:Lijst>
+              </tekst:Inhoud>
+            </tekst:Lid>
+          </tekst:Artikel>
+        </tekst:Afdeling>
+        <tekst:Afdeling eId="chp_2__subchp_2.3" wId="gm0297_1__chp_2__subchp_2.3">
+          <tekst:Kop>
+            <tekst:Label>Afdeling</tekst:Label>
+            <tekst:Nummer>2.3</tekst:Nummer>
+            <tekst:Opschrift>Centrumgebied</tekst:Opschrift>
+          </tekst:Kop>
+          <tekst:Artikel eId="chp_2__subchp_2.3__art_2.9" wId="gm0297_1__chp_2__subchp_2.3__art_2.9">
+            <tekst:Kop>
+              <tekst:Label>Artikel</tekst:Label>
+              <tekst:Nummer>2.9</tekst:Nummer>
+              <tekst:Opschrift>Doel functietoedeling</tekst:Opschrift>
+            </tekst:Kop>
+            <tekst:Inhoud>
+              <tekst:Al>Het werkingsgebied van de functie 'Centrumgebied' is bedoeld voor het verrichten van gebruiksactiviteiten die passen in een stadscentrum met een overwegend stedelijke inrichting en die geen onevenredige afbreuk doen aan het stedelijke karakter of aan de beleving van het bezoekende publiek.</tekst:Al>
+            </tekst:Inhoud>
+          </tekst:Artikel>
+          <tekst:Artikel eId="chp_2__subchp_2.3__art_2.10" wId="gm0297_1__chp_2__subchp_2.3__art_2.10">
+            <tekst:Kop>
+              <tekst:Label>Artikel</tekst:Label>
+              <tekst:Nummer>2.10</tekst:Nummer>
+              <tekst:Opschrift>Gebruiksactiviteiten die zonder vergunning of melding zijn toegestaan</tekst:Opschrift>
+            </tekst:Kop>
+            <tekst:Inhoud>
+              <tekst:Al>Ter plaatse van het werkingsgebied van de functie 'Centrumgebied', zoals benoemd inartikel 2.9 mag de locatie in ieder geval worden gebruikt voor het verrichten van de volgende gebruiksactiviteiten:</tekst:Al>
+              <tekst:Lijst>
+                <tekst:Li>
+                  <tekst:LiNummer>a.</tekst:LiNummer>
+                  <tekst:Al>het exploiteren van een bedrijf;</tekst:Al>
+                </tekst:Li>
+                <tekst:Li>
+                  <tekst:LiNummer>b.</tekst:LiNummer>
+                  <tekst:Al>het exploiteren van een instelling voor cultuur en ontspanning;</tekst:Al>
+                </tekst:Li>
+                <tekst:Li>
+                  <tekst:LiNummer>c.</tekst:LiNummer>
+                  <tekst:Al>het uitoefenen van detailhandel;</tekst:Al>
+                </tekst:Li>
+                <tekst:Li>
+                  <tekst:LiNummer>d.</tekst:LiNummer>
+                  <tekst:Al>het uitoefenen van dienstverlening;</tekst:Al>
+                </tekst:Li>
+                <tekst:Li>
+                  <tekst:LiNummer>e.</tekst:LiNummer>
+                  <tekst:Al>het exploiteren van een horeca-inrichting;</tekst:Al>
+                </tekst:Li>
+                <tekst:Li>
+                  <tekst:LiNummer>f.</tekst:LiNummer>
+                  <tekst:Al>het exploiteren van een kantoor;</tekst:Al>
+                </tekst:Li>
+                <tekst:Li>
+                  <tekst:LiNummer>g.</tekst:LiNummer>
+                  <tekst:Al>het exploiteren van een instelling voor maatschappelijke voorzieningen;</tekst:Al>
+                </tekst:Li>
+                <tekst:Li>
+                  <tekst:LiNummer>h.</tekst:LiNummer>
+                  <tekst:Al>het exploiteren van een centrale voor het verwerken van huishoudelijk afval;</tekst:Al>
+                </tekst:Li>
+                <tekst:Li>
+                  <tekst:LiNummer>i.</tekst:LiNummer>
+                  <tekst:Al>het exploiteren van een speelautomatenhal, uitsluitend ter plaatse van het werkingsgebied 'exploiteren speelautomatenhal';</tekst:Al>
+                </tekst:Li>
+                <tekst:Li>
+                  <tekst:LiNummer>j.</tekst:LiNummer>
+                  <tekst:Al>het aanleggen en instandhouden van openbaar groen;</tekst:Al>
+                </tekst:Li>
+                <tekst:Li>
+                  <tekst:LiNummer>k.</tekst:LiNummer>
+                  <tekst:Al>het recreëren;</tekst:Al>
+                </tekst:Li>
+                <tekst:Li>
+                  <tekst:LiNummer>l.</tekst:LiNummer>
+                  <tekst:Al>het sporten;</tekst:Al>
+                </tekst:Li>
+                <tekst:Li>
+                  <tekst:LiNummer>m.</tekst:LiNummer>
+                  <tekst:Al>het wonen;</tekst:Al>
+                </tekst:Li>
+                <tekst:Li>
+                  <tekst:LiNummer>n.</tekst:LiNummer>
+                  <tekst:Al>het uitoefenen van een beroep aan huis;</tekst:Al>
+                </tekst:Li>
+                <tekst:Li>
+                  <tekst:LiNummer>o.</tekst:LiNummer>
+                  <tekst:Al>het exploiteren van een aan de woonfunctie ondergeschikt bedrijf aan huis;</tekst:Al>
+                </tekst:Li>
+                <tekst:Li>
+                  <tekst:LiNummer>p.</tekst:LiNummer>
+                  <tekst:Al>het aanleggen en instandhouden van tuin en/of erf;</tekst:Al>
+                </tekst:Li>
+                <tekst:Li>
+                  <tekst:LiNummer>q.</tekst:LiNummer>
+                  <tekst:Al>het aanleggen en instandhouden van de openbare ruimte , waaronder in ieder geval worden begrepen voorzieningen voor de waterhuishouding, voetpaden, fietspaden, wegen en voorzieningen die het verblijf in de openbare ruimte vergemakkelijken, zoals verlichting,</tekst:Al>
+                </tekst:Li>
+              </tekst:Lijst>
+            </tekst:Inhoud>
+          </tekst:Artikel>
+          <tekst:Artikel eId="chp_2__subchp_2.3__art_2.11" wId="gm0297_1__chp_2__subchp_2.3__art_2.11">
+            <tekst:Kop>
+              <tekst:Label>Artikel</tekst:Label>
+              <tekst:Nummer>2.11</tekst:Nummer>
+              <tekst:Opschrift>Gebruiksactiviteiten die zijn toegelaten na voorafgaande melding</tekst:Opschrift>
+            </tekst:Kop>
+            <tekst:Lid eId="chp_2__subchp_2.3__art_2.11__para_1" wId="gm0297_1__chp_2__subchp_2.3__art_2.11__para_1">
+              <tekst:LidNummer>1.</tekst:LidNummer>
+              <tekst:Inhoud>
+                <tekst:Al>Meldingplichtige gebruiksactiviteiten</tekst:Al>
+                <tekst:Al>Ter plaatse van het werkingsgebied van de functie 'Centrumgebied' is het verboden de gebruiksactiviteit 'het wonen in een bedrijfswoning' te verrichten zonder dat daarvoor aan het bevoegd gezag een melding is gedaan.</tekst:Al>
+              </tekst:Inhoud>
+            </tekst:Lid>
+            <tekst:Lid eId="chp_2__subchp_2.3__art_2.11__para_2" wId="gm0297_1__chp_2__subchp_2.3__art_2.11__para_2">
+              <tekst:LidNummer>2.</tekst:LidNummer>
+              <tekst:Inhoud>
+                <tekst:Al>Indieningsvereisten melding</tekst:Al>
+                <tekst:Al>Bij het doen van de melding dienen de volgende indieningsvereisten in acht te worden genomen:</tekst:Al>
+                <tekst:Lijst>
+                  <tekst:Li>
+                    <tekst:LiNummer>a.</tekst:LiNummer>
+                    <tekst:Al>de melding dient te worden gedaan door middel van het inzenden van het bij deze regels behorende Formulier Melding;</tekst:Al>
+                  </tekst:Li>
+                </tekst:Lijst>
+              </tekst:Inhoud>
+            </tekst:Lid>
+          </tekst:Artikel>
+        </tekst:Afdeling>
+        <tekst:Afdeling eId="chp_2__subchp_2.4" wId="gm0297_1__chp_2__subchp_2.4">
+          <tekst:Kop>
+            <tekst:Label>Afdeling</tekst:Label>
+            <tekst:Nummer>2.4</tekst:Nummer>
+            <tekst:Opschrift>Voorbeeld omgevingswaarde</tekst:Opschrift>
+          </tekst:Kop>
+          <tekst:Artikel eId="chp_2__subchp_2.4__art_2.12" wId="gm0297_1__chp_2__subchp_2.4__art_2.12">
+            <tekst:Kop>
+              <tekst:Label>Artikel</tekst:Label>
+              <tekst:Nummer>2.12</tekst:Nummer>
+              <tekst:Opschrift>Omgevingswaarde stikstofdioxide</tekst:Opschrift>
+            </tekst:Kop>
+            <tekst:Inhoud>
+              <tekst:Al>Voor stikstofdioxide geldt in 'Zuilichem' de volgende ten hoogste toelaatbare concentraties:</tekst:Al>
+              <tekst:Lijst>
+                <tekst:Li>
+                  <tekst:LiNummer>a.</tekst:LiNummer>
+                  <tekst:Al>150 μg/m3 uurgemiddelde, dat ten hoogste twaalf maal per kalenderjaar wordt overschreden; en</tekst:Al>
+                </tekst:Li>
+                <tekst:Li>
+                  <tekst:LiNummer>b.</tekst:LiNummer>
+                  <tekst:Al>30 μg/m3 als kalenderjaargemiddelde.</tekst:Al>
+                </tekst:Li>
+              </tekst:Lijst>
+              <tekst:Al>Dit komt overeen met wat er in de Omgevingsregeling staat in bijlage XXIII B.</tekst:Al>
+            </tekst:Inhoud>
+          </tekst:Artikel>
+        </tekst:Afdeling>
+        <tekst:Afdeling eId="chp_2__subchp_2.5" wId="gm0297_1__chp_2__subchp_2.5">
+          <tekst:Kop>
+            <tekst:Label>Afdeling</tekst:Label>
+            <tekst:Nummer>2.5</tekst:Nummer>
+            <tekst:Opschrift>Voorbeeld omgevingsnorm</tekst:Opschrift>
+          </tekst:Kop>
+          <tekst:Artikel eId="chp_2__subchp_2.5__art_2.13" wId="gm0297_1__chp_2__subchp_2.5__art_2.13">
+            <tekst:Kop>
+              <tekst:Label>Artikel</tekst:Label>
+              <tekst:Nummer>2.13</tekst:Nummer>
+              <tekst:Opschrift>Omgevingsplanactiviteiten bouwen die zonder vergunning of melding zijn toegestaan</tekst:Opschrift>
+            </tekst:Kop>
+            <tekst:Inhoud>
+              <tekst:Al>Een vergunning voor de omgevingsplanactiviteit bouwen is niet vereist indien deze activiteit bestaat uit:</tekst:Al>
+              <tekst:Lijst>
+                <tekst:Li>
+                  <tekst:LiNummer>a.</tekst:LiNummer>
+                  <tekst:Al>het verrichten van gewoon onderhoud aan eenbouwwerk, voor zover maatvoering en vormgeving van dat bouwwerk niet wijzigen;</tekst:Al>
+                </tekst:Li>
+                <tekst:Li>
+                  <tekst:LiNummer>b.</tekst:LiNummer>
+                  <tekst:Al>het plaatsen van straatmeubilair;</tekst:Al>
+                </tekst:Li>
+                <tekst:Li>
+                  <tekst:LiNummer>c.</tekst:LiNummer>
+                  <tekst:Al>het bouwen van bouwwerken, geen gebouw zijnde, ter plaatse van het werkingsgebied 'voorerfgebied' mits de bouwhoogte niet hoger is dan 1 meter;</tekst:Al>
+                </tekst:Li>
+                <tekst:Li>
+                  <tekst:LiNummer>d.</tekst:LiNummer>
+                  <tekst:Al>het bouwen van bouwwerken ter plaatse van het werkingsgebied 'achtererfgebied', mits de bouwhoogte niet hoger is dan 3 meter en de grondoppervlakte niet groter is dan 30 m2.</tekst:Al>
+                </tekst:Li>
+              </tekst:Lijst>
+            </tekst:Inhoud>
+          </tekst:Artikel>
+          <tekst:Artikel eId="chp_2__subchp_2.5__art_2.14" wId="gm0297_1__chp_2__subchp_2.5__art_2.14">
+            <tekst:Kop>
+              <tekst:Label>Artikel</tekst:Label>
+              <tekst:Nummer>2.14</tekst:Nummer>
+              <tekst:Opschrift>Bouwregels bedrijfsgebouwen</tekst:Opschrift>
+            </tekst:Kop>
+            <tekst:Inhoud>
+              <tekst:Al>Voor het bouwen en instandhouden van bedrijfsgebouwen gelden de volgende regels:</tekst:Al>
+              <tekst:Lijst>
+                <tekst:Li>
+                  <tekst:LiNummer>a.</tekst:LiNummer>
+                  <tekst:Al>Een bedrijfsgebouw moet worden gesitueerd binnen het werkingsgebied 'bouwactiviteit toegestaan'.</tekst:Al>
+                </tekst:Li>
+                <tekst:Li>
+                  <tekst:LiNummer>b.</tekst:LiNummer>
+                  <tekst:Al>De maximum oppervlakte van een bedrijfsgebouw is gelijk aan het werkingsgebied 'maximum oppervlakte'.</tekst:Al>
+                </tekst:Li>
+                <tekst:Li>
+                  <tekst:LiNummer>c.</tekst:LiNummer>
+                  <tekst:Al>De maximum goothoogte van een bedrijfsgebouw is de ter plaatse van het werkingsgebied 'maximum goothoogte bedrijfsgebouw' bepaalde waarde.</tekst:Al>
+                </tekst:Li>
+                <tekst:Li>
+                  <tekst:LiNummer>d.</tekst:LiNummer>
+                  <tekst:Al>De maximum bouwhoogte van een bedrijfsgebouw is de ter plaatse van het werkingsgebied 'maximum bouwhoogte bedrijfsgebouw' bepaalde waarde.</tekst:Al>
+                </tekst:Li>
+                <tekst:Li>
+                  <tekst:LiNummer>e.</tekst:LiNummer>
+                  <tekst:Al>Binnen het werkingsgebied bouwactiviteit toegestaan bedraagt de afstand tussen een bedrijfsgebouw en de zijdelingse perceelsgrens ten minste 3 meter.</tekst:Al>
+                </tekst:Li>
+              </tekst:Lijst>
+            </tekst:Inhoud>
+          </tekst:Artikel>
+          <tekst:Artikel eId="chp_2__subchp_2.5__art_2.15" wId="gm0297_1__chp_2__subchp_2.5__art_2.15">
+            <tekst:Kop>
+              <tekst:Label>Artikel</tekst:Label>
+              <tekst:Nummer>2.15</tekst:Nummer>
+              <tekst:Opschrift>Regels voor het uiterlijk van bouwwerken</tekst:Opschrift>
+            </tekst:Kop>
+            <tekst:Inhoud>
+              <tekst:Al>Het uiterlijk van bouwwerken dient te voldoen aan het niveau van redelijke eisen van welstand dat ter plaatse van het werkingsgebied ‘welstandsniveau’ is vastgelegd.</tekst:Al>
+            </tekst:Inhoud>
+          </tekst:Artikel>
+        </tekst:Afdeling>
+        <tekst:Afdeling eId="chp_2__subchp_2.6" wId="gm0297_1__chp_2__subchp_2.6">
+          <tekst:Kop>
+            <tekst:Label>Afdeling</tekst:Label>
+            <tekst:Nummer>2.6</tekst:Nummer>
+            <tekst:Opschrift>Centrumgebied</tekst:Opschrift>
+          </tekst:Kop>
+          <tekst:Artikel eId="chp_2__subchp_2.6__art_2.16" wId="gm0297_1__chp_2__subchp_2.6__art_2.16">
+            <tekst:Kop>
+              <tekst:Label>Artikel</tekst:Label>
+              <tekst:Nummer>2.16</tekst:Nummer>
+              <tekst:Opschrift>Toedeling functie landelijk gebied</tekst:Opschrift>
+            </tekst:Kop>
+            <tekst:Gereserveerd/>
+          </tekst:Artikel>
+        </tekst:Afdeling>
+      </tekst:Hoofdstuk>
+      <tekst:Hoofdstuk eId="chp_5" wId="gm0297_1__chp_5">
+        <tekst:Kop>
+          <tekst:Label>Hoofdstuk</tekst:Label>
+          <tekst:Nummer>5</tekst:Nummer>
+          <tekst:Opschrift>Bouwregels</tekst:Opschrift>
+        </tekst:Kop>
+        <tekst:Afdeling eId="chp_5__subchp_5.1" wId="gm0297_1__chp_5__subchp_5.1">
+          <tekst:Kop>
+            <tekst:Label>Afdeling</tekst:Label>
+            <tekst:Nummer>5.1</tekst:Nummer>
+            <tekst:Opschrift>Bouwregels landelijk gebied</tekst:Opschrift>
+          </tekst:Kop>
+          <tekst:Artikel eId="chp_5__subchp_5.1__art_5.1" wId="gm0297_1__chp_5__subchp_5.1__art_5.1">
+            <tekst:Kop>
+              <tekst:Label>Artikel</tekst:Label>
+              <tekst:Nummer>5.1</tekst:Nummer>
+              <tekst:Opschrift>Bouwen van een bijgebouw</tekst:Opschrift>
+            </tekst:Kop>
+            <tekst:Inhoud>
+              <tekst:Al>Voor het bouwen van een bijgebouw gelden de volgende toestemmingen:</tekst:Al>
+              <tekst:Lijst>
+                <tekst:Li>
+                  <tekst:LiNummer>a.</tekst:LiNummer>
+                  <tekst:Al>Het is toegestaan om een bijgebouw met een oppervlakte kleiner dan 20 m² te bouwen.</tekst:Al>
+                </tekst:Li>
+                <tekst:Li>
+                  <tekst:LiNummer>b.</tekst:LiNummer>
+                  <tekst:Al>Het is verboden om zonder voorafgaande melding een bijgebouw met een oppervlakte groter dan of gelijk aan 20 m² en kleiner dan 30 m² te bouwen.</tekst:Al>
+                </tekst:Li>
+                <tekst:Li>
+                  <tekst:LiNummer>c.</tekst:LiNummer>
+                  <tekst:Al>Het is verboden om zonder omgevingsvergunning een bijgebouw met een oppervlakte groter dan of gelijk aan 30 m² te bouwen.</tekst:Al>
+                </tekst:Li>
+              </tekst:Lijst>
+            </tekst:Inhoud>
+          </tekst:Artikel>
+        </tekst:Afdeling>
+      </tekst:Hoofdstuk>
+      <tekst:Hoofdstuk eId="chp_6" wId="gm0297_1__chp_6">
+        <tekst:Kop>
+          <tekst:Label>Hoofdstuk</tekst:Label>
+          <tekst:Nummer>6</tekst:Nummer>
+          <tekst:Opschrift>Activiteiten</tekst:Opschrift>
+        </tekst:Kop>
+        <tekst:Afdeling eId="chp_6__subchp_6.1" wId="gm0297_1__chp_6__subchp_6.1">
+          <tekst:Kop>
+            <tekst:Label>Afdeling</tekst:Label>
+            <tekst:Nummer>6.1</tekst:Nummer>
+            <tekst:Opschrift>Kappen van bomen</tekst:Opschrift>
+          </tekst:Kop>
+          <tekst:Artikel eId="chp_6__subchp_6.1__art_6.1" wId="gm0297_1__chp_6__subchp_6.1__art_6.1">
+            <tekst:Kop>
+              <tekst:Label>Artikel</tekst:Label>
+              <tekst:Nummer>6.1</tekst:Nummer>
+              <tekst:Opschrift>Aanwijzing vergunningplichtige gevallen</tekst:Opschrift>
+            </tekst:Kop>
+            <tekst:Lid eId="chp_6__subchp_6.1__art_6.1__para_1" wId="gm0297_1__chp_6__subchp_6.1__art_6.1__para_1">
+              <tekst:LidNummer>1.</tekst:LidNummer>
+              <tekst:Inhoud>
+                <tekst:Al>Het is verboden zonder omgevingsvergunning een boom te kappen.</tekst:Al>
+              </tekst:Inhoud>
+            </tekst:Lid>
+            <tekst:Lid eId="chp_6__subchp_6.1__art_6.1__para_2" wId="gm0297_1__chp_6__subchp_6.1__art_6.1__para_2">
+              <tekst:LidNummer>2.</tekst:LidNummer>
+              <tekst:Inhoud>
+                <tekst:Al>Het verbod geldt niet voor:</tekst:Al>
+                <tekst:Lijst>
+                  <tekst:Li>
+                    <tekst:LiNummer>a.</tekst:LiNummer>
+                    <tekst:Al>bomen met een stamomtrek van minder dan 50 cm;</tekst:Al>
+                  </tekst:Li>
+                  <tekst:Li>
+                    <tekst:LiNummer>b.</tekst:LiNummer>
+                    <tekst:Al>bomen die niet zichtbaar zijn vanaf openbaar toegankelijk gebied; en</tekst:Al>
+                  </tekst:Li>
+                  <tekst:Li>
+                    <tekst:LiNummer>c.</tekst:LiNummer>
+                    <tekst:Al>bomen die moeten worden gekapt op grond van de Plantenziektenwet of vanwege een aanschrijving op grond van artikel PM van de Algemene plaatselijke verordening.</tekst:Al>
+                  </tekst:Li>
+                </tekst:Lijst>
+              </tekst:Inhoud>
+            </tekst:Lid>
+          </tekst:Artikel>
+          <tekst:Artikel eId="chp_6__subchp_6.1__art_6.2" wId="gm0297_1__chp_6__subchp_6.1__art_6.2">
+            <tekst:Kop>
+              <tekst:Label>Artikel</tekst:Label>
+              <tekst:Nummer>6.2</tekst:Nummer>
+              <tekst:Opschrift>Bijzondere aanvraagvereisten</tekst:Opschrift>
+            </tekst:Kop>
+            <tekst:Inhoud>
+              <tekst:Al>Bij de aanvraag om een omgevingsvergunning wordt:</tekst:Al>
+              <tekst:Lijst>
+                <tekst:Li>
+                  <tekst:LiNummer>a.</tekst:LiNummer>
+                  <tekst:Al>iedere te kappen boom op een kaart, foto of tekening geïdentificeerd met een nummer en de locatie;</tekst:Al>
+                </tekst:Li>
+                <tekst:Li>
+                  <tekst:LiNummer>b.</tekst:LiNummer>
+                  <tekst:Al>de reden voor het kappen van iedere boom opgenomen; en</tekst:Al>
+                </tekst:Li>
+                <tekst:Li>
+                  <tekst:LiNummer>c.</tekst:LiNummer>
+                  <tekst:Al>de stamomtrek in centimeters van iedere boom aangegeven.</tekst:Al>
+                </tekst:Li>
+              </tekst:Lijst>
+            </tekst:Inhoud>
+          </tekst:Artikel>
+          <tekst:Artikel eId="chp_6__subchp_6.1__art_6.3" wId="gm0297_1__chp_6__subchp_6.1__art_6.3">
+            <tekst:Kop>
+              <tekst:Label>Artikel</tekst:Label>
+              <tekst:Nummer>6.3</tekst:Nummer>
+              <tekst:Opschrift>Beoordelingsregels omgevingsvergunning</tekst:Opschrift>
+            </tekst:Kop>
+            <tekst:Inhoud>
+              <tekst:Al>De omgevingsvergunning kan worden verleend:</tekst:Al>
+              <tekst:Lijst>
+                <tekst:Li>
+                  <tekst:LiNummer>a.</tekst:LiNummer>
+                  <tekst:Al>als de boom gevaar of ernstige hinder veroorzaakt; of</tekst:Al>
+                </tekst:Li>
+                <tekst:Li>
+                  <tekst:LiNummer>b.</tekst:LiNummer>
+                  <tekst:Al>vanwege een individueel of maatschappelijk belang, dat zwaarder moet wegen dan de belangen, bedoeld in artikel 5.27.</tekst:Al>
+                </tekst:Li>
+              </tekst:Lijst>
+            </tekst:Inhoud>
+          </tekst:Artikel>
+        </tekst:Afdeling>
+      </tekst:Hoofdstuk>
+      <tekst:Hoofdstuk eId="chp_7" wId="gm0297_1__chp_7">
+        <tekst:Kop>
+          <tekst:Label>Hoofdstuk</tekst:Label>
+          <tekst:Nummer>7</tekst:Nummer>
+          <tekst:Opschrift>Gebruiksverboden</tekst:Opschrift>
+        </tekst:Kop>
+        <tekst:Afdeling eId="chp_7__subchp_7.1" wId="gm0297_1__chp_7__subchp_7.1">
+          <tekst:Kop>
+            <tekst:Label>Afdeling</tekst:Label>
+            <tekst:Nummer>7.1</tekst:Nummer>
+            <tekst:Opschrift>Gebruiksverboden agrarische activiteiten</tekst:Opschrift>
+          </tekst:Kop>
+          <tekst:Artikel eId="chp_7__subchp_7.1__art_7.1" wId="gm0297_1__chp_7__subchp_7.1__art_7.1">
+            <tekst:Kop>
+              <tekst:Label>Artikel</tekst:Label>
+              <tekst:Nummer>7.1</tekst:Nummer>
+              <tekst:Opschrift>Geitenfokkerijverbod</tekst:Opschrift>
+            </tekst:Kop>
+            <tekst:Inhoud>
+              <tekst:Al>Het oprichten, instandhouden en gebruiken van bouwwerken en het gebruik van gronden ten behoeve van geitenfokkerijen is verboden.</tekst:Al>
+            </tekst:Inhoud>
+          </tekst:Artikel>
+          <tekst:Artikel eId="chp_7__subchp_7.1__art_7.2" wId="gm0297_1__chp_7__subchp_7.1__art_7.2">
+            <tekst:Kop>
+              <tekst:Label>Artikel</tekst:Label>
+              <tekst:Nummer>7.2</tekst:Nummer>
+              <tekst:Opschrift>Wormenkwekerijverbod</tekst:Opschrift>
+            </tekst:Kop>
+            <tekst:Inhoud>
+              <tekst:Al>Het oprichten, instandhouden en gebruiken van bouwwerken en het gebruik van gronden ten behoeve van wormenkwekerijen is verboden.</tekst:Al>
+            </tekst:Inhoud>
+          </tekst:Artikel>
+        </tekst:Afdeling>
+      </tekst:Hoofdstuk>
+      <tekst:Hoofdstuk eId="chp_10" wId="gm0297_1__chp_10">
+        <tekst:Kop>
+          <tekst:Label>Hoofdstuk</tekst:Label>
+          <tekst:Nummer>10</tekst:Nummer>
+          <tekst:Opschrift>Bedrijfsmatige activiteiten</tekst:Opschrift>
+        </tekst:Kop>
+        <tekst:Afdeling eId="chp_10__subchp_10.1" wId="gm0297_1__chp_10__subchp_10.1">
+          <tekst:Kop>
+            <tekst:Label>Afdeling</tekst:Label>
+            <tekst:Nummer>10.1</tekst:Nummer>
+            <tekst:Opschrift>Agrarische activiteiten</tekst:Opschrift>
+          </tekst:Kop>
+          <tekst:Artikel eId="chp_10__subchp_10.1__art_10.1" wId="gm0297_1__chp_10__subchp_10.1__art_10.1">
+            <tekst:Kop>
+              <tekst:Label>Artikel</tekst:Label>
+              <tekst:Nummer>10.1</tekst:Nummer>
+              <tekst:Opschrift>Landbouwhuisdieren</tekst:Opschrift>
+            </tekst:Kop>
+            <tekst:Inhoud>
+              <tekst:Al>De regels omtrent hygiëne van landbouwhuisdieren is vastgelegd in het werkingsgebied 'landbouwhuisdierenverblijfhygiëne'.</tekst:Al>
+            </tekst:Inhoud>
+          </tekst:Artikel>
+          <tekst:Artikel eId="chp_10__subchp_10.1__art_10.2" wId="gm0297_1__chp_10__subchp_10.1__art_10.2">
+            <tekst:Kop>
+              <tekst:Label>Artikel</tekst:Label>
+              <tekst:Nummer>10.2</tekst:Nummer>
+              <tekst:Opschrift>Dierlijke bijproducten</tekst:Opschrift>
+            </tekst:Kop>
+            <tekst:Lid eId="chp_10__subchp_10.1__art_10.2__para_1" wId="gm0297_1__chp_10__subchp_10.1__art_10.2__para_1">
+              <tekst:LidNummer>1</tekst:LidNummer>
+              <tekst:Inhoud>
+                <tekst:Al>Ter plaatse van het werkingsgebied 'Verwerking organische reststromen en dierlijke bijproducten' is het verboden om zonder omgevingsvergunning activiteiten te verrichten op het gebied van het verwerken van organische reststromen en dierlijke bijproducten.</tekst:Al>
+              </tekst:Inhoud>
+            </tekst:Lid>
+            <tekst:Lid eId="chp_10__subchp_10.1__art_10.2__para_2" wId="gm0297_1__chp_10__subchp_10.1__art_10.2__para_2">
+              <tekst:LidNummer>2</tekst:LidNummer>
+              <tekst:Inhoud>
+                <tekst:Al>De omgevingsvergunning wordt slechts verleend wanneer wordt voldaan aan de volgende vereisten:</tekst:Al>
+              </tekst:Inhoud>
+            </tekst:Lid>
+          </tekst:Artikel>
+        </tekst:Afdeling>
+      </tekst:Hoofdstuk>
+    </tekst:Lichaam>
+  </tekst:Tekst>
+  <ow:OwObjecten>
+    <ow:Regels>
+      <ow:Regeltekst wId="gm0297_1__chp_2__subchp_2.2__art_2.3">
+        <ow:identificatie>nl.imow-gm0297.regeltekst.2019000001</ow:identificatie>
+      </ow:Regeltekst>
+      <ow:Regeltekst wId="gm0297_1__chp_2__subchp_2.2__art_2.4">
+        <ow:identificatie>nl.imow-gm0297.regeltekst.2019000002</ow:identificatie>
+      </ow:Regeltekst>
+      <ow:Regeltekst wId="gm0297_1__chp_2__subchp_2.2__art_2.5">
+        <ow:identificatie>nl.imow-gm0297.regeltekst.2019000003</ow:identificatie>
+      </ow:Regeltekst>
+      <ow:Regeltekst wId="gm0297_1__chp_2__subchp_2.2__art_2.6__para_1">
+        <ow:identificatie>nl.imow-gm0297.regeltekst.2019000004</ow:identificatie>
+      </ow:Regeltekst>
+      <ow:Regeltekst wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_1">
+        <ow:identificatie>nl.imow-gm0297.regeltekst.2019000007</ow:identificatie>
+      </ow:Regeltekst>
+      <ow:Regeltekst wId="gm0297_1__chp_2__subchp_2.3__art_2.9">
+        <ow:identificatie>nl.imow-gm0297.regeltekst.2019000012</ow:identificatie>
+      </ow:Regeltekst>
+      <ow:Regeltekst wId="gm0297_1__chp_2__subchp_2.3__art_2.10">
+        <ow:identificatie>nl.imow-gm0297.regeltekst.2019000008</ow:identificatie>
+        <ow:gerelateerdeRegeltekst ref="nl.imow-gm0297.regeltekst.2019000012"/>
+      </ow:Regeltekst>
+      <ow:Regeltekst wId="gm0297_1__chp_2__subchp_2.4__art_2.12">
+        <ow:identificatie>nl.imow-gm0297.regeltekst.2019000009</ow:identificatie>
+      </ow:Regeltekst>
+      <ow:Regeltekst wId="gm0297_1__chp_2__subchp_2.5__art_2.14">
+        <ow:identificatie>nl.imow-gm0297.regeltekst.2019000010</ow:identificatie>
+      </ow:Regeltekst>
+      <ow:Regeltekst wId="gm0297_1__chp_2__subchp_2.5__art_2.15">
+        <ow:identificatie>nl.imow-gm0297.regeltekst.2019000015</ow:identificatie>
+      </ow:Regeltekst>
+      <ow:Regeltekst wId="gm0297_1__chp_5__subchp_5.1__art_5.1">
+        <ow:identificatie>nl.imow-gm0297.regeltekst.2019000113</ow:identificatie>
+      </ow:Regeltekst>
+      <ow:Regeltekst wId="gm0297_1__chp_6__subchp_6.1__art_6.1__para_1">
+        <ow:identificatie>nl.imow-gm0297.regeltekst.2019000114</ow:identificatie>
+      </ow:Regeltekst>
+      <ow:Regeltekst wId="gm0297_1__chp_6__subchp_6.1__art_6.1__para_2">
+        <ow:identificatie>nl.imow-gm0297.regeltekst.2019000115</ow:identificatie>
+      </ow:Regeltekst>
+      <ow:Regeltekst wId="gm0297_1__chp_1__art_1.4">
+        <ow:identificatie>nl.imow-gm0297.regeltekst.2019000116</ow:identificatie>
+      </ow:Regeltekst>
+      <ow:RegelVoorIedereen>
+        <ow:identificatie>nl.imow-gm0297.juridischeregel.2019000001</ow:identificatie>
+        <ow:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</ow:idealisatie>
+        <ow:artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000001"/>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
+        <ow:gebiedsaanwijzing ref="nl.imow-gm0297.gebiedsaanwijzing.2019000001"/>
+      </ow:RegelVoorIedereen>
+      <ow:RegelVoorIedereen>
+        <ow:identificatie>nl.imow-gm0297.juridischeregel.2019000002</ow:identificatie>
+        <ow:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</ow:idealisatie>
+        <ow:artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000002"/>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
+        <ow:activiteitaanduiding>
+          <ow:activiteit ref="nl.imow-gm0297.activiteit.2019000241"/>
+          <ow:ActiviteitLocatieaanduiding>
+            <ow:identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.2019000001</ow:identificatie>
+            <ow:activiteitregelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan</ow:activiteitregelkwalificatie>
+            <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
+          </ow:ActiviteitLocatieaanduiding>
+        </ow:activiteitaanduiding>
+      </ow:RegelVoorIedereen>
+      <ow:RegelVoorIedereen>
+        <ow:identificatie>nl.imow-gm0297.juridischeregel.2019000003</ow:identificatie>
+        <ow:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</ow:idealisatie>
+        <ow:artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000002"/>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
+        <ow:activiteitaanduiding>
+          <ow:activiteit ref="nl.imow-gm0297.activiteit.2019000530"/>
+          <ow:ActiviteitLocatieaanduiding>
+            <ow:identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.2019000002</ow:identificatie>
+            <ow:activiteitregelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan</ow:activiteitregelkwalificatie>
+            <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
+          </ow:ActiviteitLocatieaanduiding>
+        </ow:activiteitaanduiding>
+      </ow:RegelVoorIedereen>
+      <ow:RegelVoorIedereen>
+        <ow:identificatie>nl.imow-gm0297.juridischeregel.2019000004</ow:identificatie>
+        <ow:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</ow:idealisatie>
+        <ow:artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000002"/>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
+        <ow:activiteitaanduiding>
+          <ow:activiteit ref="nl.imow-gm0297.activiteit.2019000243"/>
+          <ow:ActiviteitLocatieaanduiding>
+            <ow:identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.2019000003</ow:identificatie>
+            <ow:activiteitregelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan</ow:activiteitregelkwalificatie>
+            <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
+          </ow:ActiviteitLocatieaanduiding>
+        </ow:activiteitaanduiding>
+      </ow:RegelVoorIedereen>
+      <ow:RegelVoorIedereen>
+        <ow:identificatie>nl.imow-gm0297.juridischeregel.2019000005</ow:identificatie>
+        <ow:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</ow:idealisatie>
+        <ow:artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000002"/>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
+        <ow:activiteitaanduiding>
+          <ow:activiteit ref="nl.imow-gm0297.activiteit.2019000244"/>
+          <ow:ActiviteitLocatieaanduiding>
+            <ow:identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.2019000004</ow:identificatie>
+            <ow:activiteitregelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan</ow:activiteitregelkwalificatie>
+            <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
+          </ow:ActiviteitLocatieaanduiding>
+        </ow:activiteitaanduiding>
+      </ow:RegelVoorIedereen>
+      <ow:RegelVoorIedereen>
+        <ow:identificatie>nl.imow-gm0297.juridischeregel.2019000006</ow:identificatie>
+        <ow:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</ow:idealisatie>
+        <ow:artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000002"/>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
+        <ow:activiteitaanduiding>
+          <ow:activiteit ref="nl.imow-gm0297.activiteit.2019000245"/>
+          <ow:ActiviteitLocatieaanduiding>
+            <ow:identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.2019000005</ow:identificatie>
+            <ow:activiteitregelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan</ow:activiteitregelkwalificatie>
+            <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
+          </ow:ActiviteitLocatieaanduiding>
+        </ow:activiteitaanduiding>
+      </ow:RegelVoorIedereen>
+      <ow:RegelVoorIedereen>
+        <ow:identificatie>nl.imow-gm0297.juridischeregel.2019000007</ow:identificatie>
+        <ow:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</ow:idealisatie>
+        <ow:artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000002"/>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
+        <ow:activiteitaanduiding>
+          <ow:activiteit ref="nl.imow-gm0297.activiteit.2019000246"/>
+          <ow:ActiviteitLocatieaanduiding>
+            <ow:identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.2019000006</ow:identificatie>
+            <ow:activiteitregelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan</ow:activiteitregelkwalificatie>
+            <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.zoneA"/>
+          </ow:ActiviteitLocatieaanduiding>
+        </ow:activiteitaanduiding>
+      </ow:RegelVoorIedereen>
+      <ow:RegelVoorIedereen>
+        <ow:identificatie>nl.imow-gm0297.juridischeregel.2019000008</ow:identificatie>
+        <ow:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</ow:idealisatie>
+        <ow:artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000003"/>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
+        <ow:activiteitaanduiding>
+          <ow:activiteit ref="nl.imow-gm0297.activiteit.2019000730"/>
+          <ow:ActiviteitLocatieaanduiding>
+            <ow:identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.2019000007</ow:identificatie>
+            <ow:activiteitregelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Verbod</ow:activiteitregelkwalificatie>
+            <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
+          </ow:ActiviteitLocatieaanduiding>
+        </ow:activiteitaanduiding>
+      </ow:RegelVoorIedereen>
+      <ow:RegelVoorIedereen>
+        <ow:identificatie>nl.imow-gm0297.juridischeregel.2019000009</ow:identificatie>
+        <ow:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</ow:idealisatie>
+        <ow:artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000003"/>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
+        <ow:activiteitaanduiding>
+          <ow:activiteit ref="nl.imow-gm0297.activiteit.2019000740"/>
+          <ow:ActiviteitLocatieaanduiding>
+            <ow:identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.2019000008</ow:identificatie>
+            <ow:activiteitregelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Verbod</ow:activiteitregelkwalificatie>
+            <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
+          </ow:ActiviteitLocatieaanduiding>
+        </ow:activiteitaanduiding>
+      </ow:RegelVoorIedereen>
+      <ow:RegelVoorIedereen>
+        <ow:identificatie>nl.imow-gm0297.juridischeregel.2019000010</ow:identificatie>
+        <ow:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</ow:idealisatie>
+        <ow:artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000003"/>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
+        <ow:activiteitaanduiding>
+          <ow:activiteit ref="nl.imow-gm0297.activiteit.2019000750"/>
+          <ow:ActiviteitLocatieaanduiding>
+            <ow:identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.2019000009</ow:identificatie>
+            <ow:activiteitregelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Verbod</ow:activiteitregelkwalificatie>
+            <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
+          </ow:ActiviteitLocatieaanduiding>
+        </ow:activiteitaanduiding>
+      </ow:RegelVoorIedereen>
+      <ow:RegelVoorIedereen>
+        <ow:identificatie>nl.imow-gm0297.juridischeregel.2019000011</ow:identificatie>
+        <ow:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</ow:idealisatie>
+        <ow:artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000004"/>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.zoneB"/>
+        <ow:activiteitaanduiding>
+          <ow:activiteit ref="nl.imow-gm0297.activiteit.2019000590"/>
+          <ow:ActiviteitLocatieaanduiding>
+            <ow:identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.2019000010</ow:identificatie>
+            <ow:activiteitregelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Meldingsplicht</ow:activiteitregelkwalificatie>
+            <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.zoneB"/>
+          </ow:ActiviteitLocatieaanduiding>
+        </ow:activiteitaanduiding>
+      </ow:RegelVoorIedereen>
+      <ow:RegelVoorIedereen>
+        <ow:identificatie>nl.imow-gm0297.juridischeregel.2019000012</ow:identificatie>
+        <ow:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</ow:idealisatie>
+        <ow:artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000007"/>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
+        <ow:activiteitaanduiding>
+          <ow:activiteit ref="nl.imow-gm0297.activiteit.2019000540"/>
+          <ow:ActiviteitLocatieaanduiding>
+            <ow:identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.2019000011</ow:identificatie>
+            <ow:activiteitregelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Vergunningplicht</ow:activiteitregelkwalificatie>
+            <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
+          </ow:ActiviteitLocatieaanduiding>
+        </ow:activiteitaanduiding>
+        <ow:activiteitaanduiding>
+          <ow:activiteit ref="nl.imow-gm0297.activiteit.2019000760"/>
+          <ow:ActiviteitLocatieaanduiding>
+            <ow:identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.2019000013</ow:identificatie>
+            <ow:activiteitregelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Vergunningplicht</ow:activiteitregelkwalificatie>
+            <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
+          </ow:ActiviteitLocatieaanduiding>
+        </ow:activiteitaanduiding>
+      </ow:RegelVoorIedereen>
+      <ow:RegelVoorIedereen>
+        <ow:identificatie>nl.imow-gm0297.juridischeregel.2019000013</ow:identificatie>
+        <ow:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</ow:idealisatie>
+        <ow:artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000012"/>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.centrumgebied"/>
+        <ow:gebiedsaanwijzing ref="nl.imow-gm0297.gebiedsaanwijzing.2019000002"/>
+      </ow:RegelVoorIedereen>
+      <ow:RegelVoorIedereen>
+        <ow:identificatie>nl.imow-gm0297.juridischeregel.2019000014</ow:identificatie>
+        <ow:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</ow:idealisatie>
+        <ow:artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000008"/>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.speelhal"/>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.gebied.2019000008"/>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.gebied.2019000009"/>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.gebied.2019000010"/>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.zuilichem"/>
+        <ow:activiteitaanduiding>
+          <ow:activiteit ref="nl.imow-gm0297.activiteit.2019000660"/>
+          <ow:ActiviteitLocatieaanduiding>
+            <ow:identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.2019000012</ow:identificatie>
+            <ow:activiteitregelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan</ow:activiteitregelkwalificatie>
+            <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.speelhal"/>
+          </ow:ActiviteitLocatieaanduiding>
+        </ow:activiteitaanduiding>
+        <ow:activiteitaanduiding>
+          <ow:activiteit ref="nl.imow-gm0297.activiteit.2019000680"/>
+          <ow:ActiviteitLocatieaanduiding>
+            <ow:identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.2019000014</ow:identificatie>
+            <ow:activiteitregelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan</ow:activiteitregelkwalificatie>
+            <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.centrumgebied"/>
+          </ow:ActiviteitLocatieaanduiding>
+        </ow:activiteitaanduiding>
+      </ow:RegelVoorIedereen>
+      <ow:Omgevingswaarderegel>
+        <ow:identificatie>nl.imow-gm0297.juridischeregel.2019000015</ow:identificatie>
+        <ow:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</ow:idealisatie>
+        <ow:artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000009"/>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.zuilichem"/>
+        <ow:omgevingswaardeaanduiding ref="nl.imow-gm0297.omgevingswaarde.2019000001"/>
+      </ow:Omgevingswaarderegel>
+      <ow:RegelVoorIedereen>
+        <ow:identificatie>nl.imow-gm0297.juridischeregel.2019000016</ow:identificatie>
+        <ow:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</ow:idealisatie>
+        <ow:artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000010"/>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.speelhal"/>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.gebied.2019000008"/>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.gebied.2019000009"/>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.gebied.2019000010"/>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.zuilichem"/>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.gebied.2019000013"/>
+        <ow:omgevingsnormaanduiding ref="nl.imow-gm0297.omgevingsnorm.2019000002"/>
+      </ow:RegelVoorIedereen>
+      <ow:RegelVoorIedereen>
+        <ow:identificatie>nl.imow-gm0297.juridischeregel.2019000017</ow:identificatie>
+        <ow:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</ow:idealisatie>
+        <ow:artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000015"/>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.zoneA"/>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.zoneB"/>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.centrumgebied"/>
+        <ow:kaartaanduiding ref="nl.imow-gm0297.kaart.2019000001"/>
+        <ow:omgevingsnormaanduiding ref="nl.imow-gm0297.omgevingsnorm.2019000003"/>
+      </ow:RegelVoorIedereen>
+      <ow:RegelVoorIedereen>
+        <ow:identificatie>nl.imow-gm0297.juridischeregel.2019000113</ow:identificatie>
+        <ow:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</ow:idealisatie>
+        <ow:artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000113"/>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+        <ow:activiteitaanduiding>
+          <ow:activiteit ref="nl.imow-gm0297.activiteit.2019000800"/>
+          <ow:ActiviteitLocatieaanduiding>
+            <ow:identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.20190000111</ow:identificatie>
+            <ow:activiteitregelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan</ow:activiteitregelkwalificatie>
+            <ow:locatieaanduiding ref="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+          </ow:ActiviteitLocatieaanduiding>
+        </ow:activiteitaanduiding>
+        <ow:activiteitaanduiding>
+          <ow:activiteit ref="nl.imow-gm0297.activiteit.2019000800"/>
+          <ow:ActiviteitLocatieaanduiding>
+            <ow:identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.20190000112</ow:identificatie>
+            <ow:activiteitregelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Meldingsplicht</ow:activiteitregelkwalificatie>
+            <ow:locatieaanduiding ref="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+          </ow:ActiviteitLocatieaanduiding>
+        </ow:activiteitaanduiding>
+        <ow:activiteitaanduiding>
+          <ow:activiteit ref="nl.imow-gm0297.activiteit.2019000800"/>
+          <ow:ActiviteitLocatieaanduiding>
+            <ow:identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.20190000113</ow:identificatie>
+            <ow:activiteitregelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Vergunningplicht</ow:activiteitregelkwalificatie>
+            <ow:locatieaanduiding ref="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+          </ow:ActiviteitLocatieaanduiding>
+        </ow:activiteitaanduiding>
+      </ow:RegelVoorIedereen>
+      <ow:RegelVoorIedereen>
+        <ow:identificatie>nl.imow-gm0297.juridischeregel.2019000114</ow:identificatie>
+        <ow:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</ow:idealisatie>
+        <ow:artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000114"/>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+        <ow:activiteitaanduiding>
+          <ow:activiteit ref="nl.imow-gm0297.activiteit.2019000810"/>
+          <ow:ActiviteitLocatieaanduiding>
+            <ow:identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.20190000114</ow:identificatie>
+            <ow:activiteitregelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Vergunningplicht</ow:activiteitregelkwalificatie>
+            <ow:locatieaanduiding ref="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+          </ow:ActiviteitLocatieaanduiding>
+        </ow:activiteitaanduiding>
+      </ow:RegelVoorIedereen>
+      <ow:RegelVoorIedereen>
+        <ow:identificatie>nl.imow-gm0297.juridischeregel.2019000115</ow:identificatie>
+        <ow:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</ow:idealisatie>
+        <ow:artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000115"/>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+        <ow:activiteitaanduiding>
+          <ow:activiteit ref="nl.imow-gm0297.activiteit.2019000810"/>
+          <ow:ActiviteitLocatieaanduiding>
+            <ow:identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.20190000115</ow:identificatie>
+            <ow:activiteitregelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan</ow:activiteitregelkwalificatie>
+            <ow:locatieaanduiding ref="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+          </ow:ActiviteitLocatieaanduiding>
+        </ow:activiteitaanduiding>
+      </ow:RegelVoorIedereen>
+      <ow:RegelVoorIedereen>
+        <ow:identificatie>nl.imow-gm0297.juridischeregel.2019000019</ow:identificatie>
+        <ow:idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</ow:idealisatie>
+        <ow:artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000116"/>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+      </ow:RegelVoorIedereen>
+      <ow:Regelingsgebied>
+        <ow:identificatie>nl.imow-gm0297.regelingsgebied.2019000001</ow:identificatie>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+      </ow:Regelingsgebied>
+      <ow:Pons>
+        <ow:identificatie>nl.imow-gm0297.pons.2019000001</ow:identificatie>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.gebied.pons"/>
+      </ow:Pons>
+    </ow:Regels>
+    <ow:Normen>
+      <ow:Omgevingswaarde>
+        <ow:identificatie>nl.imow-gm0297.omgevingswaarde.2019000001</ow:identificatie>
+        <ow:naam>fijnstof</ow:naam>
+        <ow:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/Volume</ow:type>
+        <ow:normwaarde>
+          <ow:Normwaarde>
+            <ow:identificatie>nl.imow-gm0297.normwaarde.2019000001</ow:identificatie>
+            <ow:kwantitatieveWaarde>6</ow:kwantitatieveWaarde>
+            <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.zuilichem"/>
+          </ow:Normwaarde>
+        </ow:normwaarde>
+        <ow:groep>http://standaarden.omgevingswet.overheid.nl/omgevingswaarde/id/concept/Luchtkwaliteit</ow:groep>
+      </ow:Omgevingswaarde>
+      <ow:Omgevingsnorm>
+        <ow:identificatie>nl.imow-gm0297.omgevingsnorm.2019000002</ow:identificatie>
+        <ow:naam>maximum bouwhoogte bedrijfsgebouw</ow:naam>
+        <ow:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumBouwhoogte</ow:type>
+        <ow:eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Meter</ow:eenheid>
+        <ow:normwaarde>
+          <ow:Normwaarde>
+            <ow:identificatie>nl.imow-gm0297.normwaarde.2019000002</ow:identificatie>
+            <ow:kwantitatieveWaarde>13</ow:kwantitatieveWaarde>
+            <ow:locatieaanduiding ref="nl.imow-gm0297.gebied.2019000010"/>
+            <ow:locatieaanduiding ref="nl.imow-gm0297.gebied.2019000013"/>
+          </ow:Normwaarde>
+          <ow:Normwaarde>
+            <ow:identificatie>nl.imow-gm0297.normwaarde.2019000003</ow:identificatie>
+            <ow:kwantitatieveWaarde>7</ow:kwantitatieveWaarde>
+            <ow:locatieaanduiding ref="nl.imow-gm0297.gebied.2019000008"/>
+            <ow:locatieaanduiding ref="nl.imow-gm0297.gebied.2019000009"/>
+          </ow:Normwaarde>
+        </ow:normwaarde>
+        <ow:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Bouwaanduiding</ow:groep>
+      </ow:Omgevingsnorm>
+      <ow:Omgevingsnorm>
+        <ow:identificatie>nl.imow-gm0297.omgevingsnorm.2019000003</ow:identificatie>
+        <ow:naam>welstandsniveau</ow:naam>
+        <ow:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumBouwhoogte</ow:type>
+        <ow:normwaarde>
+          <ow:Normwaarde>
+            <ow:identificatie>nl.imow-gm0297.normwaarde.2019000004</ow:identificatie>
+            <ow:kwalitatieveWaarde>laag</ow:kwalitatieveWaarde>
+            <ow:locatieaanduiding ref="nl.imow-gm0297.gebied.2019000015"/>
+          </ow:Normwaarde>
+          <ow:Normwaarde>
+            <ow:identificatie>nl.imow-gm0297.normwaarde.2019000005</ow:identificatie>
+            <ow:kwalitatieveWaarde>midden</ow:kwalitatieveWaarde>
+            <ow:locatieaanduiding ref="nl.imow-gm0297.gebied.2019000014"/>
+          </ow:Normwaarde>
+          <ow:Normwaarde>
+            <ow:identificatie>nl.imow-gm0297.normwaarde.2019000006</ow:identificatie>
+            <ow:kwalitatieveWaarde>hoog</ow:kwalitatieveWaarde>
+            <ow:locatieaanduiding ref="nl.imow-gm0297.gebied.2019000016"/>
+          </ow:Normwaarde>
+        </ow:normwaarde>
+        <ow:groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Bouwaanduiding</ow:groep>
+      </ow:Omgevingsnorm>
+    </ow:Normen>
+    <ow:Activiteiten>
+      <ow:Activiteit>
+        <ow:identificatie>nl.imow-gm0297.activiteit.2019000241</ow:identificatie>
+        <ow:naam>uitoefenen van bedrijfstypen van categorie 2</ow:naam>
+        <ow:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/MilieubelastendeActiviteit</ow:groep>
+        <ow:bovenliggendeActiviteit ref="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+      </ow:Activiteit>
+      <ow:Activiteit>
+        <ow:identificatie>nl.imow-gm0297.activiteit.2019000243</ow:identificatie>
+        <ow:naam>aanleggen en instandhouden van nutsvoorzieningen</ow:naam>
+        <ow:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/BouwactiviteitTechnisch</ow:groep>
+        <ow:bovenliggendeActiviteit ref="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+      </ow:Activiteit>
+      <ow:Activiteit>
+        <ow:identificatie>nl.imow-gm0297.activiteit.2019000244</ow:identificatie>
+        <ow:naam>aanleggen en instandhouden van voorzieningen voor de waterhuishouding</ow:naam>
+        <ow:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/BouwactiviteitTechnisch</ow:groep>
+        <ow:bovenliggendeActiviteit ref="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+      </ow:Activiteit>
+      <ow:Activiteit>
+        <ow:identificatie>nl.imow-gm0297.activiteit.2019000245</ow:identificatie>
+        <ow:naam>aanleggen en instandhouden van tuin en/of erf</ow:naam>
+        <ow:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/BouwactiviteitTechnisch</ow:groep>
+        <ow:bovenliggendeActiviteit ref="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+      </ow:Activiteit>
+      <ow:Activiteit>
+        <ow:identificatie>nl.imow-gm0297.activiteit.2019000246</ow:identificatie>
+        <ow:naam>uitoefenen van detailhandel in ter plaatse vervaardigde goederen</ow:naam>
+        <ow:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/ExploitatieactiviteitDetailhandel</ow:groep>
+        <ow:bovenliggendeActiviteit ref="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+      </ow:Activiteit>
+      <ow:Activiteit>
+        <ow:identificatie>nl.imow-gm0297.activiteit.2019000730</ow:identificatie>
+        <ow:naam>exploiteren van inrichtingen</ow:naam>
+        <ow:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/ExploitatieactiviteitBedrijf</ow:groep>
+        <ow:bovenliggendeActiviteit ref="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+      </ow:Activiteit>
+      <ow:Activiteit>
+        <ow:identificatie>nl.imow-gm0297.activiteit.2019000740</ow:identificatie>
+        <ow:naam>exploiteren van risicovolle inrichtingen</ow:naam>
+        <ow:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/ExploitatieactiviteitBedrijf</ow:groep>
+        <ow:bovenliggendeActiviteit ref="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+      </ow:Activiteit>
+      <ow:Activiteit>
+        <ow:identificatie>nl.imow-gm0297.activiteit.2019000750</ow:identificatie>
+        <ow:naam>opslagterrein</ow:naam>
+        <ow:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Opslagactiviteit</ow:groep>
+        <ow:bovenliggendeActiviteit ref="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+      </ow:Activiteit>
+      <ow:Activiteit>
+        <ow:identificatie>nl.imow-gm0297.activiteit.2019000590</ow:identificatie>
+        <ow:naam>uitoefenen van detailhandel in ter plaatse vervaardigde goederen</ow:naam>
+        <ow:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/ExploitatieactiviteitDetailhandel</ow:groep>
+        <ow:bovenliggendeActiviteit ref="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+      </ow:Activiteit>
+      <ow:Activiteit>
+        <ow:identificatie>nl.imow-gm0297.activiteit.2019000540</ow:identificatie>
+        <ow:naam>exploiteren van een verkooppunt voor motorbrandstoffen niet zijnde lpg</ow:naam>
+        <ow:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/ExploitatieactiviteitDetailhandel</ow:groep>
+        <ow:gerelateerdeActiviteit ref="nl.imow-gm0297.activiteit.2019000760"/>
+        <ow:bovenliggendeActiviteit ref="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+      </ow:Activiteit>
+      <ow:Activiteit>
+        <ow:identificatie>nl.imow-gm0297.activiteit.2019000760</ow:identificatie>
+        <ow:naam>opslaan van motorbrandstoffen niet zijnde lpg</ow:naam>
+        <ow:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Opslagactiviteit</ow:groep>
+        <ow:bovenliggendeActiviteit ref="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+      </ow:Activiteit>
+      <ow:Activiteit>
+        <ow:identificatie>nl.imow-gm0297.activiteit.2019000660</ow:identificatie>
+        <ow:naam>exploiteren van een speelautomatenhal</ow:naam>
+        <ow:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/ExploitatieactiviteitHoreca</ow:groep>
+        <ow:bovenliggendeActiviteit ref="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+      </ow:Activiteit>
+      <ow:Activiteit>
+        <ow:identificatie>nl.imow-gm0297.activiteit.2019000680</ow:identificatie>
+        <ow:naam>exploiteren van een kantoor</ow:naam>
+        <ow:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/ExploitatieactiviteitKantoor</ow:groep>
+        <ow:bovenliggendeActiviteit ref="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+      </ow:Activiteit>
+      <ow:Activiteit>
+        <ow:identificatie>nl.imow-gm0297.activiteit.2019000530</ow:identificatie>
+        <ow:naam>wonen in een bedrijfswoning</ow:naam>
+        <ow:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Woonactiviteit</ow:groep>
+        <ow:bovenliggendeActiviteit ref="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+      </ow:Activiteit>
+      <ow:Activiteit>
+        <ow:identificatie>nl.imow-gm0297.activiteit.2019000800</ow:identificatie>
+        <ow:naam>bouwen van een bijgebouw</ow:naam>
+        <ow:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/BouwactiviteitRuimtelijk</ow:groep>
+        <ow:bovenliggendeActiviteit ref="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+      </ow:Activiteit>
+      <ow:Activiteit>
+        <ow:identificatie>nl.imow-gm0297.activiteit.2019000810</ow:identificatie>
+        <ow:naam>boom kappen</ow:naam>
+        <ow:groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Kapactiviteit</ow:groep>
+        <ow:bovenliggendeActiviteit ref="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem"/>
+      </ow:Activiteit>
+    </ow:Activiteiten>
+    <ow:Locaties>
+      <ow:Gebiedengroep>
+        <ow:identificatie>nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2</ow:identificatie>
+        <ow:noemer>Bedrijf categorie 2</ow:noemer>
+        <ow:groepselement ref="nl.imow-gm0297.gebied.2019000001"/>
+      </ow:Gebiedengroep>
+      <ow:Gebied>
+        <ow:identificatie>nl.imow-gm0297.gebied.2019000001</ow:identificatie>
+        <ow:geometrie>
+          <ow:GeometrieRef ref="50EA019E-3C96-4631-A76C-35BCF4D7AB6D"/>
+        </ow:geometrie>
+      </ow:Gebied>
+      <ow:Gebiedengroep>
+        <ow:identificatie>nl.imow-gm0297.gebiedengroep.zoneA</ow:identificatie>
+        <ow:noemer>zone A</ow:noemer>
+        <ow:groepselement ref="nl.imow-gm0297.gebied.2019000002"/>
+      </ow:Gebiedengroep>
+      <ow:Gebied>
+        <ow:identificatie>nl.imow-gm0297.gebied.2019000002</ow:identificatie>
+        <ow:geometrie>
+          <ow:GeometrieRef ref="B3AF6AF7-5EFA-4A87-9C66-BFB046DD89AC"/>
+        </ow:geometrie>
+      </ow:Gebied>
+      <ow:Gebiedengroep>
+        <ow:identificatie>nl.imow-gm0297.gebiedengroep.zoneB</ow:identificatie>
+        <ow:noemer>zone B</ow:noemer>
+        <ow:groepselement ref="nl.imow-gm0297.gebied.2019000003"/>
+      </ow:Gebiedengroep>
+      <ow:Gebied>
+        <ow:identificatie>nl.imow-gm0297.gebied.2019000003</ow:identificatie>
+        <ow:geometrie>
+          <ow:GeometrieRef ref="0868A0B1-DA79-4C33-8305-1BDE0126FA9A"/>
+        </ow:geometrie>
+      </ow:Gebied>
+      <ow:Gebiedengroep>
+        <ow:identificatie>nl.imow-gm0297.gebiedengroep.centrumgebied</ow:identificatie>
+        <ow:noemer>Centrumgebied</ow:noemer>
+        <ow:groepselement ref="nl.imow-gm0297.gebied.2019000004"/>
+      </ow:Gebiedengroep>
+      <ow:Gebied>
+        <ow:identificatie>nl.imow-gm0297.gebied.2019000004</ow:identificatie>
+        <ow:geometrie>
+          <ow:GeometrieRef ref="D28AF779-7EDD-4A88-8B11-809798F53636"/>
+        </ow:geometrie>
+      </ow:Gebied>
+      <ow:Gebiedengroep>
+        <ow:identificatie>nl.imow-gm0297.gebiedengroep.speelhal</ow:identificatie>
+        <ow:noemer>exploiteren speelautomatenhal</ow:noemer>
+        <ow:groepselement ref="nl.imow-gm0297.gebied.2019000007"/>
+      </ow:Gebiedengroep>
+      <ow:Gebied>
+        <ow:identificatie>nl.imow-gm0297.gebied.2019000007</ow:identificatie>
+        <ow:geometrie>
+          <ow:GeometrieRef ref="33B7D2D0-BF32-4CA1-B7F6-EB0FEF30175A"/>
+        </ow:geometrie>
+      </ow:Gebied>
+      <ow:Gebied>
+        <ow:identificatie>nl.imow-gm0297.gebied.2019000008</ow:identificatie>
+        <ow:noemer>Zuilichem industriegebied 1</ow:noemer>
+        <ow:geometrie>
+          <ow:GeometrieRef ref="772B4B37-69F8-4671-B92E-3BCED242409D"/>
+        </ow:geometrie>
+      </ow:Gebied>
+      <ow:Gebied>
+        <ow:identificatie>nl.imow-gm0297.gebied.2019000009</ow:identificatie>
+        <ow:noemer>Zuilichem industriegebied 2</ow:noemer>
+        <ow:geometrie>
+          <ow:GeometrieRef ref="D24C3416-4790-461C-A4D0-A82BA60CA7D6"/>
+        </ow:geometrie>
+      </ow:Gebied>
+      <ow:Gebied>
+        <ow:identificatie>nl.imow-gm0297.gebied.2019000010</ow:identificatie>
+        <ow:noemer>Zuilichem industriegebied 3</ow:noemer>
+        <ow:geometrie>
+          <ow:GeometrieRef ref="954BA8CC-6E90-4698-BEEC-005A65C63E98"/>
+        </ow:geometrie>
+      </ow:Gebied>
+      <ow:Gebied>
+        <ow:identificatie>nl.imow-gm0297.gebied.2019000013</ow:identificatie>
+        <ow:noemer>Zuilichem industriegebied 4</ow:noemer>
+        <ow:geometrie>
+          <ow:GeometrieRef ref="EFAAD5E9-B181-4C22-9C3B-B290F4586D82"/>
+        </ow:geometrie>
+      </ow:Gebied>
+      <ow:Gebiedengroep>
+        <ow:identificatie>nl.imow-gm0297.gebiedengroep.zuilichem</ow:identificatie>
+        <ow:noemer>Zuilichem</ow:noemer>
+        <ow:groepselement ref="nl.imow-gm0297.gebied.2019000011"/>
+      </ow:Gebiedengroep>
+      <ow:Gebied>
+        <ow:identificatie>nl.imow-gm0297.gebied.2019000011</ow:identificatie>
+        <ow:geometrie>
+          <ow:GeometrieRef ref="b69221bd-8121-4368-9058-ad4ff7618dcd"/>
+        </ow:geometrie>
+      </ow:Gebied>
+      <ow:Gebied>
+        <ow:identificatie>nl.imow-gm0297.gebied.2019000014</ow:identificatie>
+        <ow:geometrie>
+          <ow:GeometrieRef ref="d775e368-6c81-40b9-9a7a-c2acb70831f3"/>
+        </ow:geometrie>
+      </ow:Gebied>
+      <ow:Gebied>
+        <ow:identificatie>nl.imow-gm0297.gebied.2019000015</ow:identificatie>
+        <ow:geometrie>
+          <ow:GeometrieRef ref="3ce37c9c-1721-4eec-9b4a-5380fd30fbac"/>
+        </ow:geometrie>
+      </ow:Gebied>
+      <ow:Gebied>
+        <ow:identificatie>nl.imow-gm0297.gebied.2019000016</ow:identificatie>
+        <ow:geometrie>
+          <ow:GeometrieRef ref="dc57c9d5-a5ca-470c-b9f6-43eb30abdf8a"/>
+        </ow:geometrie>
+      </ow:Gebied>
+      <ow:Gebied>
+        <ow:identificatie>nl.imow-gm0297.gebied.pons</ow:identificatie>
+        <ow:geometrie>
+          <ow:GeometrieRef ref="e8028788-a5bd-4d1c-ab6e-ae8258c7097d"/>
+        </ow:geometrie>
+      </ow:Gebied>
+      <ow:Ambtsgebied>
+        <ow:identificatie>nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied</ow:identificatie>
+        <ow:bestuurlijkeGrenzenVerwijzing>
+          <ow:bestuurlijkeGrenzenID>GM0297</ow:bestuurlijkeGrenzenID>
+          <ow:domein>NL.BI.BestuurlijkGebied</ow:domein>
+          <ow:geldigOp>2021-01-01</ow:geldigOp>
+        </ow:bestuurlijkeGrenzenVerwijzing>
+      </ow:Ambtsgebied>
+    </ow:Locaties>
+    <ow:Gebiedsaanwijzingen>
+      <ow:Gebiedsaanwijzing>
+        <ow:identificatie>nl.imow-gm0297.gebiedsaanwijzing.2019000001</ow:identificatie>
+        <ow:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</ow:type>
+        <ow:naam>Bedrijf categorie 2</ow:naam>
+        <ow:groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Bedrijf</ow:groep>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
+      </ow:Gebiedsaanwijzing>
+      <ow:Gebiedsaanwijzing>
+        <ow:identificatie>nl.imow-gm0297.gebiedsaanwijzing.2019000002</ow:identificatie>
+        <ow:type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</ow:type>
+        <ow:naam>Centrumgebied</ow:naam>
+        <ow:groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Centrumgebied</ow:groep>
+        <ow:locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.centrumgebied"/>
+      </ow:Gebiedsaanwijzing>
+    </ow:Gebiedsaanwijzingen>
+  </ow:OwObjecten>
+</Regeling>

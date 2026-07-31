@@ -60,7 +60,6 @@
           <xs:element ref="Instructieregel"/>
           <xs:element ref="Omgevingswaarderegel"/>
         </xs:choice>
-        <xs:element ref="ActiviteitLocatieaanduiding" minOccurs="0" maxOccurs="unbounded"/>
         <xs:element ref="Regelingsgebied" minOccurs="0" maxOccurs="unbounded"/>
         <xs:element ref="Pons" minOccurs="0" maxOccurs="unbounded"/>
       </xs:sequence>
@@ -103,7 +102,8 @@
           <xs:complexType>
             <xs:sequence>
               <xs:element name="activiteit" type="b:Ref"/>
-              <xs:element name="activiteitLocatieaanduiding" type="b:Ref"
+              <!-- IMOW: de ActiviteitLocatieaanduiding staat inline in de regel -->
+              <xs:element ref="ActiviteitLocatieaanduiding"
                           minOccurs="0" maxOccurs="unbounded"/>
             </xs:sequence>
           </xs:complexType>
@@ -172,13 +172,10 @@
   <!-- Normen -->
   <xs:element name="Normen">
     <xs:complexType>
-      <xs:sequence>
-        <xs:choice minOccurs="0" maxOccurs="unbounded">
-          <xs:element ref="Omgevingsnorm"/>
-          <xs:element ref="Omgevingswaarde"/>
-        </xs:choice>
-        <xs:element ref="Normwaarde" minOccurs="0" maxOccurs="unbounded"/>
-      </xs:sequence>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Omgevingsnorm"/>
+        <xs:element ref="Omgevingswaarde"/>
+      </xs:choice>
     </xs:complexType>
   </xs:element>
 
@@ -188,8 +185,16 @@
       <xs:element name="identificatie" type="b:NEN3610ID"/>
       <xs:element name="naam" type="xs:string"/>
       <xs:element name="type" type="b:WaardelijstURI"/>
-      <xs:element name="eenheid" type="b:WaardeEenheid" minOccurs="0"/>
-      <xs:element name="normwaarde" type="b:Ref" maxOccurs="unbounded"/>
+      <!-- eenheid is een waardelijst-URI (da:Eenheid), niet WaardeEenheid -->
+      <xs:element name="eenheid" type="b:WaardelijstURI" minOccurs="0"/>
+      <!-- IMOW: de Normwaarden staan inline in de norm (1..*) -->
+      <xs:element name="normwaarde">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="Normwaarde" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
     </xs:sequence>
   </xs:group>
 

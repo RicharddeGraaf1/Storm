@@ -47,14 +47,15 @@
         <ow:identificatie>nl.imow-gm0297.omgevingswaarde.001</ow:identificatie>
         <ow:naam>maximum bouwhoogte</ow:naam>
         <ow:type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumBouwhoogte</ow:type>
-        <ow:normwaarde ref="nl.imow-gm0297.normwaarde.001"/>
+        <ow:normwaarde>
+          <ow:Normwaarde>
+            <ow:identificatie>nl.imow-gm0297.normwaarde.001</ow:identificatie>
+            <ow:kwantitatieveWaarde>11</ow:kwantitatieveWaarde>
+            <ow:locatieaanduiding ref="nl.imow-gm0297.gebied.001"/>
+          </ow:Normwaarde>
+        </ow:normwaarde>
         <ow:groep>http://standaarden.omgevingswet.overheid.nl/omgevingswaardegroep/id/concept/Bouwen</ow:groep>
       </ow:Omgevingswaarde>
-      <ow:Normwaarde>
-        <ow:identificatie>nl.imow-gm0297.normwaarde.001</ow:identificatie>
-        <ow:kwantitatieveWaarde>11</ow:kwantitatieveWaarde>
-        <ow:locatieaanduiding ref="nl.imow-gm0297.gebied.001"/>
-      </ow:Normwaarde>
     </ow:Normen>
     <ow:Locaties>
       <ow:Gebied>
