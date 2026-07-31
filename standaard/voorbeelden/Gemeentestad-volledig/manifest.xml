@@ -3,13 +3,13 @@
   <regeling ref="/akn/nl/act/gm0297/2019/reg456"/>
   <doel>/join/id/proces/gm0297/2019/Instelling</doel>
   <Bestand naam="storm-volledig.xml" rol="regeling" contentType="application/xml"/>
-  <Bestand naam="Bedrijf_categorie_2.gml" rol="gio" contentType="application/gml+xml"/>
-  <Bestand naam="Bouwhoogte.gml" rol="gio" contentType="application/gml+xml"/>
-  <Bestand naam="Centrumgebied.gml" rol="gio" contentType="application/gml+xml"/>
-  <Bestand naam="PonsGebied.gml" rol="gio" contentType="application/gml+xml"/>
-  <Bestand naam="Speelhal.gml" rol="gio" contentType="application/gml+xml"/>
-  <Bestand naam="Welstand.gml" rol="gio" contentType="application/gml+xml"/>
-  <Bestand naam="Zone_A.gml" rol="gio" contentType="application/gml+xml"/>
-  <Bestand naam="Zone_B.gml" rol="gio" contentType="application/gml+xml"/>
-  <Bestand naam="Zuilichem.gml" rol="gio" contentType="application/gml+xml"/>
+  <Bestand naam="Bedrijf_categorie_2.storm-gio.xml" rol="gio" contentType="application/xml" work="/join/id/regdata/gm0297/2019/Bedrijf_categorie_2"/>
+  <Bestand naam="Centrumgebied.storm-gio.xml" rol="gio" contentType="application/xml" work="/join/id/regdata/gm0297/2019/Centrumgebied"/>
+  <Bestand naam="Zone_A.storm-gio.xml" rol="gio" contentType="application/xml" work="/join/id/regdata/gm0297/2019/Zone_A"/>
+  <Bestand naam="Zone_B.storm-gio.xml" rol="gio" contentType="application/xml" work="/join/id/regdata/gm0297/2019/Zone_B"/>
+  <Bestand naam="Speelhal.storm-gio.xml" rol="gio" contentType="application/xml" work="/join/id/regdata/gm0297/2019/Speelhal"/>
+  <Bestand naam="Bouwhoogte.storm-gio.xml" rol="gio" contentType="application/xml" work="/join/id/regdata/gm0297/2019/Bouwhoogte"/>
+  <Bestand naam="Welstand.storm-gio.xml" rol="gio" contentType="application/xml" work="/join/id/regdata/gm0297/2019/Welstand"/>
+  <Bestand naam="Zuilichem.storm-gio.xml" rol="gio" contentType="application/xml" work="/join/id/regdata/gm0297/2019/Zuilichem"/>
+  <Bestand naam="PonsGebied.storm-gio.xml" rol="gio" contentType="application/xml" work="/join/id/regdata/gm0297/2021/Ponsgebied"/>
 </Manifest>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  storm-gio.xsd — zelfstandig GIO-bestand. Namespace urn:storm:gio.
+  Bundelt in één root de informatieobject-metadata + symbolisatie + de
+  geometrie (voorheen verspreid over de AanleveringInformatieObject-wrapper
+  en het losse .gml). Metadata/Symbolisatie/Geo worden verbatim bewaard
+  (STOP imop-data / SE / imop-geo), zodat volledig <-> download verliesvrij is.
+  Pakket: storm-volledig.xml verwijst via GeometrieRef (basisgeo:id) naar de
+  Locaties in de Geo van deze bestanden.
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="urn:storm:gio"
+           xmlns="urn:storm:gio"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified"
+           version="0.6.0">
+
+  <xs:element name="GeoInformatieObject">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Identificatie">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FRBRWork" type="xs:string"/>
+              <xs:element name="FRBRExpression" type="xs:string" minOccurs="0"/>
+              <xs:element name="soortWork" type="xs:string" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <!-- InformatieObject(Versie)Metadata verbatim -->
+        <xs:element name="Metadata" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:any namespace="##other" processContents="lax"
+                      minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <!-- FeatureTypeStyle (SE) verbatim -->
+        <xs:element name="Symbolisatie" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:any namespace="##other" processContents="lax"
+                      minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <!-- de geometrie/normwaarden (imop-geo) verbatim -->
+        <xs:element name="Geo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:any namespace="##other" processContents="lax"
+                      maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

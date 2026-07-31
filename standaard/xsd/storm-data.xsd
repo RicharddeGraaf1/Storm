@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  storm-data.xsd — regeling-/besluit-metadata. Namespace urn:storm:data.
+  Draagt de STOP-metadata die volledig nodig heeft om verliesvrij naar een
+  downloadpakket te kunnen (en terug): de besluit-metadata (identificatie,
+  BesluitMetadata, Procedureverloop, ConsolidatieInformatie) en de
+  regeling-metadata (RegelingMetadata). Eerste pass: verbatim bewaard
+  (STOP imop-data), zodat niets verloren gaat; later eventueel storm-native
+  hermodelleren.
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="urn:storm:data"
+           xmlns="urn:storm:data"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified"
+           version="0.6.0">
+
+  <xs:element name="Metadata">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Besluit" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:any namespace="##other" processContents="lax"
+                      minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Regeling" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:any namespace="##other" processContents="lax"
+                      minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

@@ -20,6 +20,7 @@
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns:b="urn:storm:basis"
+           xmlns:data="urn:storm:data"
            xmlns:tekst="urn:storm:tekst"
            xmlns:ow="urn:storm:ow"
            xmlns:tr="urn:storm:tr"
@@ -30,6 +31,7 @@
            version="0.6.0">
 
   <xs:import namespace="urn:storm:basis" schemaLocation="storm-basis.xsd"/>
+  <xs:import namespace="urn:storm:data"  schemaLocation="storm-data.xsd"/>
   <xs:import namespace="urn:storm:tekst" schemaLocation="storm-tekst.xsd"/>
   <xs:import namespace="urn:storm:ow"    schemaLocation="storm-ow.xsd"/>
   <xs:import namespace="urn:storm:tr"    schemaLocation="storm-tr.xsd"/>
@@ -39,6 +41,7 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element ref="Identificatie"/>
+        <xs:element ref="data:Metadata" minOccurs="0"/>
         <xs:element ref="tekst:Tekst"/>
         <xs:element ref="ow:OwObjecten" minOccurs="0"/>
         <xs:element ref="tekst:Mutatie" minOccurs="0"/>
