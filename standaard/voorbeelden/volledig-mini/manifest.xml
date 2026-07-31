@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Manifest xmlns="urn:storm:1.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="urn:storm:1.0 https://raw.githubusercontent.com/RicharddeGraaf1/Storm/main/standaard/xsd/storm-volledig.xsd"
+          schemaversie="0.6.0">
+  <regeling ref="/akn/nl/act/gm0297/2019/reg456"/>
+  <doel>/join/id/proces/gm0297/2019/instelling-omgevingsplan</doel>
+  <Bestand naam="storm-volledig.xml" rol="regeling" contentType="application/xml"/>
+  <Bestand naam="Bouwhoogte.gml" rol="gio" objecttype="Gebied"
+           work="/join/id/regdata/gm0297/2019/Bouwhoogte" contentType="application/gml+xml"/>
+</Manifest>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Regeling xmlns="urn:storm:1.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="urn:storm:1.0 https://raw.githubusercontent.com/RicharddeGraaf1/Storm/main/standaard/xsd/storm-volledig.xsd"
+          variant="volledig" schemaversie="0.6.0">
+
+  <Identificatie>
+    <FRBRWork>/akn/nl/act/gm0297/2019/reg456</FRBRWork>
+    <bevoegdGezag>gm0297</bevoegdGezag>
+  </Identificatie>
+
+  <!-- Laag 1: pure STOP-tekst, geen annotatie erop -->
+  <Tekst structuur="compact">
+    <RegelingOpschrift eId="opschrift"><Al>Omgevingsplan Gemeentestad</Al></RegelingOpschrift>
+    <Lichaam eId="lichaam">
+      <Hoofdstuk eId="hfd_2">
+        <Kop><Label>Hoofdstuk</Label><Nummer>2</Nummer><Opschrift>Bouwen</Opschrift></Kop>
+        <Artikel eId="art_2.1" wId="/akn/nl/act/gm0297/2019/reg456/art_2.1">
+          <Kop><Label>Artikel</Label><Nummer>2.1</Nummer><Opschrift>Bouwhoogte</Opschrift></Kop>
+          <Lid eId="art_2.1__lid_1" wId="/akn/nl/act/gm0297/2019/reg456/art_2.1/lid_1">
+            <LidNummer>1</LidNummer>
+            <Inhoud><Al>In het centrumgebied bedraagt de bouwhoogte ten hoogste 11 meter.</Al></Inhoud>
+          </Lid>
+        </Artikel>
+      </Hoofdstuk>
+    </Lichaam>
+  </Tekst>
+
+  <!-- Laag 2: IMOW-objecten los, gekoppeld via wId / @ref -->
+  <OwObjecten>
+    <Regels>
+      <Regeltekst wId="/akn/nl/act/gm0297/2019/reg456/art_2.1">
+        <identificatie>nl.imow-gm0297.regeltekst.001</identificatie>
+      </Regeltekst>
+      <Omgevingswaarderegel>
+        <identificatie>nl.imow-gm0297.juridischeregel.001</identificatie>
+        <idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</idealisatie>
+        <artikelOfLid ref="nl.imow-gm0297.regeltekst.001"/>
+        <locatieaanduiding ref="nl.imow-gm0297.gebied.001"/>
+        <omgevingswaardeaanduiding ref="nl.imow-gm0297.omgevingswaarde.001"/>
+      </Omgevingswaarderegel>
+    </Regels>
+    <Normen>
+      <Omgevingswaarde>
+        <identificatie>nl.imow-gm0297.omgevingswaarde.001</identificatie>
+        <naam>maximum bouwhoogte</naam>
+        <type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumBouwhoogte</type>
+        <normwaarde ref="nl.imow-gm0297.normwaarde.001"/>
+        <groep>http://standaarden.omgevingswet.overheid.nl/omgevingswaardegroep/id/concept/Bouwen</groep>
+      </Omgevingswaarde>
+      <Normwaarde>
+        <identificatie>nl.imow-gm0297.normwaarde.001</identificatie>
+        <kwantitatieveWaarde>11</kwantitatieveWaarde>
+        <locatieaanduiding ref="nl.imow-gm0297.gebied.001"/>
+      </Normwaarde>
+    </Normen>
+    <Locaties>
+      <Gebied>
+        <identificatie>nl.imow-gm0297.gebied.001</identificatie>
+        <noemer>Centrumgebied</noemer>
+        <geometrie><GeometrieRef ref="772B4B37-69F8-4671-B92E-3BCED242409D"/></geometrie>
+      </Gebied>
+    </Locaties>
+  </OwObjecten>
+</Regeling>
