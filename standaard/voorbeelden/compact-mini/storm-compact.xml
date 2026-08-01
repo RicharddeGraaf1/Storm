@@ -24,7 +24,9 @@
           <tekst:Kop>
             <tekst:Label>Artikel</tekst:Label>
             <tekst:Nummer>1.1</tekst:Nummer>
-            <tekst:Opschrift>Toepassingsbereik</tekst:Opschrift>
+            <!-- rijk opschrift: verwijzing in de titel blijft behouden (SimplicIT
+                 rendert 'm dan read-only) -->
+            <tekst:Opschrift>Toepassingsbereik <tekst:IntRef ref="gm0297_1__chp_1__art_1.1">bouwwerken</tekst:IntRef></tekst:Opschrift>
           </tekst:Kop>
           <tekst:Inhoud>
             <tekst:Al>Dit artikel geldt voor bouwwerken in het centrumgebied.</tekst:Al>
@@ -41,6 +43,7 @@
       </Regeltekst>
       <JuridischeRegel>
         <identificatie>nl.imow-gm0297.juridischeregel.0001</identificatie>
+        <idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</idealisatie>
         <artikelOfLid ref="gm0297_1__chp_1__art_1.1"/>
         <activiteitaanduiding>
           <activiteit ref="nl.imow-gm0297.activiteit.Bouwen"/>

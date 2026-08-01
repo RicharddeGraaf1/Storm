@@ -102,6 +102,9 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element name="identificatie" type="b:NEN3610ID"/>
+        <!-- IMOW-verplicht; transform hardcodet op Exact als de bron hem niet draagt -->
+        <xs:element name="idealisatie" type="b:WaardelijstURI"
+                    default="http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact"/>
         <xs:element name="artikelOfLid" type="b:Ref"/>
         <xs:element name="activiteitaanduiding" minOccurs="0" maxOccurs="unbounded">
           <xs:complexType>

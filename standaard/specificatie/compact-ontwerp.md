@@ -42,6 +42,23 @@ volledige DSO-structuur als de plansoftware "begrijpen". Compact is de
   `Normen`, `Gebiedsaanwijzingen`, `Locaties` (minimaal), `Regelingsgebied`,
   `Pons`, `Hoofdlijnen`, `Bestanden`. **Geen** `Kaarten`.
 
+## Opschrift blijft rijk (verwijzingen behouden)
+
+SimplicIT kent **geen opgeslagen "bewerkbaar"-vlag** op het opschrift. Bij een
+pull bewaart de `StopXmlParser` juist de content-marks (`IntRef`/`ExtRef`/`sup`/
+`sub`) op de opschrift-runs; de editor rendert een opschrift dan **read-only**
+zodra er marks op staan (bewuste tussenmaatregel: een plat-tekst-edit zou de
+geïmporteerde verwijzing vernietigen). Het nummer-deel is server-waarheid
+(auto-nummering). Bron: SimplicIT `StopXmlParser.ParseOpschrift`,
+`document-component-kop.component.ts`, `docs/plans/.../opmaak-in-opschriften.md`.
+
+**Gevolg voor compact:** het opschrift MOET zijn verwijzingen/opmaak kunnen
+dragen — anders valt weg wat het read-only-gedrag stuurt. compact doet dat al:
+via `storm-tekst` is `Kop.Opschrift` een rijke `Tekstregel` (inline `IntRef`/
+`ExtRef`/`sup`/`sub`) met een apart `Nummer`. Dus **opschrift niet platslaan** in
+`volledig → compact`; de marks blijven behouden. (Zie het marked-up opschrift in
+`compact-mini`.)
+
 ## Open punten (te bevestigen)
 
 1. **Regel n:1 vs 1:1** — compact houdt de *vorm* van volledig (aparte objecten
