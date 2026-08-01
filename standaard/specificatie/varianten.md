@@ -27,13 +27,53 @@ STORM kent drie varianten van dezelfde regeling. Ze verschillen niet in
                              (1:1 + ≥10%-vocabulaire; lossy)
 ```
 
+## Het principe: structuur × regels
+
+De twee assen zijn preciezer te benoemen:
+
+- **structuur** — STOP-objectvorm (aparte objecten, refs, sectioneel) versus
+  artikel-inline (annotatie op `Artikel`/`Lid`);
+- **regels/vocabulaire** — de faithful superset (alles wat STOP/IMOW kan) versus
+  wat de plansoftware ondersteunt (= wat `integrated` draagt; zie
+  [compact-ontwerp.md](compact-ontwerp.md) en de mapping op `SimplicIT.Project`
+  in `Storm-services/TRANSFORMATIE-ARCHITECTUUR.md` §4a).
+
+Als 2×2:
+
+|  | **STOP-structuur** | **artikel-inline** |
+|---|---|---|
+| **volledige vocabulaire** | `volledig` | — |
+| **SimplicIT-vocabulaire (integrated's regels)** | `compact` | `integrated` |
+
+Dus: **`compact` deelt zijn structuur met `volledig` (kolom) en zijn regels/
+vocabulaire met `integrated` (rij).** Het **persistentie-principe**:
+
+> `compact` persisteert de gegevens **conform de regels van `integrated`**
+> (SimplicIT-vocabulaire), maar **in de structuur van `volledig`** (STOP).
+
+Eén nuance: de STOP-structuur stelt velden verplicht die `integrated` niet kent
+(bv. `idealisatie`). Die vult `compact` **per regel in** (hardcoded/afgeleid —
+`idealisatie` → `Exact`). Scherp: *compact = integrated's vocabulaire,
+heruitgedrukt in volledig's structuur, met STOP-verplichte velden door regel
+ingevuld.*
+
+**Wat dit over de transformaties zegt** (de winst van deze framing):
+
+- `volledig → compact` = **alléén vocabulaire-reductie** (zelfde structuur) →
+  éénrichting-lossy.
+- `compact ↔ integrated` = **alléén structuur-hervorming** (zelfde vocabulaire) →
+  **bijna verliesvrij béide kanten op** (op het STOP-verplichte defaulten na),
+  want beide dragen dezelfde informatie.
+- Natuurlijke pijplijn: `volledig → compact → integrated`; terug vereist alleen
+  *generatie* voor wat `volledig` extra draagt + gemunte id's.
+
 ## De drie varianten
 
 | Variant | Doel / consument | Structuurkenmerk | Regels per regeltekst |
 |---|---|---|---|
 | **volledig** | **downloadpakketten** aanleveren/uitleveren; 1-op-1 met STOP/IMOW/IMTR | IMOW-identiteiten expliciet in zij-blokken (`OwObjecten`, `Geo`, `Exportregels`) | **n:1** (faithful) |
 | **integrated** | de **eigen plansoftware**: bewerken/redigeren | annotatie ingevouwen op `Artikel`/`Lid`; zij-objecten geminimaliseerd; IMOW-nummers als herkomst | **1:1** |
-| **compact** | **transformatie-mechanisme**: variëteit platslaan | 1:1 + ≥10%-vocabulaire; lossy | **1:1** |
+| **compact** | **uitwisselkern**: integrated's data in STOP-vorm | STOP-structuur (als `volledig`) + SimplicIT-vocabulaire (als `integrated`); STOP-verplichte velden ingevuld | **1:1** |
 
 ## Transformatie-lattice
 
@@ -83,12 +123,22 @@ tot hernoemen dwingen en de renvooi/diff met schijnverschillen vervuilen.
    terugweg exact dezelfde nummers oplevert. Daarnaast documenteren we
    expliciet **wat `volledig → integrated` normaliseert** (multi-regel-teksten
    e.d.), zodat het verlies bekend en verantwoord is.
-2. **Het normalisatie-regelboek van compact.** "1:1 regel per regeltekst"
-   deelt het met integrated; compact voegt de ≥10%-vocabulaire-reductie toe,
-   plus het platslaan van samengestelde gebiedsaanwijzingen e.d. Dit regelboek
-   bepaalt precies wat compact opeet.
+2. **Het regelboek van compact.** compact deelt zijn vocabulaire met
+   *integrated* (SimplicIT-support): de keep/drop/collapse-lijst en de
+   STOP-verplichte defaults (o.a. `idealisatie → Exact`, opschrift-marks
+   behouden) staan in [compact-ontwerp.md](compact-ontwerp.md). Dit **vervangt**
+   de eerdere ≥10%-frequentie-framing: compact snoeit niet op gebruiksfrequentie
+   maar op *wat de plansoftware ondersteunt*.
 
 ## Integrated — ontwerpkeuzes
+
+> **Realisatie (2026-08-01):** het concrete `integrated` is gebouwd als
+> `storm-integrated.xsd`, **1-op-1 gemodelleerd op `SimplicIT.Domain.Project`**
+> (documentboom met annotatie op `Artikel`/`Lid`, `ContentBlok`/`TekstRun`-laag,
+> platte OW-pools). Zie [compact-ontwerp.md](compact-ontwerp.md) en
+> `TRANSFORMATIE-ARCHITECTUUR.md` §4a. De keuzes hieronder zijn de
+> oorspronkelijke rationale; waar de bouw op Project afweek (bv. wél een
+> `Omgevingsnormen`-pool i.p.v. "geen `<Norm>`-element") is Project leidend.
 
 Het principe: **los het `Exportregels`-blok op** door de verwijzingen op de
 regel-annotatie van het artikel te hangen; leid de IMOW-administratie bij
