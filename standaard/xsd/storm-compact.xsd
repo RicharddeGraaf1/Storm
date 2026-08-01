@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  storm-compact.xsd — de genormaliseerde, lossy variant (aanzet v0.6.0).
+  Namespace urn:storm:compact.
+
+  Principe: de STRUCTUUR/vorm van volledig (gelaagd, IMOW-objecten, ref-based,
+  sectioneel) beperkt tot de ELEMENTONDERSTEUNING van SimplicIT.Domain.Project.
+  Zie standaard/specificatie/compact-ontwerp.md.
+
+  Hergebruikt:
+    urn:storm:basis  (Ref/NEN3610ID)          — storm-basis.xsd
+    urn:storm:tekst  (STOP-tekst-vocabulaire)  — storm-tekst.xsd (strikte wrapper)
+
+  Gesnoeid t.o.v. volledig: geen Kaarten; één JuridischeRegel (geen subtypes);
+  geen idealisatie / per-regel locatie-/gebieds-/kaart-/norm-koppeling; norm zonder
+  waardeInRegeltekst; locatie minimaal (identificatie + geometrieRef); metadata
+  alleen scalars; geometrie als Bestand-verwijzing.
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:b="urn:storm:basis"
+           xmlns:tekst="urn:storm:tekst"
+           targetNamespace="urn:storm:compact"
+           xmlns="urn:storm:compact"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified"
+           version="0.6.0">
+
+  <xs:import namespace="urn:storm:basis" schemaLocation="storm-basis.xsd"/>
+  <xs:import namespace="urn:storm:tekst" schemaLocation="storm-tekst.xsd"/>
+
+  <!-- ===================== Root ===================== -->
+  <xs:element name="Regeling">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Tekst"/>
+        <xs:element ref="CompactObjecten" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="variant" type="xs:string" fixed="compact"/>
+      <xs:attribute name="schemaversie" type="xs:string" use="required"/>
+      <xs:attribute name="naam" type="xs:string"/>
+      <xs:attribute name="type" type="xs:string"/>
+      <xs:attribute name="soortRegeling" type="xs:string"/>
+      <xs:attribute name="bevoegdGezagCode" type="xs:string" use="required"/>
+      <xs:attribute name="frbrWork" type="xs:string"/>
+      <xs:attribute name="frbrExpression" type="xs:string"/>
+      <xs:attribute name="versienummer" type="xs:string"/>
+      <xs:attribute name="datum" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Strikte tekst-wrapper op de storm-tekst-vocabulaire (SimplicIT-parseerbaar):
+       geen wildcard zoals volledig, maar de gemodelleerde STOP-elementen. -->
+  <xs:element name="Tekst">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tekst:RegelingOpschrift"/>
+        <xs:element ref="tekst:Lichaam"/>
+        <xs:element ref="tekst:Bijlage" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="tekst:ArtikelgewijzeToelichting" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="structuur" type="xs:string" default="compact"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- ===================== Object-laag (gesnoeid) ===================== -->
+  <xs:element name="CompactObjecten">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Regels" minOccurs="0"/>
+        <xs:element ref="Activiteiten" minOccurs="0"/>
+        <xs:element ref="Normen" minOccurs="0"/>
+        <xs:element ref="Gebiedsaanwijzingen" minOccurs="0"/>
+        <xs:element ref="Locaties" minOccurs="0"/>
+        <xs:element ref="Regelingsgebied" minOccurs="0"/>
+        <xs:element ref="Ponsen" minOccurs="0"/>
+        <xs:element ref="Hoofdlijnen" minOccurs="0"/>
+        <xs:element ref="Bestanden" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Regels: Regeltekst + één JuridischeRegel-type (subtypes samengeklapt) -->
+  <xs:element name="Regels">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Regeltekst" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="JuridischeRegel" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Regeltekst">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="identificatie" type="b:NEN3610ID"/>
+      </xs:sequence>
+      <xs:attribute name="wId" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="JuridischeRegel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="identificatie" type="b:NEN3610ID"/>
+        <xs:element name="artikelOfLid" type="b:Ref"/>
+        <xs:element name="activiteitaanduiding" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="activiteit" type="b:Ref"/>
+              <xs:element name="regelkwalificatie" type="xs:string" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="thema" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Activiteiten">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Activiteit" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="identificatie" type="b:NEN3610ID"/>
+              <xs:element name="naam" type="xs:string"/>
+              <xs:element name="omschrijving" type="xs:string" minOccurs="0"/>
+              <xs:element name="groep" type="xs:string"/>
+              <xs:element name="type" type="xs:string"/>
+              <xs:element name="bovenliggendeActiviteit" type="b:Ref" minOccurs="0"/>
+              <xs:element name="juridischeRegelRef" type="b:Ref"
+                          minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Normen: alleen Omgevingsnorm; Normwaarde zonder waardeInRegeltekst -->
+  <xs:element name="Normen">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Omgevingsnorm" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="identificatie" type="b:NEN3610ID"/>
+              <xs:element name="naam" type="xs:string"/>
+              <xs:element name="type" type="xs:string"/>
+              <xs:element name="eenheid" type="xs:string" minOccurs="0"/>
+              <xs:element name="groep" type="xs:string"/>
+              <xs:element name="Normwaarde" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="identificatie" type="b:NEN3610ID"/>
+                    <xs:element name="kwantitatieveWaarde" type="xs:string" minOccurs="0"/>
+                    <xs:element name="kwalitatieveWaarde" type="xs:string" minOccurs="0"/>
+                    <xs:element name="locatieaanduiding" type="b:Ref"
+                                minOccurs="0" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Gebiedsaanwijzingen">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Gebiedsaanwijzing" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="identificatie" type="b:NEN3610ID"/>
+              <xs:element name="naam" type="xs:string"/>
+              <xs:element name="type" type="xs:string"/>
+              <xs:element name="groep" type="xs:string"/>
+              <xs:element name="locatieaanduiding" type="b:Ref"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Locaties: minimaal (identificatie + geometrieRef) -->
+  <xs:element name="Locaties">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Ambtsgebied" minOccurs="0"/>
+        <xs:element name="Locatie" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="identificatie" type="b:NEN3610ID"/>
+              <xs:element name="noemer" type="xs:string" minOccurs="0"/>
+              <xs:element name="geometrieRef" type="b:Ref" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Ambtsgebied">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="identificatie" type="b:NEN3610ID"/>
+        <xs:element name="naam" type="xs:string"/>
+        <xs:element name="bestuurlijkeGrenzenId" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Regelingsgebied">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="identificatie" type="b:NEN3610ID"/>
+        <xs:element name="locatieaanduiding" type="b:Ref"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Ponsen">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Pons" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="identificatie" type="b:NEN3610ID"/>
+              <xs:element name="locatieaanduiding" type="b:Ref"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Hoofdlijnen">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Hoofdlijn" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="identificatie" type="b:NEN3610ID"/>
+              <xs:element name="naam" type="xs:string"/>
+              <xs:element name="soort" type="xs:string"/>
+              <xs:element name="type" type="xs:string" minOccurs="0"/>
+              <xs:element name="gerelateerdeHoofdlijn" type="b:Ref"
+                          minOccurs="0" maxOccurs="unbounded"/>
+              <xs:element name="divisieRef" type="b:Ref"
+                          minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- geometrie/PDF/afbeelding als verwijzing (inhoud extern/GridFS) -->
+  <xs:element name="Bestanden">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Bestand" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="type" type="xs:string" use="required"/>
+            <xs:attribute name="naam" type="xs:string" use="required"/>
+            <xs:attribute name="frbrExpression" type="xs:string"/>
+            <xs:attribute name="mimeType" type="xs:string"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

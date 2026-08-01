@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Regeling xmlns="urn:storm:compact"
+          xmlns:tekst="urn:storm:tekst"
+          xmlns:b="urn:storm:basis"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="urn:storm:compact https://raw.githubusercontent.com/RicharddeGraaf1/Storm/main/standaard/xsd/storm-compact.xsd"
+          variant="compact" schemaversie="0.6.0"
+          naam="Omgevingsplan Zaltbommel" type="omgevingsplan"
+          soortRegeling="/join/id/stop/regelingtype_003" bevoegdGezagCode="gm0297"
+          frbrWork="/akn/nl/act/gm0297/2020/omgevingsplan">
+
+  <Tekst structuur="compact">
+    <tekst:RegelingOpschrift eId="longTitle" wId="longTitle">
+      <tekst:Al>Omgevingsplan Zaltbommel</tekst:Al>
+    </tekst:RegelingOpschrift>
+    <tekst:Lichaam eId="body" wId="body">
+      <tekst:Hoofdstuk eId="chp_1" wId="gm0297_1__chp_1">
+        <tekst:Kop>
+          <tekst:Label>Hoofdstuk</tekst:Label>
+          <tekst:Nummer>1</tekst:Nummer>
+          <tekst:Opschrift>Algemene bepalingen</tekst:Opschrift>
+        </tekst:Kop>
+        <tekst:Artikel eId="chp_1__art_1.1" wId="gm0297_1__chp_1__art_1.1">
+          <tekst:Kop>
+            <tekst:Label>Artikel</tekst:Label>
+            <tekst:Nummer>1.1</tekst:Nummer>
+            <tekst:Opschrift>Toepassingsbereik</tekst:Opschrift>
+          </tekst:Kop>
+          <tekst:Inhoud>
+            <tekst:Al>Dit artikel geldt voor bouwwerken in het centrumgebied.</tekst:Al>
+          </tekst:Inhoud>
+        </tekst:Artikel>
+      </tekst:Hoofdstuk>
+    </tekst:Lichaam>
+  </Tekst>
+
+  <CompactObjecten>
+    <Regels>
+      <Regeltekst wId="gm0297_1__chp_1__art_1.1">
+        <identificatie>nl.imow-gm0297.regeltekst.2020000001</identificatie>
+      </Regeltekst>
+      <JuridischeRegel>
+        <identificatie>nl.imow-gm0297.juridischeregel.0001</identificatie>
+        <artikelOfLid ref="gm0297_1__chp_1__art_1.1"/>
+        <activiteitaanduiding>
+          <activiteit ref="nl.imow-gm0297.activiteit.Bouwen"/>
+          <regelkwalificatie>verbodMetVergunning</regelkwalificatie>
+        </activiteitaanduiding>
+        <thema>/join/id/stop/thema_bouwen</thema>
+      </JuridischeRegel>
+    </Regels>
+
+    <Activiteiten>
+      <Activiteit>
+        <identificatie>nl.imow-gm0297.activiteit.Bouwen</identificatie>
+        <naam>Bouwen</naam>
+        <groep>http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/BouwactiviteitRuimtelijk</groep>
+        <type>Activiteit</type>
+        <bovenliggendeActiviteit ref="nl.imow-gm0297.activiteit.Wonen"/>
+        <juridischeRegelRef ref="nl.imow-gm0297.juridischeregel.0001"/>
+      </Activiteit>
+    </Activiteiten>
+
+    <Normen>
+      <Omgevingsnorm>
+        <identificatie>nl.imow-gm0297.omgevingsnorm.2019000003</identificatie>
+        <naam>Maximale bouwhoogte</naam>
+        <type>bouwhoogte</type>
+        <eenheid>m</eenheid>
+        <groep>waarde</groep>
+        <Normwaarde>
+          <identificatie>nl.imow-gm0297.normwaarde.2019000002</identificatie>
+          <kwantitatieveWaarde>13</kwantitatieveWaarde>
+          <locatieaanduiding ref="nl.imow-gm0297.gebied.bouwhoogte13"/>
+        </Normwaarde>
+      </Omgevingsnorm>
+    </Normen>
+
+    <Gebiedsaanwijzingen>
+      <Gebiedsaanwijzing>
+        <identificatie>nl.imow-gm0297.gebiedsaanwijzing.001</identificatie>
+        <naam>Centrum</naam>
+        <type>functie</type>
+        <groep>gebied</groep>
+        <locatieaanduiding ref="nl.imow-gm0297.gebied.centrum"/>
+      </Gebiedsaanwijzing>
+    </Gebiedsaanwijzingen>
+
+    <Locaties>
+      <Ambtsgebied>
+        <identificatie>nl.imow-gm0297.ambtsgebied.9999999999</identificatie>
+        <naam>gemeente Zaltbommel</naam>
+        <bestuurlijkeGrenzenId>GM0297</bestuurlijkeGrenzenId>
+      </Ambtsgebied>
+      <Locatie>
+        <identificatie>nl.imow-gm0297.gebied.bouwhoogte13</identificatie>
+        <noemer>Bouwhoogte 13 meter</noemer>
+        <geometrieRef ref="/join/id/regdata/gm0297/2019/Bouwhoogte"/>
+      </Locatie>
+    </Locaties>
+
+    <Regelingsgebied>
+      <identificatie>nl.imow-gm0297.regelingsgebied.2019000001</identificatie>
+      <locatieaanduiding ref="nl.imow-gm0297.ambtsgebied.9999999999"/>
+    </Regelingsgebied>
+
+    <Bestanden>
+      <Bestand type="gml" naam="Bouwhoogte.gml" mimeType="application/gml+xml"
+               frbrExpression="/join/id/regdata/gm0297/2019/Bouwhoogte"/>
+    </Bestanden>
+  </CompactObjecten>
+
+</Regeling>
