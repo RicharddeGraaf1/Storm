@@ -244,7 +244,8 @@
         <xs:element name="groep" type="b:WaardelijstURI"/>
         <xs:element name="gerelateerdeActiviteit" type="b:Ref"
                     minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element name="bovenliggendeActiviteit" type="b:Ref"/>
+        <!-- optioneel: een top-activiteit heeft geen bovenliggende -->
+        <xs:element name="bovenliggendeActiviteit" type="b:Ref" minOccurs="0"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
