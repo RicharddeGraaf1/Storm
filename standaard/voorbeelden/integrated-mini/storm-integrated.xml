@@ -4,7 +4,7 @@
           xsi:schemaLocation="urn:storm:integrated https://raw.githubusercontent.com/RicharddeGraaf1/Storm/main/standaard/xsd/storm-integrated.xsd"
           variant="integrated" schemaversie="0.6.0"
           naam="Omgevingsplan Zaltbommel" type="omgevingsplan"
-          soortRegeling="/join/id/stop/regelingtype_003" bevoegdGezag="gm0297"
+          soortRegeling="/join/id/stop/regelingtype_003" bevoegdGezagCode="gm0297"
           frbrWork="/akn/nl/act/gm0297/2020/omgevingsplan"
           frbrExpression="/akn/nl/act/gm0297/2020/omgevingsplan/nld@2024-06-18;3520">
 

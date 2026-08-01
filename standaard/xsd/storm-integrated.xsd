@@ -543,7 +543,7 @@
       <xs:attribute name="naam" type="xs:string"/>
       <xs:attribute name="type" type="xs:string"/>
       <xs:attribute name="soortRegeling" type="xs:string"/>
-      <xs:attribute name="bevoegdGezag" type="xs:string" use="required"/>
+      <xs:attribute name="bevoegdGezagCode" type="xs:string" use="required"/>
       <xs:attribute name="frbrWork" type="xs:string"/>
       <xs:attribute name="frbrExpression" type="xs:string"/>
       <xs:attribute name="versienummer" type="xs:string"/>
