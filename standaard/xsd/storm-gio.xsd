@@ -18,7 +18,7 @@
   <xs:element name="GeoInformatieObject">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="Identificatie">
+        <xs:element name="Identificatie" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="FRBRWork" type="xs:string"/>
@@ -27,7 +27,11 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <!-- InformatieObject(Versie)Metadata verbatim -->
+        <!-- InformatieObject(Versie)Metadata + overige modules verbatim.
+             Voor de download-IO-mappen (Identificatie/VersieMetadata/Metadata/
+             Momentopname/JuridischeBorgingVan) worden de module-roots hier
+             verbatim bewaard; de structuur-Identificatie hierboven blijft
+             beschikbaar voor de aanlever-GIO-wrappers. -->
         <xs:element name="Metadata" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
@@ -46,7 +50,8 @@
           </xs:complexType>
         </xs:element>
         <!-- de geometrie/normwaarden (imop-geo) verbatim -->
-        <xs:element name="Geo">
+        <!-- Geo optioneel: niet elk informatieobject heeft een GML-geometrie -->
+        <xs:element name="Geo" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
               <xs:any namespace="##other" processContents="lax"
@@ -55,6 +60,12 @@
           </xs:complexType>
         </xs:element>
       </xs:sequence>
+      <!-- herkomst voor verliesvrije reconstructie van de download-IO-map -->
+      <xs:attribute name="map" type="xs:string"/>
+      <xs:attribute name="geoBestand" type="xs:string"/>
+      <xs:attribute name="symbBestand" type="xs:string"/>
+      <!-- niet-XML informatieobject (bv. PDF): verbatim als los pakketbestand -->
+      <xs:attribute name="bijlage" type="xs:string"/>
     </xs:complexType>
   </xs:element>
 
