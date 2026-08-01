@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  storm-integrated.xsd — de authoring-variant van STORM (concept v0.6.0).
+  Namespace urn:storm:integrated.
+
+  Artikel-centrisch, 1:1 (één juridische regel = annotatie ÓP een Artikel/Lid),
+  gemodelleerd 1-op-1 op het SimplicIT.Domain.Project-aggregate zodat
+  integrated <-> SimplicIT een mechanische mapping is en integrated exact dekt
+  wat de plansoftware ondersteunt. Zelfstandig schema (geen imports).
+
+  Lagen:
+    Regeling -> Lichaam/Bijlage -> structuur (Hoofdstuk/Afdeling/Divisie/...)
+             -> Artikel/Lid/Divisietekst
+             -> ContentBlok (Alinea/Lijst/Tabel/Figuur/Begrippenlijst/...)
+             -> TekstRun (+ Mark: strong/.../intRef/extIoRef)
+  OW-objecten staan als platte lijsten op Regeling; locaties zijn string-refs;
+  geometrie/PDF zit als Bestand (verwijzing naar externe/GridFS-inhoud).
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="urn:storm:integrated"
+           xmlns="urn:storm:integrated"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified"
+           version="0.6.0">
+
+  <!-- ===================== Laag 3: tekst ===================== -->
+  <xs:simpleType name="TekstRunSoort">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Tekst"/>
+      <xs:enumeration value="Regeleinde"/>
+      <xs:enumeration value="Noot"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Mark: gevlakte unie, gediscrimineerd door @kind (spiegelt TekstRunMark) -->
+  <xs:element name="Mark">
+    <xs:complexType>
+      <xs:attribute name="kind" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="strong"/>
+            <xs:enumeration value="italic"/>
+            <xs:enumeration value="underline"/>
+            <xs:enumeration value="sub"/>
+            <xs:enumeration value="sup"/>
+            <xs:enumeration value="abbr"/>
+            <xs:enumeration value="intRef"/>
+            <xs:enumeration value="extRef"/>
+            <xs:enumeration value="intIoRef"/>
+            <xs:enumeration value="extIoRef"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="title" type="xs:string"/>   <!-- abbr -->
+      <xs:attribute name="ref" type="xs:string"/>     <!-- intRef/extRef/extIoRef -->
+      <xs:attribute name="soort" type="xs:string"/>   <!-- extRef -->
+      <xs:attribute name="scope" type="xs:string"/>   <!-- intRef/extRef -->
+      <xs:attribute name="eId" type="xs:string"/>     <!-- extIoRef -->
+      <xs:attribute name="wId" type="xs:string"/>     <!-- extIoRef -->
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="NootGegevens">
+    <xs:sequence>
+      <xs:element ref="TekstRun" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string"/>
+    <xs:attribute name="type" type="xs:string"/>
+    <xs:attribute name="nummer" type="xs:string"/>
+  </xs:complexType>
+
+  <!-- TekstRun: één run tekst met opmaak-marks en optioneel een noot -->
+  <xs:element name="TekstRun">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Mark" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="Noot" type="NootGegevens" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="tekst" type="xs:string" use="required"/>
+      <xs:attribute name="soort" type="TekstRunSoort" default="Tekst"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="Tekst">
+    <xs:sequence>
+      <xs:element ref="TekstRun" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Kop">
+    <xs:sequence>
+      <xs:element name="Opschrift" type="Tekst" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="label" type="xs:string"/>
+    <xs:attribute name="nummer" type="xs:string"/>
+  </xs:complexType>
+
+  <!-- ===================== Laag 2: ContentBlok ===================== -->
+  <xs:group name="gContentBlok">
+    <xs:choice>
+      <xs:element ref="Alinea"/>
+      <xs:element ref="Lijst"/>
+      <xs:element ref="Tabel"/>
+      <xs:element ref="Figuur"/>
+      <xs:element ref="Begrippenlijst"/>
+      <xs:element ref="Kadertekst"/>
+      <xs:element ref="Citaat"/>
+    </xs:choice>
+  </xs:group>
+
+  <xs:element name="Alinea">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="Tekst">
+          <xs:attribute name="uId" type="xs:string" use="required"/>
+          <xs:attribute name="rang" type="xs:string"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Lijst">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Aanhef" type="Tekst" minOccurs="0"/>
+        <xs:element name="Item" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:group ref="gContentBlok" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="eId" type="xs:string"/>
+            <xs:attribute name="wId" type="xs:string"/>
+            <xs:attribute name="nummer" type="xs:string"/>
+            <xs:attribute name="rang" type="xs:string"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Sluiting" type="Tekst" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="eId" type="xs:string" use="required"/>
+      <xs:attribute name="wId" type="xs:string" use="required"/>
+      <xs:attribute name="geordend" type="xs:boolean" default="false"/>
+      <xs:attribute name="nummeringStijl" type="xs:string"/>
+      <xs:attribute name="nummeringSymbool" type="xs:string"/>
+      <xs:attribute name="nummeringSuffix" type="xs:string"/>
+      <xs:attribute name="rang" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Tabel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Titel" type="Tekst" minOccurs="0"/>
+        <xs:element name="Kolom" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="naam" type="xs:string"/>
+            <xs:attribute name="breedte" type="xs:string"/>
+            <xs:attribute name="align" type="xs:string"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Rij" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cel" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:group ref="gContentBlok" minOccurs="0" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                  <xs:attribute name="uId" type="xs:string"/>
+                  <xs:attribute name="colspan" type="xs:integer" default="1"/>
+                  <xs:attribute name="rowspan" type="xs:integer" default="1"/>
+                  <xs:attribute name="align" type="xs:string"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="uId" type="xs:string"/>
+            <xs:attribute name="kop" type="xs:boolean" default="false"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Bron" type="Tekst" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="eId" type="xs:string" use="required"/>
+      <xs:attribute name="wId" type="xs:string" use="required"/>
+      <xs:attribute name="align" type="xs:string"/>
+      <xs:attribute name="rang" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Figuur">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Titel" type="Tekst" minOccurs="0"/>
+        <xs:element name="Bijschrift" type="Tekst" minOccurs="0"/>
+        <xs:element name="Bron" type="Tekst" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="eId" type="xs:string" use="required"/>
+      <xs:attribute name="wId" type="xs:string" use="required"/>
+      <xs:attribute name="afbeeldingId" type="xs:string" use="required"/>
+      <xs:attribute name="breedte" type="xs:integer"/>
+      <xs:attribute name="hoogte" type="xs:integer"/>
+      <xs:attribute name="dpi" type="xs:integer"/>
+      <xs:attribute name="uitlijning" type="xs:string"/>
+      <xs:attribute name="formaat" type="xs:string"/>
+      <xs:attribute name="alt" type="xs:string"/>
+      <xs:attribute name="rang" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Begrippenlijst">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Begrip" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Term" type="Tekst"/>
+              <xs:element name="Definitie">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:group ref="gContentBlok" minOccurs="0" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="eId" type="xs:string"/>
+            <xs:attribute name="wId" type="xs:string"/>
+            <xs:attribute name="rang" type="xs:string"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="eId" type="xs:string" use="required"/>
+      <xs:attribute name="wId" type="xs:string" use="required"/>
+      <xs:attribute name="rang" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="ContentBlokContainer">
+    <xs:sequence>
+      <xs:group ref="gContentBlok" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="eId" type="xs:string" use="required"/>
+    <xs:attribute name="wId" type="xs:string" use="required"/>
+    <xs:attribute name="rang" type="xs:string"/>
+  </xs:complexType>
+  <xs:element name="Kadertekst" type="ContentBlokContainer"/>
+  <xs:element name="Citaat" type="ContentBlokContainer"/>
+
+  <!-- ===================== Laag 1: DocumentComponent ===================== -->
+  <xs:simpleType name="Aantekening">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Gereserveerd"/>
+      <xs:enumeration value="Vervallen"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- annotatie ÓP de regel (het integrated-patroon) -->
+  <xs:element name="ActiviteitAanduiding">
+    <xs:complexType>
+      <xs:attribute name="activiteitIdentificatie" type="xs:string" use="required"/>
+      <xs:attribute name="activiteitNaam" type="xs:string" use="required"/>
+      <xs:attribute name="regelkwalificatie" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InformatieobjectAanduiding">
+    <xs:complexType>
+      <xs:attribute name="informatieobjectNaam" type="xs:string" use="required"/>
+      <xs:attribute name="termInTekst" type="xs:string"/>
+      <xs:attribute name="type" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:group name="gAnnotatie">
+    <xs:sequence>
+      <xs:element ref="ActiviteitAanduiding" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element ref="InformatieobjectAanduiding" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="Thema" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:group>
+  <xs:attributeGroup name="agOwId">
+    <xs:attribute name="owRegeltekstIdentificatie" type="xs:string"/>
+    <xs:attribute name="owJuridischeRegelIdentificatie" type="xs:string"/>
+  </xs:attributeGroup>
+
+  <xs:group name="gDocumentComponent">
+    <xs:choice>
+      <xs:element ref="Boek"/>
+      <xs:element ref="Deel"/>
+      <xs:element ref="Hoofdstuk"/>
+      <xs:element ref="Afdeling"/>
+      <xs:element ref="Paragraaf"/>
+      <xs:element ref="Subparagraaf"/>
+      <xs:element ref="Subsubparagraaf"/>
+      <xs:element ref="Divisie"/>
+      <xs:element ref="Bijlage"/>
+      <xs:element ref="Artikel"/>
+      <xs:element ref="Lid"/>
+      <xs:element ref="Divisietekst"/>
+    </xs:choice>
+  </xs:group>
+
+  <!-- structuur-branch: Kop + kinderen (Boek/Deel/.../Divisie/Bijlage) -->
+  <xs:complexType name="Structuur">
+    <xs:sequence>
+      <xs:element name="Kop" type="Kop"/>
+      <xs:group ref="gDocumentComponent" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="eId" type="xs:string" use="required"/>
+    <xs:attribute name="wId" type="xs:string" use="required"/>
+    <xs:attribute name="rang" type="xs:string"/>
+    <xs:attribute name="aantekening" type="Aantekening"/>
+  </xs:complexType>
+  <xs:element name="Boek" type="Structuur"/>
+  <xs:element name="Deel" type="Structuur"/>
+  <xs:element name="Hoofdstuk" type="Structuur"/>
+  <xs:element name="Afdeling" type="Structuur"/>
+  <xs:element name="Paragraaf" type="Structuur"/>
+  <xs:element name="Subparagraaf" type="Structuur"/>
+  <xs:element name="Subsubparagraaf" type="Structuur"/>
+  <xs:element name="Divisie" type="Structuur"/>
+  <xs:element name="Bijlage" type="Structuur"/>
+
+  <xs:element name="Lichaam">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="gDocumentComponent" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="eId" type="xs:string" default="body"/>
+      <xs:attribute name="wId" type="xs:string" default="body"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Artikel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Kop" type="Kop"/>
+        <xs:group ref="gContentBlok" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="Lid" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:group ref="gAnnotatie"/>
+      </xs:sequence>
+      <xs:attribute name="eId" type="xs:string" use="required"/>
+      <xs:attribute name="wId" type="xs:string" use="required"/>
+      <xs:attribute name="rang" type="xs:string"/>
+      <xs:attribute name="aantekening" type="Aantekening"/>
+      <xs:attributeGroup ref="agOwId"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Lid">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:group ref="gContentBlok" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:group ref="gAnnotatie"/>
+      </xs:sequence>
+      <xs:attribute name="eId" type="xs:string" use="required"/>
+      <xs:attribute name="wId" type="xs:string" use="required"/>
+      <xs:attribute name="nummer" type="xs:string" use="required"/>
+      <xs:attribute name="rang" type="xs:string"/>
+      <xs:attribute name="aantekening" type="Aantekening"/>
+      <xs:attributeGroup ref="agOwId"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Divisietekst">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Kop" type="Kop" minOccurs="0"/>
+        <xs:group ref="gContentBlok" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="Thema" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="eId" type="xs:string" use="required"/>
+      <xs:attribute name="wId" type="xs:string" use="required"/>
+      <xs:attribute name="rang" type="xs:string"/>
+      <xs:attribute name="aantekening" type="Aantekening"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="DocumentComponentLijst">
+    <xs:sequence>
+      <xs:group ref="gDocumentComponent" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- ===================== OW-objecten (platte pools) ===================== -->
+  <xs:element name="Activiteiten">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Activiteit" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="JuridischeRegelRef" type="xs:string"
+                          minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string"/>
+            <xs:attribute name="identificatie" type="xs:string" use="required"/>
+            <xs:attribute name="naam" type="xs:string" use="required"/>
+            <xs:attribute name="omschrijving" type="xs:string"/>
+            <xs:attribute name="groep" type="xs:string" use="required"/>
+            <xs:attribute name="type" type="xs:string" use="required"/>
+            <xs:attribute name="bovenliggendId" type="xs:string"/>
+            <xs:attribute name="bovenliggendeIdentificatie" type="xs:string"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Omgevingsnormen">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Omgevingsnorm" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Normwaarde" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="LocatieRef" type="xs:string"
+                                minOccurs="0" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                  <xs:attribute name="identificatie" type="xs:string" use="required"/>
+                  <xs:attribute name="kwantitatieveWaarde" type="xs:string"/>
+                  <xs:attribute name="kwalitatieveWaarde" type="xs:string"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="identificatie" type="xs:string" use="required"/>
+            <xs:attribute name="naam" type="xs:string" use="required"/>
+            <xs:attribute name="type" type="xs:string" use="required"/>
+            <xs:attribute name="eenheid" type="xs:string"/>
+            <xs:attribute name="groep" type="xs:string" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Gebiedsaanwijzingen">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Gebiedsaanwijzing" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="identificatie" type="xs:string" use="required"/>
+            <xs:attribute name="naam" type="xs:string" use="required"/>
+            <xs:attribute name="type" type="xs:string" use="required"/>
+            <xs:attribute name="groep" type="xs:string" use="required"/>
+            <xs:attribute name="locatieRef" type="xs:string" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Ambtsgebied">
+    <xs:complexType>
+      <xs:attribute name="identificatie" type="xs:string" use="required"/>
+      <xs:attribute name="naam" type="xs:string" use="required"/>
+      <xs:attribute name="bestuurlijkeGrenzenId" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Regelingsgebied">
+    <xs:complexType>
+      <xs:attribute name="identificatie" type="xs:string" use="required"/>
+      <xs:attribute name="locatieRef" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Ponsen">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Pons" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="identificatie" type="xs:string" use="required"/>
+            <xs:attribute name="locatieRef" type="xs:string" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Hoofdlijnen">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Hoofdlijn" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GerelateerdeHoofdlijn" type="xs:string"
+                          minOccurs="0" maxOccurs="unbounded"/>
+              <xs:element name="DivisieRef" type="xs:string"
+                          minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="identificatie" type="xs:string" use="required"/>
+            <xs:attribute name="naam" type="xs:string" use="required"/>
+            <xs:attribute name="soort" type="xs:string" use="required"/>
+            <xs:attribute name="type" type="xs:string"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- bestanden: geometrie/PDF/afbeelding als verwijzing (inhoud extern/GridFS) -->
+  <xs:element name="Bestanden">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Bestand" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="id" type="xs:string"/>
+            <xs:attribute name="type" type="xs:string" use="required"/>
+            <xs:attribute name="naam" type="xs:string" use="required"/>
+            <xs:attribute name="mimeType" type="xs:string"/>
+            <xs:attribute name="gridfsId" type="xs:string"/>
+            <xs:attribute name="frbrExpression" type="xs:string"/>
+            <xs:attribute name="metadataNaam" type="xs:string"/>
+            <xs:attribute name="termInTekst" type="xs:string"/>
+            <xs:attribute name="grootteBytes" type="xs:long"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- ===================== Root ===================== -->
+  <xs:element name="Regeling">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Opschrift" type="Tekst"/>
+        <xs:element ref="Lichaam"/>
+        <xs:element ref="Bijlage" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="AlgemeneToelichting" type="DocumentComponentLijst" minOccurs="0"/>
+        <xs:element name="ArtikelsgewijzeToelichting" type="DocumentComponentLijst" minOccurs="0"/>
+        <xs:element name="Motivering" type="DocumentComponentLijst" minOccurs="0"/>
+        <xs:element name="Aanhef" type="DocumentComponentLijst" minOccurs="0"/>
+        <xs:element name="Sluiting" type="DocumentComponentLijst" minOccurs="0"/>
+        <xs:element ref="Ambtsgebied" minOccurs="0"/>
+        <xs:element ref="Regelingsgebied" minOccurs="0"/>
+        <xs:element ref="Gebiedsaanwijzingen" minOccurs="0"/>
+        <xs:element ref="Omgevingsnormen" minOccurs="0"/>
+        <xs:element ref="Ponsen" minOccurs="0"/>
+        <xs:element ref="Hoofdlijnen" minOccurs="0"/>
+        <xs:element ref="Activiteiten" minOccurs="0"/>
+        <xs:element ref="Bestanden" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="variant" type="xs:string" fixed="integrated"/>
+      <xs:attribute name="schemaversie" type="xs:string" use="required"/>
+      <xs:attribute name="naam" type="xs:string"/>
+      <xs:attribute name="type" type="xs:string"/>
+      <xs:attribute name="soortRegeling" type="xs:string"/>
+      <xs:attribute name="bevoegdGezag" type="xs:string" use="required"/>
+      <xs:attribute name="frbrWork" type="xs:string"/>
+      <xs:attribute name="frbrExpression" type="xs:string"/>
+      <xs:attribute name="versienummer" type="xs:string"/>
+      <xs:attribute name="datum" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
