@@ -194,6 +194,7 @@
         <xs:element ref="Tussenkop"/>
         <xs:element ref="Kadertekst"/>
       </xs:choice>
+      <xs:attributeGroup ref="agTekstId"/>
     </xs:complexType>
   </xs:element>
 
@@ -208,6 +209,7 @@
         <xs:element name="Lijstsluiting" type="Tekstregel" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="type" type="xs:string"/>
+      <xs:attributeGroup ref="agTekstId"/>
     </xs:complexType>
   </xs:element>
 
@@ -222,6 +224,7 @@
           <xs:element ref="table"/>
         </xs:choice>
       </xs:sequence>
+      <xs:attributeGroup ref="agTekstId"/>
     </xs:complexType>
   </xs:element>
 
@@ -230,6 +233,7 @@
       <xs:sequence>
         <xs:element ref="Begrip" maxOccurs="unbounded"/>
       </xs:sequence>
+      <xs:attributeGroup ref="agTekstId"/>
     </xs:complexType>
   </xs:element>
   <xs:element name="Begrip">
@@ -245,6 +249,7 @@
           </xs:complexType>
         </xs:element>
       </xs:sequence>
+      <xs:attributeGroup ref="agTekstId"/>
     </xs:complexType>
   </xs:element>
 
@@ -259,6 +264,7 @@
           <xs:element ref="table"/>
         </xs:choice>
       </xs:sequence>
+      <xs:attributeGroup ref="agTekstId"/>
     </xs:complexType>
   </xs:element>
 
@@ -274,6 +280,7 @@
         </xs:element>
         <xs:element name="Bijschrift" type="Tekstregel" minOccurs="0"/>
       </xs:sequence>
+      <xs:attributeGroup ref="agTekstId"/>
     </xs:complexType>
   </xs:element>
 
@@ -298,6 +305,7 @@
           </xs:complexType>
         </xs:element>
       </xs:sequence>
+      <xs:attributeGroup ref="agTekstId"/>
     </xs:complexType>
   </xs:element>
   <xs:complexType name="Rijenblok">
@@ -331,6 +339,7 @@
         <xs:complexType><xs:attribute name="refid" type="xs:string"/></xs:complexType>
       </xs:element>
     </xs:choice>
+    <xs:attributeGroup ref="agTekstId"/>
     <xs:anyAttribute namespace="##other" processContents="lax"/>
   </xs:complexType>
   <xs:complexType name="InlineRef" mixed="true">
