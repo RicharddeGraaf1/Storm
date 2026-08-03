@@ -1,0 +1,1128 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Regeling xmlns="urn:storm:integrated" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" variant="integrated" schemaversie="0.6.0" xsi:schemaLocation="urn:storm:integrated https://raw.githubusercontent.com/RicharddeGraaf1/Storm/main/standaard/xsd/storm-integrated.xsd" naam="Omgevingsplan Zaltbommel (met de nadruk op Zuilichem)" type="omgevingsplan" soortRegeling="/join/id/stop/regelingtype_003" bevoegdGezagCode="gm0297" frbrWork="/akn/nl/act/gm0297/2019/reg456">
+  <Opschrift>
+    <TekstRun tekst="Omgevingsplan Zaltbommel (met de nadruk op Zuilichem)"/>
+  </Opschrift>
+  <Lichaam eId="body" wId="body">
+    <Hoofdstuk eId="chp_1" wId="gm0297_1__chp_1">
+      <Kop label="Hoofdstuk" nummer="1">
+        <Opschrift>
+          <TekstRun tekst="Algemene bepalingen"/>
+        </Opschrift>
+      </Kop>
+      <Artikel eId="chp_1__art_1.4" wId="gm0297_1__chp_1__art_1.4" owRegeltekstIdentificatie="nl.imow-gm0297.regeltekst.2019000116" owJuridischeRegelIdentificatie="nl.imow-gm0297.juridischeregel.2019000019">
+        <Kop label="Artikel" nummer="1.4">
+          <Opschrift>
+            <TekstRun tekst="Toepassingsgebied"/>
+          </Opschrift>
+        </Kop>
+        <Alinea uId="uid-0001">
+          <TekstRun tekst="Dit omgevingsplan is van toepassing in Zaltbommel."/>
+        </Alinea>
+      </Artikel>
+    </Hoofdstuk>
+    <Hoofdstuk eId="chp_2" wId="gm0297_1__chp_2">
+      <Kop label="Hoofdstuk" nummer="2">
+        <Opschrift>
+          <TekstRun tekst="Functietoedeling"/>
+        </Opschrift>
+      </Kop>
+      <Afdeling eId="chp_2__subchp_2.2" wId="gm0297_1__chp_2__subchp_2.2">
+        <Kop label="Afdeling" nummer="2.2">
+          <Opschrift>
+            <TekstRun tekst="Bedrijf categorie 2"/>
+          </Opschrift>
+        </Kop>
+        <Artikel eId="chp_2__subchp_2.2__art_2.3" wId="gm0297_1__chp_2__subchp_2.2__art_2.3" owRegeltekstIdentificatie="nl.imow-gm0297.regeltekst.2019000001" owJuridischeRegelIdentificatie="nl.imow-gm0297.juridischeregel.2019000001">
+          <Kop label="Artikel" nummer="2.3">
+            <Opschrift>
+              <TekstRun tekst="Doel functietoedeling"/>
+            </Opschrift>
+          </Kop>
+          <Alinea uId="uid-0002">
+            <TekstRun tekst="Het werkingsgebied van de functie '"/>
+            <TekstRun tekst="Bedrijf categorie 2">
+              <Mark kind="intIoRef" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1" eId="chp_2__subchp_2.2__art_2.3__ref_o_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.3__ref_o_1"/>
+            </TekstRun>
+            <TekstRun tekst="' is bedoeld voor het verrichten van gebruiksactiviteiten die passen bij een bedrijf met een lichte milieucategorie met een beperkte uitstraling op het omringende gebied. "/>
+          </Alinea>
+        </Artikel>
+        <Artikel eId="chp_2__subchp_2.2__art_2.4" wId="gm0297_1__chp_2__subchp_2.2__art_2.4" owRegeltekstIdentificatie="nl.imow-gm0297.regeltekst.2019000002" owJuridischeRegelIdentificatie="nl.imow-gm0297.juridischeregel.2019000002">
+          <Kop label="Artikel" nummer="2.4">
+            <Opschrift>
+              <TekstRun tekst="Gebruiksactiviteiten die zonder vergunning of melding zijn toegestaan"/>
+            </Opschrift>
+          </Kop>
+          <Alinea uId="uid-0003">
+            <TekstRun tekst="Ter plaatse van het werkingsgebied van de functie '"/>
+            <TekstRun tekst="Bedrijf categorie 2">
+              <Mark kind="intIoRef" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1" eId="chp_2__subchp_2.2__art_2.4__ref_o_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.4__ref_o_1"/>
+            </TekstRun>
+            <TekstRun tekst="' mogen de locatie en de daarop voorkomende bouwwerken in ieder geval worden gebruikt voor het verrichten van de volgende gebruiksactiviteiten:"/>
+          </Alinea>
+          <Lijst eId="chp_2__subchp_2.2__art_2.4__list_o_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.4__list_o_1">
+            <Item eId="chp_2__subchp_2.2__art_2.4__list_o_1__item_a" wId="gm0297_1__chp_2__subchp_2.2__art_2.4__list_o_1__item_a" nummer="a.">
+              <Alinea uId="uid-0004">
+                <TekstRun tekst="het uitoefenen van bedrijfstypen van categorie 2 die voorkomen op de bij deze regels behorende"/>
+                <TekstRun tekst="Lijst van toegelaten bedrijfstypen">
+                  <Mark kind="intRef" ref="cmp_III__content_o_1" scope="Divisietekst"/>
+                </TekstRun>
+                <TekstRun tekst=" ; "/>
+              </Alinea>
+            </Item>
+            <Item eId="chp_2__subchp_2.2__art_2.4__list_o_1__item_b" wId="gm0297_1__chp_2__subchp_2.2__art_2.4__list_o_1__item_b" nummer="b.">
+              <Alinea uId="uid-0005">
+                <TekstRun tekst="het wonen in een bedrijfswoning ;"/>
+              </Alinea>
+            </Item>
+            <Item eId="chp_2__subchp_2.2__art_2.4__list_o_1__item_c" wId="gm0297_1__chp_2__subchp_2.2__art_2.4__list_o_1__item_c" nummer="c.">
+              <Alinea uId="uid-0006">
+                <TekstRun tekst="het aanleggen en instandhouden van nutsvoorzieningen "/>
+              </Alinea>
+            </Item>
+            <Item eId="chp_2__subchp_2.2__art_2.4__list_o_1__item_d" wId="gm0297_1__chp_2__subchp_2.2__art_2.4__list_o_1__item_d" nummer="d.">
+              <Alinea uId="uid-0007">
+                <TekstRun tekst="het aanleggen en instandhouden van voorzieningen voor de waterhuishouding;"/>
+              </Alinea>
+            </Item>
+            <Item eId="chp_2__subchp_2.2__art_2.4__list_o_1__item_e" wId="gm0297_1__chp_2__subchp_2.2__art_2.4__list_o_1__item_e" nummer="e.">
+              <Alinea uId="uid-0008">
+                <TekstRun tekst="het aanleggen en instandhouden van tuin en/of erf."/>
+              </Alinea>
+            </Item>
+            <Item eId="chp_2__subchp_2.2__art_2.4__list_o_1__item_f" wId="gm0297_1__chp_2__subchp_2.2__art_2.4__list_o_1__item_f" nummer="f.">
+              <Alinea uId="uid-0009">
+                <TekstRun tekst="het uitoefenen van detailhandel in ter plaatse vervaardigde goederen, voor zover deze binnen ‘"/>
+                <TekstRun tekst="Zone A">
+                  <Mark kind="intIoRef" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_6__ref_o_1" eId="chp_2__subchp_2.2__art_2.4__list_o_1__item_f__ref_o_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.4__list_o_1__item_f__ref_o_1"/>
+                </TekstRun>
+                <TekstRun tekst="’ van het werkingsgebied ‘"/>
+                <TekstRun tekst="Bedrijf categorie 2">
+                  <Mark kind="intIoRef" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1" eId="chp_2__subchp_2.2__art_2.4__list_o_1__item_f__ref_o_2" wId="gm0297_1__chp_2__subchp_2.2__art_2.4__list_o_1__item_f__ref_o_2"/>
+                </TekstRun>
+                <TekstRun tekst="’ plaatsvinden."/>
+              </Alinea>
+            </Item>
+          </Lijst>
+          <ActiviteitAanduiding activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000241" activiteitNaam="uitoefenen van bedrijfstypen van categorie 2" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan"/>
+        </Artikel>
+        <Artikel eId="chp_2__subchp_2.2__art_2.5" wId="gm0297_1__chp_2__subchp_2.2__art_2.5" owRegeltekstIdentificatie="nl.imow-gm0297.regeltekst.2019000003" owJuridischeRegelIdentificatie="nl.imow-gm0297.juridischeregel.2019000008">
+          <Kop label="Artikel" nummer="2.5">
+            <Opschrift>
+              <TekstRun tekst="Gebruiksactiviteiten die verboden zijn"/>
+            </Opschrift>
+          </Kop>
+          <Alinea uId="uid-0010">
+            <TekstRun tekst="Ter plaatse van het werkingsgebied van de functie '"/>
+            <TekstRun tekst="Bedrijf categorie 2">
+              <Mark kind="intIoRef" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1" eId="chp_2__subchp_2.2__art_2.5__ref_o_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.5__ref_o_1"/>
+            </TekstRun>
+            <TekstRun tekst="' is het verboden de locatie en de daarop voorkomende bouwwerken te gebruiken:"/>
+          </Alinea>
+          <Lijst eId="chp_2__subchp_2.2__art_2.5__list_o_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.5__list_o_1">
+            <Item eId="chp_2__subchp_2.2__art_2.5__list_o_1__item_a" wId="gm0297_1__chp_2__subchp_2.2__art_2.5__list_o_1__item_a" nummer="a.">
+              <Alinea uId="uid-0011">
+                <TekstRun tekst="voor het exploiteren van inrichtingen als bedoeld in artikel 2.1 lid 3 juncto Bijlage 1 onderdeel D van het Besluit omgevingsrecht;"/>
+              </Alinea>
+            </Item>
+            <Item eId="chp_2__subchp_2.2__art_2.5__list_o_1__item_b" wId="gm0297_1__chp_2__subchp_2.2__art_2.5__list_o_1__item_b" nummer="b.">
+              <Alinea uId="uid-0012">
+                <TekstRun tekst="voor het exploiteren van risicovolle inrichtingen;"/>
+              </Alinea>
+            </Item>
+            <Item eId="chp_2__subchp_2.2__art_2.5__list_o_1__item_c" wId="gm0297_1__chp_2__subchp_2.2__art_2.5__list_o_1__item_c" nummer="c.">
+              <Alinea uId="uid-0013">
+                <TekstRun tekst="als opslagterrein, voor zover het betreft het gebied gelegen voor de voorgevels van de bedrijfsgebouwen. "/>
+              </Alinea>
+            </Item>
+          </Lijst>
+          <ActiviteitAanduiding activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000730" activiteitNaam="exploiteren van inrichtingen" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Verbod"/>
+        </Artikel>
+        <Artikel eId="chp_2__subchp_2.2__art_2.6" wId="gm0297_1__chp_2__subchp_2.2__art_2.6">
+          <Kop label="Artikel" nummer="2.6">
+            <Opschrift>
+              <TekstRun tekst="Gebruiksactiviteiten die zijn toegelaten na voorafgaande melding"/>
+            </Opschrift>
+          </Kop>
+          <Lid eId="chp_2__subchp_2.2__art_2.6__para_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.6__para_1" nummer="1." owRegeltekstIdentificatie="nl.imow-gm0297.regeltekst.2019000004" owJuridischeRegelIdentificatie="nl.imow-gm0297.juridischeregel.2019000011">
+            <Alinea uId="uid-0014">
+              <TekstRun tekst="Meldingplichtige gebruiksactiviteiten"/>
+            </Alinea>
+            <Alinea uId="uid-0015">
+              <TekstRun tekst="Ter plaatse van het werkingsgebied van de functie '"/>
+              <TekstRun tekst="Bedrijf categorie 2">
+                <Mark kind="intIoRef" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1" eId="chp_2__subchp_2.2__art_2.6__para_1__ref_o_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.6__para_1__ref_o_1"/>
+              </TekstRun>
+              <TekstRun tekst="' is het binnen '"/>
+              <TekstRun tekst="Zone B">
+                <Mark kind="intIoRef" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_7__ref_o_1" eId="chp_2__subchp_2.2__art_2.6__para_1__ref_o_2" wId="gm0297_1__chp_2__subchp_2.2__art_2.6__para_1__ref_o_2"/>
+              </TekstRun>
+              <TekstRun tekst="' verboden de gebruiksactiviteit 'het uitoefenen van detailhandel in ter plaatse vervaardigde goederen' te verrichten zonder dat daarvoor aan het bevoegd gezag een melding is gedaan"/>
+            </Alinea>
+            <ActiviteitAanduiding activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000590" activiteitNaam="uitoefenen van detailhandel in ter plaatse vervaardigde goederen" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Meldingsplicht"/>
+          </Lid>
+          <Lid eId="chp_2__subchp_2.2__art_2.6__para_2" wId="gm0297_1__chp_2__subchp_2.2__art_2.6__para_2" nummer="2.">
+            <Alinea uId="uid-0016">
+              <TekstRun tekst="Indieningsvereisten melding"/>
+            </Alinea>
+            <Alinea uId="uid-0017">
+              <TekstRun tekst="Bij het doen van de melding dienen de volgende indieningsvereisten in acht te worden genomen:"/>
+            </Alinea>
+            <Lijst eId="chp_2__subchp_2.2__art_2.6__para_2__list_o_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.6__para_2__list_o_1">
+              <Item eId="chp_2__subchp_2.2__art_2.6__para_2__list_o_1__item_a" wId="gm0297_1__chp_2__subchp_2.2__art_2.6__para_2__list_o_1__item_a" nummer="a.">
+                <Alinea uId="uid-0018">
+                  <TekstRun tekst="de melding dient te worden gedaan door middel van het inzenden van het bij deze regels behorende Formulier Melding;"/>
+                </Alinea>
+              </Item>
+              <Item eId="chp_2__subchp_2.2__art_2.6__para_2__list_o_1__item_b" wId="gm0297_1__chp_2__subchp_2.2__art_2.6__para_2__list_o_1__item_b" nummer="b.">
+                <Alinea uId="uid-0019">
+                  <TekstRun tekst="toegevoegd moet worden een terreininrichtingstekening. "/>
+                </Alinea>
+              </Item>
+            </Lijst>
+          </Lid>
+        </Artikel>
+        <Artikel eId="chp_2__subchp_2.2__art_2.7" wId="gm0297_1__chp_2__subchp_2.2__art_2.7">
+          <Kop label="Artikel" nummer="2.7">
+            <Opschrift>
+              <TekstRun tekst="Gebruiksactiviteiten die zijn toegelaten nadat daarvoor omgevingsvergunning is verleend"/>
+            </Opschrift>
+          </Kop>
+          <Lid eId="chp_2__subchp_2.2__art_2.7__para_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_1" nummer="1." owRegeltekstIdentificatie="nl.imow-gm0297.regeltekst.2019000007" owJuridischeRegelIdentificatie="nl.imow-gm0297.juridischeregel.2019000012">
+            <Alinea uId="uid-0020">
+              <TekstRun tekst="Vergunningplichtige gebruiksactiviteiten"/>
+            </Alinea>
+            <Alinea uId="uid-0021">
+              <TekstRun tekst="Ter plaatse van het werkingsgebied van de functie '"/>
+              <TekstRun tekst="Bedrijf categorie 2">
+                <Mark kind="intIoRef" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1" eId="chp_2__subchp_2.2__art_2.7__para_1__ref_o_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_1__ref_o_1"/>
+              </TekstRun>
+              <TekstRun tekst="' is het verboden om zonder omgevingsvergunning de gebruiksactiviteit 'het exploiteren van een verkooppunt voor motorbrandstoffen niet zijnde lpg' te verrichten. Daarnaast is het eveneens verboden om deze gebruiksactiviteit uit te voeren zonder een vergunning voor de milieubelastende activiteit ‘het opslaan van motorbrandstoffen niet zijnde lpg’, zoals beschreven in Artikel 13.24."/>
+            </Alinea>
+            <ActiviteitAanduiding activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000540" activiteitNaam="exploiteren van een verkooppunt voor motorbrandstoffen niet zijnde lpg" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Vergunningplicht"/>
+            <ActiviteitAanduiding activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000760" activiteitNaam="opslaan van motorbrandstoffen niet zijnde lpg" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Vergunningplicht"/>
+          </Lid>
+          <Lid eId="chp_2__subchp_2.2__art_2.7__para_2" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_2" nummer="2.">
+            <Alinea uId="uid-0022">
+              <TekstRun tekst="Indieningsvereisten aanvraag omgevingsvergunning"/>
+            </Alinea>
+            <Alinea uId="uid-0023">
+              <TekstRun tekst="Bij het indienen van de aanvraag om omgevingsvergunning dienen de volgende indieningsvereisten in acht te worden genomen:"/>
+            </Alinea>
+            <Lijst eId="chp_2__subchp_2.2__art_2.7__para_2__list_o_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_2__list_o_1">
+              <Item eId="chp_2__subchp_2.2__art_2.7__para_2__list_o_1__item_a" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_2__list_o_1__item_a" nummer="a.">
+                <Alinea uId="uid-0024">
+                  <TekstRun tekst="de aanvraag dient te worden ingediend door middel van het inzenden van het bij deze regels behorende Formulier Aanvraag omgevingsvergunning;"/>
+                </Alinea>
+              </Item>
+              <Item eId="chp_2__subchp_2.2__art_2.7__para_2__list_o_1__item_b" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_2__list_o_1__item_b" nummer="b.">
+                <Alinea uId="uid-0025">
+                  <TekstRun tekst="toegevoegd moet worden een terreininrichtingstekening;"/>
+                </Alinea>
+              </Item>
+              <Item eId="chp_2__subchp_2.2__art_2.7__para_2__list_o_1__item_c" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_2__list_o_1__item_c" nummer="c.">
+                <Alinea uId="uid-0026">
+                  <TekstRun tekst="toegevoegd moet worden een RisicoEffectRapportage."/>
+                </Alinea>
+              </Item>
+            </Lijst>
+          </Lid>
+          <Lid eId="chp_2__subchp_2.2__art_2.7__para_3" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_3" nummer="3.">
+            <Alinea uId="uid-0027">
+              <TekstRun tekst="Beoordelingsregels aanvraag omgevingsvergunning"/>
+            </Alinea>
+            <Alinea uId="uid-0028">
+              <TekstRun tekst="De omgevingsvergunning wordt alleen verleend als aan de volgende regels wordt voldaan:"/>
+            </Alinea>
+            <Lijst eId="chp_2__subchp_2.2__art_2.7__para_3__list_o_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_3__list_o_1">
+              <Item eId="chp_2__subchp_2.2__art_2.7__para_3__list_o_1__item_a" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_3__list_o_1__item_a" nummer="a.">
+                <Alinea uId="uid-0029">
+                  <TekstRun tekst="Uit de RisicoEffectRapportage is gebleken dat het gevaar voor de omliggende gevoelige functies ten hoogste 0.1 is."/>
+                </Alinea>
+              </Item>
+              <Item eId="chp_2__subchp_2.2__art_2.7__para_3__list_o_1__item_b" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_3__list_o_1__item_b" nummer="b.">
+                <Alinea uId="uid-0030">
+                  <TekstRun tekst="Bebouwing wordt uitsluitend gebruikt als technische ruimte, zoals een werkplaats, en als servicegebouw ten dienste van het verkooppunt motorbrandstoffen, waaronder in ieder geval begrepen winkel, magazijn en sanitaire ruimten."/>
+                </Alinea>
+              </Item>
+              <Item eId="chp_2__subchp_2.2__art_2.7__para_3__list_o_1__item_c" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_3__list_o_1__item_c" nummer="c.">
+                <Alinea uId="uid-0031">
+                  <TekstRun tekst="In het servicegebouw zijn geen afzonderlijke ruimten voor detailhandel."/>
+                </Alinea>
+              </Item>
+              <Item eId="chp_2__subchp_2.2__art_2.7__para_3__list_o_1__item_d" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_3__list_o_1__item_d" nummer="d.">
+                <Alinea uId="uid-0032">
+                  <TekstRun tekst="Er zijn geen zelfstandige en onzelfstandige horecaruimten in de zin van café/bar, restaurant, snackbar, et cetera. Buffetverkoop en verkoop uit automatiek zijn, als onderdeel van de winkel, wel toegestaan."/>
+                </Alinea>
+              </Item>
+            </Lijst>
+          </Lid>
+        </Artikel>
+      </Afdeling>
+      <Afdeling eId="chp_2__subchp_2.3" wId="gm0297_1__chp_2__subchp_2.3">
+        <Kop label="Afdeling" nummer="2.3">
+          <Opschrift>
+            <TekstRun tekst="Centrumgebied"/>
+          </Opschrift>
+        </Kop>
+        <Artikel eId="chp_2__subchp_2.3__art_2.9" wId="gm0297_1__chp_2__subchp_2.3__art_2.9" owRegeltekstIdentificatie="nl.imow-gm0297.regeltekst.2019000012" owJuridischeRegelIdentificatie="nl.imow-gm0297.juridischeregel.2019000013">
+          <Kop label="Artikel" nummer="2.9">
+            <Opschrift>
+              <TekstRun tekst="Doel functietoedeling"/>
+            </Opschrift>
+          </Kop>
+          <Alinea uId="uid-0033">
+            <TekstRun tekst="Het werkingsgebied van de functie '"/>
+            <TekstRun tekst="Centrumgebied">
+              <Mark kind="intIoRef" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_2__ref_o_1" eId="chp_2__subchp_2.3__art_2.9__ref_o_1" wId="gm0297_1__chp_2__subchp_2.3__art_2.9__ref_o_1"/>
+            </TekstRun>
+            <TekstRun tekst="' is bedoeld voor het verrichten van gebruiksactiviteiten die passen in een stadscentrum met een overwegend stedelijke inrichting en die geen onevenredige afbreuk doen aan het stedelijke karakter of aan de beleving van het bezoekende publiek."/>
+          </Alinea>
+        </Artikel>
+        <Artikel eId="chp_2__subchp_2.3__art_2.10" wId="gm0297_1__chp_2__subchp_2.3__art_2.10" owRegeltekstIdentificatie="nl.imow-gm0297.regeltekst.2019000008" owJuridischeRegelIdentificatie="nl.imow-gm0297.juridischeregel.2019000014">
+          <Kop label="Artikel" nummer="2.10">
+            <Opschrift>
+              <TekstRun tekst="Gebruiksactiviteiten die zonder vergunning of melding zijn toegestaan"/>
+            </Opschrift>
+          </Kop>
+          <Alinea uId="uid-0034">
+            <TekstRun tekst="Ter plaatse van het werkingsgebied van de functie '"/>
+            <TekstRun tekst="Centrumgebied">
+              <Mark kind="intIoRef" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_2__ref_o_1" eId="chp_2__subchp_2.3__art_2.10__ref_o_1" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__ref_o_1"/>
+            </TekstRun>
+            <TekstRun tekst="', zoals benoemd in"/>
+            <TekstRun tekst="artikel 2.9">
+              <Mark kind="intRef" ref="chp_2__subchp_2.3__art_2.9" scope="Artikel"/>
+            </TekstRun>
+            <TekstRun tekst=" mag de locatie in ieder geval worden gebruikt voor het verrichten van de volgende gebruiksactiviteiten:"/>
+          </Alinea>
+          <Lijst eId="chp_2__subchp_2.3__art_2.10__list_o_1" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1">
+            <Item eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_a" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_a" nummer="a.">
+              <Alinea uId="uid-0035">
+                <TekstRun tekst="het exploiteren van een bedrijf;"/>
+              </Alinea>
+            </Item>
+            <Item eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_b" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_b" nummer="b.">
+              <Alinea uId="uid-0036">
+                <TekstRun tekst="het exploiteren van een instelling voor cultuur en ontspanning;"/>
+              </Alinea>
+            </Item>
+            <Item eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_c" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_c" nummer="c.">
+              <Alinea uId="uid-0037">
+                <TekstRun tekst="het uitoefenen van detailhandel;"/>
+              </Alinea>
+            </Item>
+            <Item eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_d" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_d" nummer="d.">
+              <Alinea uId="uid-0038">
+                <TekstRun tekst="het uitoefenen van dienstverlening;"/>
+              </Alinea>
+            </Item>
+            <Item eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_e" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_e" nummer="e.">
+              <Alinea uId="uid-0039">
+                <TekstRun tekst="het exploiteren van een horeca-inrichting;"/>
+              </Alinea>
+            </Item>
+            <Item eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_f" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_f" nummer="f.">
+              <Alinea uId="uid-0040">
+                <TekstRun tekst="het exploiteren van een kantoor;"/>
+              </Alinea>
+            </Item>
+            <Item eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_g" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_g" nummer="g.">
+              <Alinea uId="uid-0041">
+                <TekstRun tekst="het exploiteren van een instelling voor maatschappelijke voorzieningen;"/>
+              </Alinea>
+            </Item>
+            <Item eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_h" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_h" nummer="h.">
+              <Alinea uId="uid-0042">
+                <TekstRun tekst="het exploiteren van een centrale voor het verwerken van huishoudelijk afval;"/>
+              </Alinea>
+            </Item>
+            <Item eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_i" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_i" nummer="i.">
+              <Alinea uId="uid-0043">
+                <TekstRun tekst="het exploiteren van een speelautomatenhal, uitsluitend ter plaatse van het werkingsgebied '"/>
+                <TekstRun tekst="exploiteren speelautomatenhal">
+                  <Mark kind="intIoRef" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_3__ref_o_1" eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_i__ref_o_1" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_i__ref_o_1"/>
+                </TekstRun>
+                <TekstRun tekst="'; "/>
+              </Alinea>
+            </Item>
+            <Item eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_j" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_j" nummer="j.">
+              <Alinea uId="uid-0044">
+                <TekstRun tekst="het aanleggen en instandhouden van openbaar groen;"/>
+              </Alinea>
+            </Item>
+            <Item eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_k" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_k" nummer="k.">
+              <Alinea uId="uid-0045">
+                <TekstRun tekst="het recreëren;"/>
+              </Alinea>
+            </Item>
+            <Item eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_l" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_l" nummer="l.">
+              <Alinea uId="uid-0046">
+                <TekstRun tekst="het sporten;"/>
+              </Alinea>
+            </Item>
+            <Item eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_m" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_m" nummer="m.">
+              <Alinea uId="uid-0047">
+                <TekstRun tekst="het wonen;"/>
+              </Alinea>
+            </Item>
+            <Item eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_n" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_n" nummer="n.">
+              <Alinea uId="uid-0048">
+                <TekstRun tekst="het uitoefenen van een beroep aan huis;"/>
+              </Alinea>
+            </Item>
+            <Item eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_o" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_o" nummer="o.">
+              <Alinea uId="uid-0049">
+                <TekstRun tekst="het exploiteren van een aan de woonfunctie ondergeschikt bedrijf aan huis;"/>
+              </Alinea>
+            </Item>
+            <Item eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_p" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_p" nummer="p.">
+              <Alinea uId="uid-0050">
+                <TekstRun tekst="het aanleggen en instandhouden van tuin en/of erf;"/>
+              </Alinea>
+            </Item>
+            <Item eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_q" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_q" nummer="q.">
+              <Alinea uId="uid-0051">
+                <TekstRun tekst="het aanleggen en instandhouden van de openbare ruimte , waaronder in ieder geval worden begrepen voorzieningen voor de waterhuishouding, voetpaden, fietspaden, wegen en voorzieningen die het verblijf in de openbare ruimte vergemakkelijken, zoals verlichting,"/>
+              </Alinea>
+            </Item>
+          </Lijst>
+          <ActiviteitAanduiding activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000660" activiteitNaam="exploiteren van een speelautomatenhal" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan"/>
+          <ActiviteitAanduiding activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000680" activiteitNaam="exploiteren van een kantoor" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan"/>
+        </Artikel>
+        <Artikel eId="chp_2__subchp_2.3__art_2.11" wId="gm0297_1__chp_2__subchp_2.3__art_2.11">
+          <Kop label="Artikel" nummer="2.11">
+            <Opschrift>
+              <TekstRun tekst="Gebruiksactiviteiten die zijn toegelaten na voorafgaande melding"/>
+            </Opschrift>
+          </Kop>
+          <Lid eId="chp_2__subchp_2.3__art_2.11__para_1" wId="gm0297_1__chp_2__subchp_2.3__art_2.11__para_1" nummer="1.">
+            <Alinea uId="uid-0052">
+              <TekstRun tekst="Meldingplichtige gebruiksactiviteiten"/>
+            </Alinea>
+            <Alinea uId="uid-0053">
+              <TekstRun tekst="Ter plaatse van het werkingsgebied van de functie '"/>
+              <TekstRun tekst="Centrumgebied">
+                <Mark kind="intIoRef" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_2__ref_o_1" eId="chp_2__subchp_2.3__art_2.11__para_1__ref_o_1" wId="gm0297_1__chp_2__subchp_2.3__art_2.11__para_1__ref_o_1"/>
+              </TekstRun>
+              <TekstRun tekst="' is het verboden de gebruiksactiviteit 'het wonen in een bedrijfswoning' te verrichten zonder dat daarvoor aan het bevoegd gezag een melding is gedaan."/>
+            </Alinea>
+          </Lid>
+          <Lid eId="chp_2__subchp_2.3__art_2.11__para_2" wId="gm0297_1__chp_2__subchp_2.3__art_2.11__para_2" nummer="2.">
+            <Alinea uId="uid-0054">
+              <TekstRun tekst="Indieningsvereisten melding"/>
+            </Alinea>
+            <Alinea uId="uid-0055">
+              <TekstRun tekst="Bij het doen van de melding dienen de volgende indieningsvereisten in acht te worden genomen:"/>
+            </Alinea>
+            <Lijst eId="chp_2__subchp_2.3__art_2.11__para_2__list_o_1" wId="gm0297_1__chp_2__subchp_2.3__art_2.11__para_2__list_o_1">
+              <Item eId="chp_2__subchp_2.3__art_2.11__para_2__list_o_1__item_o_1" wId="gm0297_1__chp_2__subchp_2.3__art_2.11__para_2__list_o_1__item_o_1" nummer="a.">
+                <Alinea uId="uid-0056">
+                  <TekstRun tekst="de melding dient te worden gedaan door middel van het inzenden van het bij deze regels behorende Formulier Melding;"/>
+                </Alinea>
+              </Item>
+            </Lijst>
+          </Lid>
+        </Artikel>
+      </Afdeling>
+      <Afdeling eId="chp_2__subchp_2.4" wId="gm0297_1__chp_2__subchp_2.4">
+        <Kop label="Afdeling" nummer="2.4">
+          <Opschrift>
+            <TekstRun tekst="Voorbeeld omgevingswaarde"/>
+          </Opschrift>
+        </Kop>
+        <Artikel eId="chp_2__subchp_2.4__art_2.12" wId="gm0297_1__chp_2__subchp_2.4__art_2.12" owRegeltekstIdentificatie="nl.imow-gm0297.regeltekst.2019000009" owJuridischeRegelIdentificatie="nl.imow-gm0297.juridischeregel.2019000015">
+          <Kop label="Artikel" nummer="2.12">
+            <Opschrift>
+              <TekstRun tekst="Omgevingswaarde stikstofdioxide"/>
+            </Opschrift>
+          </Kop>
+          <Alinea uId="uid-0057">
+            <TekstRun tekst="Voor stikstofdioxide geldt in '"/>
+            <TekstRun tekst="Zuilichem">
+              <Mark kind="intIoRef" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_8__ref_o_1" eId="chp_2__subchp_2.4__art_2.12__ref_o_1" wId="gm0297_1__chp_2__subchp_2.4__art_2.12__ref_o_1"/>
+            </TekstRun>
+            <TekstRun tekst="' de volgende ten hoogste toelaatbare concentraties:"/>
+          </Alinea>
+          <Lijst eId="chp_2__subchp_2.4__art_2.12__list_o_1" wId="gm0297_1__chp_2__subchp_2.4__art_2.12__list_o_1">
+            <Item eId="chp_2__subchp_2.4__art_2.12__list_o_1__item_a" wId="gm0297_1__chp_2__subchp_2.4__art_2.12__list_o_1__item_a" nummer="a.">
+              <Alinea uId="uid-0058">
+                <TekstRun tekst="150 μg/m"/>
+                <TekstRun tekst="3">
+                  <Mark kind="sup"/>
+                </TekstRun>
+                <TekstRun tekst=" uurgemiddelde, dat ten hoogste twaalf maal per kalenderjaar wordt overschreden; en"/>
+              </Alinea>
+            </Item>
+            <Item eId="chp_2__subchp_2.4__art_2.12__list_o_1__item_b" wId="gm0297_1__chp_2__subchp_2.4__art_2.12__list_o_1__item_b" nummer="b.">
+              <Alinea uId="uid-0059">
+                <TekstRun tekst="30 μg/m"/>
+                <TekstRun tekst="3">
+                  <Mark kind="sup"/>
+                </TekstRun>
+                <TekstRun tekst=" als kalenderjaargemiddelde."/>
+              </Alinea>
+            </Item>
+          </Lijst>
+          <Alinea uId="uid-0060">
+            <TekstRun tekst="Dit komt overeen met wat er in de "/>
+            <TekstRun tekst="Omgevingsregeling">
+              <Mark kind="extRef" ref="/akn/nl/act/mnre1034/2020/reg1001" soort="AKN"/>
+            </TekstRun>
+            <TekstRun tekst=" staat in "/>
+            <TekstRun tekst="bijlage XXIII B">
+              <Mark kind="extRef" ref="/akn/nl/act/mnre1034/2020/reg1001#cmp_XXIII__content_1_inst2" soort="AKN"/>
+            </TekstRun>
+            <TekstRun tekst="."/>
+          </Alinea>
+        </Artikel>
+      </Afdeling>
+      <Afdeling eId="chp_2__subchp_2.5" wId="gm0297_1__chp_2__subchp_2.5">
+        <Kop label="Afdeling" nummer="2.5">
+          <Opschrift>
+            <TekstRun tekst="Voorbeeld omgevingsnorm"/>
+          </Opschrift>
+        </Kop>
+        <Artikel eId="chp_2__subchp_2.5__art_2.13" wId="gm0297_1__chp_2__subchp_2.5__art_2.13">
+          <Kop label="Artikel" nummer="2.13">
+            <Opschrift>
+              <TekstRun tekst="Omgevingsplanactiviteiten bouwen die zonder vergunning of melding zijn toegestaan"/>
+            </Opschrift>
+          </Kop>
+          <Alinea uId="uid-0061">
+            <TekstRun tekst="Een vergunning voor de omgevingsplanactiviteit bouwen is niet vereist indien deze activiteit bestaat uit:"/>
+          </Alinea>
+          <Lijst eId="chp_2__subchp_2.5__art_2.13__list_o_1" wId="gm0297_1__chp_2__subchp_2.5__art_2.13__list_o_1">
+            <Item eId="chp_2__subchp_2.5__art_2.13__list_o_1__item_a" wId="gm0297_1__chp_2__subchp_2.5__art_2.13__list_o_1__item_a" nummer="a.">
+              <Alinea uId="uid-0062">
+                <TekstRun tekst="het verrichten van gewoon onderhoud aan een"/>
+                <TekstRun tekst="bouwwerk">
+                  <Mark kind="intRef" ref="cmp_II__content_o_1__list_o_1__item_o_1" scope="Begrip"/>
+                </TekstRun>
+                <TekstRun tekst=", voor zover maatvoering en vormgeving van dat bouwwerk niet wijzigen;"/>
+              </Alinea>
+            </Item>
+            <Item eId="chp_2__subchp_2.5__art_2.13__list_o_1__item_b" wId="gm0297_1__chp_2__subchp_2.5__art_2.13__list_o_1__item_b" nummer="b.">
+              <Alinea uId="uid-0063">
+                <TekstRun tekst="het plaatsen van straatmeubilair;"/>
+              </Alinea>
+            </Item>
+            <Item eId="chp_2__subchp_2.5__art_2.13__list_o_1__item_c" wId="gm0297_1__chp_2__subchp_2.5__art_2.13__list_o_1__item_c" nummer="c.">
+              <Alinea uId="uid-0064">
+                <TekstRun tekst="het bouwen van bouwwerken, geen gebouw zijnde, ter plaatse van het werkingsgebied 'voorerfgebied' mits de bouwhoogte niet hoger is dan 1 meter;"/>
+              </Alinea>
+            </Item>
+            <Item eId="chp_2__subchp_2.5__art_2.13__list_o_1__item_d" wId="gm0297_1__chp_2__subchp_2.5__art_2.13__list_o_1__item_d" nummer="d.">
+              <Alinea uId="uid-0065">
+                <TekstRun tekst="het bouwen van bouwwerken ter plaatse van het werkingsgebied 'achtererfgebied', mits de bouwhoogte niet hoger is dan 3 meter en de grondoppervlakte niet groter is dan 30 m"/>
+                <TekstRun tekst="2">
+                  <Mark kind="sup"/>
+                </TekstRun>
+                <TekstRun tekst="."/>
+              </Alinea>
+            </Item>
+          </Lijst>
+        </Artikel>
+        <Artikel eId="chp_2__subchp_2.5__art_2.14" wId="gm0297_1__chp_2__subchp_2.5__art_2.14" owRegeltekstIdentificatie="nl.imow-gm0297.regeltekst.2019000010" owJuridischeRegelIdentificatie="nl.imow-gm0297.juridischeregel.2019000016">
+          <Kop label="Artikel" nummer="2.14">
+            <Opschrift>
+              <TekstRun tekst="Bouwregels bedrijfsgebouwen"/>
+            </Opschrift>
+          </Kop>
+          <Alinea uId="uid-0066">
+            <TekstRun tekst="Voor het bouwen en instandhouden van bedrijfsgebouwen gelden de volgende regels:"/>
+          </Alinea>
+          <Lijst eId="chp_2__subchp_2.5__art_2.14__list_o_1" wId="gm0297_1__chp_2__subchp_2.5__art_2.14__list_o_1">
+            <Item eId="chp_2__subchp_2.5__art_2.14__list_o_1__item_a" wId="gm0297_1__chp_2__subchp_2.5__art_2.14__list_o_1__item_a" nummer="a.">
+              <Alinea uId="uid-0067">
+                <TekstRun tekst="Een bedrijfsgebouw moet worden gesitueerd binnen het werkingsgebied 'bouwactiviteit toegestaan'."/>
+              </Alinea>
+            </Item>
+            <Item eId="chp_2__subchp_2.5__art_2.14__list_o_1__item_b" wId="gm0297_1__chp_2__subchp_2.5__art_2.14__list_o_1__item_b" nummer="b.">
+              <Alinea uId="uid-0068">
+                <TekstRun tekst="De maximum oppervlakte van een bedrijfsgebouw is gelijk aan het werkingsgebied 'maximum oppervlakte'."/>
+              </Alinea>
+            </Item>
+            <Item eId="chp_2__subchp_2.5__art_2.14__list_o_1__item_c" wId="gm0297_1__chp_2__subchp_2.5__art_2.14__list_o_1__item_c" nummer="c.">
+              <Alinea uId="uid-0069">
+                <TekstRun tekst="De maximum goothoogte van een bedrijfsgebouw is de ter plaatse van het werkingsgebied 'maximum goothoogte bedrijfsgebouw' bepaalde waarde."/>
+              </Alinea>
+            </Item>
+            <Item eId="chp_2__subchp_2.5__art_2.14__list_o_1__item_d" wId="gm0297_1__chp_2__subchp_2.5__art_2.14__list_o_1__item_d" nummer="d.">
+              <Alinea uId="uid-0070">
+                <TekstRun tekst="De maximum bouwhoogte van een bedrijfsgebouw is de ter plaatse van het werkingsgebied '"/>
+                <TekstRun tekst="maximum bouwhoogte bedrijfsgebouw">
+                  <Mark kind="intIoRef" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_4__ref_o_1" eId="chp_2__subchp_2.5__art_2.14__list_o_1__item_d__ref_o_1" wId="gm0297_1__chp_2__subchp_2.5__art_2.14__list_o_1__item_d__ref_o_1"/>
+                </TekstRun>
+                <TekstRun tekst="' bepaalde waarde."/>
+              </Alinea>
+            </Item>
+            <Item eId="chp_2__subchp_2.5__art_2.14__list_o_1__item_e" wId="gm0297_1__chp_2__subchp_2.5__art_2.14__list_o_1__item_e" nummer="e.">
+              <Alinea uId="uid-0071">
+                <TekstRun tekst="Binnen het werkingsgebied bouwactiviteit toegestaan bedraagt de afstand tussen een bedrijfsgebouw en de zijdelingse perceelsgrens ten minste 3 meter."/>
+              </Alinea>
+            </Item>
+          </Lijst>
+        </Artikel>
+        <Artikel eId="chp_2__subchp_2.5__art_2.15" wId="gm0297_1__chp_2__subchp_2.5__art_2.15" owRegeltekstIdentificatie="nl.imow-gm0297.regeltekst.2019000015" owJuridischeRegelIdentificatie="nl.imow-gm0297.juridischeregel.2019000017">
+          <Kop label="Artikel" nummer="2.15">
+            <Opschrift>
+              <TekstRun tekst="Regels voor het uiterlijk van bouwwerken"/>
+            </Opschrift>
+          </Kop>
+          <Alinea uId="uid-0072">
+            <TekstRun tekst="Het uiterlijk van bouwwerken dient te voldoen aan het niveau van redelijke eisen van welstand dat ter plaatse van het werkingsgebied ‘"/>
+            <TekstRun tekst="welstandsniveau">
+              <Mark kind="intIoRef" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_5__ref_o_1" eId="chp_2__subchp_2.5__art_2.15__ref_o_1" wId="gm0297_1__chp_2__subchp_2.5__art_2.15__ref_o_1"/>
+            </TekstRun>
+            <TekstRun tekst="’ is vastgelegd."/>
+          </Alinea>
+        </Artikel>
+      </Afdeling>
+      <Afdeling eId="chp_2__subchp_2.6" wId="gm0297_1__chp_2__subchp_2.6">
+        <Kop label="Afdeling" nummer="2.6">
+          <Opschrift>
+            <TekstRun tekst="Centrumgebied"/>
+          </Opschrift>
+        </Kop>
+        <Artikel eId="chp_2__subchp_2.6__art_2.16" wId="gm0297_1__chp_2__subchp_2.6__art_2.16">
+          <Kop label="Artikel" nummer="2.16">
+            <Opschrift>
+              <TekstRun tekst="Toedeling functie landelijk gebied"/>
+            </Opschrift>
+          </Kop>
+        </Artikel>
+      </Afdeling>
+    </Hoofdstuk>
+    <Hoofdstuk eId="chp_5" wId="gm0297_1__chp_5">
+      <Kop label="Hoofdstuk" nummer="5">
+        <Opschrift>
+          <TekstRun tekst="Bouwregels"/>
+        </Opschrift>
+      </Kop>
+      <Afdeling eId="chp_5__subchp_5.1" wId="gm0297_1__chp_5__subchp_5.1">
+        <Kop label="Afdeling" nummer="5.1">
+          <Opschrift>
+            <TekstRun tekst="Bouwregels landelijk gebied"/>
+          </Opschrift>
+        </Kop>
+        <Artikel eId="chp_5__subchp_5.1__art_5.1" wId="gm0297_1__chp_5__subchp_5.1__art_5.1" owRegeltekstIdentificatie="nl.imow-gm0297.regeltekst.2019000113" owJuridischeRegelIdentificatie="nl.imow-gm0297.juridischeregel.2019000113">
+          <Kop label="Artikel" nummer="5.1">
+            <Opschrift>
+              <TekstRun tekst="Bouwen van een bijgebouw"/>
+            </Opschrift>
+          </Kop>
+          <Alinea uId="uid-0073">
+            <TekstRun tekst="Voor het bouwen van een bijgebouw gelden de volgende toestemmingen:"/>
+          </Alinea>
+          <Lijst eId="chp_5__subchp_5.1__art_5.1__list_o_1" wId="gm0297_1__chp_5__subchp_5.1__art_5.1__list_o_1">
+            <Item eId="chp_5__subchp_5.1__art_5.1__list_o_1__item_a" wId="gm0297_1__chp_5__subchp_5.1__art_5.1__list_o_1__item_a" nummer="a.">
+              <Alinea uId="uid-0074">
+                <TekstRun tekst="Het is toegestaan om een bijgebouw met een oppervlakte kleiner dan 20 m² te bouwen."/>
+              </Alinea>
+            </Item>
+            <Item eId="chp_5__subchp_5.1__art_5.1__list_o_1__item_b" wId="gm0297_1__chp_5__subchp_5.1__art_5.1__list_o_1__item_b" nummer="b.">
+              <Alinea uId="uid-0075">
+                <TekstRun tekst="Het is verboden om zonder voorafgaande melding een bijgebouw met een oppervlakte groter dan of gelijk aan 20 m² en kleiner dan 30 m² te bouwen."/>
+              </Alinea>
+            </Item>
+            <Item eId="chp_5__subchp_5.1__art_5.1__list_o_1__item_c" wId="gm0297_1__chp_5__subchp_5.1__art_5.1__list_o_1__item_c" nummer="c.">
+              <Alinea uId="uid-0076">
+                <TekstRun tekst="Het is verboden om zonder omgevingsvergunning een bijgebouw met een oppervlakte groter dan of gelijk aan 30 m² te bouwen."/>
+              </Alinea>
+            </Item>
+          </Lijst>
+          <ActiviteitAanduiding activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000800" activiteitNaam="bouwen van een bijgebouw" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan"/>
+          <ActiviteitAanduiding activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000800" activiteitNaam="bouwen van een bijgebouw" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Meldingsplicht"/>
+          <ActiviteitAanduiding activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000800" activiteitNaam="bouwen van een bijgebouw" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Vergunningplicht"/>
+        </Artikel>
+      </Afdeling>
+    </Hoofdstuk>
+    <Hoofdstuk eId="chp_6" wId="gm0297_1__chp_6">
+      <Kop label="Hoofdstuk" nummer="6">
+        <Opschrift>
+          <TekstRun tekst="Activiteiten"/>
+        </Opschrift>
+      </Kop>
+      <Afdeling eId="chp_6__subchp_6.1" wId="gm0297_1__chp_6__subchp_6.1">
+        <Kop label="Afdeling" nummer="6.1">
+          <Opschrift>
+            <TekstRun tekst="Kappen van bomen"/>
+          </Opschrift>
+        </Kop>
+        <Artikel eId="chp_6__subchp_6.1__art_6.1" wId="gm0297_1__chp_6__subchp_6.1__art_6.1">
+          <Kop label="Artikel" nummer="6.1">
+            <Opschrift>
+              <TekstRun tekst="Aanwijzing vergunningplichtige gevallen"/>
+            </Opschrift>
+          </Kop>
+          <Lid eId="chp_6__subchp_6.1__art_6.1__para_1" wId="gm0297_1__chp_6__subchp_6.1__art_6.1__para_1" nummer="1." owRegeltekstIdentificatie="nl.imow-gm0297.regeltekst.2019000114" owJuridischeRegelIdentificatie="nl.imow-gm0297.juridischeregel.2019000114">
+            <Alinea uId="uid-0077">
+              <TekstRun tekst="Het is verboden zonder omgevingsvergunning een boom te kappen."/>
+            </Alinea>
+            <ActiviteitAanduiding activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000810" activiteitNaam="boom kappen" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Vergunningplicht"/>
+          </Lid>
+          <Lid eId="chp_6__subchp_6.1__art_6.1__para_2" wId="gm0297_1__chp_6__subchp_6.1__art_6.1__para_2" nummer="2." owRegeltekstIdentificatie="nl.imow-gm0297.regeltekst.2019000115" owJuridischeRegelIdentificatie="nl.imow-gm0297.juridischeregel.2019000115">
+            <Alinea uId="uid-0078">
+              <TekstRun tekst="Het verbod geldt niet voor:"/>
+            </Alinea>
+            <Lijst eId="chp_6__subchp_6.1__art_6.1__para_2__list_o_1" wId="gm0297_1__chp_6__subchp_6.1__art_6.1__para_2__list_o_1">
+              <Item eId="chp_6__subchp_6.1__art_6.1__para_2__list_o_1__item_a" wId="gm0297_1__chp_6__subchp_6.1__art_6.1__para_2__list_o_1__item_a" nummer="a.">
+                <Alinea uId="uid-0079">
+                  <TekstRun tekst="bomen met een stamomtrek van minder dan 50 cm;"/>
+                </Alinea>
+              </Item>
+              <Item eId="chp_6__subchp_6.1__art_6.1__para_2__list_o_1__item_b" wId="gm0297_1__chp_6__subchp_6.1__art_6.1__para_2__list_o_1__item_b" nummer="b.">
+                <Alinea uId="uid-0080">
+                  <TekstRun tekst="bomen die niet zichtbaar zijn vanaf openbaar toegankelijk gebied; en"/>
+                </Alinea>
+              </Item>
+              <Item eId="chp_6__subchp_6.1__art_6.1__para_2__list_o_1__item_c" wId="gm0297_1__chp_6__subchp_6.1__art_6.1__para_2__list_o_1__item_c" nummer="c.">
+                <Alinea uId="uid-0081">
+                  <TekstRun tekst="bomen die moeten worden gekapt op grond van de Plantenziektenwet of vanwege een aanschrijving op grond van artikel PM van de Algemene plaatselijke verordening."/>
+                </Alinea>
+              </Item>
+            </Lijst>
+            <ActiviteitAanduiding activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000810" activiteitNaam="boom kappen" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan"/>
+          </Lid>
+        </Artikel>
+        <Artikel eId="chp_6__subchp_6.1__art_6.2" wId="gm0297_1__chp_6__subchp_6.1__art_6.2">
+          <Kop label="Artikel" nummer="6.2">
+            <Opschrift>
+              <TekstRun tekst="Bijzondere aanvraagvereisten"/>
+            </Opschrift>
+          </Kop>
+          <Alinea uId="uid-0082">
+            <TekstRun tekst="Bij de aanvraag om een omgevingsvergunning wordt:"/>
+          </Alinea>
+          <Lijst eId="chp_6__subchp_6.1__art_6.2__list_o_1" wId="gm0297_1__chp_6__subchp_6.1__art_6.2__list_o_1">
+            <Item eId="chp_6__subchp_6.1__art_6.2__list_o_1__item_a" wId="gm0297_1__chp_6__subchp_6.1__art_6.2__list_o_1__item_a" nummer="a.">
+              <Alinea uId="uid-0083">
+                <TekstRun tekst="iedere te kappen boom op een kaart, foto of tekening geïdentificeerd met een nummer en de locatie;"/>
+              </Alinea>
+            </Item>
+            <Item eId="chp_6__subchp_6.1__art_6.2__list_o_1__item_b" wId="gm0297_1__chp_6__subchp_6.1__art_6.2__list_o_1__item_b" nummer="b.">
+              <Alinea uId="uid-0084">
+                <TekstRun tekst="de reden voor het kappen van iedere boom opgenomen; en"/>
+              </Alinea>
+            </Item>
+            <Item eId="chp_6__subchp_6.1__art_6.2__list_o_1__item_c" wId="gm0297_1__chp_6__subchp_6.1__art_6.2__list_o_1__item_c" nummer="c.">
+              <Alinea uId="uid-0085">
+                <TekstRun tekst="de stamomtrek in centimeters van iedere boom aangegeven."/>
+              </Alinea>
+            </Item>
+          </Lijst>
+        </Artikel>
+        <Artikel eId="chp_6__subchp_6.1__art_6.3" wId="gm0297_1__chp_6__subchp_6.1__art_6.3">
+          <Kop label="Artikel" nummer="6.3">
+            <Opschrift>
+              <TekstRun tekst="Beoordelingsregels omgevingsvergunning"/>
+            </Opschrift>
+          </Kop>
+          <Alinea uId="uid-0086">
+            <TekstRun tekst="De omgevingsvergunning kan worden verleend:"/>
+          </Alinea>
+          <Lijst eId="chp_6__subchp_6.1__art_6.3__list_o_1" wId="gm0297_1__chp_6__subchp_6.1__art_6.3__list_o_1">
+            <Item eId="chp_6__subchp_6.1__art_6.3__list_o_1__item_a" wId="gm0297_1__chp_6__subchp_6.1__art_6.3__list_o_1__item_a" nummer="a.">
+              <Alinea uId="uid-0087">
+                <TekstRun tekst="als de boom gevaar of ernstige hinder veroorzaakt; of"/>
+              </Alinea>
+            </Item>
+            <Item eId="chp_6__subchp_6.1__art_6.3__list_o_1__item_b" wId="gm0297_1__chp_6__subchp_6.1__art_6.3__list_o_1__item_b" nummer="b.">
+              <Alinea uId="uid-0088">
+                <TekstRun tekst="vanwege een individueel of maatschappelijk belang, dat zwaarder moet wegen dan de belangen, bedoeld in artikel 5.27."/>
+              </Alinea>
+            </Item>
+          </Lijst>
+        </Artikel>
+      </Afdeling>
+    </Hoofdstuk>
+    <Hoofdstuk eId="chp_7" wId="gm0297_1__chp_7">
+      <Kop label="Hoofdstuk" nummer="7">
+        <Opschrift>
+          <TekstRun tekst="Gebruiksverboden"/>
+        </Opschrift>
+      </Kop>
+      <Afdeling eId="chp_7__subchp_7.1" wId="gm0297_1__chp_7__subchp_7.1">
+        <Kop label="Afdeling" nummer="7.1">
+          <Opschrift>
+            <TekstRun tekst="Gebruiksverboden agrarische activiteiten"/>
+          </Opschrift>
+        </Kop>
+        <Artikel eId="chp_7__subchp_7.1__art_7.1" wId="gm0297_1__chp_7__subchp_7.1__art_7.1">
+          <Kop label="Artikel" nummer="7.1">
+            <Opschrift>
+              <TekstRun tekst="Geitenfokkerijverbod"/>
+            </Opschrift>
+          </Kop>
+          <Alinea uId="uid-0089">
+            <TekstRun tekst="Het oprichten, instandhouden en gebruiken van bouwwerken en het gebruik van gronden ten behoeve van geitenfokkerijen is verboden."/>
+          </Alinea>
+        </Artikel>
+        <Artikel eId="chp_7__subchp_7.1__art_7.2" wId="gm0297_1__chp_7__subchp_7.1__art_7.2">
+          <Kop label="Artikel" nummer="7.2">
+            <Opschrift>
+              <TekstRun tekst="Wormenkwekerijverbod"/>
+            </Opschrift>
+          </Kop>
+          <Alinea uId="uid-0090">
+            <TekstRun tekst="Het oprichten, instandhouden en gebruiken van bouwwerken en het gebruik van gronden ten behoeve van wormenkwekerijen is verboden."/>
+          </Alinea>
+        </Artikel>
+      </Afdeling>
+    </Hoofdstuk>
+    <Hoofdstuk eId="chp_10" wId="gm0297_1__chp_10">
+      <Kop label="Hoofdstuk" nummer="10">
+        <Opschrift>
+          <TekstRun tekst="Bedrijfsmatige activiteiten"/>
+        </Opschrift>
+      </Kop>
+      <Afdeling eId="chp_10__subchp_10.1" wId="gm0297_1__chp_10__subchp_10.1">
+        <Kop label="Afdeling" nummer="10.1">
+          <Opschrift>
+            <TekstRun tekst="Agrarische activiteiten"/>
+          </Opschrift>
+        </Kop>
+        <Artikel eId="chp_10__subchp_10.1__art_10.1" wId="gm0297_1__chp_10__subchp_10.1__art_10.1">
+          <Kop label="Artikel" nummer="10.1">
+            <Opschrift>
+              <TekstRun tekst="Landbouwhuisdieren"/>
+            </Opschrift>
+          </Kop>
+          <Alinea uId="uid-0091">
+            <TekstRun tekst="De regels omtrent hygiëne van landbouwhuisdieren is vastgelegd in het werkingsgebied 'landbouwhuisdierenverblijfhygiëne'."/>
+          </Alinea>
+        </Artikel>
+        <Artikel eId="chp_10__subchp_10.1__art_10.2" wId="gm0297_1__chp_10__subchp_10.1__art_10.2">
+          <Kop label="Artikel" nummer="10.2">
+            <Opschrift>
+              <TekstRun tekst="Dierlijke bijproducten"/>
+            </Opschrift>
+          </Kop>
+          <Lid eId="chp_10__subchp_10.1__art_10.2__para_1" wId="gm0297_1__chp_10__subchp_10.1__art_10.2__para_1" nummer="1">
+            <Alinea uId="uid-0092">
+              <TekstRun tekst="Ter plaatse van het werkingsgebied 'Verwerking organische reststromen en dierlijke bijproducten' is het verboden om zonder omgevingsvergunning activiteiten te verrichten op het gebied van het verwerken van organische reststromen en dierlijke bijproducten."/>
+            </Alinea>
+          </Lid>
+          <Lid eId="chp_10__subchp_10.1__art_10.2__para_2" wId="gm0297_1__chp_10__subchp_10.1__art_10.2__para_2" nummer="2">
+            <Alinea uId="uid-0093">
+              <TekstRun tekst="De omgevingsvergunning wordt slechts verleend wanneer wordt voldaan aan de volgende vereisten:"/>
+            </Alinea>
+          </Lid>
+        </Artikel>
+      </Afdeling>
+    </Hoofdstuk>
+  </Lichaam>
+  <Bijlage eId="cmp_I" wId="gm0297_1__cmp_I">
+    <Kop label="Bijlage" nummer="I">
+      <Opschrift>
+        <TekstRun tekst="Overzicht Informatieobjecten"/>
+      </Opschrift>
+    </Kop>
+    <Divisietekst eId="cmp_I__content_o_1" wId="gm0297_1__cmp_I__content_o_1">
+      <Begrippenlijst eId="cmp_I__content_o_1__list_o_1" wId="gm0297_1__cmp_I__content_o_1__list_o_1">
+        <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_1" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1">
+          <Term>
+            <TekstRun tekst="Bedrijf categorie 2"/>
+          </Term>
+          <Definitie>
+            <Alinea uId="uid-0094">
+              <TekstRun tekst="&#10;                                    "/>
+              <TekstRun tekst="/join/id/regdata/gm0297/2019/Bedrijf_categorie_2/nld@2019-06-18;3520">
+                <Mark kind="extIoRef" ref="/join/id/regdata/gm0297/2019/Bedrijf_categorie_2/nld@2019-06-18;3520" eId="cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1"/>
+              </TekstRun>
+              <TekstRun tekst="&#10;                                 "/>
+            </Alinea>
+          </Definitie>
+        </Begrip>
+        <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_2" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_2">
+          <Term>
+            <TekstRun tekst="Centrumgebied"/>
+          </Term>
+          <Definitie>
+            <Alinea uId="uid-0095">
+              <TekstRun tekst="&#10;                                    "/>
+              <TekstRun tekst="/join/id/regdata/gm0297/2019/Centrumgebied/nld@2019-06-18;3520">
+                <Mark kind="extIoRef" ref="/join/id/regdata/gm0297/2019/Centrumgebied/nld@2019-06-18;3520" eId="cmp_I__content_o_1__list_o_1__item_o_2__ref_o_1" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_2__ref_o_1"/>
+              </TekstRun>
+              <TekstRun tekst="&#10;                                 "/>
+            </Alinea>
+          </Definitie>
+        </Begrip>
+        <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_3" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_3">
+          <Term>
+            <TekstRun tekst="Exploiteren speelautomatenhal"/>
+          </Term>
+          <Definitie>
+            <Alinea uId="uid-0096">
+              <TekstRun tekst="&#10;                                    "/>
+              <TekstRun tekst="/join/id/regdata/gm0297/2019/Speelhal/nld@2019-06-18;3520">
+                <Mark kind="extIoRef" ref="/join/id/regdata/gm0297/2019/Speelhal/nld@2019-06-18;3520" eId="cmp_I__content_o_1__list_o_1__item_o_3__ref_o_1" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_3__ref_o_1"/>
+              </TekstRun>
+              <TekstRun tekst="&#10;                                 "/>
+            </Alinea>
+          </Definitie>
+        </Begrip>
+        <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_4" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_4">
+          <Term>
+            <TekstRun tekst="Maximum bouwhoogte bedrijfsgebouw"/>
+          </Term>
+          <Definitie>
+            <Alinea uId="uid-0097">
+              <TekstRun tekst="&#10;                                    "/>
+              <TekstRun tekst="/join/id/regdata/gm0297/2019/Bouwhoogte/nld@2019-06-18;3520">
+                <Mark kind="extIoRef" ref="/join/id/regdata/gm0297/2019/Bouwhoogte/nld@2019-06-18;3520" eId="cmp_I__content_o_1__list_o_1__item_o_4__ref_o_1" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_4__ref_o_1"/>
+              </TekstRun>
+              <TekstRun tekst="&#10;                                 "/>
+            </Alinea>
+          </Definitie>
+        </Begrip>
+        <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_5" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_5">
+          <Term>
+            <TekstRun tekst="Welstandsniveau"/>
+          </Term>
+          <Definitie>
+            <Alinea uId="uid-0098">
+              <TekstRun tekst="&#10;                                    "/>
+              <TekstRun tekst="/join/id/regdata/gm0297/2019/Welstand/nld@2019-06-18;3520">
+                <Mark kind="extIoRef" ref="/join/id/regdata/gm0297/2019/Welstand/nld@2019-06-18;3520" eId="cmp_I__content_o_1__list_o_1__item_o_5__ref_o_1" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_5__ref_o_1"/>
+              </TekstRun>
+              <TekstRun tekst="&#10;                                 "/>
+            </Alinea>
+          </Definitie>
+        </Begrip>
+        <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_6" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_6">
+          <Term>
+            <TekstRun tekst="Zone A"/>
+          </Term>
+          <Definitie>
+            <Alinea uId="uid-0099">
+              <TekstRun tekst="&#10;                                    "/>
+              <TekstRun tekst="/join/id/regdata/gm0297/2019/Zone_A/nld@2019-06-18;3520">
+                <Mark kind="extIoRef" ref="/join/id/regdata/gm0297/2019/Zone_A/nld@2019-06-18;3520" eId="cmp_I__content_o_1__list_o_1__item_o_6__ref_o_1" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_6__ref_o_1"/>
+              </TekstRun>
+              <TekstRun tekst="&#10;                                 "/>
+            </Alinea>
+          </Definitie>
+        </Begrip>
+        <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_7" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_7">
+          <Term>
+            <TekstRun tekst="Zone B"/>
+          </Term>
+          <Definitie>
+            <Alinea uId="uid-0100">
+              <TekstRun tekst="&#10;                                    "/>
+              <TekstRun tekst="/join/id/regdata/gm0297/2019/Zone_B/nld@2019-06-18;3520">
+                <Mark kind="extIoRef" ref="/join/id/regdata/gm0297/2019/Zone_B/nld@2019-06-18;3520" eId="cmp_I__content_o_1__list_o_1__item_o_7__ref_o_1" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_7__ref_o_1"/>
+              </TekstRun>
+              <TekstRun tekst="&#10;                                 "/>
+            </Alinea>
+          </Definitie>
+        </Begrip>
+        <Begrip eId="cmp_I__content_o_1__list_o_1__item_o_8" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_8">
+          <Term>
+            <TekstRun tekst="Zuilichem"/>
+          </Term>
+          <Definitie>
+            <Alinea uId="uid-0101">
+              <TekstRun tekst="&#10;                                    "/>
+              <TekstRun tekst="/join/id/regdata/gm0297/2019/Zuilichem/nld@2019-06-18;3520">
+                <Mark kind="extIoRef" ref="/join/id/regdata/gm0297/2019/Zuilichem/nld@2019-06-18;3520" eId="cmp_I__content_o_1__list_o_1__item_o_8__ref_o_1" wId="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_8__ref_o_1"/>
+              </TekstRun>
+              <TekstRun tekst="&#10;                                 "/>
+            </Alinea>
+          </Definitie>
+        </Begrip>
+      </Begrippenlijst>
+    </Divisietekst>
+  </Bijlage>
+  <Bijlage eId="cmp_II" wId="gm0297_1__cmp_II">
+    <Kop label="Bijlage" nummer="II">
+      <Opschrift>
+        <TekstRun tekst="Begrippen"/>
+      </Opschrift>
+    </Kop>
+    <Divisietekst eId="cmp_II__content_o_1" wId="gm0297_1__cmp_II__content_o_1">
+      <Begrippenlijst eId="cmp_II__content_o_1__list_o_1" wId="gm0297_1__cmp_II__content_o_1__list_o_1">
+        <Begrip eId="cmp_II__content_o_1__list_o_1__item_o_1" wId="gm0297_1__cmp_II__content_o_1__list_o_1__item_o_1">
+          <Term>
+            <TekstRun tekst="Bouwwerk"/>
+          </Term>
+          <Definitie>
+            <Alinea uId="uid-0102">
+              <TekstRun tekst="Elke constructie van enige omvang van hout, steen, metaal of ander materiaal, die hetzij direct of indirect met de grond verbonden is, hetzij direct of indirect steun vindt in of op de grond."/>
+            </Alinea>
+          </Definitie>
+        </Begrip>
+      </Begrippenlijst>
+    </Divisietekst>
+  </Bijlage>
+  <Bijlage eId="cmp_III" wId="gm0297_1__cmp_III">
+    <Kop label="Bijlage" nummer="III">
+      <Opschrift>
+        <TekstRun tekst="Lijst van toegelaten bedrijfstypen"/>
+      </Opschrift>
+    </Kop>
+    <Divisietekst eId="cmp_III__content_o_1" wId="gm0297_1__cmp_III__content_o_1">
+      <Alinea uId="uid-0103">
+        <TekstRun tekst="Vervaardiging van voedingsmiddelen en dranken."/>
+      </Alinea>
+      <Alinea uId="uid-0104">
+        <TekstRun tekst="Slachterijen en overige vleesverwerking:"/>
+      </Alinea>
+      <Lijst eId="cmp_III__content_o_1__list_o_1" wId="gm0297_1__cmp_III__content_o_1__list_o_1">
+        <Item eId="cmp_III__content_o_1__list_o_1__item_o_1" wId="gm0297_1__cmp_III__content_o_1__list_o_1__item_o_1">
+          <Alinea uId="uid-0105">
+            <TekstRun tekst="Slachterijen en overige vleesverwerking:"/>
+          </Alinea>
+        </Item>
+        <Item eId="cmp_III__content_o_1__list_o_1__item_o_2" wId="gm0297_1__cmp_III__content_o_1__list_o_1__item_o_2">
+          <Alinea uId="uid-0106">
+            <TekstRun tekst="vleeswaren- en vleesconservenfabrieken: p.o. kleiner of gelijk aan 1000 m² 2"/>
+          </Alinea>
+        </Item>
+        <Item eId="cmp_III__content_o_1__list_o_1__item_o_3" wId="gm0297_1__cmp_III__content_o_1__list_o_1__item_o_3">
+          <Alinea uId="uid-0107">
+            <TekstRun tekst="vleeswaren- en vleesconservenfabrieken: p.o. kleiner of gelijk aan 200 m² 2"/>
+          </Alinea>
+        </Item>
+        <Item eId="cmp_III__content_o_1__list_o_1__item_o_4" wId="gm0297_1__cmp_III__content_o_1__list_o_1__item_o_4">
+          <Alinea uId="uid-0108">
+            <TekstRun tekst="loonslachterijen 2"/>
+          </Alinea>
+        </Item>
+        <Item eId="cmp_III__content_o_1__list_o_1__item_o_5" wId="gm0297_1__cmp_III__content_o_1__list_o_1__item_o_5">
+          <Alinea uId="uid-0109">
+            <TekstRun tekst="vervaardiging van snacks en vervaardiging van kant-en-klaar-maaltijden met p.o. kleiner of gelijk aan 2.000 m² 2"/>
+          </Alinea>
+        </Item>
+      </Lijst>
+    </Divisietekst>
+  </Bijlage>
+  <Bijlage eId="cmp_IV" wId="gm0297_1__cmp_IV">
+    <Kop label="Bijlage" nummer="IV">
+      <Opschrift>
+        <TekstRun tekst="Overzicht PDF-informatieobjecten"/>
+      </Opschrift>
+    </Kop>
+    <Divisietekst eId="cmp_IV__content_o_1" wId="gm0297_1__cmp_IV__content_o_1">
+      <Begrippenlijst eId="cmp_IV__content_o_1__list_o_1" wId="gm0297_1__cmp_IV__content_o_1__list_o_1">
+        <Begrip eId="cmp_IV__content_o_1__list_o_1__item_o_1" wId="gm0297_1__cmp_IV__content_o_1__list_o_1__item_o_1">
+          <Term>
+            <TekstRun tekst="PDF-bestand"/>
+          </Term>
+          <Definitie>
+            <Alinea uId="uid-0110">
+              <TekstRun tekst="&#10;                                    "/>
+              <TekstRun tekst="/join/id/regdata/gm0297/2020/PDF/nld@2020-06-18;3520">
+                <Mark kind="extIoRef" ref="/join/id/regdata/gm0297/2020/PDF/nld@2020-06-18;3520" eId="cmp_IV__content_o_1__list_o_1__item_o_1__ref_o_1" wId="gm0297_1__cmp_IV__content_o_1__list_o_1__item_o_1__ref_o_1"/>
+              </TekstRun>
+              <TekstRun tekst="&#10;                                 "/>
+            </Alinea>
+          </Definitie>
+        </Begrip>
+      </Begrippenlijst>
+    </Divisietekst>
+  </Bijlage>
+  <Ambtsgebied identificatie="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied" naam="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied" bestuurlijkeGrenzenId="GM0297"/>
+  <Regelingsgebied identificatie="nl.imow-gm0297.regelingsgebied.2019000001" locatieRef="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+  <Gebiedsaanwijzingen>
+    <Gebiedsaanwijzing identificatie="nl.imow-gm0297.gebiedsaanwijzing.2019000001" naam="Bedrijf categorie 2" type="http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie" groep="http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Bedrijf" locatieRef="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
+    <Gebiedsaanwijzing identificatie="nl.imow-gm0297.gebiedsaanwijzing.2019000002" naam="Centrumgebied" type="http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie" groep="http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Centrumgebied" locatieRef="nl.imow-gm0297.gebiedengroep.centrumgebied"/>
+  </Gebiedsaanwijzingen>
+  <Omgevingsnormen>
+    <Omgevingsnorm identificatie="nl.imow-gm0297.omgevingswaarde.2019000001" naam="fijnstof" type="http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/Volume" groep="http://standaarden.omgevingswet.overheid.nl/omgevingswaarde/id/concept/Luchtkwaliteit">
+      <Normwaarde identificatie="nl.imow-gm0297.normwaarde.2019000001" kwantitatieveWaarde="6">
+        <LocatieRef>nl.imow-gm0297.gebiedengroep.zuilichem</LocatieRef>
+      </Normwaarde>
+    </Omgevingsnorm>
+    <Omgevingsnorm identificatie="nl.imow-gm0297.omgevingsnorm.2019000002" naam="maximum bouwhoogte bedrijfsgebouw" type="http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumBouwhoogte" eenheid="http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Meter" groep="http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Bouwaanduiding">
+      <Normwaarde identificatie="nl.imow-gm0297.normwaarde.2019000002" kwantitatieveWaarde="13">
+        <LocatieRef>nl.imow-gm0297.gebied.2019000010</LocatieRef>
+        <LocatieRef>nl.imow-gm0297.gebied.2019000013</LocatieRef>
+      </Normwaarde>
+      <Normwaarde identificatie="nl.imow-gm0297.normwaarde.2019000003" kwantitatieveWaarde="7">
+        <LocatieRef>nl.imow-gm0297.gebied.2019000008</LocatieRef>
+        <LocatieRef>nl.imow-gm0297.gebied.2019000009</LocatieRef>
+      </Normwaarde>
+    </Omgevingsnorm>
+    <Omgevingsnorm identificatie="nl.imow-gm0297.omgevingsnorm.2019000003" naam="welstandsniveau" type="http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumBouwhoogte" groep="http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Bouwaanduiding">
+      <Normwaarde identificatie="nl.imow-gm0297.normwaarde.2019000004" kwalitatieveWaarde="laag">
+        <LocatieRef>nl.imow-gm0297.gebied.2019000015</LocatieRef>
+      </Normwaarde>
+      <Normwaarde identificatie="nl.imow-gm0297.normwaarde.2019000005" kwalitatieveWaarde="midden">
+        <LocatieRef>nl.imow-gm0297.gebied.2019000014</LocatieRef>
+      </Normwaarde>
+      <Normwaarde identificatie="nl.imow-gm0297.normwaarde.2019000006" kwalitatieveWaarde="hoog">
+        <LocatieRef>nl.imow-gm0297.gebied.2019000016</LocatieRef>
+      </Normwaarde>
+    </Omgevingsnorm>
+  </Omgevingsnormen>
+  <Ponsen>
+    <Pons identificatie="nl.imow-gm0297.pons.2019000001" locatieRef="nl.imow-gm0297.gebied.pons"/>
+  </Ponsen>
+  <Activiteiten>
+    <Activiteit identificatie="nl.imow-gm0297.activiteit.2019000241" naam="uitoefenen van bedrijfstypen van categorie 2" groep="http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/MilieubelastendeActiviteit" type="Activiteit" bovenliggendeIdentificatie="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+      <JuridischeRegelRef>nl.imow-gm0297.juridischeregel.2019000002</JuridischeRegelRef>
+    </Activiteit>
+    <Activiteit identificatie="nl.imow-gm0297.activiteit.2019000243" naam="aanleggen en instandhouden van nutsvoorzieningen" groep="http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/BouwactiviteitTechnisch" type="Activiteit" bovenliggendeIdentificatie="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+      <JuridischeRegelRef>nl.imow-gm0297.juridischeregel.2019000004</JuridischeRegelRef>
+    </Activiteit>
+    <Activiteit identificatie="nl.imow-gm0297.activiteit.2019000244" naam="aanleggen en instandhouden van voorzieningen voor de waterhuishouding" groep="http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/BouwactiviteitTechnisch" type="Activiteit" bovenliggendeIdentificatie="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+      <JuridischeRegelRef>nl.imow-gm0297.juridischeregel.2019000005</JuridischeRegelRef>
+    </Activiteit>
+    <Activiteit identificatie="nl.imow-gm0297.activiteit.2019000245" naam="aanleggen en instandhouden van tuin en/of erf" groep="http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/BouwactiviteitTechnisch" type="Activiteit" bovenliggendeIdentificatie="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+      <JuridischeRegelRef>nl.imow-gm0297.juridischeregel.2019000006</JuridischeRegelRef>
+    </Activiteit>
+    <Activiteit identificatie="nl.imow-gm0297.activiteit.2019000246" naam="uitoefenen van detailhandel in ter plaatse vervaardigde goederen" groep="http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/ExploitatieactiviteitDetailhandel" type="Activiteit" bovenliggendeIdentificatie="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+      <JuridischeRegelRef>nl.imow-gm0297.juridischeregel.2019000007</JuridischeRegelRef>
+    </Activiteit>
+    <Activiteit identificatie="nl.imow-gm0297.activiteit.2019000730" naam="exploiteren van inrichtingen" groep="http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/ExploitatieactiviteitBedrijf" type="Activiteit" bovenliggendeIdentificatie="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+      <JuridischeRegelRef>nl.imow-gm0297.juridischeregel.2019000008</JuridischeRegelRef>
+    </Activiteit>
+    <Activiteit identificatie="nl.imow-gm0297.activiteit.2019000740" naam="exploiteren van risicovolle inrichtingen" groep="http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/ExploitatieactiviteitBedrijf" type="Activiteit" bovenliggendeIdentificatie="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+      <JuridischeRegelRef>nl.imow-gm0297.juridischeregel.2019000009</JuridischeRegelRef>
+    </Activiteit>
+    <Activiteit identificatie="nl.imow-gm0297.activiteit.2019000750" naam="opslagterrein" groep="http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Opslagactiviteit" type="Activiteit" bovenliggendeIdentificatie="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+      <JuridischeRegelRef>nl.imow-gm0297.juridischeregel.2019000010</JuridischeRegelRef>
+    </Activiteit>
+    <Activiteit identificatie="nl.imow-gm0297.activiteit.2019000590" naam="uitoefenen van detailhandel in ter plaatse vervaardigde goederen" groep="http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/ExploitatieactiviteitDetailhandel" type="Activiteit" bovenliggendeIdentificatie="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+      <JuridischeRegelRef>nl.imow-gm0297.juridischeregel.2019000011</JuridischeRegelRef>
+    </Activiteit>
+    <Activiteit identificatie="nl.imow-gm0297.activiteit.2019000540" naam="exploiteren van een verkooppunt voor motorbrandstoffen niet zijnde lpg" groep="http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/ExploitatieactiviteitDetailhandel" type="Activiteit" bovenliggendeIdentificatie="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+      <JuridischeRegelRef>nl.imow-gm0297.juridischeregel.2019000012</JuridischeRegelRef>
+    </Activiteit>
+    <Activiteit identificatie="nl.imow-gm0297.activiteit.2019000760" naam="opslaan van motorbrandstoffen niet zijnde lpg" groep="http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Opslagactiviteit" type="Activiteit" bovenliggendeIdentificatie="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+      <JuridischeRegelRef>nl.imow-gm0297.juridischeregel.2019000012</JuridischeRegelRef>
+    </Activiteit>
+    <Activiteit identificatie="nl.imow-gm0297.activiteit.2019000660" naam="exploiteren van een speelautomatenhal" groep="http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/ExploitatieactiviteitHoreca" type="Activiteit" bovenliggendeIdentificatie="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+      <JuridischeRegelRef>nl.imow-gm0297.juridischeregel.2019000014</JuridischeRegelRef>
+    </Activiteit>
+    <Activiteit identificatie="nl.imow-gm0297.activiteit.2019000680" naam="exploiteren van een kantoor" groep="http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/ExploitatieactiviteitKantoor" type="Activiteit" bovenliggendeIdentificatie="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+      <JuridischeRegelRef>nl.imow-gm0297.juridischeregel.2019000014</JuridischeRegelRef>
+    </Activiteit>
+    <Activiteit identificatie="nl.imow-gm0297.activiteit.2019000530" naam="wonen in een bedrijfswoning" groep="http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Woonactiviteit" type="Activiteit" bovenliggendeIdentificatie="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+      <JuridischeRegelRef>nl.imow-gm0297.juridischeregel.2019000003</JuridischeRegelRef>
+    </Activiteit>
+    <Activiteit identificatie="nl.imow-gm0297.activiteit.2019000800" naam="bouwen van een bijgebouw" groep="http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/BouwactiviteitRuimtelijk" type="Activiteit" bovenliggendeIdentificatie="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+      <JuridischeRegelRef>nl.imow-gm0297.juridischeregel.2019000113</JuridischeRegelRef>
+      <JuridischeRegelRef>nl.imow-gm0297.juridischeregel.2019000113</JuridischeRegelRef>
+      <JuridischeRegelRef>nl.imow-gm0297.juridischeregel.2019000113</JuridischeRegelRef>
+    </Activiteit>
+    <Activiteit identificatie="nl.imow-gm0297.activiteit.2019000810" naam="boom kappen" groep="http://standaarden.omgevingswet.overheid.nl/activiteit/id/concept/Kapactiviteit" type="Activiteit" bovenliggendeIdentificatie="nl.imow-gm0297.activiteit.ActInOmgevingsplanGem">
+      <JuridischeRegelRef>nl.imow-gm0297.juridischeregel.2019000114</JuridischeRegelRef>
+      <JuridischeRegelRef>nl.imow-gm0297.juridischeregel.2019000115</JuridischeRegelRef>
+    </Activiteit>
+  </Activiteiten>
+  <Bestanden>
+    <Bestand type="gml" naam="Bedrijf_categorie_2.gml" mimeType="application/gml+xml" frbrExpression="/join/id/regdata/gm0297/2019/Bedrijf_categorie_2"/>
+    <Bestand type="gml" naam="Bouwhoogte.gml" mimeType="application/gml+xml" frbrExpression="/join/id/regdata/gm0297/2019/Bouwhoogte"/>
+    <Bestand type="gml" naam="Centrumgebied.gml" mimeType="application/gml+xml" frbrExpression="/join/id/regdata/gm0297/2019/Centrumgebied"/>
+    <Bestand type="gml" naam="PonsGebied.gml" mimeType="application/gml+xml" frbrExpression="/join/id/regdata/gm0297/2021/Ponsgebied"/>
+    <Bestand type="gml" naam="Speelhal.gml" mimeType="application/gml+xml" frbrExpression="/join/id/regdata/gm0297/2019/Speelhal"/>
+    <Bestand type="gml" naam="Welstand.gml" mimeType="application/gml+xml" frbrExpression="/join/id/regdata/gm0297/2019/Welstand"/>
+    <Bestand type="gml" naam="Zone_A.gml" mimeType="application/gml+xml" frbrExpression="/join/id/regdata/gm0297/2019/Zone_A"/>
+    <Bestand type="gml" naam="Zone_B.gml" mimeType="application/gml+xml" frbrExpression="/join/id/regdata/gm0297/2019/Zone_B"/>
+    <Bestand type="gml" naam="Zuilichem.gml" mimeType="application/gml+xml" frbrExpression="/join/id/regdata/gm0297/2019/Zuilichem"/>
+  </Bestanden>
+</Regeling>
