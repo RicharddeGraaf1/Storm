@@ -1059,55 +1059,55 @@
   <Ambtsgebied identificatie="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied" naam="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied" bestuurlijkeGrenzenId="GM0297"/>
   <Regelingsgebied identificatie="nl.imow-gm0297.regelingsgebied.2019000001" locatieRef="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
   <Locaties>
-    <Locatie identificatie="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2" noemer="Bedrijf categorie 2"/>
-    <Locatie identificatie="nl.imow-gm0297.gebied.2019000001" geometrieRef="50EA019E-3C96-4631-A76C-35BCF4D7AB6D"/>
-    <Locatie identificatie="nl.imow-gm0297.gebiedengroep.zoneA" noemer="zone A"/>
-    <Locatie identificatie="nl.imow-gm0297.gebied.2019000002" geometrieRef="B3AF6AF7-5EFA-4A87-9C66-BFB046DD89AC"/>
-    <Locatie identificatie="nl.imow-gm0297.gebiedengroep.zoneB" noemer="zone B"/>
-    <Locatie identificatie="nl.imow-gm0297.gebied.2019000003" geometrieRef="0868A0B1-DA79-4C33-8305-1BDE0126FA9A"/>
-    <Locatie identificatie="nl.imow-gm0297.gebiedengroep.centrumgebied" noemer="Centrumgebied"/>
-    <Locatie identificatie="nl.imow-gm0297.gebied.2019000004" geometrieRef="D28AF779-7EDD-4A88-8B11-809798F53636"/>
-    <Locatie identificatie="nl.imow-gm0297.gebiedengroep.speelhal" noemer="exploiteren speelautomatenhal"/>
-    <Locatie identificatie="nl.imow-gm0297.gebied.2019000007" geometrieRef="33B7D2D0-BF32-4CA1-B7F6-EB0FEF30175A"/>
-    <Locatie identificatie="nl.imow-gm0297.gebied.2019000008" noemer="Zuilichem industriegebied 1" geometrieRef="772B4B37-69F8-4671-B92E-3BCED242409D"/>
-    <Locatie identificatie="nl.imow-gm0297.gebied.2019000009" noemer="Zuilichem industriegebied 2" geometrieRef="D24C3416-4790-461C-A4D0-A82BA60CA7D6"/>
-    <Locatie identificatie="nl.imow-gm0297.gebied.2019000010" noemer="Zuilichem industriegebied 3" geometrieRef="954BA8CC-6E90-4698-BEEC-005A65C63E98"/>
-    <Locatie identificatie="nl.imow-gm0297.gebied.2019000013" noemer="Zuilichem industriegebied 4" geometrieRef="EFAAD5E9-B181-4C22-9C3B-B290F4586D82"/>
-    <Locatie identificatie="nl.imow-gm0297.gebiedengroep.zuilichem" noemer="Zuilichem"/>
-    <Locatie identificatie="nl.imow-gm0297.gebied.2019000011" geometrieRef="b69221bd-8121-4368-9058-ad4ff7618dcd"/>
-    <Locatie identificatie="nl.imow-gm0297.gebied.2019000014" geometrieRef="d775e368-6c81-40b9-9a7a-c2acb70831f3"/>
-    <Locatie identificatie="nl.imow-gm0297.gebied.2019000015" geometrieRef="3ce37c9c-1721-4eec-9b4a-5380fd30fbac"/>
-    <Locatie identificatie="nl.imow-gm0297.gebied.2019000016" geometrieRef="dc57c9d5-a5ca-470c-b9f6-43eb30abdf8a"/>
-    <Locatie identificatie="nl.imow-gm0297.gebied.pons" geometrieRef="e8028788-a5bd-4d1c-ab6e-ae8258c7097d"/>
+    <Locatie identificatie="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2" noemer="Bedrijf categorie 2" gioRef="/join/id/regdata/gm0297/2019/Bedrijf_categorie_2"/>
+    <Locatie identificatie="nl.imow-gm0297.gebied.2019000001" geometrieRef="50EA019E-3C96-4631-A76C-35BCF4D7AB6D" gioRef="/join/id/regdata/gm0297/2019/Bedrijf_categorie_2"/>
+    <Locatie identificatie="nl.imow-gm0297.gebiedengroep.zoneA" noemer="zone A" gioRef="/join/id/regdata/gm0297/2019/Zone_A"/>
+    <Locatie identificatie="nl.imow-gm0297.gebied.2019000002" geometrieRef="B3AF6AF7-5EFA-4A87-9C66-BFB046DD89AC" gioRef="/join/id/regdata/gm0297/2019/Zone_A"/>
+    <Locatie identificatie="nl.imow-gm0297.gebiedengroep.zoneB" noemer="zone B" gioRef="/join/id/regdata/gm0297/2019/Zone_B"/>
+    <Locatie identificatie="nl.imow-gm0297.gebied.2019000003" geometrieRef="0868A0B1-DA79-4C33-8305-1BDE0126FA9A" gioRef="/join/id/regdata/gm0297/2019/Zone_B"/>
+    <Locatie identificatie="nl.imow-gm0297.gebiedengroep.centrumgebied" noemer="Centrumgebied" gioRef="/join/id/regdata/gm0297/2019/Centrumgebied"/>
+    <Locatie identificatie="nl.imow-gm0297.gebied.2019000004" geometrieRef="D28AF779-7EDD-4A88-8B11-809798F53636" gioRef="/join/id/regdata/gm0297/2019/Centrumgebied"/>
+    <Locatie identificatie="nl.imow-gm0297.gebiedengroep.speelhal" noemer="exploiteren speelautomatenhal" gioRef="/join/id/regdata/gm0297/2019/Speelhal"/>
+    <Locatie identificatie="nl.imow-gm0297.gebied.2019000007" geometrieRef="33B7D2D0-BF32-4CA1-B7F6-EB0FEF30175A" gioRef="/join/id/regdata/gm0297/2019/Speelhal"/>
+    <Locatie identificatie="nl.imow-gm0297.gebied.2019000008" noemer="Zuilichem industriegebied 1" geometrieRef="772B4B37-69F8-4671-B92E-3BCED242409D" gioRef="/join/id/regdata/gm0297/2019/Bouwhoogte"/>
+    <Locatie identificatie="nl.imow-gm0297.gebied.2019000009" noemer="Zuilichem industriegebied 2" geometrieRef="D24C3416-4790-461C-A4D0-A82BA60CA7D6" gioRef="/join/id/regdata/gm0297/2019/Bouwhoogte"/>
+    <Locatie identificatie="nl.imow-gm0297.gebied.2019000010" noemer="Zuilichem industriegebied 3" geometrieRef="954BA8CC-6E90-4698-BEEC-005A65C63E98" gioRef="/join/id/regdata/gm0297/2019/Bouwhoogte"/>
+    <Locatie identificatie="nl.imow-gm0297.gebied.2019000013" noemer="Zuilichem industriegebied 4" geometrieRef="EFAAD5E9-B181-4C22-9C3B-B290F4586D82" gioRef="/join/id/regdata/gm0297/2019/Bouwhoogte"/>
+    <Locatie identificatie="nl.imow-gm0297.gebiedengroep.zuilichem" noemer="Zuilichem" gioRef="/join/id/regdata/gm0297/2019/Zuilichem"/>
+    <Locatie identificatie="nl.imow-gm0297.gebied.2019000011" geometrieRef="b69221bd-8121-4368-9058-ad4ff7618dcd" gioRef="/join/id/regdata/gm0297/2019/Zuilichem"/>
+    <Locatie identificatie="nl.imow-gm0297.gebied.2019000014" geometrieRef="d775e368-6c81-40b9-9a7a-c2acb70831f3" gioRef="/join/id/regdata/gm0297/2019/Welstand"/>
+    <Locatie identificatie="nl.imow-gm0297.gebied.2019000015" geometrieRef="3ce37c9c-1721-4eec-9b4a-5380fd30fbac" gioRef="/join/id/regdata/gm0297/2019/Welstand"/>
+    <Locatie identificatie="nl.imow-gm0297.gebied.2019000016" geometrieRef="dc57c9d5-a5ca-470c-b9f6-43eb30abdf8a" gioRef="/join/id/regdata/gm0297/2019/Welstand"/>
+    <Locatie identificatie="nl.imow-gm0297.gebied.pons" geometrieRef="e8028788-a5bd-4d1c-ab6e-ae8258c7097d" gioRef="/join/id/regdata/gm0297/2021/Ponsgebied"/>
   </Locaties>
   <Gebiedsaanwijzingen>
-    <Gebiedsaanwijzing identificatie="nl.imow-gm0297.gebiedsaanwijzing.2019000001" naam="Bedrijf categorie 2" type="http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie" groep="http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Bedrijf" locatieRef="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
-    <Gebiedsaanwijzing identificatie="nl.imow-gm0297.gebiedsaanwijzing.2019000002" naam="Centrumgebied" type="http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie" groep="http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Centrumgebied" locatieRef="nl.imow-gm0297.gebiedengroep.centrumgebied"/>
+    <Gebiedsaanwijzing identificatie="nl.imow-gm0297.gebiedsaanwijzing.2019000001" naam="Bedrijf categorie 2" type="http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie" groep="http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Bedrijf" locatieRef="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2" gioRef="/join/id/regdata/gm0297/2019/Bedrijf_categorie_2"/>
+    <Gebiedsaanwijzing identificatie="nl.imow-gm0297.gebiedsaanwijzing.2019000002" naam="Centrumgebied" type="http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie" groep="http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Centrumgebied" locatieRef="nl.imow-gm0297.gebiedengroep.centrumgebied" gioRef="/join/id/regdata/gm0297/2019/Centrumgebied"/>
   </Gebiedsaanwijzingen>
   <Omgevingsnormen>
     <Omgevingsnorm identificatie="nl.imow-gm0297.omgevingswaarde.2019000001" naam="fijnstof" type="http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/Volume" groep="http://standaarden.omgevingswet.overheid.nl/omgevingswaarde/id/concept/Luchtkwaliteit">
-      <Normwaarde identificatie="nl.imow-gm0297.normwaarde.2019000001" kwantitatieveWaarde="6">
+      <Normwaarde identificatie="nl.imow-gm0297.normwaarde.2019000001" kwantitatieveWaarde="6" gioRef="/join/id/regdata/gm0297/2019/Zuilichem">
         <LocatieRef>nl.imow-gm0297.gebiedengroep.zuilichem</LocatieRef>
       </Normwaarde>
     </Omgevingsnorm>
     <Omgevingsnorm identificatie="nl.imow-gm0297.omgevingsnorm.2019000002" naam="maximum bouwhoogte bedrijfsgebouw" type="http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumBouwhoogte" eenheid="http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Meter" groep="http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Bouwaanduiding">
-      <Normwaarde identificatie="nl.imow-gm0297.normwaarde.2019000002" kwantitatieveWaarde="13">
+      <Normwaarde identificatie="nl.imow-gm0297.normwaarde.2019000002" kwantitatieveWaarde="13" gioRef="/join/id/regdata/gm0297/2019/Bouwhoogte">
         <LocatieRef>nl.imow-gm0297.gebied.2019000010</LocatieRef>
         <LocatieRef>nl.imow-gm0297.gebied.2019000013</LocatieRef>
       </Normwaarde>
-      <Normwaarde identificatie="nl.imow-gm0297.normwaarde.2019000003" kwantitatieveWaarde="7">
+      <Normwaarde identificatie="nl.imow-gm0297.normwaarde.2019000003" kwantitatieveWaarde="7" gioRef="/join/id/regdata/gm0297/2019/Bouwhoogte">
         <LocatieRef>nl.imow-gm0297.gebied.2019000008</LocatieRef>
         <LocatieRef>nl.imow-gm0297.gebied.2019000009</LocatieRef>
       </Normwaarde>
     </Omgevingsnorm>
     <Omgevingsnorm identificatie="nl.imow-gm0297.omgevingsnorm.2019000003" naam="welstandsniveau" type="http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumBouwhoogte" groep="http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Bouwaanduiding">
-      <Normwaarde identificatie="nl.imow-gm0297.normwaarde.2019000004" kwalitatieveWaarde="laag">
+      <Normwaarde identificatie="nl.imow-gm0297.normwaarde.2019000004" kwalitatieveWaarde="laag" gioRef="/join/id/regdata/gm0297/2019/Welstand">
         <LocatieRef>nl.imow-gm0297.gebied.2019000015</LocatieRef>
       </Normwaarde>
-      <Normwaarde identificatie="nl.imow-gm0297.normwaarde.2019000005" kwalitatieveWaarde="midden">
+      <Normwaarde identificatie="nl.imow-gm0297.normwaarde.2019000005" kwalitatieveWaarde="midden" gioRef="/join/id/regdata/gm0297/2019/Welstand">
         <LocatieRef>nl.imow-gm0297.gebied.2019000014</LocatieRef>
       </Normwaarde>
-      <Normwaarde identificatie="nl.imow-gm0297.normwaarde.2019000006" kwalitatieveWaarde="hoog">
+      <Normwaarde identificatie="nl.imow-gm0297.normwaarde.2019000006" kwalitatieveWaarde="hoog" gioRef="/join/id/regdata/gm0297/2019/Welstand">
         <LocatieRef>nl.imow-gm0297.gebied.2019000016</LocatieRef>
       </Normwaarde>
     </Omgevingsnorm>
@@ -1168,6 +1168,17 @@
       <JuridischeRegelRef>nl.imow-gm0297.juridischeregel.2019000115</JuridischeRegelRef>
     </Activiteit>
   </Activiteiten>
+  <Gios>
+    <Gio identificatie="/join/id/regdata/gm0297/2019/Bedrijf_categorie_2" naam="Bedrijf_categorie_2" geometrieBestand="Bedrijf_categorie_2.gml"/>
+    <Gio identificatie="/join/id/regdata/gm0297/2019/Bouwhoogte" naam="Bouwhoogte" geometrieBestand="Bouwhoogte.gml"/>
+    <Gio identificatie="/join/id/regdata/gm0297/2019/Centrumgebied" naam="Centrumgebied" geometrieBestand="Centrumgebied.gml"/>
+    <Gio identificatie="/join/id/regdata/gm0297/2021/Ponsgebied" naam="PonsGebied" geometrieBestand="PonsGebied.gml"/>
+    <Gio identificatie="/join/id/regdata/gm0297/2019/Speelhal" naam="Speelhal" geometrieBestand="Speelhal.gml"/>
+    <Gio identificatie="/join/id/regdata/gm0297/2019/Welstand" naam="Welstand" geometrieBestand="Welstand.gml"/>
+    <Gio identificatie="/join/id/regdata/gm0297/2019/Zone_A" naam="Zone_A" geometrieBestand="Zone_A.gml"/>
+    <Gio identificatie="/join/id/regdata/gm0297/2019/Zone_B" naam="Zone_B" geometrieBestand="Zone_B.gml"/>
+    <Gio identificatie="/join/id/regdata/gm0297/2019/Zuilichem" naam="Zuilichem" geometrieBestand="Zuilichem.gml"/>
+  </Gios>
   <Bestanden>
     <Bestand type="gml" naam="Bedrijf_categorie_2.gml" mimeType="application/gml+xml" frbrExpression="/join/id/regdata/gm0297/2019/Bedrijf_categorie_2"/>
     <Bestand type="gml" naam="Bouwhoogte.gml" mimeType="application/gml+xml" frbrExpression="/join/id/regdata/gm0297/2019/Bouwhoogte"/>

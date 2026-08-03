@@ -419,6 +419,7 @@
                   <xs:attribute name="identificatie" type="xs:string" use="required"/>
                   <xs:attribute name="kwantitatieveWaarde" type="xs:string"/>
                   <xs:attribute name="kwalitatieveWaarde" type="xs:string"/>
+                  <xs:attribute name="gioRef" type="xs:string"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
@@ -443,6 +444,7 @@
             <xs:attribute name="type" type="xs:string" use="required"/>
             <xs:attribute name="groep" type="xs:string" use="required"/>
             <xs:attribute name="locatieRef" type="xs:string" use="required"/>
+            <xs:attribute name="gioRef" type="xs:string"/>
           </xs:complexType>
         </xs:element>
       </xs:sequence>
@@ -508,6 +510,23 @@
             <xs:attribute name="identificatie" type="xs:string" use="required"/>
             <xs:attribute name="noemer" type="xs:string"/>
             <xs:attribute name="geometrieRef" type="xs:string"/>
+            <xs:attribute name="gioRef" type="xs:string"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- GIO-catalogus: geo-informatieobjecten (regdata) waar locaties/gebieds-
+       aanwijzingen/normen via gioRef naar verwijzen; geometrie zelf in de GML -->
+  <xs:element name="Gios">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Gio" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="identificatie" type="xs:string" use="required"/>
+            <xs:attribute name="naam" type="xs:string"/>
+            <xs:attribute name="geometrieBestand" type="xs:string"/>
           </xs:complexType>
         </xs:element>
       </xs:sequence>
@@ -555,6 +574,7 @@
         <xs:element ref="Ponsen" minOccurs="0"/>
         <xs:element ref="Hoofdlijnen" minOccurs="0"/>
         <xs:element ref="Activiteiten" minOccurs="0"/>
+        <xs:element ref="Gios" minOccurs="0"/>
         <xs:element ref="Bestanden" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="variant" type="xs:string" fixed="integrated"/>

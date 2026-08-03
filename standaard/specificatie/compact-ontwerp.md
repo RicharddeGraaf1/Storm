@@ -71,12 +71,16 @@ n:1→1:1-normalisatie na**. Gemeten op Gemeentestad
   1:1-authoring-vorm kán geen n:1 dragen.
 
 Al het andere komt **identiek** terug — tekst, artikelen, leden, `Gereserveerd`/
-`Vervallen`, opschrift-marks, alle pools, **de locatie-objecten** (`Locatie` met
-`noemer`/`geometrieRef`) én **de eigen `Kop` van de toelichting**. Die laatste
-twee waren aanvankelijk verlies; ze zijn toegevoegd aan `storm-integrated`
-(en als plan aan SimplicIT:
-`docs/plans/storm-integrated-locatie-en-toelichtingkop.md`). Transforms:
-`Storm-services/python/compact_integrated.py` + `integrated_compact.py`.
+`Vervallen`, opschrift-marks, alle pools, de **locatie-objecten**, de eigen `Kop`
+van de toelichting, en de **GIO-catalogus + `gioRef`** op gebiedsaanwijzing/norm/
+locatie. Die verrijkingen zijn toegevoegd aan `storm-integrated` (en als plan aan
+SimplicIT: `docs/plans/storm-integrated-locatie-en-toelichtingkop.md`).
+
+**Invariant (afgedwongen in de transform):** heeft een `Artikel` leden, dan moet
+de juridische regel op het **lid** staan — `compact → integrated` gooit een fout
+als een regel op een artikel-met-leden zou landen (schema-assert kan niet, want
+lxml/XSD 1.0 ondersteunt `xs:assert` niet). Transforms:
+`Storm-services/python/{volledig_compact,compact_integrated,integrated_compact}.py`.
 
 ## Open punten (te bevestigen)
 

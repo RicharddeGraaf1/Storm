@@ -1191,6 +1191,7 @@
           <identificatie>nl.imow-gm0297.normwaarde.2019000001</identificatie>
           <kwantitatieveWaarde>6</kwantitatieveWaarde>
           <locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.zuilichem"/>
+          <gioRef ref="/join/id/regdata/gm0297/2019/Zuilichem"/>
         </Normwaarde>
       </Omgevingsnorm>
       <Omgevingsnorm>
@@ -1204,12 +1205,14 @@
           <kwantitatieveWaarde>13</kwantitatieveWaarde>
           <locatieaanduiding ref="nl.imow-gm0297.gebied.2019000010"/>
           <locatieaanduiding ref="nl.imow-gm0297.gebied.2019000013"/>
+          <gioRef ref="/join/id/regdata/gm0297/2019/Bouwhoogte"/>
         </Normwaarde>
         <Normwaarde>
           <identificatie>nl.imow-gm0297.normwaarde.2019000003</identificatie>
           <kwantitatieveWaarde>7</kwantitatieveWaarde>
           <locatieaanduiding ref="nl.imow-gm0297.gebied.2019000008"/>
           <locatieaanduiding ref="nl.imow-gm0297.gebied.2019000009"/>
+          <gioRef ref="/join/id/regdata/gm0297/2019/Bouwhoogte"/>
         </Normwaarde>
       </Omgevingsnorm>
       <Omgevingsnorm>
@@ -1221,16 +1224,19 @@
           <identificatie>nl.imow-gm0297.normwaarde.2019000004</identificatie>
           <kwalitatieveWaarde>laag</kwalitatieveWaarde>
           <locatieaanduiding ref="nl.imow-gm0297.gebied.2019000015"/>
+          <gioRef ref="/join/id/regdata/gm0297/2019/Welstand"/>
         </Normwaarde>
         <Normwaarde>
           <identificatie>nl.imow-gm0297.normwaarde.2019000005</identificatie>
           <kwalitatieveWaarde>midden</kwalitatieveWaarde>
           <locatieaanduiding ref="nl.imow-gm0297.gebied.2019000014"/>
+          <gioRef ref="/join/id/regdata/gm0297/2019/Welstand"/>
         </Normwaarde>
         <Normwaarde>
           <identificatie>nl.imow-gm0297.normwaarde.2019000006</identificatie>
           <kwalitatieveWaarde>hoog</kwalitatieveWaarde>
           <locatieaanduiding ref="nl.imow-gm0297.gebied.2019000016"/>
+          <gioRef ref="/join/id/regdata/gm0297/2019/Welstand"/>
         </Normwaarde>
       </Omgevingsnorm>
     </Normen>
@@ -1241,6 +1247,7 @@
         <type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</type>
         <groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Bedrijf</groep>
         <locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
+        <gioRef ref="/join/id/regdata/gm0297/2019/Bedrijf_categorie_2"/>
       </Gebiedsaanwijzing>
       <Gebiedsaanwijzing>
         <identificatie>nl.imow-gm0297.gebiedsaanwijzing.2019000002</identificatie>
@@ -1248,6 +1255,7 @@
         <type>http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie</type>
         <groep>http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Centrumgebied</groep>
         <locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.centrumgebied"/>
+        <gioRef ref="/join/id/regdata/gm0297/2019/Centrumgebied"/>
       </Gebiedsaanwijzing>
     </Gebiedsaanwijzingen>
     <Locaties>
@@ -1259,86 +1267,106 @@
       <Locatie>
         <identificatie>nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2</identificatie>
         <noemer>Bedrijf categorie 2</noemer>
+        <gioRef ref="/join/id/regdata/gm0297/2019/Bedrijf_categorie_2"/>
       </Locatie>
       <Locatie>
         <identificatie>nl.imow-gm0297.gebied.2019000001</identificatie>
         <geometrieRef ref="50EA019E-3C96-4631-A76C-35BCF4D7AB6D"/>
+        <gioRef ref="/join/id/regdata/gm0297/2019/Bedrijf_categorie_2"/>
       </Locatie>
       <Locatie>
         <identificatie>nl.imow-gm0297.gebiedengroep.zoneA</identificatie>
         <noemer>zone A</noemer>
+        <gioRef ref="/join/id/regdata/gm0297/2019/Zone_A"/>
       </Locatie>
       <Locatie>
         <identificatie>nl.imow-gm0297.gebied.2019000002</identificatie>
         <geometrieRef ref="B3AF6AF7-5EFA-4A87-9C66-BFB046DD89AC"/>
+        <gioRef ref="/join/id/regdata/gm0297/2019/Zone_A"/>
       </Locatie>
       <Locatie>
         <identificatie>nl.imow-gm0297.gebiedengroep.zoneB</identificatie>
         <noemer>zone B</noemer>
+        <gioRef ref="/join/id/regdata/gm0297/2019/Zone_B"/>
       </Locatie>
       <Locatie>
         <identificatie>nl.imow-gm0297.gebied.2019000003</identificatie>
         <geometrieRef ref="0868A0B1-DA79-4C33-8305-1BDE0126FA9A"/>
+        <gioRef ref="/join/id/regdata/gm0297/2019/Zone_B"/>
       </Locatie>
       <Locatie>
         <identificatie>nl.imow-gm0297.gebiedengroep.centrumgebied</identificatie>
         <noemer>Centrumgebied</noemer>
+        <gioRef ref="/join/id/regdata/gm0297/2019/Centrumgebied"/>
       </Locatie>
       <Locatie>
         <identificatie>nl.imow-gm0297.gebied.2019000004</identificatie>
         <geometrieRef ref="D28AF779-7EDD-4A88-8B11-809798F53636"/>
+        <gioRef ref="/join/id/regdata/gm0297/2019/Centrumgebied"/>
       </Locatie>
       <Locatie>
         <identificatie>nl.imow-gm0297.gebiedengroep.speelhal</identificatie>
         <noemer>exploiteren speelautomatenhal</noemer>
+        <gioRef ref="/join/id/regdata/gm0297/2019/Speelhal"/>
       </Locatie>
       <Locatie>
         <identificatie>nl.imow-gm0297.gebied.2019000007</identificatie>
         <geometrieRef ref="33B7D2D0-BF32-4CA1-B7F6-EB0FEF30175A"/>
+        <gioRef ref="/join/id/regdata/gm0297/2019/Speelhal"/>
       </Locatie>
       <Locatie>
         <identificatie>nl.imow-gm0297.gebied.2019000008</identificatie>
         <noemer>Zuilichem industriegebied 1</noemer>
         <geometrieRef ref="772B4B37-69F8-4671-B92E-3BCED242409D"/>
+        <gioRef ref="/join/id/regdata/gm0297/2019/Bouwhoogte"/>
       </Locatie>
       <Locatie>
         <identificatie>nl.imow-gm0297.gebied.2019000009</identificatie>
         <noemer>Zuilichem industriegebied 2</noemer>
         <geometrieRef ref="D24C3416-4790-461C-A4D0-A82BA60CA7D6"/>
+        <gioRef ref="/join/id/regdata/gm0297/2019/Bouwhoogte"/>
       </Locatie>
       <Locatie>
         <identificatie>nl.imow-gm0297.gebied.2019000010</identificatie>
         <noemer>Zuilichem industriegebied 3</noemer>
         <geometrieRef ref="954BA8CC-6E90-4698-BEEC-005A65C63E98"/>
+        <gioRef ref="/join/id/regdata/gm0297/2019/Bouwhoogte"/>
       </Locatie>
       <Locatie>
         <identificatie>nl.imow-gm0297.gebied.2019000013</identificatie>
         <noemer>Zuilichem industriegebied 4</noemer>
         <geometrieRef ref="EFAAD5E9-B181-4C22-9C3B-B290F4586D82"/>
+        <gioRef ref="/join/id/regdata/gm0297/2019/Bouwhoogte"/>
       </Locatie>
       <Locatie>
         <identificatie>nl.imow-gm0297.gebiedengroep.zuilichem</identificatie>
         <noemer>Zuilichem</noemer>
+        <gioRef ref="/join/id/regdata/gm0297/2019/Zuilichem"/>
       </Locatie>
       <Locatie>
         <identificatie>nl.imow-gm0297.gebied.2019000011</identificatie>
         <geometrieRef ref="b69221bd-8121-4368-9058-ad4ff7618dcd"/>
+        <gioRef ref="/join/id/regdata/gm0297/2019/Zuilichem"/>
       </Locatie>
       <Locatie>
         <identificatie>nl.imow-gm0297.gebied.2019000014</identificatie>
         <geometrieRef ref="d775e368-6c81-40b9-9a7a-c2acb70831f3"/>
+        <gioRef ref="/join/id/regdata/gm0297/2019/Welstand"/>
       </Locatie>
       <Locatie>
         <identificatie>nl.imow-gm0297.gebied.2019000015</identificatie>
         <geometrieRef ref="3ce37c9c-1721-4eec-9b4a-5380fd30fbac"/>
+        <gioRef ref="/join/id/regdata/gm0297/2019/Welstand"/>
       </Locatie>
       <Locatie>
         <identificatie>nl.imow-gm0297.gebied.2019000016</identificatie>
         <geometrieRef ref="dc57c9d5-a5ca-470c-b9f6-43eb30abdf8a"/>
+        <gioRef ref="/join/id/regdata/gm0297/2019/Welstand"/>
       </Locatie>
       <Locatie>
         <identificatie>nl.imow-gm0297.gebied.pons</identificatie>
         <geometrieRef ref="e8028788-a5bd-4d1c-ab6e-ae8258c7097d"/>
+        <gioRef ref="/join/id/regdata/gm0297/2021/Ponsgebied"/>
       </Locatie>
     </Locaties>
     <Regelingsgebied>
@@ -1351,6 +1379,53 @@
         <locatieaanduiding ref="nl.imow-gm0297.gebied.pons"/>
       </Pons>
     </Ponsen>
+    <Gios>
+      <Gio>
+        <identificatie>/join/id/regdata/gm0297/2019/Bedrijf_categorie_2</identificatie>
+        <naam>Bedrijf_categorie_2</naam>
+        <geometrieBestand>Bedrijf_categorie_2.gml</geometrieBestand>
+      </Gio>
+      <Gio>
+        <identificatie>/join/id/regdata/gm0297/2019/Bouwhoogte</identificatie>
+        <naam>Bouwhoogte</naam>
+        <geometrieBestand>Bouwhoogte.gml</geometrieBestand>
+      </Gio>
+      <Gio>
+        <identificatie>/join/id/regdata/gm0297/2019/Centrumgebied</identificatie>
+        <naam>Centrumgebied</naam>
+        <geometrieBestand>Centrumgebied.gml</geometrieBestand>
+      </Gio>
+      <Gio>
+        <identificatie>/join/id/regdata/gm0297/2021/Ponsgebied</identificatie>
+        <naam>PonsGebied</naam>
+        <geometrieBestand>PonsGebied.gml</geometrieBestand>
+      </Gio>
+      <Gio>
+        <identificatie>/join/id/regdata/gm0297/2019/Speelhal</identificatie>
+        <naam>Speelhal</naam>
+        <geometrieBestand>Speelhal.gml</geometrieBestand>
+      </Gio>
+      <Gio>
+        <identificatie>/join/id/regdata/gm0297/2019/Welstand</identificatie>
+        <naam>Welstand</naam>
+        <geometrieBestand>Welstand.gml</geometrieBestand>
+      </Gio>
+      <Gio>
+        <identificatie>/join/id/regdata/gm0297/2019/Zone_A</identificatie>
+        <naam>Zone_A</naam>
+        <geometrieBestand>Zone_A.gml</geometrieBestand>
+      </Gio>
+      <Gio>
+        <identificatie>/join/id/regdata/gm0297/2019/Zone_B</identificatie>
+        <naam>Zone_B</naam>
+        <geometrieBestand>Zone_B.gml</geometrieBestand>
+      </Gio>
+      <Gio>
+        <identificatie>/join/id/regdata/gm0297/2019/Zuilichem</identificatie>
+        <naam>Zuilichem</naam>
+        <geometrieBestand>Zuilichem.gml</geometrieBestand>
+      </Gio>
+    </Gios>
     <Bestanden>
       <Bestand type="gml" naam="Bedrijf_categorie_2.gml" frbrExpression="/join/id/regdata/gm0297/2019/Bedrijf_categorie_2" mimeType="application/gml+xml"/>
       <Bestand type="gml" naam="Bouwhoogte.gml" frbrExpression="/join/id/regdata/gm0297/2019/Bouwhoogte" mimeType="application/gml+xml"/>
