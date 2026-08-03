@@ -59,6 +59,26 @@ via `storm-tekst` is `Kop.Opschrift` een rijke `Tekstregel` (inline `IntRef`/
 `volledig → compact`; de marks blijven behouden. (Zie het marked-up opschrift in
 `compact-mini`.)
 
+## Gemeten rondreis compact → integrated → compact
+
+De structuur-hervorming `compact ↔ integrated` is bijna verliesvrij; het verlies
+zit precies in de gedocumenteerde vocabulaire/cardinaliteit-verschillen. Gemeten
+op Gemeentestad (`compact → integrated → compact'`), álle verschillen zijn
+verwacht:
+
+- **n:1 → 1:1** — `JuridischeRegel` 21 → 14 (meerdere regels per regeltekst
+  klappen samen tot één op het Artikel/Lid; eerste wint). Idem `artikelOfLid`/
+  `idealisatie`/`activiteitaanduiding`.
+- **integrated kent geen Locatie-objecten** — `Locatie`/`geometrieRef`/`noemer`
+  → weg (locaties zijn refs; geometrie zit als `Bestand`).
+- **toelichting-lijst zonder eigen kop** — de `Kop` van de
+  `ArtikelgewijzeToelichting` zelf verdwijnt (`ArtikelsgewijzeToelichting` in
+  Project is een kale component-lijst).
+
+Al het andere (tekst, artikelen, leden, `Gereserveerd`/`Vervallen`, alle pools,
+opschrift-marks) komt identiek terug. Transforms:
+`Storm-services/python/compact_integrated.py` + `integrated_compact.py`.
+
 ## Open punten (te bevestigen)
 
 1. **Regel n:1 vs 1:1** — compact houdt de *vorm* van volledig (aparte objecten

@@ -585,7 +585,7 @@
             <TekstRun tekst="Centrumgebied"/>
           </Opschrift>
         </Kop>
-        <Artikel eId="chp_2__subchp_2.6__art_2.16" wId="gm0297_1__chp_2__subchp_2.6__art_2.16">
+        <Artikel eId="chp_2__subchp_2.6__art_2.16" wId="gm0297_1__chp_2__subchp_2.6__art_2.16" aantekening="Gereserveerd">
           <Kop label="Artikel" nummer="2.16">
             <Opschrift>
               <TekstRun tekst="Toedeling functie landelijk gebied"/>
@@ -1024,6 +1024,33 @@
       </Begrippenlijst>
     </Divisietekst>
   </Bijlage>
+  <ArtikelsgewijzeToelichting>
+    <Divisie eId="artrecital_o_1__div_o_1" wId="artrecital_o_1__div_o_1">
+      <Kop>
+        <Opschrift>
+          <TekstRun tekst="Toelichting op artikelen uit hoofdstuk 2"/>
+        </Opschrift>
+      </Kop>
+      <Divisietekst eId="artrecital_o_1__div_o_1__content_o_1" wId="artrecital_o_1__div_o_1__content_o_1">
+        <Kop>
+          <Opschrift>
+            <TekstRun tekst="Toelichting artikel 2.10"/>
+          </Opschrift>
+        </Kop>
+        <Alinea uId="uid-0111">
+          <TekstRun tekst="Toelichting op "/>
+          <TekstRun tekst="Artikel 2.10">
+            <Mark kind="intRef" ref="chp_2__subchp_2.3__art_2.10" scope="Artikel"/>
+          </TekstRun>
+          <TekstRun tekst=". Ook te vinden op"/>
+          <TekstRun tekst="de website van de gemeente Zaltbommel">
+            <Mark kind="extRef" ref="https://decentrale.regelgeving.overheid.nl/cvdr/xhtmloutput/Historie/Zaltbommel/637099/CVDR637099_1.html" soort="URL"/>
+          </TekstRun>
+          <TekstRun tekst="."/>
+        </Alinea>
+      </Divisietekst>
+    </Divisie>
+  </ArtikelsgewijzeToelichting>
   <Ambtsgebied identificatie="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied" naam="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied" bestuurlijkeGrenzenId="GM0297"/>
   <Regelingsgebied identificatie="nl.imow-gm0297.regelingsgebied.2019000001" locatieRef="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
   <Gebiedsaanwijzingen>
