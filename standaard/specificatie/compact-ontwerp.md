@@ -61,22 +61,21 @@ via `storm-tekst` is `Kop.Opschrift` een rijke `Tekstregel` (inline `IntRef`/
 
 ## Gemeten rondreis compact → integrated → compact
 
-De structuur-hervorming `compact ↔ integrated` is bijna verliesvrij; het verlies
-zit precies in de gedocumenteerde vocabulaire/cardinaliteit-verschillen. Gemeten
-op Gemeentestad (`compact → integrated → compact'`), álle verschillen zijn
-verwacht:
+De structuur-hervorming `compact ↔ integrated` is verliesvrij op de **inherente
+n:1→1:1-normalisatie na**. Gemeten op Gemeentestad
+(`compact → integrated → compact'`), het enige verschil:
 
-- **n:1 → 1:1** — `JuridischeRegel` 21 → 14 (meerdere regels per regeltekst
-  klappen samen tot één op het Artikel/Lid; eerste wint). Idem `artikelOfLid`/
-  `idealisatie`/`activiteitaanduiding`.
-- **integrated kent geen Locatie-objecten** — `Locatie`/`geometrieRef`/`noemer`
-  → weg (locaties zijn refs; geometrie zit als `Bestand`).
-- **toelichting-lijst zonder eigen kop** — de `Kop` van de
-  `ArtikelgewijzeToelichting` zelf verdwijnt (`ArtikelsgewijzeToelichting` in
-  Project is een kale component-lijst).
+- **n:1 → 1:1** — `JuridischeRegel` 21 → 14 (meerdere juridische regels per
+  regeltekst kunnen niet op één artikel-annotatie; eerste wint). Idem
+  `artikelOfLid`/`idealisatie`/`activiteitaanduiding`. Dit is per definitie: een
+  1:1-authoring-vorm kán geen n:1 dragen.
 
-Al het andere (tekst, artikelen, leden, `Gereserveerd`/`Vervallen`, alle pools,
-opschrift-marks) komt identiek terug. Transforms:
+Al het andere komt **identiek** terug — tekst, artikelen, leden, `Gereserveerd`/
+`Vervallen`, opschrift-marks, alle pools, **de locatie-objecten** (`Locatie` met
+`noemer`/`geometrieRef`) én **de eigen `Kop` van de toelichting**. Die laatste
+twee waren aanvankelijk verlies; ze zijn toegevoegd aan `storm-integrated`
+(en als plan aan SimplicIT:
+`docs/plans/storm-integrated-locatie-en-toelichtingkop.md`). Transforms:
 `Storm-services/python/compact_integrated.py` + `integrated_compact.py`.
 
 ## Open punten (te bevestigen)

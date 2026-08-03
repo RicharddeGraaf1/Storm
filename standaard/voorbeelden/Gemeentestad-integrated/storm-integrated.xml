@@ -1025,6 +1025,11 @@
     </Divisietekst>
   </Bijlage>
   <ArtikelsgewijzeToelichting>
+    <Kop>
+      <Opschrift>
+        <TekstRun tekst="Artikelsgewijze Toelichting"/>
+      </Opschrift>
+    </Kop>
     <Divisie eId="artrecital_o_1__div_o_1" wId="artrecital_o_1__div_o_1">
       <Kop>
         <Opschrift>
@@ -1053,6 +1058,28 @@
   </ArtikelsgewijzeToelichting>
   <Ambtsgebied identificatie="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied" naam="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied" bestuurlijkeGrenzenId="GM0297"/>
   <Regelingsgebied identificatie="nl.imow-gm0297.regelingsgebied.2019000001" locatieRef="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+  <Locaties>
+    <Locatie identificatie="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2" noemer="Bedrijf categorie 2"/>
+    <Locatie identificatie="nl.imow-gm0297.gebied.2019000001" geometrieRef="50EA019E-3C96-4631-A76C-35BCF4D7AB6D"/>
+    <Locatie identificatie="nl.imow-gm0297.gebiedengroep.zoneA" noemer="zone A"/>
+    <Locatie identificatie="nl.imow-gm0297.gebied.2019000002" geometrieRef="B3AF6AF7-5EFA-4A87-9C66-BFB046DD89AC"/>
+    <Locatie identificatie="nl.imow-gm0297.gebiedengroep.zoneB" noemer="zone B"/>
+    <Locatie identificatie="nl.imow-gm0297.gebied.2019000003" geometrieRef="0868A0B1-DA79-4C33-8305-1BDE0126FA9A"/>
+    <Locatie identificatie="nl.imow-gm0297.gebiedengroep.centrumgebied" noemer="Centrumgebied"/>
+    <Locatie identificatie="nl.imow-gm0297.gebied.2019000004" geometrieRef="D28AF779-7EDD-4A88-8B11-809798F53636"/>
+    <Locatie identificatie="nl.imow-gm0297.gebiedengroep.speelhal" noemer="exploiteren speelautomatenhal"/>
+    <Locatie identificatie="nl.imow-gm0297.gebied.2019000007" geometrieRef="33B7D2D0-BF32-4CA1-B7F6-EB0FEF30175A"/>
+    <Locatie identificatie="nl.imow-gm0297.gebied.2019000008" noemer="Zuilichem industriegebied 1" geometrieRef="772B4B37-69F8-4671-B92E-3BCED242409D"/>
+    <Locatie identificatie="nl.imow-gm0297.gebied.2019000009" noemer="Zuilichem industriegebied 2" geometrieRef="D24C3416-4790-461C-A4D0-A82BA60CA7D6"/>
+    <Locatie identificatie="nl.imow-gm0297.gebied.2019000010" noemer="Zuilichem industriegebied 3" geometrieRef="954BA8CC-6E90-4698-BEEC-005A65C63E98"/>
+    <Locatie identificatie="nl.imow-gm0297.gebied.2019000013" noemer="Zuilichem industriegebied 4" geometrieRef="EFAAD5E9-B181-4C22-9C3B-B290F4586D82"/>
+    <Locatie identificatie="nl.imow-gm0297.gebiedengroep.zuilichem" noemer="Zuilichem"/>
+    <Locatie identificatie="nl.imow-gm0297.gebied.2019000011" geometrieRef="b69221bd-8121-4368-9058-ad4ff7618dcd"/>
+    <Locatie identificatie="nl.imow-gm0297.gebied.2019000014" geometrieRef="d775e368-6c81-40b9-9a7a-c2acb70831f3"/>
+    <Locatie identificatie="nl.imow-gm0297.gebied.2019000015" geometrieRef="3ce37c9c-1721-4eec-9b4a-5380fd30fbac"/>
+    <Locatie identificatie="nl.imow-gm0297.gebied.2019000016" geometrieRef="dc57c9d5-a5ca-470c-b9f6-43eb30abdf8a"/>
+    <Locatie identificatie="nl.imow-gm0297.gebied.pons" geometrieRef="e8028788-a5bd-4d1c-ab6e-ae8258c7097d"/>
+  </Locaties>
   <Gebiedsaanwijzingen>
     <Gebiedsaanwijzing identificatie="nl.imow-gm0297.gebiedsaanwijzing.2019000001" naam="Bedrijf categorie 2" type="http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie" groep="http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Bedrijf" locatieRef="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
     <Gebiedsaanwijzing identificatie="nl.imow-gm0297.gebiedsaanwijzing.2019000002" naam="Centrumgebied" type="http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie" groep="http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Centrumgebied" locatieRef="nl.imow-gm0297.gebiedengroep.centrumgebied"/>

@@ -372,8 +372,10 @@
     </xs:complexType>
   </xs:element>
 
+  <!-- toelichting-sectie: optionele eigen Kop + document-componenten -->
   <xs:complexType name="DocumentComponentLijst">
     <xs:sequence>
+      <xs:element name="Kop" type="Kop" minOccurs="0"/>
       <xs:group ref="gDocumentComponent" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
   </xs:complexType>
@@ -496,6 +498,22 @@
     </xs:complexType>
   </xs:element>
 
+  <!-- locatie-objecten (eerste-klas, naast de opake locatieRef-strings):
+       id + noemer + verwijzing naar de geometrie -->
+  <xs:element name="Locaties">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Locatie" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="identificatie" type="xs:string" use="required"/>
+            <xs:attribute name="noemer" type="xs:string"/>
+            <xs:attribute name="geometrieRef" type="xs:string"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
   <!-- bestanden: geometrie/PDF/afbeelding als verwijzing (inhoud extern/GridFS) -->
   <xs:element name="Bestanden">
     <xs:complexType>
@@ -531,6 +549,7 @@
         <xs:element name="Sluiting" type="DocumentComponentLijst" minOccurs="0"/>
         <xs:element ref="Ambtsgebied" minOccurs="0"/>
         <xs:element ref="Regelingsgebied" minOccurs="0"/>
+        <xs:element ref="Locaties" minOccurs="0"/>
         <xs:element ref="Gebiedsaanwijzingen" minOccurs="0"/>
         <xs:element ref="Omgevingsnormen" minOccurs="0"/>
         <xs:element ref="Ponsen" minOccurs="0"/>
