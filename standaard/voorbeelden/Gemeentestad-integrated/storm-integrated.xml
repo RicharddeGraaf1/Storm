@@ -1085,29 +1085,29 @@
     <Gebiedsaanwijzing identificatie="nl.imow-gm0297.gebiedsaanwijzing.2019000002" naam="Centrumgebied" type="http://standaarden.omgevingswet.overheid.nl/typegebiedsaanwijzing/id/concept/Functie" groep="http://standaarden.omgevingswet.overheid.nl/functie/id/concept/Centrumgebied" locatieRef="nl.imow-gm0297.gebiedengroep.centrumgebied" gioRef="/join/id/regdata/gm0297/2019/Centrumgebied"/>
   </Gebiedsaanwijzingen>
   <Omgevingsnormen>
-    <Omgevingsnorm identificatie="nl.imow-gm0297.omgevingswaarde.2019000001" naam="fijnstof" type="http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/Volume" groep="http://standaarden.omgevingswet.overheid.nl/omgevingswaarde/id/concept/Luchtkwaliteit">
-      <Normwaarde identificatie="nl.imow-gm0297.normwaarde.2019000001" kwantitatieveWaarde="6" gioRef="/join/id/regdata/gm0297/2019/Zuilichem">
+    <Omgevingsnorm identificatie="nl.imow-gm0297.omgevingswaarde.2019000001" naam="fijnstof" type="http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/Volume" groep="http://standaarden.omgevingswet.overheid.nl/omgevingswaarde/id/concept/Luchtkwaliteit" gioRef="/join/id/regdata/gm0297/2019/Zuilichem">
+      <Normwaarde identificatie="nl.imow-gm0297.normwaarde.2019000001" kwantitatieveWaarde="6">
         <LocatieRef>nl.imow-gm0297.gebiedengroep.zuilichem</LocatieRef>
       </Normwaarde>
     </Omgevingsnorm>
-    <Omgevingsnorm identificatie="nl.imow-gm0297.omgevingsnorm.2019000002" naam="maximum bouwhoogte bedrijfsgebouw" type="http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumBouwhoogte" eenheid="http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Meter" groep="http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Bouwaanduiding">
-      <Normwaarde identificatie="nl.imow-gm0297.normwaarde.2019000002" kwantitatieveWaarde="13" gioRef="/join/id/regdata/gm0297/2019/Bouwhoogte">
+    <Omgevingsnorm identificatie="nl.imow-gm0297.omgevingsnorm.2019000002" naam="maximum bouwhoogte bedrijfsgebouw" type="http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumBouwhoogte" eenheid="http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Meter" groep="http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Bouwaanduiding" gioRef="/join/id/regdata/gm0297/2019/Bouwhoogte">
+      <Normwaarde identificatie="nl.imow-gm0297.normwaarde.2019000002" kwantitatieveWaarde="13">
         <LocatieRef>nl.imow-gm0297.gebied.2019000010</LocatieRef>
         <LocatieRef>nl.imow-gm0297.gebied.2019000013</LocatieRef>
       </Normwaarde>
-      <Normwaarde identificatie="nl.imow-gm0297.normwaarde.2019000003" kwantitatieveWaarde="7" gioRef="/join/id/regdata/gm0297/2019/Bouwhoogte">
+      <Normwaarde identificatie="nl.imow-gm0297.normwaarde.2019000003" kwantitatieveWaarde="7">
         <LocatieRef>nl.imow-gm0297.gebied.2019000008</LocatieRef>
         <LocatieRef>nl.imow-gm0297.gebied.2019000009</LocatieRef>
       </Normwaarde>
     </Omgevingsnorm>
-    <Omgevingsnorm identificatie="nl.imow-gm0297.omgevingsnorm.2019000003" naam="welstandsniveau" type="http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumBouwhoogte" groep="http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Bouwaanduiding">
-      <Normwaarde identificatie="nl.imow-gm0297.normwaarde.2019000004" kwalitatieveWaarde="laag" gioRef="/join/id/regdata/gm0297/2019/Welstand">
+    <Omgevingsnorm identificatie="nl.imow-gm0297.omgevingsnorm.2019000003" naam="welstandsniveau" type="http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumBouwhoogte" groep="http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Bouwaanduiding" gioRef="/join/id/regdata/gm0297/2019/Welstand">
+      <Normwaarde identificatie="nl.imow-gm0297.normwaarde.2019000004" kwalitatieveWaarde="laag">
         <LocatieRef>nl.imow-gm0297.gebied.2019000015</LocatieRef>
       </Normwaarde>
-      <Normwaarde identificatie="nl.imow-gm0297.normwaarde.2019000005" kwalitatieveWaarde="midden" gioRef="/join/id/regdata/gm0297/2019/Welstand">
+      <Normwaarde identificatie="nl.imow-gm0297.normwaarde.2019000005" kwalitatieveWaarde="midden">
         <LocatieRef>nl.imow-gm0297.gebied.2019000014</LocatieRef>
       </Normwaarde>
-      <Normwaarde identificatie="nl.imow-gm0297.normwaarde.2019000006" kwalitatieveWaarde="hoog" gioRef="/join/id/regdata/gm0297/2019/Welstand">
+      <Normwaarde identificatie="nl.imow-gm0297.normwaarde.2019000006" kwalitatieveWaarde="hoog">
         <LocatieRef>nl.imow-gm0297.gebied.2019000016</LocatieRef>
       </Normwaarde>
     </Omgevingsnorm>

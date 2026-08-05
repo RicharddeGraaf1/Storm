@@ -419,7 +419,6 @@
                   <xs:attribute name="identificatie" type="xs:string" use="required"/>
                   <xs:attribute name="kwantitatieveWaarde" type="xs:string"/>
                   <xs:attribute name="kwalitatieveWaarde" type="xs:string"/>
-                  <xs:attribute name="gioRef" type="xs:string"/>
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
@@ -428,6 +427,8 @@
             <xs:attribute name="type" type="xs:string" use="required"/>
             <xs:attribute name="eenheid" type="xs:string"/>
             <xs:attribute name="groep" type="xs:string" use="required"/>
+            <!-- GIO waar deze norm (als geo-informatieobject) op slaat -->
+            <xs:attribute name="gioRef" type="xs:string"/>
           </xs:complexType>
         </xs:element>
       </xs:sequence>

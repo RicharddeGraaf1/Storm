@@ -1187,11 +1187,11 @@
         <naam>fijnstof</naam>
         <type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/Volume</type>
         <groep>http://standaarden.omgevingswet.overheid.nl/omgevingswaarde/id/concept/Luchtkwaliteit</groep>
+        <gioRef ref="/join/id/regdata/gm0297/2019/Zuilichem"/>
         <Normwaarde>
           <identificatie>nl.imow-gm0297.normwaarde.2019000001</identificatie>
           <kwantitatieveWaarde>6</kwantitatieveWaarde>
           <locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.zuilichem"/>
-          <gioRef ref="/join/id/regdata/gm0297/2019/Zuilichem"/>
         </Normwaarde>
       </Omgevingsnorm>
       <Omgevingsnorm>
@@ -1200,19 +1200,18 @@
         <type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumBouwhoogte</type>
         <eenheid>http://standaarden.omgevingswet.overheid.nl/eenheid/id/concept/Meter</eenheid>
         <groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Bouwaanduiding</groep>
+        <gioRef ref="/join/id/regdata/gm0297/2019/Bouwhoogte"/>
         <Normwaarde>
           <identificatie>nl.imow-gm0297.normwaarde.2019000002</identificatie>
           <kwantitatieveWaarde>13</kwantitatieveWaarde>
           <locatieaanduiding ref="nl.imow-gm0297.gebied.2019000010"/>
           <locatieaanduiding ref="nl.imow-gm0297.gebied.2019000013"/>
-          <gioRef ref="/join/id/regdata/gm0297/2019/Bouwhoogte"/>
         </Normwaarde>
         <Normwaarde>
           <identificatie>nl.imow-gm0297.normwaarde.2019000003</identificatie>
           <kwantitatieveWaarde>7</kwantitatieveWaarde>
           <locatieaanduiding ref="nl.imow-gm0297.gebied.2019000008"/>
           <locatieaanduiding ref="nl.imow-gm0297.gebied.2019000009"/>
-          <gioRef ref="/join/id/regdata/gm0297/2019/Bouwhoogte"/>
         </Normwaarde>
       </Omgevingsnorm>
       <Omgevingsnorm>
@@ -1220,23 +1219,21 @@
         <naam>welstandsniveau</naam>
         <type>http://standaarden.omgevingswet.overheid.nl/typenorm/id/concept/MaximumBouwhoogte</type>
         <groep>http://standaarden.omgevingswet.overheid.nl/omgevingsnorm/id/concept/Bouwaanduiding</groep>
+        <gioRef ref="/join/id/regdata/gm0297/2019/Welstand"/>
         <Normwaarde>
           <identificatie>nl.imow-gm0297.normwaarde.2019000004</identificatie>
           <kwalitatieveWaarde>laag</kwalitatieveWaarde>
           <locatieaanduiding ref="nl.imow-gm0297.gebied.2019000015"/>
-          <gioRef ref="/join/id/regdata/gm0297/2019/Welstand"/>
         </Normwaarde>
         <Normwaarde>
           <identificatie>nl.imow-gm0297.normwaarde.2019000005</identificatie>
           <kwalitatieveWaarde>midden</kwalitatieveWaarde>
           <locatieaanduiding ref="nl.imow-gm0297.gebied.2019000014"/>
-          <gioRef ref="/join/id/regdata/gm0297/2019/Welstand"/>
         </Normwaarde>
         <Normwaarde>
           <identificatie>nl.imow-gm0297.normwaarde.2019000006</identificatie>
           <kwalitatieveWaarde>hoog</kwalitatieveWaarde>
           <locatieaanduiding ref="nl.imow-gm0297.gebied.2019000016"/>
-          <gioRef ref="/join/id/regdata/gm0297/2019/Welstand"/>
         </Normwaarde>
       </Omgevingsnorm>
     </Normen>

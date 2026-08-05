@@ -153,6 +153,8 @@
               <xs:element name="type" type="xs:string"/>
               <xs:element name="eenheid" type="xs:string" minOccurs="0"/>
               <xs:element name="groep" type="xs:string"/>
+              <!-- GIO waar deze norm (als geo-informatieobject) op slaat -->
+              <xs:element name="gioRef" type="b:Ref" minOccurs="0"/>
               <xs:element name="Normwaarde" minOccurs="0" maxOccurs="unbounded">
                 <xs:complexType>
                   <xs:sequence>
@@ -161,7 +163,6 @@
                     <xs:element name="kwalitatieveWaarde" type="xs:string" minOccurs="0"/>
                     <xs:element name="locatieaanduiding" type="b:Ref"
                                 minOccurs="0" maxOccurs="unbounded"/>
-                    <xs:element name="gioRef" type="b:Ref" minOccurs="0"/>
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
