@@ -23,8 +23,15 @@ verschillend.**
 ## De keyword-tabel (regelkwalificatie)
 
 Langste keyword wint (zo gaat "niet toegestaan" naar Verbod, niet naar
-Toegestaan). URI-basis:
-`http://standaarden.omgevingswet.overheid.nl/regelkwalificatie/id/concept/`.
+Toegestaan). De regelkwalificatie is een IMOW-waardelijst-URI; de autoritatieve
+basis is die uit de gepubliceerde omgevingsplannen zelf:
+`http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/`
+(dus `…/activiteitregelkwalificatie/id/concept/Toegestaan`, `…/Verbod`, enz.).
+
+> **Let op** — de oude frontend-detectie gebruikte een andere basis
+> (`…/id/concept/Regelkwalificatie/`) die niet met de DSO-waardelijst
+> overeenkomt. Bij de port (zie het plansoftware-plan) de **autoritatieve** URI
+> hierboven aanhouden, niet de oude constante.
 
 | regelkwalificatie | signaalwoorden (langste eerst) |
 |---|---|
