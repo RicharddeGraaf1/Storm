@@ -251,12 +251,23 @@
     </xs:restriction>
   </xs:simpleType>
 
+  <!-- herkomst van een afgeleide annotatie (keyword-/naam-detectie).
+       afwezig = handmatig gezet. Zie specificatie/annotatie-detectie.md -->
+  <xs:simpleType name="AanduidingHerkomst">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="voorstel"/>   <!-- door detectie gezet, nog niet bevestigd -->
+      <xs:enumeration value="bevestigd"/>  <!-- door detectie gezet én bevestigd -->
+      <xs:enumeration value="handmatig"/>  <!-- door de gebruiker zelf gezet -->
+    </xs:restriction>
+  </xs:simpleType>
+
   <!-- annotatie ÓP de regel (het integrated-patroon) -->
   <xs:element name="ActiviteitAanduiding">
     <xs:complexType>
       <xs:attribute name="activiteitIdentificatie" type="xs:string" use="required"/>
       <xs:attribute name="activiteitNaam" type="xs:string" use="required"/>
       <xs:attribute name="regelkwalificatie" type="xs:string"/>
+      <xs:attribute name="herkomst" type="AanduidingHerkomst"/>
     </xs:complexType>
   </xs:element>
   <xs:element name="InformatieobjectAanduiding">
@@ -264,6 +275,7 @@
       <xs:attribute name="informatieobjectNaam" type="xs:string" use="required"/>
       <xs:attribute name="termInTekst" type="xs:string"/>
       <xs:attribute name="type" type="xs:string"/>
+      <xs:attribute name="herkomst" type="AanduidingHerkomst"/>
     </xs:complexType>
   </xs:element>
 
