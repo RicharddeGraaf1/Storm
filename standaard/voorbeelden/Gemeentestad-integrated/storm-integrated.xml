@@ -1104,7 +1104,7 @@
       </Begrippenlijst>
     </Divisietekst>
   </Bijlage>
-  <ArtikelsgewijzeToelichting>
+  <ArtikelsgewijzeToelichting eId="artrecital_o_1" uId="artrecital_o_1">
     <Kop>
       <Opschrift>
         <TekstRun tekst="Artikelsgewijze Toelichting"/>

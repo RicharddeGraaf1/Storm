@@ -415,6 +415,9 @@
       <xs:element name="Kop" type="Kop" minOccurs="0"/>
       <xs:group ref="gDocumentComponent" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
+    <!-- de toelichting-sectie draagt in STOP zijn eigen id (bv. artrecital_o_1) -->
+    <xs:attribute name="eId" type="xs:string"/>
+    <xs:attribute name="uId" type="xs:string"/>
   </xs:complexType>
 
   <!-- ===================== OW-objecten (platte pools) ===================== -->
