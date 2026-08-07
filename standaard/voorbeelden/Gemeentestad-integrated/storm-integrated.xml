@@ -50,7 +50,10 @@
         <Artikel eId="chp_2__subchp_2.2__art_2.4" wId="gm0297_1__chp_2__subchp_2.2__art_2.4" owRegeltekstIdentificatie="nl.imow-gm0297.regeltekst.2019000002" owJuridischeRegelIdentificatie="nl.imow-gm0297.juridischeregel.2019000002">
           <Kop label="Artikel" nummer="2.4">
             <Opschrift>
-              <TekstRun tekst="Gebruiksactiviteiten die zonder vergunning of melding zijn toegestaan"/>
+              <TekstRun tekst="Gebruiksactiviteiten die zonder vergunning of melding zijn "/>
+              <TekstRun tekst="toegestaan">
+                <Mark kind="regelkwalificatie" ref="nl.imow-gm0297.activiteitlocatieaanduiding.2019000001"/>
+              </TekstRun>
             </Opschrift>
           </Kop>
           <Alinea uId="uid-0003">
@@ -63,7 +66,11 @@
           <Lijst eId="chp_2__subchp_2.2__art_2.4__list_o_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.4__list_o_1">
             <Item eId="chp_2__subchp_2.2__art_2.4__list_o_1__item_a" wId="gm0297_1__chp_2__subchp_2.2__art_2.4__list_o_1__item_a" nummer="a.">
               <Alinea uId="uid-0004">
-                <TekstRun tekst="het uitoefenen van bedrijfstypen van categorie 2 die voorkomen op de bij deze regels behorende"/>
+                <TekstRun tekst="het "/>
+                <TekstRun tekst="uitoefenen van bedrijfstypen van categorie 2">
+                  <Mark kind="activiteitRef" ref="nl.imow-gm0297.activiteitlocatieaanduiding.2019000001"/>
+                </TekstRun>
+                <TekstRun tekst=" die voorkomen op de bij deze regels behorende"/>
                 <TekstRun tekst="Lijst van toegelaten bedrijfstypen">
                   <Mark kind="intRef" ref="cmp_III__content_o_1" scope="Divisietekst"/>
                 </TekstRun>
@@ -104,12 +111,16 @@
               </Alinea>
             </Item>
           </Lijst>
-          <ActiviteitAanduiding activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000241" activiteitNaam="uitoefenen van bedrijfstypen van categorie 2" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan"/>
+          <ActiviteitAanduiding identificatie="nl.imow-gm0297.activiteitlocatieaanduiding.2019000001" activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000241" activiteitNaam="uitoefenen van bedrijfstypen van categorie 2" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan" locatieRef="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
         </Artikel>
         <Artikel eId="chp_2__subchp_2.2__art_2.5" wId="gm0297_1__chp_2__subchp_2.2__art_2.5" owRegeltekstIdentificatie="nl.imow-gm0297.regeltekst.2019000003" owJuridischeRegelIdentificatie="nl.imow-gm0297.juridischeregel.2019000008">
           <Kop label="Artikel" nummer="2.5">
             <Opschrift>
-              <TekstRun tekst="Gebruiksactiviteiten die verboden zijn"/>
+              <TekstRun tekst="Gebruiksactiviteiten die "/>
+              <TekstRun tekst="verboden">
+                <Mark kind="regelkwalificatie" ref="nl.imow-gm0297.activiteitlocatieaanduiding.2019000007"/>
+              </TekstRun>
+              <TekstRun tekst=" zijn"/>
             </Opschrift>
           </Kop>
           <Alinea uId="uid-0010">
@@ -122,7 +133,11 @@
           <Lijst eId="chp_2__subchp_2.2__art_2.5__list_o_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.5__list_o_1">
             <Item eId="chp_2__subchp_2.2__art_2.5__list_o_1__item_a" wId="gm0297_1__chp_2__subchp_2.2__art_2.5__list_o_1__item_a" nummer="a.">
               <Alinea uId="uid-0011">
-                <TekstRun tekst="voor het exploiteren van inrichtingen als bedoeld in artikel 2.1 lid 3 juncto Bijlage 1 onderdeel D van het Besluit omgevingsrecht;"/>
+                <TekstRun tekst="voor het "/>
+                <TekstRun tekst="exploiteren van inrichtingen">
+                  <Mark kind="activiteitRef" ref="nl.imow-gm0297.activiteitlocatieaanduiding.2019000007"/>
+                </TekstRun>
+                <TekstRun tekst=" als bedoeld in artikel 2.1 lid 3 juncto Bijlage 1 onderdeel D van het Besluit omgevingsrecht;"/>
               </Alinea>
             </Item>
             <Item eId="chp_2__subchp_2.2__art_2.5__list_o_1__item_b" wId="gm0297_1__chp_2__subchp_2.2__art_2.5__list_o_1__item_b" nummer="b.">
@@ -136,7 +151,7 @@
               </Alinea>
             </Item>
           </Lijst>
-          <ActiviteitAanduiding activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000730" activiteitNaam="exploiteren van inrichtingen" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Verbod"/>
+          <ActiviteitAanduiding identificatie="nl.imow-gm0297.activiteitlocatieaanduiding.2019000007" activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000730" activiteitNaam="exploiteren van inrichtingen" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Verbod" locatieRef="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
         </Artikel>
         <Artikel eId="chp_2__subchp_2.2__art_2.6" wId="gm0297_1__chp_2__subchp_2.2__art_2.6">
           <Kop label="Artikel" nummer="2.6">
@@ -157,9 +172,17 @@
               <TekstRun tekst="Zone B">
                 <Mark kind="intIoRef" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_7__ref_o_1" eId="chp_2__subchp_2.2__art_2.6__para_1__ref_o_2" wId="gm0297_1__chp_2__subchp_2.2__art_2.6__para_1__ref_o_2"/>
               </TekstRun>
-              <TekstRun tekst="' verboden de gebruiksactiviteit 'het uitoefenen van detailhandel in ter plaatse vervaardigde goederen' te verrichten zonder dat daarvoor aan het bevoegd gezag een melding is gedaan"/>
+              <TekstRun tekst="' verboden de gebruiksactiviteit 'het "/>
+              <TekstRun tekst="uitoefenen van detailhandel in ter plaatse vervaardigde goederen">
+                <Mark kind="activiteitRef" ref="nl.imow-gm0297.activiteitlocatieaanduiding.2019000010"/>
+              </TekstRun>
+              <TekstRun tekst="' te verrichten zonder dat daarvoor aan het bevoegd gezag een "/>
+              <TekstRun tekst="melding">
+                <Mark kind="regelkwalificatie" ref="nl.imow-gm0297.activiteitlocatieaanduiding.2019000010"/>
+              </TekstRun>
+              <TekstRun tekst=" is gedaan"/>
             </Alinea>
-            <ActiviteitAanduiding activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000590" activiteitNaam="uitoefenen van detailhandel in ter plaatse vervaardigde goederen" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Meldingsplicht"/>
+            <ActiviteitAanduiding identificatie="nl.imow-gm0297.activiteitlocatieaanduiding.2019000010" activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000590" activiteitNaam="uitoefenen van detailhandel in ter plaatse vervaardigde goederen" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Meldingsplicht" locatieRef="nl.imow-gm0297.gebiedengroep.zoneB"/>
           </Lid>
           <Lid eId="chp_2__subchp_2.2__art_2.6__para_2" wId="gm0297_1__chp_2__subchp_2.2__art_2.6__para_2" nummer="2.">
             <Alinea uId="uid-0016">
@@ -197,10 +220,26 @@
               <TekstRun tekst="Bedrijf categorie 2">
                 <Mark kind="intIoRef" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1" eId="chp_2__subchp_2.2__art_2.7__para_1__ref_o_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_1__ref_o_1"/>
               </TekstRun>
-              <TekstRun tekst="' is het verboden om zonder omgevingsvergunning de gebruiksactiviteit 'het exploiteren van een verkooppunt voor motorbrandstoffen niet zijnde lpg' te verrichten. Daarnaast is het eveneens verboden om deze gebruiksactiviteit uit te voeren zonder een vergunning voor de milieubelastende activiteit ‘het opslaan van motorbrandstoffen niet zijnde lpg’, zoals beschreven in Artikel 13.24."/>
+              <TekstRun tekst="' is het verboden om zonder "/>
+              <TekstRun tekst="omgevingsvergunning">
+                <Mark kind="regelkwalificatie" ref="nl.imow-gm0297.activiteitlocatieaanduiding.2019000011"/>
+              </TekstRun>
+              <TekstRun tekst=" de gebruiksactiviteit 'het "/>
+              <TekstRun tekst="exploiteren van een verkooppunt voor motorbrandstoffen niet zijnde lpg">
+                <Mark kind="activiteitRef" ref="nl.imow-gm0297.activiteitlocatieaanduiding.2019000011"/>
+              </TekstRun>
+              <TekstRun tekst="' te verrichten. Daarnaast is het eveneens verboden om deze gebruiksactiviteit uit te voeren zonder een "/>
+              <TekstRun tekst="vergunning">
+                <Mark kind="regelkwalificatie" ref="nl.imow-gm0297.activiteitlocatieaanduiding.2019000013"/>
+              </TekstRun>
+              <TekstRun tekst=" voor de milieubelastende activiteit ‘het "/>
+              <TekstRun tekst="opslaan van motorbrandstoffen niet zijnde lpg">
+                <Mark kind="activiteitRef" ref="nl.imow-gm0297.activiteitlocatieaanduiding.2019000013"/>
+              </TekstRun>
+              <TekstRun tekst="’, zoals beschreven in Artikel 13.24."/>
             </Alinea>
-            <ActiviteitAanduiding activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000540" activiteitNaam="exploiteren van een verkooppunt voor motorbrandstoffen niet zijnde lpg" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Vergunningplicht"/>
-            <ActiviteitAanduiding activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000760" activiteitNaam="opslaan van motorbrandstoffen niet zijnde lpg" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Vergunningplicht"/>
+            <ActiviteitAanduiding identificatie="nl.imow-gm0297.activiteitlocatieaanduiding.2019000011" activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000540" activiteitNaam="exploiteren van een verkooppunt voor motorbrandstoffen niet zijnde lpg" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Vergunningplicht" locatieRef="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
+            <ActiviteitAanduiding identificatie="nl.imow-gm0297.activiteitlocatieaanduiding.2019000013" activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000760" activiteitNaam="opslaan van motorbrandstoffen niet zijnde lpg" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Vergunningplicht" locatieRef="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
           </Lid>
           <Lid eId="chp_2__subchp_2.2__art_2.7__para_2" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_2" nummer="2.">
             <Alinea uId="uid-0022">
@@ -282,7 +321,10 @@
         <Artikel eId="chp_2__subchp_2.3__art_2.10" wId="gm0297_1__chp_2__subchp_2.3__art_2.10" owRegeltekstIdentificatie="nl.imow-gm0297.regeltekst.2019000008" owJuridischeRegelIdentificatie="nl.imow-gm0297.juridischeregel.2019000014">
           <Kop label="Artikel" nummer="2.10">
             <Opschrift>
-              <TekstRun tekst="Gebruiksactiviteiten die zonder vergunning of melding zijn toegestaan"/>
+              <TekstRun tekst="Gebruiksactiviteiten die zonder vergunning of melding zijn "/>
+              <TekstRun tekst="toegestaan">
+                <Mark kind="regelkwalificatie" ref="nl.imow-gm0297.activiteitlocatieaanduiding.2019000012"/>
+              </TekstRun>
             </Opschrift>
           </Kop>
           <Alinea uId="uid-0034">
@@ -294,7 +336,11 @@
             <TekstRun tekst="artikel 2.9">
               <Mark kind="intRef" ref="chp_2__subchp_2.3__art_2.9" scope="Artikel"/>
             </TekstRun>
-            <TekstRun tekst=" mag de locatie in ieder geval worden gebruikt voor het verrichten van de volgende gebruiksactiviteiten:"/>
+            <TekstRun tekst=" "/>
+            <TekstRun tekst="mag">
+              <Mark kind="regelkwalificatie" ref="nl.imow-gm0297.activiteitlocatieaanduiding.2019000014"/>
+            </TekstRun>
+            <TekstRun tekst=" de locatie in ieder geval worden gebruikt voor het verrichten van de volgende gebruiksactiviteiten:"/>
           </Alinea>
           <Lijst eId="chp_2__subchp_2.3__art_2.10__list_o_1" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1">
             <Item eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_a" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_a" nummer="a.">
@@ -324,7 +370,11 @@
             </Item>
             <Item eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_f" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_f" nummer="f.">
               <Alinea uId="uid-0040">
-                <TekstRun tekst="het exploiteren van een kantoor;"/>
+                <TekstRun tekst="het "/>
+                <TekstRun tekst="exploiteren van een kantoor">
+                  <Mark kind="activiteitRef" ref="nl.imow-gm0297.activiteitlocatieaanduiding.2019000014"/>
+                </TekstRun>
+                <TekstRun tekst=";"/>
               </Alinea>
             </Item>
             <Item eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_g" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_g" nummer="g.">
@@ -339,7 +389,11 @@
             </Item>
             <Item eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_i" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_i" nummer="i.">
               <Alinea uId="uid-0043">
-                <TekstRun tekst="het exploiteren van een speelautomatenhal, uitsluitend ter plaatse van het werkingsgebied '"/>
+                <TekstRun tekst="het "/>
+                <TekstRun tekst="exploiteren van een speelautomatenhal">
+                  <Mark kind="activiteitRef" ref="nl.imow-gm0297.activiteitlocatieaanduiding.2019000012"/>
+                </TekstRun>
+                <TekstRun tekst=", uitsluitend ter plaatse van het werkingsgebied '"/>
                 <TekstRun tekst="exploiteren speelautomatenhal">
                   <Mark kind="intIoRef" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_3__ref_o_1" eId="chp_2__subchp_2.3__art_2.10__list_o_1__item_i__ref_o_1" wId="gm0297_1__chp_2__subchp_2.3__art_2.10__list_o_1__item_i__ref_o_1"/>
                 </TekstRun>
@@ -387,8 +441,8 @@
               </Alinea>
             </Item>
           </Lijst>
-          <ActiviteitAanduiding activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000660" activiteitNaam="exploiteren van een speelautomatenhal" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan"/>
-          <ActiviteitAanduiding activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000680" activiteitNaam="exploiteren van een kantoor" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan"/>
+          <ActiviteitAanduiding identificatie="nl.imow-gm0297.activiteitlocatieaanduiding.2019000012" activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000660" activiteitNaam="exploiteren van een speelautomatenhal" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan" locatieRef="nl.imow-gm0297.gebiedengroep.speelhal"/>
+          <ActiviteitAanduiding identificatie="nl.imow-gm0297.activiteitlocatieaanduiding.2019000014" activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000680" activiteitNaam="exploiteren van een kantoor" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan" locatieRef="nl.imow-gm0297.gebiedengroep.centrumgebied"/>
         </Artikel>
         <Artikel eId="chp_2__subchp_2.3__art_2.11" wId="gm0297_1__chp_2__subchp_2.3__art_2.11">
           <Kop label="Artikel" nummer="2.11">
@@ -609,32 +663,50 @@
         <Artikel eId="chp_5__subchp_5.1__art_5.1" wId="gm0297_1__chp_5__subchp_5.1__art_5.1" owRegeltekstIdentificatie="nl.imow-gm0297.regeltekst.2019000113" owJuridischeRegelIdentificatie="nl.imow-gm0297.juridischeregel.2019000113">
           <Kop label="Artikel" nummer="5.1">
             <Opschrift>
-              <TekstRun tekst="Bouwen van een bijgebouw"/>
+              <TekstRun tekst="Bouwen van een bijgebouw">
+                <Mark kind="activiteitRef" ref="nl.imow-gm0297.activiteitlocatieaanduiding.20190000111"/>
+              </TekstRun>
             </Opschrift>
           </Kop>
           <Alinea uId="uid-0073">
-            <TekstRun tekst="Voor het bouwen van een bijgebouw gelden de volgende toestemmingen:"/>
+            <TekstRun tekst="Voor het "/>
+            <TekstRun tekst="bouwen van een bijgebouw">
+              <Mark kind="activiteitRef" ref="nl.imow-gm0297.activiteitlocatieaanduiding.20190000112"/>
+            </TekstRun>
+            <TekstRun tekst=" gelden de volgende toestemmingen:"/>
           </Alinea>
           <Lijst eId="chp_5__subchp_5.1__art_5.1__list_o_1" wId="gm0297_1__chp_5__subchp_5.1__art_5.1__list_o_1">
             <Item eId="chp_5__subchp_5.1__art_5.1__list_o_1__item_a" wId="gm0297_1__chp_5__subchp_5.1__art_5.1__list_o_1__item_a" nummer="a.">
               <Alinea uId="uid-0074">
-                <TekstRun tekst="Het is toegestaan om een bijgebouw met een oppervlakte kleiner dan 20 m² te bouwen."/>
+                <TekstRun tekst="Het "/>
+                <TekstRun tekst="is toegestaan">
+                  <Mark kind="regelkwalificatie" ref="nl.imow-gm0297.activiteitlocatieaanduiding.20190000111"/>
+                </TekstRun>
+                <TekstRun tekst=" om een bijgebouw met een oppervlakte kleiner dan 20 m² te bouwen."/>
               </Alinea>
             </Item>
             <Item eId="chp_5__subchp_5.1__art_5.1__list_o_1__item_b" wId="gm0297_1__chp_5__subchp_5.1__art_5.1__list_o_1__item_b" nummer="b.">
               <Alinea uId="uid-0075">
-                <TekstRun tekst="Het is verboden om zonder voorafgaande melding een bijgebouw met een oppervlakte groter dan of gelijk aan 20 m² en kleiner dan 30 m² te bouwen."/>
+                <TekstRun tekst="Het is verboden om zonder voorafgaande "/>
+                <TekstRun tekst="melding">
+                  <Mark kind="regelkwalificatie" ref="nl.imow-gm0297.activiteitlocatieaanduiding.20190000112"/>
+                </TekstRun>
+                <TekstRun tekst=" een bijgebouw met een oppervlakte groter dan of gelijk aan 20 m² en kleiner dan 30 m² te bouwen."/>
               </Alinea>
             </Item>
             <Item eId="chp_5__subchp_5.1__art_5.1__list_o_1__item_c" wId="gm0297_1__chp_5__subchp_5.1__art_5.1__list_o_1__item_c" nummer="c.">
               <Alinea uId="uid-0076">
-                <TekstRun tekst="Het is verboden om zonder omgevingsvergunning een bijgebouw met een oppervlakte groter dan of gelijk aan 30 m² te bouwen."/>
+                <TekstRun tekst="Het is verboden om zonder "/>
+                <TekstRun tekst="omgevingsvergunning">
+                  <Mark kind="regelkwalificatie" ref="nl.imow-gm0297.activiteitlocatieaanduiding.20190000113"/>
+                </TekstRun>
+                <TekstRun tekst=" een bijgebouw met een oppervlakte groter dan of gelijk aan 30 m² te bouwen."/>
               </Alinea>
             </Item>
           </Lijst>
-          <ActiviteitAanduiding activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000800" activiteitNaam="bouwen van een bijgebouw" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan"/>
-          <ActiviteitAanduiding activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000800" activiteitNaam="bouwen van een bijgebouw" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Meldingsplicht"/>
-          <ActiviteitAanduiding activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000800" activiteitNaam="bouwen van een bijgebouw" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Vergunningplicht"/>
+          <ActiviteitAanduiding identificatie="nl.imow-gm0297.activiteitlocatieaanduiding.20190000111" activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000800" activiteitNaam="bouwen van een bijgebouw" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan" locatieRef="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+          <ActiviteitAanduiding identificatie="nl.imow-gm0297.activiteitlocatieaanduiding.20190000112" activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000800" activiteitNaam="bouwen van een bijgebouw" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Meldingsplicht" locatieRef="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+          <ActiviteitAanduiding identificatie="nl.imow-gm0297.activiteitlocatieaanduiding.20190000113" activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000800" activiteitNaam="bouwen van een bijgebouw" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Vergunningplicht" locatieRef="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
         </Artikel>
       </Afdeling>
     </Hoofdstuk>
@@ -658,9 +730,13 @@
           </Kop>
           <Lid eId="chp_6__subchp_6.1__art_6.1__para_1" wId="gm0297_1__chp_6__subchp_6.1__art_6.1__para_1" nummer="1." owRegeltekstIdentificatie="nl.imow-gm0297.regeltekst.2019000114" owJuridischeRegelIdentificatie="nl.imow-gm0297.juridischeregel.2019000114">
             <Alinea uId="uid-0077">
-              <TekstRun tekst="Het is verboden zonder omgevingsvergunning een boom te kappen."/>
+              <TekstRun tekst="Het is verboden zonder "/>
+              <TekstRun tekst="omgevingsvergunning">
+                <Mark kind="regelkwalificatie" ref="nl.imow-gm0297.activiteitlocatieaanduiding.20190000114"/>
+              </TekstRun>
+              <TekstRun tekst=" een boom te kappen."/>
             </Alinea>
-            <ActiviteitAanduiding activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000810" activiteitNaam="boom kappen" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Vergunningplicht"/>
+            <ActiviteitAanduiding identificatie="nl.imow-gm0297.activiteitlocatieaanduiding.20190000114" activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000810" activiteitNaam="boom kappen" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Vergunningplicht" locatieRef="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
           </Lid>
           <Lid eId="chp_6__subchp_6.1__art_6.1__para_2" wId="gm0297_1__chp_6__subchp_6.1__art_6.1__para_2" nummer="2." owRegeltekstIdentificatie="nl.imow-gm0297.regeltekst.2019000115" owJuridischeRegelIdentificatie="nl.imow-gm0297.juridischeregel.2019000115">
             <Alinea uId="uid-0078">
@@ -683,7 +759,7 @@
                 </Alinea>
               </Item>
             </Lijst>
-            <ActiviteitAanduiding activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000810" activiteitNaam="boom kappen" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan"/>
+            <ActiviteitAanduiding identificatie="nl.imow-gm0297.activiteitlocatieaanduiding.20190000115" activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000810" activiteitNaam="boom kappen" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan" locatieRef="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
           </Lid>
         </Artikel>
         <Artikel eId="chp_6__subchp_6.1__art_6.2" wId="gm0297_1__chp_6__subchp_6.1__art_6.2">

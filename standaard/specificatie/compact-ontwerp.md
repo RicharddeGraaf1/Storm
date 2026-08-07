@@ -22,7 +22,7 @@ volledige DSO-structuur als de plansoftware "begrijpen". Compact is de
 | `Regeltekst` + `JuridischeRegel` als aparte objecten met `artikelOfLid`-ref | **blijft** (vorm) | SimplicIT kent `OwRegeltekstIdentificatie` + `OwJuridischeRegelIdentificatie` |
 | 3 regel-subtypes (`RegelVoorIedereen`/`Instructieregel`/`Omgevingswaarderegel`) | **klapt samen** tot één `JuridischeRegel` | SimplicIT maakt geen subtype-onderscheid |
 | `idealisatie`, per-regel `locatieaanduiding`/`gebiedsaanwijzing`/`kaartaanduiding`/`omgevingsnormaanduiding` | **weg** | SimplicIT draagt ze niet op de regel |
-| `ActiviteitLocatieaanduiding` (activiteit + regelkwalificatie + **locatie**) | **snoeit** tot `activiteitaanduiding` (activiteit + regelkwalificatie) | SimplicIT `ActiviteitAanduiding` heeft geen locatie |
+| `ActiviteitLocatieaanduiding` (activiteit + regelkwalificatie + **locatie**) | **blijft als trio** — `activiteitaanduiding` (`identificatie` + `activiteit` + `locatieaanduiding` + `regelkwalificatie`), één per ALA | regelkwalificatie en locatie zijn in DSO een paar; zie `annotatie-detectie.md` (vorm A) |
 | `Activiteit` | **blijft** (+ `juridischeRegelRef` back-link) | 1:1 aanwezig |
 | `Omgevingsnorm` **én** `Omgevingswaarde` | **klapt samen** tot `Omgevingsnorm`; `Normwaarde` zonder `waardeInRegeltekst` | SimplicIT heeft alleen `Omgevingsnorm`+`Normwaarde` |
 | `Gebiedsaanwijzing`, `Ambtsgebied`, `Regelingsgebied`, `Pons`, `Hoofdlijn` | **blijft** | 1:1 aanwezig |

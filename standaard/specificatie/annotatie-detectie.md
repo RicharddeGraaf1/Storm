@@ -75,3 +75,44 @@ De expliciete `JuridischeRegel`-bron uit een importpakket telt als `bevestigd`
   De doorgifte door `compact ↔ integrated` en de detectie zelf horen bij de
   bouwfase van het plansoftware-plan; zolang geen bron `herkomst` levert, blijft
   de bestaande roundtrip verliesvrij (attribuut afwezig).
+
+## Vorm A — waar leeft de waarheid, en de inline-spans
+
+De activiteit-verwijzing vanuit de juridische regel is in DSO een **trio**: de
+`ActiviteitLocatieaanduiding` = *activiteit + regelkwalificatie + locatie*
+(regelkwalificatie en locatie horen bij elkaar — een activiteit kan op de ene
+locatie toegestaan en op de andere vergunningplichtig zijn). Dat trio is de
+**waarheid** en staat:
+
+- in **compact** op `activiteitaanduiding`
+  (`identificatie` = de ALA-id, `activiteit`, `locatieaanduiding`,
+  `regelkwalificatie`), één per ALA;
+- in **integrated** op `ActiviteitAanduiding`
+  (`identificatie`, `activiteitIdentificatie`, `activiteitNaam`,
+  `regelkwalificatie`, `locatieRef`, `herkomst`) op het artikel/lid.
+
+Dit trio round-trippt **verliesvrij** door `compact ↔ integrated` (op de
+inherente n:1→1:1 na — meerdere juridische regels per regeltekst kunnen niet op
+één artikel-annotatie).
+
+**Inline-spans (span-ankers).** Anders dan een informatieobject heeft een
+activiteit géén inline-anker in STOP. Toch wil de editor het activiteitwoord én
+het signaalwoord kunnen markeren. Vorm A doet dat met **twee `Mark`-kinds in
+integrated** die alleen een `ref` naar `ActiviteitAanduiding@identificatie`
+dragen — géén eigen data:
+
+| `Mark/@kind` | staat op | `@ref` |
+|---|---|---|
+| `activiteitRef` | de activiteitnaam-span | → `ActiviteitAanduiding@identificatie` |
+| `regelkwalificatie` | het signaalwoord ("verboden", "melding", …) | → dezelfde `ActiviteitAanduiding@identificatie` |
+
+Zo is de kwalificatie **niet gedupliceerd** (ze staat op de aanduiding, niet op
+de mark) en is de koppeling nooit ambigu, ook niet in een lid met meerdere
+activiteiten: beide marks wijzen naar dezelfde aanduiding.
+
+**Round-trip-eigenschap van de span.** De marks zijn inherent niet-STOP, dus ze
+overleven `→ compact` niet (compact/STOP heeft geen inline activiteit-anker). De
+**data** blijft heel (die staat op de aanduiding); de **span** wordt bij
+`compact →` opnieuw geplaatst via naam-/keyword-match (dezelfde detectie als
+hierboven). De span is dus best-effort, de data verliesvrij. Voorbeeld:
+`voorbeelden/Gemeentestad-integrated`.

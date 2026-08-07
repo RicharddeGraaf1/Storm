@@ -48,11 +48,17 @@
             <xs:enumeration value="extRef"/>
             <xs:enumeration value="intIoRef"/>
             <xs:enumeration value="extIoRef"/>
+            <!-- span-ankers (vorm A): ref wijst naar een ActiviteitAanduiding@identificatie.
+                 De waarheid (activiteit/kwalificatie/locatie) staat op die aanduiding,
+                 niet op de mark. activiteitRef markeert de activiteitnaam-span;
+                 regelkwalificatie markeert het signaalwoord ("verboden"/"melding"/…). -->
+            <xs:enumeration value="activiteitRef"/>
+            <xs:enumeration value="regelkwalificatie"/>
           </xs:restriction>
         </xs:simpleType>
       </xs:attribute>
       <xs:attribute name="title" type="xs:string"/>   <!-- abbr -->
-      <xs:attribute name="ref" type="xs:string"/>     <!-- intRef/extRef/extIoRef -->
+      <xs:attribute name="ref" type="xs:string"/>     <!-- intRef/extRef/intIoRef/extIoRef/activiteitRef/regelkwalificatie -->
       <xs:attribute name="soort" type="xs:string"/>   <!-- extRef -->
       <xs:attribute name="scope" type="xs:string"/>   <!-- intRef/extRef -->
       <xs:attribute name="eId" type="xs:string"/>     <!-- extIoRef -->
@@ -264,9 +270,13 @@
   <!-- annotatie ÓP de regel (het integrated-patroon) -->
   <xs:element name="ActiviteitAanduiding">
     <xs:complexType>
+      <!-- identificatie = de ActiviteitLocatieaanduiding-id; doel van de span-anker-marks.
+           regelkwalificatie + locatieRef vormen samen het (activiteit, locatie)-paar. -->
+      <xs:attribute name="identificatie" type="xs:string"/>
       <xs:attribute name="activiteitIdentificatie" type="xs:string" use="required"/>
       <xs:attribute name="activiteitNaam" type="xs:string" use="required"/>
       <xs:attribute name="regelkwalificatie" type="xs:string"/>
+      <xs:attribute name="locatieRef" type="xs:string"/>
       <xs:attribute name="herkomst" type="AanduidingHerkomst"/>
     </xs:complexType>
   </xs:element>

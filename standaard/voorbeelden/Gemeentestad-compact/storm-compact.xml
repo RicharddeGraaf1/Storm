@@ -876,7 +876,9 @@
         <idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</idealisatie>
         <artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000002"/>
         <activiteitaanduiding>
+          <identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.2019000001</identificatie>
           <activiteit ref="nl.imow-gm0297.activiteit.2019000241"/>
+          <locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
           <regelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan</regelkwalificatie>
         </activiteitaanduiding>
       </JuridischeRegel>
@@ -885,7 +887,9 @@
         <idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</idealisatie>
         <artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000002"/>
         <activiteitaanduiding>
+          <identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.2019000002</identificatie>
           <activiteit ref="nl.imow-gm0297.activiteit.2019000530"/>
+          <locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
           <regelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan</regelkwalificatie>
         </activiteitaanduiding>
       </JuridischeRegel>
@@ -894,7 +898,9 @@
         <idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</idealisatie>
         <artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000002"/>
         <activiteitaanduiding>
+          <identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.2019000003</identificatie>
           <activiteit ref="nl.imow-gm0297.activiteit.2019000243"/>
+          <locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
           <regelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan</regelkwalificatie>
         </activiteitaanduiding>
       </JuridischeRegel>
@@ -903,7 +909,9 @@
         <idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</idealisatie>
         <artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000002"/>
         <activiteitaanduiding>
+          <identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.2019000004</identificatie>
           <activiteit ref="nl.imow-gm0297.activiteit.2019000244"/>
+          <locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
           <regelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan</regelkwalificatie>
         </activiteitaanduiding>
       </JuridischeRegel>
@@ -912,7 +920,9 @@
         <idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</idealisatie>
         <artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000002"/>
         <activiteitaanduiding>
+          <identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.2019000005</identificatie>
           <activiteit ref="nl.imow-gm0297.activiteit.2019000245"/>
+          <locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
           <regelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan</regelkwalificatie>
         </activiteitaanduiding>
       </JuridischeRegel>
@@ -921,7 +931,9 @@
         <idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</idealisatie>
         <artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000002"/>
         <activiteitaanduiding>
+          <identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.2019000006</identificatie>
           <activiteit ref="nl.imow-gm0297.activiteit.2019000246"/>
+          <locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.zoneA"/>
           <regelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan</regelkwalificatie>
         </activiteitaanduiding>
       </JuridischeRegel>
@@ -930,7 +942,9 @@
         <idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</idealisatie>
         <artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000003"/>
         <activiteitaanduiding>
+          <identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.2019000007</identificatie>
           <activiteit ref="nl.imow-gm0297.activiteit.2019000730"/>
+          <locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
           <regelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Verbod</regelkwalificatie>
         </activiteitaanduiding>
       </JuridischeRegel>
@@ -939,7 +953,9 @@
         <idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</idealisatie>
         <artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000003"/>
         <activiteitaanduiding>
+          <identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.2019000008</identificatie>
           <activiteit ref="nl.imow-gm0297.activiteit.2019000740"/>
+          <locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
           <regelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Verbod</regelkwalificatie>
         </activiteitaanduiding>
       </JuridischeRegel>
@@ -948,7 +964,9 @@
         <idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</idealisatie>
         <artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000003"/>
         <activiteitaanduiding>
+          <identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.2019000009</identificatie>
           <activiteit ref="nl.imow-gm0297.activiteit.2019000750"/>
+          <locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
           <regelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Verbod</regelkwalificatie>
         </activiteitaanduiding>
       </JuridischeRegel>
@@ -957,7 +975,9 @@
         <idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</idealisatie>
         <artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000004"/>
         <activiteitaanduiding>
+          <identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.2019000010</identificatie>
           <activiteit ref="nl.imow-gm0297.activiteit.2019000590"/>
+          <locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.zoneB"/>
           <regelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Meldingsplicht</regelkwalificatie>
         </activiteitaanduiding>
       </JuridischeRegel>
@@ -966,11 +986,15 @@
         <idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</idealisatie>
         <artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000007"/>
         <activiteitaanduiding>
+          <identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.2019000011</identificatie>
           <activiteit ref="nl.imow-gm0297.activiteit.2019000540"/>
+          <locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
           <regelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Vergunningplicht</regelkwalificatie>
         </activiteitaanduiding>
         <activiteitaanduiding>
+          <identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.2019000013</identificatie>
           <activiteit ref="nl.imow-gm0297.activiteit.2019000760"/>
+          <locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
           <regelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Vergunningplicht</regelkwalificatie>
         </activiteitaanduiding>
       </JuridischeRegel>
@@ -984,11 +1008,15 @@
         <idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</idealisatie>
         <artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000008"/>
         <activiteitaanduiding>
+          <identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.2019000012</identificatie>
           <activiteit ref="nl.imow-gm0297.activiteit.2019000660"/>
+          <locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.speelhal"/>
           <regelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan</regelkwalificatie>
         </activiteitaanduiding>
         <activiteitaanduiding>
+          <identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.2019000014</identificatie>
           <activiteit ref="nl.imow-gm0297.activiteit.2019000680"/>
+          <locatieaanduiding ref="nl.imow-gm0297.gebiedengroep.centrumgebied"/>
           <regelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan</regelkwalificatie>
         </activiteitaanduiding>
       </JuridischeRegel>
@@ -1012,15 +1040,21 @@
         <idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</idealisatie>
         <artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000113"/>
         <activiteitaanduiding>
+          <identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.20190000111</identificatie>
           <activiteit ref="nl.imow-gm0297.activiteit.2019000800"/>
+          <locatieaanduiding ref="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
           <regelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan</regelkwalificatie>
         </activiteitaanduiding>
         <activiteitaanduiding>
+          <identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.20190000112</identificatie>
           <activiteit ref="nl.imow-gm0297.activiteit.2019000800"/>
+          <locatieaanduiding ref="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
           <regelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Meldingsplicht</regelkwalificatie>
         </activiteitaanduiding>
         <activiteitaanduiding>
+          <identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.20190000113</identificatie>
           <activiteit ref="nl.imow-gm0297.activiteit.2019000800"/>
+          <locatieaanduiding ref="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
           <regelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Vergunningplicht</regelkwalificatie>
         </activiteitaanduiding>
       </JuridischeRegel>
@@ -1029,7 +1063,9 @@
         <idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</idealisatie>
         <artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000114"/>
         <activiteitaanduiding>
+          <identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.20190000114</identificatie>
           <activiteit ref="nl.imow-gm0297.activiteit.2019000810"/>
+          <locatieaanduiding ref="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
           <regelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Vergunningplicht</regelkwalificatie>
         </activiteitaanduiding>
       </JuridischeRegel>
@@ -1038,7 +1074,9 @@
         <idealisatie>http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact</idealisatie>
         <artikelOfLid ref="nl.imow-gm0297.regeltekst.2019000115"/>
         <activiteitaanduiding>
+          <identificatie>nl.imow-gm0297.activiteitlocatieaanduiding.20190000115</identificatie>
           <activiteit ref="nl.imow-gm0297.activiteit.2019000810"/>
+          <locatieaanduiding ref="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
           <regelkwalificatie>http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan</regelkwalificatie>
         </activiteitaanduiding>
       </JuridischeRegel>

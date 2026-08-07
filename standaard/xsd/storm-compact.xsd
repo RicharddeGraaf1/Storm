@@ -107,10 +107,14 @@
         <xs:element name="idealisatie" type="b:WaardelijstURI"
                     default="http://standaarden.omgevingswet.overheid.nl/idealisatie/id/concept/Exact"/>
         <xs:element name="artikelOfLid" type="b:Ref"/>
+        <!-- activiteitaanduiding = de ActiviteitLocatieaanduiding: activiteit +
+             (locatie, regelkwalificatie) als paar. identificatie = de ALA-id. -->
         <xs:element name="activiteitaanduiding" minOccurs="0" maxOccurs="unbounded">
           <xs:complexType>
             <xs:sequence>
+              <xs:element name="identificatie" type="b:NEN3610ID" minOccurs="0"/>
               <xs:element name="activiteit" type="b:Ref"/>
+              <xs:element name="locatieaanduiding" type="b:Ref" minOccurs="0"/>
               <xs:element name="regelkwalificatie" type="xs:string" minOccurs="0"/>
             </xs:sequence>
           </xs:complexType>
