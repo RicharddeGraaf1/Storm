@@ -113,6 +113,38 @@ activiteiten: beide marks wijzen naar dezelfde aanduiding.
 **Round-trip-eigenschap van de span.** De marks zijn inherent niet-STOP, dus ze
 overleven `→ compact` niet (compact/STOP heeft geen inline activiteit-anker). De
 **data** blijft heel (die staat op de aanduiding); de **span** wordt bij
-`compact →` opnieuw geplaatst via naam-/keyword-match (dezelfde detectie als
-hierboven). De span is dus best-effort, de data verliesvrij. Voorbeeld:
+`compact →` opnieuw geplaatst. Belangrijk: er is nergens in DSO een "originele"
+activiteit-span om te bewaren — de span *bestaat* alleen als afleiding uit de
+tekst. Zolang die afleiding een **deterministische, volledige regel** is (zie
+hieronder), is de plaatsing **exact by construction** en de roundtrip
+`integrated → compact → integrated` byte-stabiel. Voorbeeld:
 `voorbeelden/Gemeentestad-integrated`.
+
+## Plaatsingsregel (normatief)
+
+`compact → integrated` plaatst de span-anker-marks volgens deze regel; die is
+onderdeel van de standaard, zodat elke consument identiek plaatst en de roundtrip
+stabiel is:
+
+1. **activiteitRef** — markeer **élk** heel-woord-voorkomen (`\b…\b`,
+   hoofdletter-ongevoelig) van de activiteitnaam (uit de Activiteit-pool via
+   `activiteitIdentificatie`) met een `activiteitRef`-mark die naar de
+   `ActiviteitAanduiding@identificatie` wijst.
+2. **regelkwalificatie** — neem de keyword-lijst van het concept van de aanduiding
+   (langste eerst), kies het **eerste keyword dat voorkomt**, en markeer **álle**
+   voorkomens dáárvan met een `regelkwalificatie`-mark naar dezelfde
+   `identificatie`. Concept-keyed: zo klopt de koppeling ook in een lid met
+   meerdere activiteiten.
+3. Runs die al een mark dragen (bv. `intIoRef`) blijven ongemoeid — die zijn één
+   span en worden niet doorgesneden.
+
+De regel is **deterministisch en volledig** → de plaatsing is reproduceerbaar en
+de roundtrip identiek. Het enige dat de regel niet kan uitdrukken is een
+handmatig van-de-regel-afwijkende plaatsing; dat is bewust buiten scope
+(`herkomst=handmatig` is de haak als dat ooit nodig is, met een expliciete span
+op de aanduiding).
+
+**Te valideren met de volledige testset** (bewust nog open): generieke keywords
+("mag", "moet") kunnen over-markeren, en dezelfde activiteit op meerdere locaties
+binnen één lid valt op de eerste aanduiding terug. Beide zijn deterministisch;
+of ze de roundtrip of de leesbaarheid schaden, blijkt uit de brede test.

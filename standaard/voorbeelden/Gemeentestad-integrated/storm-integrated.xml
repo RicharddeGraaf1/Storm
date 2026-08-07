@@ -128,7 +128,11 @@
             <TekstRun tekst="Bedrijf categorie 2">
               <Mark kind="intIoRef" ref="gm0297_1__cmp_I__content_o_1__list_o_1__item_o_1__ref_o_1" eId="chp_2__subchp_2.2__art_2.5__ref_o_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.5__ref_o_1"/>
             </TekstRun>
-            <TekstRun tekst="' is het verboden de locatie en de daarop voorkomende bouwwerken te gebruiken:"/>
+            <TekstRun tekst="' is het "/>
+            <TekstRun tekst="verboden">
+              <Mark kind="regelkwalificatie" ref="nl.imow-gm0297.activiteitlocatieaanduiding.2019000007"/>
+            </TekstRun>
+            <TekstRun tekst=" de locatie en de daarop voorkomende bouwwerken te gebruiken:"/>
           </Alinea>
           <Lijst eId="chp_2__subchp_2.2__art_2.5__list_o_1" wId="gm0297_1__chp_2__subchp_2.2__art_2.5__list_o_1">
             <Item eId="chp_2__subchp_2.2__art_2.5__list_o_1__item_a" wId="gm0297_1__chp_2__subchp_2.2__art_2.5__list_o_1__item_a" nummer="a.">
@@ -671,7 +675,7 @@
           <Alinea uId="uid-0073">
             <TekstRun tekst="Voor het "/>
             <TekstRun tekst="bouwen van een bijgebouw">
-              <Mark kind="activiteitRef" ref="nl.imow-gm0297.activiteitlocatieaanduiding.20190000112"/>
+              <Mark kind="activiteitRef" ref="nl.imow-gm0297.activiteitlocatieaanduiding.20190000111"/>
             </TekstRun>
             <TekstRun tekst=" gelden de volgende toestemmingen:"/>
           </Alinea>
