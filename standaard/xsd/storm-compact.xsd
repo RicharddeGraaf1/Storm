@@ -48,17 +48,18 @@
     </xs:complexType>
   </xs:element>
 
-  <!-- Strikte tekst-wrapper op de storm-tekst-vocabulaire (SimplicIT-parseerbaar):
-       geen wildcard zoals volledig, maar de gemodelleerde STOP-elementen. -->
+  <!-- Tekst-laag = STOP-verbatim (net als volledig). compact kopieert de tekst
+       één-op-één; de "SimplicIT-parseerbaar"-striktheid zit op de OBJECT-laag en op
+       integrated's ContentBlok-model, niet op deze verbatim STOP-tekst. Vandaar een
+       permissieve wildcard i.p.v. strikte element-modellen (die de productie-variatie
+       — extra attributen, inline-elementen — niet dekken). Zie compact-ontwerp.md. -->
   <xs:element name="Tekst">
     <xs:complexType>
       <xs:sequence>
-        <xs:element ref="tekst:RegelingOpschrift"/>
-        <xs:element ref="tekst:Lichaam"/>
-        <xs:element ref="tekst:Bijlage" minOccurs="0" maxOccurs="unbounded"/>
-        <xs:element ref="tekst:ArtikelgewijzeToelichting" minOccurs="0"/>
+        <xs:any namespace="##any" processContents="skip" minOccurs="0" maxOccurs="unbounded"/>
       </xs:sequence>
       <xs:attribute name="structuur" type="xs:string" default="compact"/>
+      <xs:anyAttribute namespace="##any" processContents="lax"/>
     </xs:complexType>
   </xs:element>
 

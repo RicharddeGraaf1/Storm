@@ -30,7 +30,7 @@ volledige DSO-structuur als de plansoftware "begrijpen". Compact is de
 | `Kaart`/`SymbolisatieItem` | **weg** | SimplicIT kent geen kaarten |
 | verbatim STOP-metadata (procedure/consolidatie/…) | **weg**, alleen scalars (`naam`/`type`/`bevoegdGezagCode`/`frbr*`/…) | SimplicIT houdt alleen identiteit over |
 | geometrie (GIO-GML) | **`Bestand`-verwijzing** | SimplicIT: GML in GridFS als `BestandRef` |
-| tekst-laag (STOP verbatim, incl. CALS/inline) | **strikt** i.p.v. wildcard: alleen de STOP-elementen die SimplicIT parseert | SimplicIT `StopXmlParser` → `ContentBlok`-model |
+| tekst-laag (STOP verbatim, incl. CALS/inline) | **verbatim (permissief)** — STOP-tekst wordt 1:1 gekopieerd; wildcard zoals volledig | de SimplicIT-striktheid (`ContentBlok`) zit op *integrated*, niet op deze verbatim tekst; een strikte compact-tekst brak op productie-variatie (2622× extra attribuut, 1745× inline-element) |
 
 ## Vorm
 
