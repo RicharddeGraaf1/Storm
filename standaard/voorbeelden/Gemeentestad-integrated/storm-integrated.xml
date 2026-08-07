@@ -111,7 +111,7 @@
               </Alinea>
             </Item>
           </Lijst>
-          <ActiviteitAanduiding identificatie="nl.imow-gm0297.activiteitlocatieaanduiding.2019000001" activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000241" activiteitNaam="uitoefenen van bedrijfstypen van categorie 2" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan" locatieRef="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
+          <ActiviteitAanduiding identificatie="nl.imow-gm0297.activiteitlocatieaanduiding.2019000001" activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000241" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan" locatieRef="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
         </Artikel>
         <Artikel eId="chp_2__subchp_2.2__art_2.5" wId="gm0297_1__chp_2__subchp_2.2__art_2.5" owRegeltekstIdentificatie="nl.imow-gm0297.regeltekst.2019000003" owJuridischeRegelIdentificatie="nl.imow-gm0297.juridischeregel.2019000008">
           <Kop label="Artikel" nummer="2.5">
@@ -151,7 +151,7 @@
               </Alinea>
             </Item>
           </Lijst>
-          <ActiviteitAanduiding identificatie="nl.imow-gm0297.activiteitlocatieaanduiding.2019000007" activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000730" activiteitNaam="exploiteren van inrichtingen" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Verbod" locatieRef="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
+          <ActiviteitAanduiding identificatie="nl.imow-gm0297.activiteitlocatieaanduiding.2019000007" activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000730" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Verbod" locatieRef="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
         </Artikel>
         <Artikel eId="chp_2__subchp_2.2__art_2.6" wId="gm0297_1__chp_2__subchp_2.2__art_2.6">
           <Kop label="Artikel" nummer="2.6">
@@ -182,7 +182,7 @@
               </TekstRun>
               <TekstRun tekst=" is gedaan"/>
             </Alinea>
-            <ActiviteitAanduiding identificatie="nl.imow-gm0297.activiteitlocatieaanduiding.2019000010" activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000590" activiteitNaam="uitoefenen van detailhandel in ter plaatse vervaardigde goederen" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Meldingsplicht" locatieRef="nl.imow-gm0297.gebiedengroep.zoneB"/>
+            <ActiviteitAanduiding identificatie="nl.imow-gm0297.activiteitlocatieaanduiding.2019000010" activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000590" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Meldingsplicht" locatieRef="nl.imow-gm0297.gebiedengroep.zoneB"/>
           </Lid>
           <Lid eId="chp_2__subchp_2.2__art_2.6__para_2" wId="gm0297_1__chp_2__subchp_2.2__art_2.6__para_2" nummer="2.">
             <Alinea uId="uid-0016">
@@ -238,8 +238,8 @@
               </TekstRun>
               <TekstRun tekst="’, zoals beschreven in Artikel 13.24."/>
             </Alinea>
-            <ActiviteitAanduiding identificatie="nl.imow-gm0297.activiteitlocatieaanduiding.2019000011" activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000540" activiteitNaam="exploiteren van een verkooppunt voor motorbrandstoffen niet zijnde lpg" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Vergunningplicht" locatieRef="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
-            <ActiviteitAanduiding identificatie="nl.imow-gm0297.activiteitlocatieaanduiding.2019000013" activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000760" activiteitNaam="opslaan van motorbrandstoffen niet zijnde lpg" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Vergunningplicht" locatieRef="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
+            <ActiviteitAanduiding identificatie="nl.imow-gm0297.activiteitlocatieaanduiding.2019000011" activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000540" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Vergunningplicht" locatieRef="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
+            <ActiviteitAanduiding identificatie="nl.imow-gm0297.activiteitlocatieaanduiding.2019000013" activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000760" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Vergunningplicht" locatieRef="nl.imow-gm0297.gebiedengroep.Bedrijfcategorie2"/>
           </Lid>
           <Lid eId="chp_2__subchp_2.2__art_2.7__para_2" wId="gm0297_1__chp_2__subchp_2.2__art_2.7__para_2" nummer="2.">
             <Alinea uId="uid-0022">
@@ -441,8 +441,8 @@
               </Alinea>
             </Item>
           </Lijst>
-          <ActiviteitAanduiding identificatie="nl.imow-gm0297.activiteitlocatieaanduiding.2019000012" activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000660" activiteitNaam="exploiteren van een speelautomatenhal" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan" locatieRef="nl.imow-gm0297.gebiedengroep.speelhal"/>
-          <ActiviteitAanduiding identificatie="nl.imow-gm0297.activiteitlocatieaanduiding.2019000014" activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000680" activiteitNaam="exploiteren van een kantoor" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan" locatieRef="nl.imow-gm0297.gebiedengroep.centrumgebied"/>
+          <ActiviteitAanduiding identificatie="nl.imow-gm0297.activiteitlocatieaanduiding.2019000012" activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000660" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan" locatieRef="nl.imow-gm0297.gebiedengroep.speelhal"/>
+          <ActiviteitAanduiding identificatie="nl.imow-gm0297.activiteitlocatieaanduiding.2019000014" activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000680" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan" locatieRef="nl.imow-gm0297.gebiedengroep.centrumgebied"/>
         </Artikel>
         <Artikel eId="chp_2__subchp_2.3__art_2.11" wId="gm0297_1__chp_2__subchp_2.3__art_2.11">
           <Kop label="Artikel" nummer="2.11">
@@ -704,9 +704,9 @@
               </Alinea>
             </Item>
           </Lijst>
-          <ActiviteitAanduiding identificatie="nl.imow-gm0297.activiteitlocatieaanduiding.20190000111" activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000800" activiteitNaam="bouwen van een bijgebouw" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan" locatieRef="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
-          <ActiviteitAanduiding identificatie="nl.imow-gm0297.activiteitlocatieaanduiding.20190000112" activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000800" activiteitNaam="bouwen van een bijgebouw" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Meldingsplicht" locatieRef="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
-          <ActiviteitAanduiding identificatie="nl.imow-gm0297.activiteitlocatieaanduiding.20190000113" activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000800" activiteitNaam="bouwen van een bijgebouw" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Vergunningplicht" locatieRef="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+          <ActiviteitAanduiding identificatie="nl.imow-gm0297.activiteitlocatieaanduiding.20190000111" activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000800" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan" locatieRef="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+          <ActiviteitAanduiding identificatie="nl.imow-gm0297.activiteitlocatieaanduiding.20190000112" activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000800" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Meldingsplicht" locatieRef="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+          <ActiviteitAanduiding identificatie="nl.imow-gm0297.activiteitlocatieaanduiding.20190000113" activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000800" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Vergunningplicht" locatieRef="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
         </Artikel>
       </Afdeling>
     </Hoofdstuk>
@@ -736,7 +736,7 @@
               </TekstRun>
               <TekstRun tekst=" een boom te kappen."/>
             </Alinea>
-            <ActiviteitAanduiding identificatie="nl.imow-gm0297.activiteitlocatieaanduiding.20190000114" activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000810" activiteitNaam="boom kappen" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Vergunningplicht" locatieRef="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+            <ActiviteitAanduiding identificatie="nl.imow-gm0297.activiteitlocatieaanduiding.20190000114" activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000810" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Vergunningplicht" locatieRef="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
           </Lid>
           <Lid eId="chp_6__subchp_6.1__art_6.1__para_2" wId="gm0297_1__chp_6__subchp_6.1__art_6.1__para_2" nummer="2." owRegeltekstIdentificatie="nl.imow-gm0297.regeltekst.2019000115" owJuridischeRegelIdentificatie="nl.imow-gm0297.juridischeregel.2019000115">
             <Alinea uId="uid-0078">
@@ -759,7 +759,7 @@
                 </Alinea>
               </Item>
             </Lijst>
-            <ActiviteitAanduiding identificatie="nl.imow-gm0297.activiteitlocatieaanduiding.20190000115" activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000810" activiteitNaam="boom kappen" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan" locatieRef="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
+            <ActiviteitAanduiding identificatie="nl.imow-gm0297.activiteitlocatieaanduiding.20190000115" activiteitIdentificatie="nl.imow-gm0297.activiteit.2019000810" regelkwalificatie="http://standaarden.omgevingswet.overheid.nl/activiteitregelkwalificatie/id/concept/Toegestaan" locatieRef="nl.imow-gm0297.ambtsgebied.ZaltbommelAmbtsgebied"/>
           </Lid>
         </Artikel>
         <Artikel eId="chp_6__subchp_6.1__art_6.2" wId="gm0297_1__chp_6__subchp_6.1__art_6.2">

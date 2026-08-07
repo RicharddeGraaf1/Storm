@@ -273,8 +273,9 @@
       <!-- identificatie = de ActiviteitLocatieaanduiding-id; doel van de span-anker-marks.
            regelkwalificatie + locatieRef vormen samen het (activiteit, locatie)-paar. -->
       <xs:attribute name="identificatie" type="xs:string"/>
+      <!-- naam is resolveerbaar uit de Activiteit-pool via activiteitIdentificatie;
+           niet gedupliceerd op de aanduiding -->
       <xs:attribute name="activiteitIdentificatie" type="xs:string" use="required"/>
-      <xs:attribute name="activiteitNaam" type="xs:string" use="required"/>
       <xs:attribute name="regelkwalificatie" type="xs:string"/>
       <xs:attribute name="locatieRef" type="xs:string"/>
       <xs:attribute name="herkomst" type="AanduidingHerkomst"/>

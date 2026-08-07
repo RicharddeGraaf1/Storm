@@ -88,8 +88,8 @@ locatie toegestaan en op de andere vergunningplichtig zijn). Dat trio is de
   (`identificatie` = de ALA-id, `activiteit`, `locatieaanduiding`,
   `regelkwalificatie`), één per ALA;
 - in **integrated** op `ActiviteitAanduiding`
-  (`identificatie`, `activiteitIdentificatie`, `activiteitNaam`,
-  `regelkwalificatie`, `locatieRef`, `herkomst`) op het artikel/lid.
+  (`identificatie`, `activiteitIdentificatie`, `regelkwalificatie`, `locatieRef`,
+  `herkomst`) op het artikel/lid — de naam is resolveerbaar uit de Activiteit-pool.
 
 Dit trio round-trippt **verliesvrij** door `compact ↔ integrated` (op de
 inherente n:1→1:1 na — meerdere juridische regels per regeltekst kunnen niet op
