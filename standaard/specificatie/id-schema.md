@@ -14,38 +14,35 @@ Niet elk element is identificeerbaar: `entry` (Cel), `row` (Rij), `Conditie` en
 `Alinea` gebruiken `agAlgemeen` en dragen **geen** eId/wId.
 
 `storm-integrated` is de authoring-vorm en gebruikt daar één **`uId`** voor.
-Omdat we een verliesvrije **mirror** willen (renvooi vergelijkt op wId), draagt
-de uId de **work-positie mee**: `uId = wId zonder de redundante `{bg-code}_`-
-prefix`. Een kale guid zou niet volstaan — de historische positie in een
-gemuteerde wId is niet uit `guid + huidige eId` te reconstrueren. De uId kan
-óók op elementen zitten die STOP niet identificeert (Conditie, entry, tr).
+Omdat we een verliesvrije **mirror** willen (renvooi vergelijkt op wId), is
+`uId = de wId **letterlijk**` — geen reconstructie, niets eraf. Import neemt over
+wat in de data staat; een kale guid zou niet volstaan omdat de historische
+positie in een gemuteerde wId niet uit `guid + huidige eId` te reconstrueren is.
+De uId kan óók op elementen zitten die STOP niet identificeert (Conditie, entry,
+tr).
 
 ## Regel
 
 - **integrated** draagt op elk element een `uId`. Op de identificeerbare
   elementen staat daarnaast `eId` (het huidige structuurpad); `wId` komt in
   integrated niet voor.
-- **`uId ↔ wId`** in de transformatie van/naar de STOP-vorm (compact/volledig):
-  - **naar STOP**: `wId = {bg-code}_{uId}` — behalve op de elementen zonder eId
-    (`entry`, `row`, `Conditie`, `Alinea`): die krijgen géén wId. Regel: **een
-    element krijgt een wId dan-en-slechts-dan als het een eId heeft** (samen uit
-    agAKN). Niet-geprefixte top-level ids (`body`, `longTitle`, toelichting-
-    `artrecital…`) hebben `uId == eId` → `wId == uId` (geen prefix).
-  - **uit STOP**: `uId` = de wId met de `{bg-code}_`-prefix gestript (of de wId
-    zelf als die niet geprefixt is).
-- **bg-code** komt uit `Regeling@bevoegdGezagCode`.
+- **`uId ↔ wId`** is een **identiteit** in de transformatie van/naar de STOP-vorm:
+  - **naar STOP**: `wId = uId` — behalve op de elementen zonder eId (`entry`,
+    `row`, `Conditie`, `Alinea`): die krijgen géén wId. Regel: **een element
+    krijgt een wId dan-en-slechts-dan als het een eId heeft** (samen uit agAKN).
+  - **uit STOP**: `uId = wId`.
 
-Zo is de heen-en-weer **byte-exact**: `wId → uId → wId` reproduceert de originele
-wId precies, óók voor gemuteerde documenten waar de wId-positie van de huidige
+Zo is de heen-en-weer **byte-exact** by construction: `wId → uId → wId` is de
+identiteit, óók voor gemuteerde documenten waar de wId-positie van de huidige
 eId afwijkt.
 
 ## uId-waarden
 
-- Uit een **geïmporteerde** regeling: de bron-wId minus bg-prefix — dus incl.
-  de (evt. historische) work-positie. In Gemeentestad `1__chp_1`; in productie
-  `{guid}__{historisch-pad}`.
-- Bij **authoring** (nieuw element): een verse GUID plus de huidige eId
-  (`{guid}__{eId}`), zodat de wId `{bg}_{guid}__{eId}` ontstaat.
+- Uit een **geïmporteerde** regeling: de bron-wId zelf, letterlijk (bv.
+  `gm0297_1__chp_1`, of in productie `{bg}_{guid}__{historisch-pad}`).
+- Bij **authoring** (nieuw element): de plansoftware maakt een wId met een verse
+  **GUID**: `{bg}_{guid}__{eId}`. Alleen dán zit er een GUID in de uId; bij
+  import hanteren we simpelweg wat er in de data zit.
 
 ## Elementen zonder eId/wId (uId-only)
 
