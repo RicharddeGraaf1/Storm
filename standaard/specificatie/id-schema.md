@@ -1,47 +1,51 @@
 # Id-schema: uId in integrated, wId in de STOP-vorm
 
-**Status:** ontwerp (2026-08-07).
+**Status:** ontwerp (2026-08-07). Keuze: **mirror** (byte-verliesvrij), zodat
+renvooi (versie-vergelijking op wId) blijft kloppen.
 
 ## Waarom
 
 STOP identificeert tekstelementen met een paar `eId`/`wId` (attributeGroup
 `agAKN`, beide required). `wId` is de stabiele work-id, opgebouwd als
-**`{bg-code}_{guid}__{eId}`**; `eId` is het structuurpad (`chp_2__art_2.3`).
+**`{bg-code}_{work-id}`**, waarbij `work-id` voor een nieuw element `{guid}__{eId}`
+is — maar in een **gemuteerd** document de **historische** positie vasthoudt,
+die kan afwijken van de huidige `eId` (`eId` is de huidige expressie-positie).
 Niet elk element is identificeerbaar: `entry` (Cel), `row` (Rij), `Conditie` en
 `Alinea` gebruiken `agAlgemeen` en dragen **geen** eId/wId.
 
-`storm-integrated` is de authoring-vorm en gebruikt daar één **`uId`** voor —
-de guid uit de wId. Zo hoeft de editor niet met de lange, positie-afhankelijke
-wId te werken, en kan een `uId` óók op elementen zitten die STOP niet
-identificeert (Conditie, entry, tr).
+`storm-integrated` is de authoring-vorm en gebruikt daar één **`uId`** voor.
+Omdat we een verliesvrije **mirror** willen (renvooi vergelijkt op wId), draagt
+de uId de **work-positie mee**: `uId = wId zonder de redundante `{bg-code}_`-
+prefix`. Een kale guid zou niet volstaan — de historische positie in een
+gemuteerde wId is niet uit `guid + huidige eId` te reconstrueren. De uId kan
+óók op elementen zitten die STOP niet identificeert (Conditie, entry, tr).
 
 ## Regel
 
-- **integrated** draagt op elk element een `uId` (de guid/workpart). Op de
-  identificeerbare elementen staat daarnaast `eId` (het structuurpad); `wId`
-  komt in integrated niet voor.
+- **integrated** draagt op elk element een `uId`. Op de identificeerbare
+  elementen staat daarnaast `eId` (het huidige structuurpad); `wId` komt in
+  integrated niet voor.
 - **`uId ↔ wId`** in de transformatie van/naar de STOP-vorm (compact/volledig):
-  - **naar STOP**: `wId = {bg-code}_{uId}__{eId}` — behalve op de elementen
-    zonder eId (`entry`, `row`, `Conditie`, `Alinea`): die krijgen géén wId.
-    Regel: **een element krijgt een wId dan-en-slechts-dan als het een eId
-    heeft** (samen uit agAKN). Top-level ids zonder bg-prefix (`body`,
-    `longTitle`, toelichting-`artrecital…`) hebben `uId == eId` → `wId == uId`.
-  - **uit STOP**: `uId` = het workpart-deel van de wId — de wId met de bekende
-    `eId` van achteren en de `{bg-code}_` van voren gestript. (Niet blind op
-    `__` splitsen: eId's bevatten zelf `__`.)
+  - **naar STOP**: `wId = {bg-code}_{uId}` — behalve op de elementen zonder eId
+    (`entry`, `row`, `Conditie`, `Alinea`): die krijgen géén wId. Regel: **een
+    element krijgt een wId dan-en-slechts-dan als het een eId heeft** (samen uit
+    agAKN). Niet-geprefixte top-level ids (`body`, `longTitle`, toelichting-
+    `artrecital…`) hebben `uId == eId` → `wId == uId` (geen prefix).
+  - **uit STOP**: `uId` = de wId met de `{bg-code}_`-prefix gestript (of de wId
+    zelf als die niet geprefixt is).
 - **bg-code** komt uit `Regeling@bevoegdGezagCode`.
 
-Zo is de heen-en-weer exact: `wId → uId → wId` reproduceert de originele wId
-byte-voor-byte (geverifieerd op Gemeentestad: 175/176 structurele wIds; de ene
-rest is een losse, al bestaande gap in de `ArtikelsgewijzeToelichting`-wrapper
-die zijn eigen id niet meedraagt — los van dit id-schema).
+Zo is de heen-en-weer **byte-exact**: `wId → uId → wId` reproduceert de originele
+wId precies, óók voor gemuteerde documenten waar de wId-positie van de huidige
+eId afwijkt.
 
 ## uId-waarden
 
-- Uit een **geïmporteerde** regeling: het workpart van de bron-wId. In een
-  hand-voorbeeld als Gemeentestad is dat één gedeelde sequence (`1`); in
-  productie is het een **per-element GUID**.
-- Bij **authoring** (nieuw element in de plansoftware): een verse GUID.
+- Uit een **geïmporteerde** regeling: de bron-wId minus bg-prefix — dus incl.
+  de (evt. historische) work-positie. In Gemeentestad `1__chp_1`; in productie
+  `{guid}__{historisch-pad}`.
+- Bij **authoring** (nieuw element): een verse GUID plus de huidige eId
+  (`{guid}__{eId}`), zodat de wId `{bg}_{guid}__{eId}` ontstaat.
 
 ## Elementen zonder eId/wId (uId-only)
 
