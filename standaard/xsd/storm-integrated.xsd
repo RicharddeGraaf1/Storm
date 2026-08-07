@@ -135,7 +135,7 @@
               <xs:group ref="gContentBlok" minOccurs="0" maxOccurs="unbounded"/>
             </xs:sequence>
             <xs:attribute name="eId" type="xs:string"/>
-            <xs:attribute name="wId" type="xs:string"/>
+            <xs:attribute name="uId" type="xs:string"/>
             <xs:attribute name="nummer" type="xs:string"/>
             <xs:attribute name="rang" type="xs:string"/>
           </xs:complexType>
@@ -143,7 +143,7 @@
         <xs:element name="Sluiting" type="Tekst" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="eId" type="xs:string" use="required"/>
-      <xs:attribute name="wId" type="xs:string" use="required"/>
+      <xs:attribute name="uId" type="xs:string" use="required"/>
       <xs:attribute name="geordend" type="xs:boolean" default="false"/>
       <xs:attribute name="nummeringStijl" type="xs:string"/>
       <xs:attribute name="nummeringSymbool" type="xs:string"/>
@@ -185,7 +185,7 @@
         <xs:element name="Bron" type="Tekst" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="eId" type="xs:string" use="required"/>
-      <xs:attribute name="wId" type="xs:string" use="required"/>
+      <xs:attribute name="uId" type="xs:string" use="required"/>
       <xs:attribute name="align" type="xs:string"/>
       <xs:attribute name="rang" type="xs:string"/>
     </xs:complexType>
@@ -199,7 +199,7 @@
         <xs:element name="Bron" type="Tekst" minOccurs="0"/>
       </xs:sequence>
       <xs:attribute name="eId" type="xs:string" use="required"/>
-      <xs:attribute name="wId" type="xs:string" use="required"/>
+      <xs:attribute name="uId" type="xs:string" use="required"/>
       <xs:attribute name="afbeeldingId" type="xs:string" use="required"/>
       <xs:attribute name="breedte" type="xs:integer"/>
       <xs:attribute name="hoogte" type="xs:integer"/>
@@ -227,13 +227,13 @@
               </xs:element>
             </xs:sequence>
             <xs:attribute name="eId" type="xs:string"/>
-            <xs:attribute name="wId" type="xs:string"/>
+            <xs:attribute name="uId" type="xs:string"/>
             <xs:attribute name="rang" type="xs:string"/>
           </xs:complexType>
         </xs:element>
       </xs:sequence>
       <xs:attribute name="eId" type="xs:string" use="required"/>
-      <xs:attribute name="wId" type="xs:string" use="required"/>
+      <xs:attribute name="uId" type="xs:string" use="required"/>
       <xs:attribute name="rang" type="xs:string"/>
     </xs:complexType>
   </xs:element>
@@ -243,7 +243,7 @@
       <xs:group ref="gContentBlok" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
     <xs:attribute name="eId" type="xs:string" use="required"/>
-    <xs:attribute name="wId" type="xs:string" use="required"/>
+    <xs:attribute name="uId" type="xs:string" use="required"/>
     <xs:attribute name="rang" type="xs:string"/>
   </xs:complexType>
   <xs:element name="Kadertekst" type="ContentBlokContainer"/>
@@ -326,7 +326,7 @@
       <xs:group ref="gDocumentComponent" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
     <xs:attribute name="eId" type="xs:string" use="required"/>
-    <xs:attribute name="wId" type="xs:string" use="required"/>
+    <xs:attribute name="uId" type="xs:string" use="required"/>
     <xs:attribute name="rang" type="xs:string"/>
     <xs:attribute name="aantekening" type="Aantekening"/>
   </xs:complexType>
@@ -340,13 +340,27 @@
   <xs:element name="Divisie" type="Structuur"/>
   <xs:element name="Bijlage" type="Structuur"/>
 
+  <!-- Conditie: structurele wrapper bovenin het Lichaam van een RegelingTijdelijkdeel
+       (voorbereidingsbesluit/reactieve interventie). Bevat 1..n Artikel (voorrangs-/
+       geldigheidsbepaling). In STOP draagt <Conditie> GEEN eId/wId (agAlgemeen), dus
+       hier uId-only en bij export naar STOP géén wId; de Artikelen erin wél. -->
+  <xs:element name="Conditie">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Artikel" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="uId" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
   <xs:element name="Lichaam">
     <xs:complexType>
       <xs:sequence>
+        <xs:element ref="Conditie" minOccurs="0"/>
         <xs:group ref="gDocumentComponent" minOccurs="0" maxOccurs="unbounded"/>
       </xs:sequence>
       <xs:attribute name="eId" type="xs:string" default="body"/>
-      <xs:attribute name="wId" type="xs:string" default="body"/>
+      <xs:attribute name="uId" type="xs:string" default="body"/>
     </xs:complexType>
   </xs:element>
 
@@ -359,7 +373,7 @@
         <xs:group ref="gAnnotatie"/>
       </xs:sequence>
       <xs:attribute name="eId" type="xs:string" use="required"/>
-      <xs:attribute name="wId" type="xs:string" use="required"/>
+      <xs:attribute name="uId" type="xs:string" use="required"/>
       <xs:attribute name="rang" type="xs:string"/>
       <xs:attribute name="aantekening" type="Aantekening"/>
       <xs:attributeGroup ref="agOwId"/>
@@ -373,7 +387,7 @@
         <xs:group ref="gAnnotatie"/>
       </xs:sequence>
       <xs:attribute name="eId" type="xs:string" use="required"/>
-      <xs:attribute name="wId" type="xs:string" use="required"/>
+      <xs:attribute name="uId" type="xs:string" use="required"/>
       <xs:attribute name="nummer" type="xs:string" use="required"/>
       <xs:attribute name="rang" type="xs:string"/>
       <xs:attribute name="aantekening" type="Aantekening"/>
@@ -389,7 +403,7 @@
         <xs:element name="Thema" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
       </xs:sequence>
       <xs:attribute name="eId" type="xs:string" use="required"/>
-      <xs:attribute name="wId" type="xs:string" use="required"/>
+      <xs:attribute name="uId" type="xs:string" use="required"/>
       <xs:attribute name="rang" type="xs:string"/>
       <xs:attribute name="aantekening" type="Aantekening"/>
     </xs:complexType>
