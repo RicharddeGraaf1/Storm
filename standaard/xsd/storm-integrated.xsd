@@ -67,9 +67,12 @@
   </xs:element>
 
   <xs:complexType name="NootGegevens">
-    <xs:sequence>
-      <xs:element ref="TekstRun" minOccurs="0" maxOccurs="unbounded"/>
-    </xs:sequence>
+    <!-- STOP 1.4.1: Noot = NootNummer + (Al | Lijst)+ — een voetnoot kan dus
+         een lijst bevatten, niet alleen losse tekst -->
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element ref="TekstRun"/>
+      <xs:element ref="Lijst"/>
+    </xs:choice>
     <xs:attribute name="id" type="xs:string"/>
     <xs:attribute name="type" type="xs:string"/>
     <xs:attribute name="nummer" type="xs:string"/>
@@ -319,6 +322,7 @@
     <xs:choice>
       <xs:element ref="Boek"/>
       <xs:element ref="Deel"/>
+      <xs:element ref="Titel"/>
       <xs:element ref="Hoofdstuk"/>
       <xs:element ref="Afdeling"/>
       <xs:element ref="Paragraaf"/>
@@ -346,6 +350,9 @@
   </xs:complexType>
   <xs:element name="Boek" type="Structuur"/>
   <xs:element name="Deel" type="Structuur"/>
+  <!-- structuurniveau Titel (tussen Deel en Hoofdstuk); niet te verwarren met
+       de lokale Titel van Figuur/Tabel, die van type Tekst is -->
+  <xs:element name="Titel" type="Structuur"/>
   <xs:element name="Hoofdstuk" type="Structuur"/>
   <xs:element name="Afdeling" type="Structuur"/>
   <xs:element name="Paragraaf" type="Structuur"/>

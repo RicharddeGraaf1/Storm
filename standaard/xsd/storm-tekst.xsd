@@ -271,7 +271,8 @@
   <xs:element name="Figuur">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="Titel" type="xs:string" minOccurs="0"/>
+        <!-- STOP 1.4.1: Titel is mixed met inline-opmaak (mgInlinesKop), niet xs:string -->
+        <xs:element name="Titel" type="Tekstregel" minOccurs="0"/>
         <xs:element name="Illustratie">
           <xs:complexType>
             <xs:attribute name="naam" type="xs:string" use="required"/>
@@ -279,6 +280,7 @@
           </xs:complexType>
         </xs:element>
         <xs:element name="Bijschrift" type="Tekstregel" minOccurs="0"/>
+        <xs:element name="Bron" type="Tekstregel" minOccurs="0"/>
       </xs:sequence>
       <xs:attributeGroup ref="agTekstId"/>
     </xs:complexType>
@@ -304,6 +306,7 @@
             <xs:attribute name="cols" type="xs:string"/>
           </xs:complexType>
         </xs:element>
+        <xs:element name="Bron" type="Tekstregel" minOccurs="0"/>
       </xs:sequence>
       <xs:attributeGroup ref="agTekstId"/>
     </xs:complexType>
