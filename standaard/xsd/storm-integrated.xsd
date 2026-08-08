@@ -240,6 +240,7 @@
 
   <xs:complexType name="ContentBlokContainer">
     <xs:sequence>
+      <xs:element name="Kop" type="Kop" minOccurs="0"/>
       <xs:group ref="gContentBlok" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
     <xs:attribute name="eId" type="xs:string" use="required"/>
