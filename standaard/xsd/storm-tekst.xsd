@@ -166,6 +166,8 @@
         <xs:element name="Label" type="xs:string" minOccurs="0"/>
         <xs:element name="Nummer" type="xs:string" minOccurs="0"/>
         <xs:element name="Opschrift" type="Tekstregel" minOccurs="0"/>
+        <!-- STOP 1.4.1: Kop mag na het opschrift een Subtitel dragen -->
+        <xs:element name="Subtitel" type="Tekstregel" minOccurs="0"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>

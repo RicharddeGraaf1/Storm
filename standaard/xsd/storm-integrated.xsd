@@ -99,6 +99,7 @@
   <xs:complexType name="Kop">
     <xs:sequence>
       <xs:element name="Opschrift" type="Tekst" minOccurs="0"/>
+      <xs:element name="Subtitel" type="Tekst" minOccurs="0"/>
     </xs:sequence>
     <xs:attribute name="label" type="xs:string"/>
     <xs:attribute name="nummer" type="xs:string"/>
@@ -272,6 +273,7 @@
     <xs:restriction base="xs:string">
       <xs:enumeration value="Gereserveerd"/>
       <xs:enumeration value="Vervallen"/>
+      <xs:enumeration value="NogNietInWerking"/>
     </xs:restriction>
   </xs:simpleType>
 
