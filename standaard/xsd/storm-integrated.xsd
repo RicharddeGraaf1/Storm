@@ -243,6 +243,8 @@
             </xs:sequence>
             <xs:attribute name="eId" type="xs:string"/>
             <xs:attribute name="uId" type="xs:string"/>
+            <!-- STOP Begrip/LiNummer; als attribuut, net als Lijst/Item@nummer -->
+            <xs:attribute name="nummer" type="xs:string"/>
             <xs:attribute name="rang" type="xs:string"/>
           </xs:complexType>
         </xs:element>

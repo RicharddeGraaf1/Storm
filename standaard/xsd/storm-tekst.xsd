@@ -239,6 +239,8 @@
   <xs:element name="Begrip">
     <xs:complexType>
       <xs:sequence>
+        <!-- STOP 1.4.1: Begrip = LiNummer?, Term, Definitie -->
+        <xs:element name="LiNummer" type="xs:string" minOccurs="0"/>
         <xs:element name="Term" type="Tekstregel"/>
         <xs:element name="Definitie">
           <xs:complexType>
