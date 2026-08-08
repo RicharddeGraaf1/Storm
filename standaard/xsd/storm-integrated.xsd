@@ -105,6 +105,7 @@
   <xs:group name="gContentBlok">
     <xs:choice>
       <xs:element ref="Alinea"/>
+      <xs:element ref="Tussenkop"/>
       <xs:element ref="Lijst"/>
       <xs:element ref="Tabel"/>
       <xs:element ref="Figuur"/>
@@ -113,6 +114,17 @@
       <xs:element ref="Citaat"/>
     </xs:choice>
   </xs:group>
+
+  <!-- Tussenkop: subkopje in de inhoud (STOP Tekstregel, geen eId/wId) -->
+  <xs:element name="Tussenkop">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="Tekst">
+          <xs:attribute name="uId" type="xs:string"/>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
 
   <xs:element name="Alinea">
     <xs:complexType>
