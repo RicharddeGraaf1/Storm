@@ -329,6 +329,7 @@
       <xs:element ref="Artikel"/>
       <xs:element ref="Lid"/>
       <xs:element ref="Divisietekst"/>
+      <xs:element ref="InleidendeTekst"/>
     </xs:choice>
   </xs:group>
 
@@ -419,6 +420,19 @@
       <xs:attribute name="uId" type="xs:string" use="required"/>
       <xs:attribute name="rang" type="xs:string"/>
       <xs:attribute name="aantekening" type="Aantekening"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- InleidendeTekst: inleiding binnen een Divisie (vrijetekst: programma/visie) -->
+  <xs:element name="InleidendeTekst">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Kop" type="Kop" minOccurs="0"/>
+        <xs:group ref="gContentBlok" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="eId" type="xs:string"/>
+      <xs:attribute name="uId" type="xs:string"/>
+      <xs:attribute name="rang" type="xs:string"/>
     </xs:complexType>
   </xs:element>
 
